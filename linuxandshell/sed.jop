@@ -1,0 +1,151 @@
+echo ' FILE_FORMAT="c"' | sed -e 's/c/p/g'
+
+
+sed -e '/^M/d' input
+sed -e '/^M/d' input > output
+# gnu sed
+sed -i -e '/^M/d' input
+ 
+
+The substitute command can be used as follows too:
+
+ 
+sed -e 's/^M//g' input
+sed -e 's/^M//g' input > output
+# gnu sed
+sed -i -e 's/^M//g' input
+# replace line feed with FOO
+sed -i -e 's/^M/FOO/g' input
+
+sed -i '' -e 's/PermitRootLogin no/PermitRootLogin yes/' /etc/ssh/sshd_config*
+
+# substitute 251.1 to 251.4 
+# sed -i -e 's/251.1/251.4/g' JesusMid456.conf
+
+# add | at the end of the line 
+# sed -i 's/$/  |/' /tmp/cli
+# sed 's/^/ping -c 1 /' /sql/file > out
+
+# add at the beginning of the line
+# sed -i 's/^/  |/' /tmp/cli
+
+# add | in between field 1 and 2
+# sed -i -e 's# #| #' /tmp/cli
+
+# print the file chino.log without lines that contain the work timer
+# sed '/timer/d' chino.log > newchino.log
+
+# substitute ></rd> with >jop</rd>/ The g means multiple times in a line
+sed -i -e "s/><\/rd>/>jop<\/rd>/g" jop.xml
+
+# delete the lines lying between PATTERN-1 and PATTERN-2 
+# including the lines containing these patterns:
+sed '/PATTERN-1/,/PATTERN-2/d' input.txt
+# use -i to make modification on the actual file
+
+# delete lines with pattern "Assigned client the"
+sed '/Assigned client the/ d' /tmp/event.txt.ip360
+
+
+# substitue the symbol + at the beginning of the line with nothing. 
+#AKA delete + from beginning of line
+sed -i -e 's/+//' diffmakefile
+
+# substitute "message #61317057 from ip360" with "message from ip360"
+sed -e "s/message #[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/message/" /tmp/event.txt.ip360.1 > /tmp/event.txt.ip360.2
+
+get value of p_dir
+Plugin: audit_binfile (active)
+        Attributes: p_age=0h;p_dir=/var/audit;p_fsize=0;p_minfree=1
+pfexec auditconfig -getplugin audit_binfile  | sed 's/.*p_dir=\(.*\);p_fsize.*$/\1/'
+echo "Plugin: audit_binfile (active) \r Attributes: p_age=0h;p_dir=/var/audit;p_fsize=0;p_minfree=1" 	| sed 's/.*p_dir=\(.*\);p_fsize.*$/\1/'
+
+
+dumpadm | grep "directory" | fn=`sed 's/.*Savecore directory: \(.*\).*$/\1/'` ; ls -ld $fn
+
+
+coreadm | grep "global core file pattern"
+     global core file pattern: /var/core/core.%f.%p
+coreadm | grep "global core file pattern" | sed 's/.*global core file pattern:\(.*\)\/.*$/\1/'
+ /var/core
+coreadm | grep "global core file pattern" | sed 's/.*global core file pattern:\(.*\)\/.*$/\1/' | ls -lLd
+drwx------   3 root     root          11 Dec 13 06:06 .
+
+
+auditconfig -getplugin audit_binfile | grep "Attributes" |  fina=`sed 's/.*p_dir=\(.*\);p_fsize.*$/\1/'` ; ls -al $fina
+drw-r-----   2 root     root          14 Dec 13 02:37 /var/audit
+
+get IP address
+jordonez@solaris:~$ sudo echo SBM+172.19.138.71+SYBEVER_UAT_T1+5003+20170529 | /bin/sed 's/.*+\(.*\)+\(.*\)+\(.*\)+\(.*\)$/\1/'
+172.19.138.71
+
+get instance name
+jordonez@solaris:~$ sudo echo SBM+172.19.138.71+SYBEVER_UAT_T1+5003+20170529 | /bin/sed 's/.*+\(.*\)+\(.*\)+\(.*\)+\(.*\)$/\2/'
+SYBEVER_UAT_T1
+
+get port
+jordonez@solaris:~$ sudo echo SBM+172.19.138.71+SYBEVER_UAT_T1+5003+20170529 | /bin/sed 's/.*+\(.*\)+\(.*\)+\(.*\)+\(.*\)$/\3/'
+5003
+
+get date
+jordonez@solaris:~$ sudo echo SBM+172.19.138.71+SYBEVER_UAT_T1+5003+20170529 | /bin/sed 's/.*+\(.*\)+\(.*\)+\(.*\)+\(.*\)$/\4/'
+20170529
+
+get group 1
+echo 3.3.6 Assign strong password to 'sa' user login : dschmidt NULL Dec 18 1997 4:09PM 0x31054ebd155b9e72159243d3a6c040922e7c1b90c27bff46d8c32230f0f9 | sed 's/.*\(user login :\)\(.*\)$/\1/'
+user login :
+
+get group 2
+echo 3.3.6 Assign strong password to 'sa' user login : dschmidt NULL Dec 18 1997 4:09PM 0x31054ebd155b9e72159243d3a6c040922e7c1b90c27bff46d8c32230f0f9 | sed 's/.*\(user login :\)\(.*\)$/\2/'
+ dschmidt NULL Dec 18 1997 4:09PM 0x31054ebd155b9e72159243d3a6c040922e7c1b90c27bff46d8c32230f0f9
+
+to get a portion of the file 
+**********************************************************************************************************************************
+3.3.6 Assign strong password to 'sa' user login :
+ sa                                         Jul  7 2010  9:59AM             Nov 26 2010 12:30PM 0xc007ae81c7b0f483b31c498361092433
+**********************************************************************************************************************************
+3.3.7-2 Install auditing database sybsecurity (number of system log tables, Min 3):
+
+ sysaudits_01
+ sysaudits_02
+ sysaudits_02
+ sysaudits_03
+ sysaudits_03
+ sysaudits_04
+ sysaudits_04
+**********************************************************************************************************************************
+3.3.8 Enable auditing :
+ auditing                            0                    0            0                    0         switch               dynamic
+**********************************************************************************************************************************
+
+need to get anything between 3.3.6 and *************
+sed -n '/3\.3\.6/,/\*\*\*\*\*/p' GWT+172.20.220.142+TOR_UCOST_UAT+7500+20170614.windows
+3.3.6 Assign strong password to 'sa' user login :
+ sa                                         Jul  7 2010  9:59AM             Nov 26 2010 12:30PM 0xc007ae81c7b0f483b31c49836109243ead
+
+need to get anything between 3.3.8 and ************* but not the line 3.3.8 Enable auditing :
+sed n '/3\.3\.8/,/\*\*\*\*\*/p' /export/home/jordonez/GWT+172.20.220.142+TOR_UCOST_UAT+7500+20170612 | grep auditing | grep  -v '3.3.8 Enable auditing :'
+ auditing                                 0                    0            0                    0         switch               dynamic
+
+
+to replace + with space. 
+File name is 
+GWT+172.20.220.142+TOR_MFUND_UAT+2020+20170614
+echo GWT+172.20.220.142+TOR_MFUND_UAT+2020+20170614 | sed 's/+/\ /g'
+GWT 172.20.220.142 TOR_MFUND_UAT 2020 20170614
+
+extract what is in between :
+echo ipr06:/app/oracle/product/11203:N | sed 's/.*:\(.*\):.*$/\1/'
+/app/oracle/product/11203
+
+get version of cat /etc/redhat-version, which is CentOS Linux release 7.4.1708 (Core)
+cat /etc/redhat-release | sed 's/^CentOS Linux release\(.*\)(Core)/\1/'
+7.4.1708
+
+get value of net.core.somaxconn
+sysctl net.core.somaxconn
+net.core.somaxconn = 128
+sysctl net.core.somaxconn | sed 's/^net\.core\.somaxconn = \(.*\)/\1/'
+128
+
+ 

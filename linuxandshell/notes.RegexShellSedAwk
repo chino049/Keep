@@ -1,0 +1,503 @@
+.		any character
+*		Zero or more repetitions
+(.*)	capture all
++? or *? 	non gready match
++		one or more repetitions
+?		optional caracrer; ex http or https then https?  
+(?:)	ex (?"hey|there) will match hey and there 
+^		start of string 
+$		end of lines
+(xx|yy)	matches xx or yy
+(?i) 	ignore case sensitive
+(?mi) 	ignore case sensitive and multiline
+(?!) 	negative look ahead
+(?<!)   negative look behind 
+(?m)	muiltiline check
+(?s)	single line
+{x} 	number of repetitions
+\d 		any digit
+\w 		word character
+\s		white space, tabs, new lines
+\S 		anything but whitespece
+
+
+
+java and ruby
+[a-z&&[^aeiou]]
+
+
+
+
+
+(?m)^[\ \t]*\*[\ \t]+hard[\ \t]+core[\ \t]+0[\ \t]*(?:$|\#)
+
+
+[\ \t]* = 0 or more spaces or tabs
+\* = an asterisk
+[\ \t]+ = 1 or more spaces or tabs
+hard = hard
+[\ \t]+ = 1 or more spaces or tabs
+0 = 0
+[\ \t]* = 0 or more spaces or tabs
+(?:$|\#) = the end of the string or the start of a bash comment
+
+([0-9]?[0-9]/)(2)
+optional first digit because of the ?
+required second digit
+required /
+(2) says must match at least 2 
+
+3/21/2000
+04/07/
+
+Attributes: p_age=0h;p_dir=/var/audit;p_fsize=0;p_minfree=0444434234
+.*p_minfree=(0*[2-9]|0*[1-9]\d{1,}$)
+to get any value greater than 2 on p_minfree
+
+find the passlength value of 15 or more
+PASSLENGTH=100 
+PASSLENGTH=17
+^\s*PASSLENGTH\s*=\s*(0*[1-9][5-9]\d{0,}\s*|0*[1-9][0-9]\d{1,}\s*)($|#.*)
+^\s*PASSLENGTH\s*=\s*0*(1[5-9]\s*|[2-9]\d\s*|[1-9]\d{2,}\s*)($|#.*)
+
+^\s*MINDIFF\s*=\s*(0*[8-9]\d{0,}\s*|0*[1-9][0-9]\d{0,}\s*)($|#*.)
+^\s*MINUPPER\s*=\s*(0*[1-9]\d{0,}\s*)($|#*.)
+^\s*MINDIGIT\s*=\s*(0*[1-9]\d{0,}\s*)($|#.*)
+^\s*MINSPECIAL\s*=\s*(0*[1-9]\d{0,}\s*)($|#.*)
+^\s*MAXREPEATS\s*=\s*(0*[1-3]\s*)($|#.*)
+^\s*SLEEPTIME\s*=\s*0*[0-4]\s*($|#.*$)
+^\s*HISTORY\s*=\s*(0*[5-9]\d{0,}\s*|0*[1-9][0-9]\d{0,}\s*)($|#.*)
+^UMASK\s*=\s*077\s*($|#.*)
+^ENABLE_NOBODY_KEYS\s*=\s*NO($|#.*)
+^CONSOLE\s*=\s*/dev/console\s*($|#.*)
+^PASSREQ\s*=\s*YES\s*($|#.*)
+^.*encryption\s+off\s+.*$
+
+^(global\s+enable.*|(?!global).*disabled)
+looging for global enabled or anything else disabled
+
+looking for 700 or less permissions
+lrwxrwxrwx   1 root     root          18 Dec  5 07:09 /var/crash -> ../var/share/crash
+.*(lrwx------|lrw-).*\s+root\s+root\s+.*
+
+
+Looking for 640 or less and owner root
+drwx------   3 root     root          10 Dec 12 13:24 .
+^d(rw-r-----|rw-------).*\s+root\s+root\s+.*
+
+^l(rw-r-----|rw-------).*\s+root\s+root\s+.*
+lrwx------   1 root     root          18 Dec  5 07:09 /var/audit -> ../var/share/audit
+
+looking for cmask of 022
+^\s*CMASK\s*=\s*022\s*($|#.*$)
+
+set noexec_user_stack=01 
+^\s*set noexec_user_stack\s*=\s*(0*1)\s*
+
+*timeout: 0:15:00 ( or less)
+^\s*\*timeout\s*:\s*0*0:(15:00|1[0-4]:[0-5][0-9]|0?[0-9]:[0-5][0-9])$
+
+*lockTimeout: 0:00:05 ( or less)
+^\s*\*lockTimeout\s*:\s*0*0:00:0?[0-5]$
+
+(?s)^(find: stat\(\) error.*No such file or directory)*$
+find: stat() error /root/.rhosts: No such file or directory
+find: stat() error /export/home/jordonez/.rhosts: No such file or directory
+
+
+(?s)^elfsign: Unable to open /PATH as an ELF object\.\s*(passed\.\s*)+$
+Looking for all passed. Anything else is a failure
+elfsign: Unable to open /PATH as an ELF object.
+passed.
+passed.
+passed.
+passed.
+
+Looking only for this string with emoty greup names
+Duplicate Group Name ():  fi
+Duplicate Group Name ():  fi
+Duplicate Group Name ():  fi
+Duplicate Group Name ():  fi
+Duplicate Group Name ():  fi
+Duplicate Group Name ():  fi
+(?s)^(Duplicate\s*Group\s*Name\s*\(\)\:\s*fi\s*)+$
+
+(?s)^MaxAuthTries\s*6\s*MaxAuthTriesLog\s*6\s*($|#.*)
+MaxAuthTries 6
+MaxAuthTriesLog 6 
+
+^\s*name=RestrictOutbound\s+desc=Restrict Outbound Connections\s+limitpriv=zone,!net_access$
+        name=RestrictOutbound
+        desc=Restrict Outbound Connections
+        limitpriv=zone,!net_access
+
+(?s)^.*(encryption\s+off\s+)+.*$
+NAME   PROPERTY    VALUE  SOURCE
+rpool  encryption  off    -
+NAME        PROPERTY    VALUE  SOURCE
+rpool/ROOT  encryption  off    -
+NAME                PROPERTY    VALUE  SOURCE
+rpool/ROOT/solaris  encryption  off    -
+NAME                    PROPERTY    VALUE  SOURCE
+rpool/ROOT/solaris/var  encryption  off    -
+
+		
+
+^IgnoreRhosts\s*yes\s*($|#.*)
+^PermitRootLogin\s*no\s*($|#.*)
+^PermitEmptyPasswords\s*no\s*($|#.*)
+^ClientAliveInterval\s*600\s*($|#.*)
+^ClientAliveCountMax\s*0\s*($|#.*)
+^\s*ClientAliveCountMax\s+0*0\s+($|#.*)
+^\s*ClientAliveInterval\s+600\s*($|#.*)
+^\s*DisplayConnect\s+/etc/issue\s*($|#.*)
+^\s*Banner\s+/etc/issue\s*($|#.*)
+^\s*CRYPT_ALGORITHMS_ALLOW\s*=\s*5,6\s*($|#*.)
+^CRYPT_DEFAULT\s*=\s*5\s*($|#*.)
+^\s*exclude:\s+scsa2us\s*
+(?s)^.*root\s+root\s*.*$
+
+
+(?s)^.*You are accessing a U\.S\. Government \(USG\) Information System \(IS\) that is provided for USG-authorized use only. By using this IS \(which includes any device attached to this IS\), you consent to the following conditions:
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct \(PM\), law enforcement \(LE\), and counterintelligence \(CI\) investigations\.
+-At any time, the USG may inspect and seize data stored on this IS\.
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+-This IS includes security measures \(e\.g\., authentication and access controls\) to protect USG interests -- not for your personal benefit or privacy\. -Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants\. Such communications and work product are private and confidential\. See User Agreement for details.*\s*($|#.*)
+
+/bin/cat: /etc/xinetd.d/tftp: No such file or directory
+(?m)^\/bin\/cat:\s\/etc\/xinetd.d\/tftp:\sNo\ssuch\sfile\sor\sdirectory(?:$|\#)
+(?m)^\/bin\/cat:[\ \t]\/etc\/xinetd.d\/tftp:[\ \t]No[\ \t]such[\ \t]file[\ \t]or[\ \t]directory(?:$|\#)
+
+
+-rw-r--r--. root root /var/log/boot.log
+.+
+
+/var exists and is not listed as a separate partion in /etc/fstab.
+(?m)^\/var[\ \t]+exists
+
+
+(?m)^[\ \t]*ip6tables[\ \t]+.*\boff\b.*$\n(?!(?:^.*$\n)*^[\ \t]*ip6tables:[\ \t]+Firewall[\ \t]+is[\ \t]+not[\ \t]+running)^.*$
+ip6tables       0:off   1:off   2:off   3:off   4:off   5:off   6:off
+Table: filter
+
+
+/bin/cat: /etc/samba/smb.conf: No such file or directory
+(?m)^\/bin\/cat:[\ \t]\/etc\/samba\/smb.conf:[\ \t]No[\ \t]such[\ \t]file[\ \t]or[\ \t]directory(?:$|\#)
+
+/bin/cat /etc/modprobe.d/bcbs_blacklist.conf
+(?m)^[\ \t]*options[\ \t]+ipv6[\ \t]+disable[\ \t]*=[\ \t]*1[\ \t]*$
+
+cat /etc/sysconfig/iptables
+^:[\ \t]*FORWARD[\ \t]+ACCEPT[\ \t]+.*(?:$|\#.*)
+
+
+num_logs = 5
+(?m)(?i)^[\ ]*num_logs[\ ]+=[\ ]+5(?:[\ ]*$|[\ ]+\#)
+
+EnPasFltV2x64 *
+(?m)(?i).*enpasfltv2x(86|64).*
+
+
+without pound
+/bin/egrep -v "^[[:space:]]*#|^[[:space:]]*$" /etc/security/limits.conf /etc/security/limits.d/* 2>/dev/null | /bin/grep -i "maxlogins"
+(?m)(?i)^[^:\n]+:[\ \t]*\*[\ \t]+\S+[\ \t]+maxlogins[\ \t]+(?:[1-9]|10)[\ \t]*(?:$|\#)
+/etc/security/limits.conf:*            -       maxlogins       10
+
+with pound
+/bin/egrep -v "^[[:space:]]*$" /etc/security/limits.conf /etc/security/limits.d/* 2>/dev/null | /bin/grep -i "maxlogins"
+(?m)(?i)^[^:\n]+:[\ \t]*\*[\ \t]+\S+[\ \t]+maxlogins[\ \t]+(?:[1-9]|10)[\ \t]*(?:$|\#)
+/etc/security/limits.conf:#*            -       maxlogins       10
+
+(?m)(?i)^[^:\n]+:[\ \t]*\*[\ \t]+\S+[\ \t]+maxlogins[\ \t]+(?:10)[\ \t]*(?:$|\#)
+
+
+echo 'difok=42' | egrep '^difok=(8|9|[1-9]\d+)'
+
+echo 'difok=42' | egrep '^difok=(8|9|[1-9])'
+difok=42
+
+
+-rwxr-xr-x root root /usr/bin/ldd
+
+(?m)^-{9}(.*)(?:\#|$)
+---------- root root /usr/bin/ldd
+global core file pattern: /var/core/core_%n_%f_%u_%g_%t_p
+(?m)(.*)(\/var)\1
+matches /var
+(?m)(.*)(\/.*\/)\1
+matches /var/core/
+(?m)(.*)(\/.*!?\/)\1
+matches /var/core
+(?m)(.*)(\/\w+\/)\1
+matches /var/
+(?m)(.*)(\/\w+)(\/\w+/)\1
+matches /var/core
+
+find /etc/rc* /etc/init.d -type f -print | xargs grep LD_LIBRARY_PATH | egrep "^:|:$|::|^!/"
+
+logins -so | awk -F: '{ print $1 }' | while read user; do found=0; for tUser in adm aiuser bin daemon dhcpserv dladm ftp gdm listen lp mysql netadm netcfg noaccess nobody nobody4 nuucp openldap pkg5srv postgres root smmsp svctag sys unknown uucp upnp ikeuser webservd xvm zfssnap sshd; do if [ ${user} = ${tUser} ]; then found=1; fi; done; if [ $found -eq 0 ]; then echo "Invalid User with Reserved UID: ${user}" ;fi ; done;
+
+getent group | cut -f3 -d":" | sort -n | uniq -c | while read x ; do [ -z "${x}" ] && break; set - $x ; if [ $1 -gt 1 ]; then grps=`getent group | nawk -F: '($3 == n) { print $1}' n=$2 | xargs`; echo "Duplicate GID ($2): ${grps}"; fi ; done ;
+
+export IFS=":"; logins -uxo | while read user uid group gid gecos home rest; do result=$(find ${home} -type d -prune ! -user $user -print > /dev/null); if [ ! -z "${result}" ]; then echo "User: ${user}\tOwner: $(ls -ld $home | awk '{ print $3 }')"; fi; done;
+
+logins -xo | while read line; do user=`echo ${line} | awk -F: '{ print $1 }'` ; home=`echo ${line} | awk -F: '{ print $6 }'` ; if [ -z "${home}" ]; then echo ${user} ; fi ; done ;
+
+for user in `logins -s | awk '{ print $1 }'` aiuser noaccess nobody nobody4; do grep -w "${user}" /etc/ftpd/ftpusers > /dev/null >&1 ; if [ $? != 0 ]; then echo "User '${user}' not in /etc/ftpd/ftpusers." ; fi ; done ;
+
+for dir in `logins -ox | awk -F: '($8 == "PS") { print $6 }'`; do find ${dir}/.rhosts -type f -ls > /dev/null ; done
+
+for dir in `logins -ox | awk -F: '($8 == "PS") { print $6 }'`; do find ${dir}/.netrc -type f \( -perm -g+r -o -perm -g+w -o -perm -g+x -o -perm -o+r -o -perm -o+w -o -perm -o+x \) -ls > /dev/null; done ;
+
+for dir in `logins -ox | awk -F: '($8 == "PS") { print $6 }'`; do find ${dir}/.[A-Za-z0-9]* \! -type l \( -perm -20 -o -perm -02 \) -ls ; done ;
+
+for dir in `logins -ox |\awk -F: '($8 == "PS") { print $6 }'`; do find ${dir} -type d -prune \( -perm -g+w -o -perm -o+r -o -perm -o+w -o -perm -o+x \) -ls ; done ;
+
+find / \( -fstype nfs -o -fstype cachefs -o -fstype autofs -o -fstype ctfs -o -fstype mntfs -o -fstype objfs -o -fstype proc \) -prune -o -type d \( -perm -0002 -a ! -perm -1000 \) -ls
+
+rmformat | grep "Logical Node" | gh=`awk -F':' '{print $2}'` ; pn=`for sgh in $gh; do zfs list | grep $sgh  | awk -F' ' '{print $1}'; done`; for jk in $pn; do zfs get encryption $jk| grep -v NAME; done
+
+rele=`cat /etc/release | grep "Oracle Solaris" | awk -F' ' '{print $3}'`; if [ $rele -ge 11.2 ] ; then ipadm show-prop -p send_redirects -co current ipv4 | grep -v off ; ipadm show-prop -p send_redirects -co current ipv6 | grep -v off ; else ipadm show-prop -p _send_redirects -co current ipv4 | grep -v 0; ipadm show-prop -p _send_redirects -co current ipv6 | grep -v 0; fi;
+
+if [ a -gt b ]; then echo 'y'; else echo 'n'; fi;
+
+for svc in `inetadm | awk '/svc:\// { print $NF }'`; do val=`inetadm -l ${svc} | grep -c tcp_wrappers=TRUE` ; if [ ${val} -eq 1 ]; then echo "TCP Wrappers enabled for ${svc}"; fi ; done;
+
+------------------------------------
+SHELL
+ 
+ 
+
+
+ egrep "auth|account" /etc/pam.d/gdm-autologin | grep -vc ^#
+
+ ipadm show-prop -p _ignore_redirect -co current ipv4 | grep -v 0 ; ipadm show-prop -p _ignore_redirect -co current ipv6 | grep -v 0
+ 
+root@solaris:~# cryptoadm list fips-140| grep -c "is disabled"
+0
+root@solaris:~# cryptoadm list fips-140
+Kernel providers:
+=================
+des: FIPS 140 mode is enabled.
+aes: FIPS 140 mode is enabled.
+ecc: FIPS 140 mode is enabled.
+sha1: FIPS 140 mode is enabled.
+sha2: FIPS 140 mode is enabled.
+rsa: FIPS 140 mode is enabled.
+swrand: FIPS 140 mode is enabled.
+intelrd: FIPS 140 mode is enabled.
+
+
+FileNames=`/usr/bin/find / -xdev \( -perm -4000 -o -perm -2000 \) -type f`; 
+if [ -n "$FileNames" ]; then for FileName in $FileNames; 
+do echo $FileName; echo $FileName | /bin/sed 's/[\/]/\x5C\x5C\x5C\x2F/g' |/bin/sed 's/\./\\\\./g'; 
+done;fi;
+
+echo $FileName | /bin/sed 's/usr/USR/g'
+echo $FileName | /bin/sed 's/\//\x5C\x5C\x5C\x2F/g'
+echo $FileName | /bin/sed 's/\//\\\//g'
+
+ FileNames=`/usr/bin/find / -xdev \( -perm -4000 -o -perm -2000 \) -type f 2>/dev/null`;
+ bool=0;
+ if [ -n "$FileNames" ]; then for FileName in $FileNames; do Regex="`/bin/echo $FileName | 
+ /bin/sed 's/[\/]/\x5C\x5C\x5C\x2F/g'|/bin/sed 's/\./\\\\./g'`"; 
+ AuditConfig=`/bin/awk -F# '$1 !~ /^[\ \t]*$/ {gsub(/^[\ \t]+|[\ \t]+$/,"",$1);print $1}' /etc/audit/audit.rules 2>/dev/null |
+ /bin/awk -v RS='' -v FS='-D' ' {gsub(/^[\ \t]+|[\ \t]+$/,"",$2);print $2}'`; 
+ IsExisted=`/bin/echo "$AuditConfig" 2>/dev/null | 
+ /bin/awk '$0 ~ /^[\ ]*-a[\ ]+[^\ ]*exit/ && $0 ~ /^[\ ]*-a[\ ]+[^\ ]*always/ 
+ && $0 ~ /[\ ]-F[\ ]perm=\w*(x|X)\w*[\ ]+/ && $0 ~ /[\ ]-F[\ ]auid>=500[\ ]+/ 
+ && $0 ~ /[\ ]-F[\ ]auid!=4294967295[\ ]+/ && $0 ~ /[\ ]-F[\ ]path='"$Regex"'[\ ]+/ {print $0}'`; 
+ if [ -z "$IsExisted" ]; then /bin/echo "$FileName"; bool=1;fi; done; else /bin/echo "There is no file"; fi; 
+ if [ "$bool" = 0 ]; then /bin/echo "All audit lines are set"; fi;
+ 
+ 
+ FileNames=`/usr/bin/find / -xdev \( -perm -4000 -o -perm -2000 \) -type f; /usr/bin/find /opt/CA -xdev \( -perm -4000 -o -perm -2000 \) -type f`
+ 
+ FileNames=`/usr/bin/find / -xdev \( -perm -4000 -o -perm -2000 \) -type f 2>/dev/null;
+ /usr/bin/find /opt/CA -xdev \( -perm -4000 -o -perm -2000 \) -type f 2>/dev/null`; bool=0;
+ if [ -n "$FileNames" ]; then for FileName in $FileNames; do Regex="`/bin/echo $FileName | 
+ /bin/sed 's/[\/]/\x5C\x5C\x5C\x2F/g'|/bin/sed 's/\./\\\\./g'`"; 
+ AuditConfig=`/bin/awk -F# '$1 !~ /^[\ \t]*$/ {gsub(/^[\ \t]+|[\ \t]+$/,"",$1);print $1}' /etc/audit/audit.rules 2>/dev/null | 
+ /bin/awk -v RS='' -v FS='-D' ' {gsub(/^[\ \t]+|[\ \t]+$/,"",$2);print $2}'`; 
+ IsExisted=`/bin/echo "$AuditConfig" 2>/dev/null | 
+ /bin/awk '$0 ~ /^[\ ]*-a[\ ]+[^\ ]*exit/ && $0 ~ /^[\ ]*-a[\ ]+[^\ ]*always/  
+ && $0 ~ /[\ ]-F[\ ]perm=\w*(x|X)\w*[\ ]+/ && $0 ~ /[\ ]-F[\ ]auid>=500[\ ]+/ 
+ && $0 ~ /[\ ]-F[\ ]auid!=4294967295[\ ]+/ && $0 ~ /[\ ]-F[\ ]path='"$Regex"'[\ ]+/ {print $0}'`;  
+ if [ -z "$IsExisted" ]; then /bin/echo "$FileName"; bool=1;fi; done; else /bin/echo "There is no file"; fi; 
+ if [ "$bool" = 0 ]; then /bin/echo "All audit lines are set"; fi;
+  
+ 
+value=`/bin/cat /proc/sys/net/ipv6/conf/all/disable_ipv6 2>/dev/null`; if [  "$value" == "0" ]; then  /bin/cat /etc/modprobe.conf /etc/modprobe.d/* 2>/dev/null ; /bin/echo " ";fi;
+
+ if [ -x /usr/sbin/snmpd ] ; then /bin/cat /etc/snmp/snmpd.conf 2> /dev/null; fi
+
+ FN=`/usr/bin/find / -xdev \( -perm -4000 -o -perm -2000 \) -type f `; if [ -n "$FN" ]; then for r in $FN ; do ls -ltr $FN; done; fi;
+-xdev means do not descend directories on other file systems
+-type f means regular files
+
+
+(/bin/egrep -v '^[[:space:]]*#' /etc/shells 2>/dev/null; 
+ls /usr/bin/*sh /bin/*sh 2>/dev/null; 
+/bin/cat /etc/passwd 2>/dev/null | 
+/bin/egrep -v "^[[:space:]]*(\+|#|(root|daemon|ident|bin|sys|adm|smtp|uucp|nuucp|listen|lpd|
+lp|ingres|apache|oracle|oracle7|oracle8|oracle9|informix|news|nobody|nobody4|noaccess|sybase|
+tivoli|mqm|www|ftp|tftp|hpdb|sshd|invscout|gccs|secman|sysadmin|install|staff|COE|predmail|
+snmp|smmsp|sm|share|BIF|GCCS|JDISS|SA|SSO|SM|gccsrv|gtnsmint|irc|Imadmin|netadmin|halt|mail|
+games|rpm|vcsa|nscd|rpc|rpcuser|mailnull|pcap|xfs|ntp|gdm|sync|shutdown|operator|gopher|nfsnobody|
+dbus|haldaemon|netdump|webalizer|pvm|mysql|mailman|dovecot|cyrus|amanda|pegasus|HPSMH|hpsmh|webadmind|
+webadmin|webservd|avahi|beagleidx|hsqldb|postfix|svctag|postgres|ids|IDS|distcache|DISTCACHE|named|
+canna|wnn|fax|quagga|htt|abrt|avahi-autoipd|dovenull|oprofile|pulse|qpidd|rtkit|sabayon|saslauth|squid|
+tcpdump|tomcat|usbmuxd):)" | /bin/awk -F: '{print $7}' | while read Shell; do 
+	if [ "${Shell}X" = "X" ]; then 
+		/bin/echo /bin/sh; 
+	else 
+		/bin/echo $Shell; 
+	fi; 
+done) | /bin/sort -u | /bin/egrep -v "(refresh|remsh|rsh|ssh|autopush|hash|chsh|uucico|savecrash|yppush|
+sdshell|false|true|/dev/null|nologin)$" | while read Shell; do 
+	/bin/ls -ldL $Shell 2>/dev/null; 
+done | /bin/awk '$1 !~ /^-....-..-.\.?$/ || $3 !~ /^(root|bin)$/ || $4 !~ /^(root|sys|bin)$/ {print $1,$3,$4,$NF}'
+
+MOUNTS="/home /var /var/log/audit /tmp"; for MOUNT in $MOUNTS; do if [ -d "$MOUNT" ]; then if [ `/bin/grep -Ev "^[[:space:]]*(#|$)" 
+
+
+using grep with -v for invert match
+/bin/grep -i bootproto=static /etc/sysconfig/network-scripts/ifcfg-* | /bin/grep -v bak 2>/dev/null
+/etc/sysconfig/network-scripts/ifcfg-eth0:BOOTPROTO=static
+
+ls /etc/sysconfig/network-scripts/ifcfg-eth*
+/etc/sysconfig/network-scripts/ifcfg-eth0  /etc/sysconfig/network-scripts/ifcfg-eth0.bak
+
+echo 'difok=11' | egrep '^difok=(8|9|[1-9][0-9]+)'
+egrep is not \d aware
+
+WHATSSSSSSS
+/usr/bin/egrep -v "^\s*#" /etc/hosts.allow 2>/dev/null properties: 
+Output pattern match ^[\ \t]*(?:sshd[^:&&\S]*|ALL)[\ \t]*:.*(?:$|\#)
+
+----------------------------------------
+[root@quamtum ~]# cat /etc/fstab
+#
+# /etc/fstab
+# Created by anaconda on Mon Dec  7 12:15:40 2015
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+/dev/mapper/vg_quamtum-lv_root /                       ext4    defaults        1 1
+UUID=9ca65b5c-7269-4496-878a-6872020b99f4 /boot                   ext4    defaults        1 2
+/dev/mapper/vg_quamtum-lv_home /home                   ext4    defaults        1 2
+/dev/mapper/vg_quamtum-lv_swap swap                    swap    defaults        0 0
+tmpfs                   /dev/shm                tmpfs   defaults        0 0
+devpts                  /dev/pts                devpts  gid=5,mode=620  0 0
+sysfs                   /sys                    sysfs   defaults        0 0
+proc                    /proc                   proc    defaults        0 0
+
+MOUNTS="/home /var /tmp"; for MOUNT in $MOUNTS; do /bin/echo "$MOUNT"; done
+
+MOUNTS="/home /var /tmp"; for MOUNT in $MOUNTS; do if [ -d "$MOUNT" ]; then /bin/echo "$MOUNT"; fi ; done
+
+MOUNTS="/home /var /tmp"; for MOUNT in $MOUNTS; do if [ -d "$MOUNT" ]; then if [ `/bin/grep -Ev "^[[:space:]]*(#|$)" /etc/fstab 2>/dev/null |
+/bin/grep -v "$MOUNT/" | /bin/grep -c $MOUNT` -eq 0 ];
+then /bin/echo "$MOUNT" ; fi ; fi; done
+
+MOUNTS="/home /var /tmp"; for MOUNT in $MOUNTS; do if [ -d "$MOUNT" ]; then if [ `/bin/grep -Ev "^[[:space:]]*(#|$)" /etc/fstab 2>/dev/null |
+/bin/grep -v "$MOUNT/" | /bin/grep -c $MOUNT` -eq 0 ];
+then /bin/echo "$MOUNT exists and is not listed as a separate partion in /etc/fstab."; fi; fi; done
+
+MOUNTS="`df -h`"; for MOUNT in $MOUNTS; do if [ -d "$MOUNT" ]; then if [ `/bin/grep -Ev "^[[:space:]]*(#|$)" /etc/fstab 2>/dev/null |
+/bin/grep -v "$MOUNT/" | /bin/grep -c $MOUNT` -eq 0 ]; 
+then /bin/echo "$MOUNT exists and is not listed as a separate partion in /etc/fstab."; fi; fi; done
+
+passFile="`cat /etc/passwd`"; for f in $passFile; do if [ $f ] ; then echo $f; fi ; done ; 
+passFile="`cat /etc/passwd`"; for f in $passFile; do if [ $f ] ; then echo $f | egrep '^\w+:'; fi ; done ;
+passFile="`cat /etc/passwd`"; for f in $passFile; do if [ $f ] ; then echo $f | egrep '(^\w+:)(\w+:)\1 \1\2'; fi ; done ;
+                                                                                egrep '(^\w+)(:)(\w+)(:).*\1'
+
+passFile="`cat /etc/passwd`"; for f in $passFile; do if [ $f ] ; then echo $f | sed 's|.*:[ \t]*\(/.*\)\(/.*\)/.*|\1|' ; fi; done;            
+
+
+echo 'pulse:x:118:127:PulseAudio daemon,,,:/var/run/pulse:/bin/false' | egrep '(^\w+)'
+echo 'pulse:x:118:127:PulseAudio daemon,,,:/var/run/pulse:/bin/false' | egrep '(^\w+)(:)(\w+)(:).*\1'
+
+echo 'pulse:x:118:127:PulseAudio daemon,,,:/var/run/pulse:/bin/false' | sed 's|(^\w+):.*||'
+echo 'pulse:x:118:127:PulseAudio daemon,,,:/var/run/pulse:/bin/false' | sed 's|(^\w+):.*|/1|'
+echo 'pulse:x:118:127:PulseAudio daemon,,,:/var/run/pulse:/bin/false' | sed 's|(.*):.*|/1|'
+echo 'pulse:x:118:127:PulseAudio daemon,,,:/var/run/pulse:/bin/false' | sed 's|(^\w+):\(/.*\)\(/.*\)/.*|\2|'
+echo 'pulse:x:118:127:PulseAudio daemon,,,:/var/run/pulse:/bin/false' | sed 's|(^\w+)(:)(\w+)(:)|\2|'
+
+cat /etc/passwd | sed 's|.*:[ \t]*\(/.*\)\(/.*\)/.*|\1|'
+
+MOUNTS=`coreadm | grep "global core file pattern" 
+| sed 's|.*:[ \t]*\(/.*\)\(/.*\)/.*|\1 \1\2|'`
+for MOUNT in $MOUNTS; do
+    echo $MOUNT
+    if [ -d "$MOUNT" ]; then
+        if [ `/bin/grep -c $MOUNT /etc/vfstab` -ne 0 ]; then
+            /bin/echo "$MOUNT exists and is listed as a separate partition in /etc/vfstab.";
+        else
+            /bin/echo "$MOUNT exists and is not listed as a separate partition in /etc/vfstab.";
+        fi;
+     else
+         /bin/echo "$MOUNT does not exist";
+     fi;
+done
+
+
+foreach n (`seq 0 255`)
+echo -n 111.222.$n.1,
+end
+
+
+if [ `zonename` == "global" ] ; then
+  echo `zonename; svcs -Ho state ntp`
+  if [ `svcs -Ho state ntp` == "disabled" ]; then
+    echo "global disabled";
+  elif [`svcs -Ho state ntp` == "enable" ]; then
+    echo "global enable";
+  fi;
+else ;
+  echo "non-global" ;
+fi;
+
+
+--------------------------
+NotePadd++
+pulse:x:118:127:PulseAudio daemon,,,:/var/run/pulse:/bin/false
+find : (^\w+)(:)(\w+)(.*)
+replace : \1::\3\4
+pulse::x:118:127:PulseAudio daemon,,,:/var/run/pulse:/bin/false
+
+---------------------SED
+replace ^M with blank
+ echo 'Hello^Mhow are you ' | sed  -e 's/\^M/ /g'
+ 
+---------------------AWK
+
+root@KaliFornia:/data/Library# ls -lR python/ | awk '{print$5,$9}'
+
+
+ echo '!System Description "ModelName 1010A, 1.1.1.2, Release 1.2' | egrep  '(.*Rele.*\d*)'
+ echo '!System Description "ModelName 1010A, 1.1.1.2, Release 1.2' | egrep  '(.*Rele.*[1].[2-4].*)'
+
+
+User timeout 1200
+\d(([1-9])|([1-9][0-9])|([1-9][0-9][0-9])|([1][0-1][0-9][0-9]))\d
+  (([1-9])|([1-9][0-9])|([1-9][0-9][0-9])|([1][0-1][0-9][0-9]))
+
+^((?!FAIL).)$
+not match on FAIL
+FAIL this is a no
+PASS this is a yes
+^((?!FAIL).)$
+(?m)^((?!FAIL).)(.*)?$
+
+-----------
+zypper pa -i | egrep '^i.*' | awk '{print $5 " | " $7 }' | sort > zypper.out
+rpm -qa --queryformat "%{NAME} | %{VERSION}-%{RELEASE}\n" | sort > rpm.out
+ 
+
+\S.*\n*.*\S.*\n*.*model:\s+(.*)\S.*\n*
+.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\nmodel:\s(.*)\n.*
+
+

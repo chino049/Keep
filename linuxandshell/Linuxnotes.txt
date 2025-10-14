@@ -1,0 +1,528 @@
+-----------------------------POSIX
+Portable Operating System Interface is a family if standards specified by the IEEE for maintaining compatibility 
+between OS's. POSIX defines the application programming interface (API), along with command line shell and 
+utility interfaces. There are versions 
+-POSIX.1 Core Services : Process Creation and Control, Signals, Floating Point Exceptions, Segmentation /
+  Memory Violations, Illegal Instructions, Bus Errors, Timers, File and Directory Operations, Pipes, 
+  C Library (Standard C), I/O Port Interface and Control, Process Triggers, 
+-POSIX.1b Real-time extensions : Priority Scheduling, Real-Time Signals, Clocks and Timers, Semaphores, 
+ Message Passing, Shared Memory, Asynch and Synch I/O, Memory Locking Interface
+-POSIX.1c Therads extensions : Thread Creation / Control / Cleanup, Thread Scheduling, Thread Synchronization,
+ Signal Handling
+-POSIX.2 Shell and Utilities : Command Interpreter, Utility Programs
+-POSIX.1-2001
+-POSIX.1-2008
+
+----------------------------File descriptors
+A file descriptor or FD, is an absract indicator for accessing a file. This term is used in POSIX operating 
+systems. In POSIX a FD is a integer. There are 3 standard POSIX FD's, corresponding to the 3 standard streams,
+0 for Standard input (stdin), 1 for Standard output (stdout), and 2 for Standard Error (stderr)
+Generally, a FD is an index for an entry in a kernel-resident array data structure containing the details of 
+open files. In POSIX this data structure is called a file descriptor table, and each process has its own file 
+descriptor table. The process passes the file descriptos to the kernel through a system call.
+On linux the set of FD's open in a process can be accessed under /proc/PID/fd.
+This FD's can refer to any unix file like type named in a file system, regular files, directories, blocks, and 
+character devices (called special files),  domain sockets, and named pipes, anonymous pipes, and network sockets.
+
+Operations of FD's 
+Some of this functions are declared in the header <fcntl.h>
+-Creating FD's : open(), open64(), creat(), creat64(), socket(), accept(), socketpair(), epoll_create() (Linux only),
+pipe(), signalfd() (Linux only), eventfd() (Linux only), opendir()
+-Deriving FD's : dirfd(), fileno()
+-Operations on a single FD : read(), write(), readv(), writev(), pread(), pwrite(), pread64(), pwrite64()
+ (linux only, recv(), send(), recvmsg(), sendmsg() (including allowing sending FDs), sendfile(), lseek(), 
+ lseek64(), fstat(), fstat64(), fchmod(), fchown(), fdopen(), gzdopen(), ftruncate(), fsync(), fdatasync(),
+ fstatvfs()
+-Operations on multiple FDs :  select(), pselect(), poll(), epoll(), kqueue()
+-Operations on the file descriptor table : The fcntl() function is used to perform various operations on a 
+ file descriptor, depending on the command argument passed to it. There are commands to get and set attributes
+ associated with a file descriptor, including F_GETFD, F_SETFD, F_GETFL and F_SETFL.  close(), closefrom() 
+ (BSD and Solaris only; deletes all file descriptors greater than or equal to specified number), dup()
+ (duplicates an existing file descriptor guaranteeing to be the lowest number available file descriptor), dup2()
+ (the new file descriptor will have the value passed as an argument), fcntl(F_DUPFD)
+-Operations that modify process table :  fchdir() (sets the process's current working directory based on a 
+ directory file descriptor), mmap() (maps ranges of a file into the process's address space)
+-File locking : flock(), fcntl (F_GETLK, F_SETLK and F_SETLKW), lockf()
+-Sockets : connect(), bind(), listen(), accept() (creates a new file descriptor for an incoming connection),
+ getsockname(), getpeername(), getsockopt(), setsockopt(), shutdown() (shuts down one or both halves of a 
+ full duplex connection)
+-Misc : ioctl() (a large collection of miscellaneous operations on a single file descriptor, often associated
+ with a device)
+
+
+----------------------------Celery
+Asunchronous task queue/job queue based on distributed message passing. It is focused on real-time operation, but 
+supports scheduling as well. The execution units, called tasks, are executed cincurrently on a single or more 
+worker servers using multiprocessingm eventlet, ot gevent. Tasks can execute asynchronously.
+ 
+
+----------------------------Stack
+It is a particular kind of abstract data type or collection in which the principal operation on the collection are
+the addition (push)  and removal (pop) of an entity, using LIFO data structure. LIFO is conidered a linear data
+structure or sequential collection. If a stack is full and does not contain enough space to accept an entity to
+be pushed, the stack is considered to be in an overflow state. A stack is a restricted data structure because 
+only a small number of operations are performed on it.
+
+
+----------------------------Gargage collector
+Garbage collection is a form of automatic memory management. The gc attempts to reclain garbage, or memory occupied
+by objects that are no longer in use by the program. GC basic principles of garbage collection are; find data
+objects in a program that cannot be accessed in the future and reclain the resources used by those objects. GC is
+often protrayed as the opposite of manual memory management which requires the programmer to specify which objects
+to deallocate and return to the memory system. Many systems use a combination of approaches, including other 
+techniques such as stack allocation and region inference.
+
+Resources other than memory, such as network sockets, database handles, user interaction windows and file/device
+descriptors are not typically handled by GC. 
+
+Many computer languages require GC, either as part of the language specification or for practical implementation.
+These are called GC languages. Other languages were designed for use with manual memory, but have GC implementation
+available (ex C, C++). Other languages allow both GC and manual memory management to co-exist in the same 
+application by using separate heaps for collected and manually managed objects. 
+
+Advantages. 1) Frees the programmer from manually dealing with memory deallocation. 2) Avoids dangling pointer
+bugs - it occurs when a piece of memory is freed while there are pointers to it, and one of those pointers is 
+derefencered. By then memory could have been re-assigned to another use, causing unpredictable results. 3) Double
+free bugs - which occurs when the program tries to free a region of memory that has already been freed, and 
+perhaps already been allocated again. 4) Certain kids of memory leaks. This happens when a program fails to free
+memory occupied by objects that have become unreachable. 5) efficient implementation of persistent data structures.
+
+Disadvantages. 1) consume computing resources and source code overehead and perhaps decreased performance. 2) real
+time environments in transaction processing can result in stall scattered throughtout a session. 
+
+Strong and weak references: Gc can reclaim only objects that have no reference pointing to them either directly
+or indirectly from the root set. Some programs require weak references which should be usable for as long as the
+object exists but should not prolong its lifetime. Ordinary references are sometimes called strong references. An
+object is eligible for garbage collection if there are not strong references to it, even though there still might
+be some weak references. 
+Aweak reference is not just any pointer to the object that the GC does not care about. The term is usually reserved
+for a properly managed category of special reference objects which are safe to use even after the object dissapears
+because they lapse to a safe value. 
+
+----------------------------Unix sockets
+A unix socket is a two way communication pipe, which can beused to communicate in a wide variety of domains, including
+communication between precesses. All data communication will take place through the sockets interface, instead of the 
+file interface. Although unix sockets are a special file in the file system (just like FIFO's), it does not use open(),
+and read(), it will be using socket(), bind(), recv(), etc.
+When programing with unix sockets, you will usually create server and client programs. The server will sit listenning for
+incomming connections from client and handle them. 
+The bind() function associates a socket (a file descriptor) with a certain filea 
+
+A server program normally needs the following steps
+-a call to a socket() to create a stream socket (SOCK_STREAM). FYI, Datagram sockets are also supported in the unix domain.
+-a call to bind() to bind the socket desciptor from the call we made to socket() with an address in the unix domain. The
+address is a special file on the disk. This associates the socket's descriptor with the unix socket address. 
+-a call to listen() to instruct the socket to listen for incomming connections from client programs.
+-a call accept() to accept a connection from a client. This function return another socket descriptor. The old descriptor 
+is still listenning for new connections, but this new one is connected to the client. Now that the socket descriptor is 
+connected to the client, it is ready to send(0 and recv()
+-close the connection when done using shutdown()
+
+Unix domain stream and datagram sockets are internet sockets type. Stream sockets use TCP while 
+datagram sockets use UDP. Stream sockets allow for reading arbitrary number of bytes, but still
+preserves byte sequence. A sender might write 4000 bytes of data to the socket, and the receiver may
+consume the data byte by byte. A sender can write small messages to the socket that the receiver can 
+consume in a single read. Stream sockets does not preserver message boundaries. 
+Datagram sockets, do preserver message boundaries- one write by the sender always correspondes to one
+read by the receiver. 
+
+If your application protocol has small messages with known upper bound on message sizes, you are better
+off with datagram sockets. If your protocol calls for arbitrary long message payloads, or is just an 
+unstructured stream (like raw audio) then use stream sockets and do the required buffering.
+
+----------------------------Kernel Interprocess Communication Mechanishms
+Processes communicate with each other and with the kernel to coordinate their activities.
+Signals - They are used to signal asynchronous events to one or more processes. There are a set of 
+defined signals that the kernel can generate or that can be generated by other processes.
+ 1) SIGHUP	 2) SIGINT	 3) SIGQUIT	 4) SIGILL
+ 5) SIGTRAP	 6) SIGIOT	 7) SIGBUS	 8) SIGFPE
+ 9) SIGKILL	10) SIGUSR1	11) SIGSEGV	12) SIGUSR2
+13) SIGPIPE	14) SIGALRM	15) SIGTERM	17) SIGCHLD
+18) SIGCONT	19) SIGSTOP	20) SIGTSTP	21) SIGTTIN
+22) SIGTTOU	23) SIGURG	24) SIGXCPU	25) SIGXFSZ
+26) SIGVTALRM	27) SIGPROF	28) SIGWINCH	29) SIGIO
+30) SIGPWR	
+Processes can choose to ignore most of the signals that are generated, with two exceptions. sigstop or
+sigkill. They can also choose to handle signals in various ways. 
+There are no mechanism for handling multiple signals of the same kind. There is no way that a process
+can tell if it received any count of signals. The number of supported signals is limited to the word
+size of the processor. Normal processes can only send signals to processes with the same uid and gid 
+or to processes in the same process group. 
+Pipes - Common linuz shells all allow redirections. Pipes are unidirectional byte streams which 
+connect the standard output from one process into the standard input of another process. Neither 
+process is aware of this redirection and behaves normally. It is the shell that sets up these temporary
+pipes between the process. 
+Linux also supports named pipes, also known as FIFO's because pipes operate on a FIFO principle. 
+Unlike pipes, FIFO's are not temporary objects, they are entities in the file system and can be created
+using the mkfifo command. Processes are free to use a FIFO so ling as they have appropriate access 
+righrs. 
+sockets - A unix domain socket or Inter-process communication socket is a data communications 
+endpoint for exchanging data between processes on the same host operatinf system. Unix sockets can be 
+created as connection-mode or as connectionless. The unix domain socket facility is a standard 
+component of POSIX operating systems. Unix domain sockets use the file system as the address name
+space. They are referenced by processes as inodes in the file system. 
+A raw socket is an internet socket that allows direct sending and receiving of internet protocol
+pacjets, wothout any protocol-specific transport layer formatting. 
+A datagram socket is a type of connectionless network socket, which is the sendging or receiving point
+for packet delivery services. 
+A stream socket is a type of internet socket which provides a connection-oriented, sequenced, and 
+unique flow of data without record boundaries, with well defined mechanisms for creating and 
+destroying connections and for detecting errors. These internet sockets type transmits data on a
+reliable basis, in order and with out-of-band capabilities. traditionally stram sockets are implemented
+on top of TCP so that applications can run accross any networks using TCP/IP protocols. 
+A network socket is an endpoint of an inter-process communication flow accros a computer network. Most
+communication between computers is based on the Internet Protocol, so most network sockets are internet
+sockets. 
+Linux supports three types of interprocess communication machanisms; messages queues, 
+semaphores, and shared memory. 
+--The System V IPC mechanisms all share common authentication methods. Access rights is set by the 
+creator if the object vis system calls. It uses public and private keys for authentication.
+--Messages queues allow one of more processes to write messages, which will be read by one of more 
+processes. Linux maintains a list of message queues, including a reading and a writers queue. 
+--Semaphores. a semaphore is a location in memory whose value can be tested and set by more than one
+process. These two operations are uninterruptible or atomic. The results are the addition for test and
+set of the current value for set. Semaphores can be used ti implement critical regions of code that 
+only one process at a time can execute it. The test is used to allow or deny access to change or set 
+the semaphore a new value. There could be a deadlock situation when a process has altered the semaphore
+value and then fails and crashes ot it is killed. Linux protects against this by maintaining lists of 
+adjustments that are applied and will set back the semaphore to the original state.
+--shared memory. It allowds one or more processes to communicate via memory that appears in all of 
+their virtual address spaces. The pages of the virtual memory is referenced by page table entries in 
+each of the sharing processes' page tables. Once memory is being shared, there are no checks on how the
+processes are using it. They must rely on other mechanism. for example in System V, it uses semaphores
+to syncrhonize access to shared memory. 
+ 
+
+
+
+
+
+
+----------------------------Setup Share
+On 10.64.4.21 the Centos machine with space 
+mkdir /home/dist
+chmod 777 /home/dist
+/sbin/service nfs start
+vi /etc/exports and add /home/dist 10.64.4.42(rw)
+/usr/sbin/exportfs -a
+
+On 10.64.2.42 the Remote machine 
+vi /etc/fstab and add 10.64.4.21:/home/dist /dist nfs rsize=8192,wsize=8192,timeo=14,intr
+
+----------------------------
+Microsoft COM 
+Component Object Model is a binary-interface standard for software component to enable interprocess communication and dynamic object creation
+It is the basis for other MS technologies and frameworks, like OLE, ActiveXm COM+m DCOM, Windows shell, DirectX, and Windows runtime
+COM in s language-neutral way of implementing objects that can be used in different environments and acrss machine boundaries. COM allows the
+reuse of objects with no knowledge of their internal implementation. Component inplememters provide well defines interfaces that are separated
+from the implementation. The different allocation semantics of languages are accomodated by making objects responsible for their own creation
+and destruction via reference-counting. The prefered method of implementation within COM is the creation of sub-objects to which method calls 
+are delegated. 
+
+COM is an interface technology defined and implemented as standard only on MS windows and Apple core foundation and an PLUG-IN api. For some 
+applications COM has been replaced by MS NET framework and support for web servicers via Windows Communication Foundation, WCF. COM is very
+similar to other component software interface technologies, such as COBRA and JavaBeans.
+
+Microsoft DCOM
+Distributed Component Object Model is an MS technology for communicatin among software components distributed across cmputers. Originally called
+Network OLE. DCOM extends COM and provides the communication substrate under MS COM+ application server infrastructure. DCOM uses DCE/RPC 
+(distributed Computing Environment/Remote Procedure Calls). MS enhance version known as MSRPC.
+In terms of extensions it added to COM, DCOM had to solve 1) Marshalling - serializing and deserializing the arguments and return values of method
+calls over the wire. 2) Distributed garbage collection. Ensuring that references help by clients of interfaces are released effectively Ex crash or
+network connectivity loss 3) Aggregating thousand of references to objects help by clients of cinterfcaces at a single host, into a single "ping"
+function in order to minimise bandwidth utilization. 
+One of the keys to solving these issues whas the use of DCE/RPC as the underlying RPC mechanism behind DCOM. DCE/RPC has strictly defined rules
+regarding masrshalling and free memory responsibility.
+DCOM was a major competitor to COBRA, which both believed it will be the main model for code and service-reuse over the internet. It did not work
+our that way due to firewalls and insecure machies. Normal https requests in combination with web browers won out and over both of them. MS latest
+attemp for this is the NCACN_http (network computing architecure connection based over http), which supports on MS exchange 2003 connection over http.
+DCOM is suported natively on most Windows OS's 
+
+
+
+
+
+Microsoft SMB
+
+Microsoft NetBios
+
+Microsoft WMI
+
+Microsoft DWR
+-----------------------mount and export
+On machine that will host the directory 10.64.4.21 CentOS
+make a directory under /home, mkdir /home/dist
+vi /etc/exports and add the home directory and the remote system, /home/dist 10.2.2.68(rw)
+start nfs system, /sbin/service nfs start
+export the directory, /usr/sbin/exportfs -a 
+
+On machine that will need to mount the remote directory
+vi /etc/fstab and add, 10.64.4.21:/home/dist /data/jordonez/GITRepo/ironwood/build-sys/ironwood-dev/dist nfs rsize=8192,wsize=8192,timeo=14,int
+mkdir /data/jordonez/GITRepo/ironwood/build-sys/ironwood-dev/dist
+mount /data/jordonez/GITRepo/ironwood/build-sys/ironwood-dev/dist
+
+-------------------mount profiler image
+Go to 10.2.2.60 
+copy the rpmfile
+rpm -i upgrade-dp-7.2.3-20140410200308.x86_64.rpm 
+rpm -qlp upgrade-dp-7.2.3-20140410200308.x86_64.rpm 
+cd /data/upgrade/
+bunzip2 upgrade-dp-7.2.3-20140410200308.img.bz2 
+mount -t ext4 -o loop /data/upgrade/upgrade-dp-7.2.3-20140410200308.img /media
+
+---------------------SSL and TSL
+Transport Layer Security (TLS) and its predecessor, Secure Sockets Layer (SSL) are cryptographic 
+protocols designed to provide communication security over the internet. They use X.509 certificates
+and hence asymmetric cryptography to authenticate the counterpart with whom they are communicating and
+to exchange symetric key. The session key is then used to encrypt data between the two. 
+
+Note. Asymetric cryptography also known as Public-key cryptography is a class of cryptographic algoryths
+which require two separate keys, a private and a public. The public key is used to encrypt plaintext or
+to verify a digital signature, whereas the private key is used to decrypt ciphertext or to create a 
+digital signature. The term asymetric stems from the use of different keys to perform these opposite 
+functions, each the inverse of the other. Symmetric cruptography relies on the same key to perform both.
+Public key algoryth, unlike symmetric key algorithms do not require a secure intial exchange of one or 
+more secret keys between the parties.
+
+Note. Message authentication involves processing a message with a private key to produce a digital 
+signature.  
+ 
+
+
+An SSL certificate are small data files that difitally bind a cryptographic key to an organization's
+details. When installed on a web server, it activates the padlock and the https protocol over port 
+443 and allows secure connrctions from a web server to a browser. Typically SSL is used to secure
+credit card transactions, data transfer and loggins, and more recently is becoming the norm when 
+securing browsing of social media sites. 
+SSL ceftificates bind together 1) domain name, server name or hostname 2) an organization identity,
+which is company name and location.
+
+An organization needs to install the SSL cerftificate onto his web server to initiate secure sessions
+with breowsers. Depending on the type of SSL certificate applied for, the organization will need to go
+through different levels of vetting. 
+
+Extended validation or EV SSL turns bar from white to green. It will also display the company name on
+the url. Standard SSL vetificates display https and a padlock.
+
+To view the detauls of an SSL certificate, go to a secure dite, click on the padlock and select, view
+certificate. Click on the certificate path to see which trusted root certificate has been used to issue
+the SSL certificate. 
+
+SSL certificates need to be issued from a trusted CA (certificate Authority) root's certificate, and 
+prefferably a 2048 bit. The root certificate must be present in the end user's machine in order for the
+certificate to be trusted. If it is not trusted, the browser will present untrusted error messages to
+the end user.
+
+A root certificate is amrked for a number of intended purposes, making it able to perform all public 
+key infrastructure PKI related activities, like; ensure identity of the remote/local computers, ensures
+software came from a publisher, protect software from alteration after publication, protects emails,
+allows data to be signed with current time, allows data on disk to be encrypted, allows secure 
+communication, permits all key usage policies, OCSP signing. 
+
+The structure of the X.509 v3 digital certificate is expressed in a formal language, called Abstract
+Syntax Notation One. 
+
+cat /usr/local/hive/etc/software.crt
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 21 (0x15)
+        Signature Algorithm: md5WithRSAEncryption
+        Issuer: C=US, ST=California, L=San Francisco, O=nCircle Network Security, OU=Internet Technology and Security, CN=ca.ncircle.com/Email=its@ncircle.com
+        Validity
+            Not Before: Jan 12 00:02:30 2002 GMT
+            Not After : Jan  2 00:02:30 2004 GMT
+        Subject: C=US, ST=California, L=San Francisco, O=nCircle Network Security, OU=Engineering, CN=Production Software Signing/Email=eng@ncircle.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (1024 bit)
+                Modulus (1024 bit):
+                    00:bf:98:2a:9e:5b:34:8d:70:99:24:71:71:8e:77:
+                    90:11:48:e9:4f:a2:b1:ef:21:06:36:42:78:c5:0e:
+                    23:3d:f5:73:16:58:49:36:c5:e6:11:e6:88:97:ba:
+                    c5:92:3d:67:7c:a0:67:a2:33:5a:e3:e5:51:55:be:
+                    88:59:ac:20:ae:41:cc:fd:e9:00:86:92:49:2f:d1:
+                    01:90:42:7f:37:b5:6e:74:dc:bf:39:2e:23:86:74:
+                    94:ba:17:e2:ce:51:3b:1c:6a:de:42:92:97:94:61:
+                    ef:9a:39:b3:40:52:10:fb:70:3f:6e:83:db:05:07:
+                    4b:3b:a5:70:0a:1a:a2:78:ad
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:TRUE
+            X509v3 Key Usage: 
+                Certificate Sign, CRL Sign
+            Netscape Comment: 
+                Root CA Signing Key CAs
+            Netscape Base Url: 
+                https://ca.ncircle.com/
+            Netscape CA Revocation Url: 
+                cgi-bin/get-cert.py/Root/crl
+            Netscape Revocation Url: 
+                cgi-bin/ns-check-rev.py/Root?
+            Netscape Renewal Url: 
+                cgi-bin/ns-renewal.py/Root?
+    Signature Algorithm: md5WithRSAEncryption
+        56:1a:73:fd:7f:63:10:4a:cd:b3:1a:65:1b:d7:e0:04:00:11:
+        9b:73:b9:34:63:13:26:ab:13:6f:e7:ca:f1:24:9a:3c:82:b6:
+        f5:70:74:56:37:4c:72:9a:5a:05:11:b5:42:f3:44:10:4c:68:
+        af:4f:cb:5a:42:44:63:09:f9:3c:24:59:68:61:f2:7d:98:e8:
+        c5:a0:c9:b7:ae:96:54:aa:e8:84:6e:09:8a:56:db:9d:fb:ec:
+        43:7b:83:fd:5e:e0:8a:eb:37:ff:f3:81:7b:7b:11:00:5b:c6:
+        84:1c:02:25:f0:2c:73:f9:72:8d:e5:08:24:d7:6e:5b:ce:df:
+        9f:64
+-----BEGIN CERTIFICATE-----
+MIID6DCCA1GgAwIBAgIBFTANBgkqhkiG9w0BAQQFADCBwTELMAkGA1UEBhMCVVMx
+EzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBGcmFuY2lzY28xITAf
+BgNVBAoTGG5DaXJjbGUgTmV0d29yayBTZWN1cml0eTEpMCcGA1UECxMgSW50ZXJu
+ZXQgVGVjaG5vbG9neSBhbmQgU2VjdXJpdHkxFzAVBgNVBAMTDmNhLm5jaXJjbGUu
+Y29tMR4wHAYJKoZIhvcNAQkBFg9pdHNAbmNpcmNsZS5jb20wHhcNMDIwMTEyMDAw
+MjMwWhcNMDQwMTAyMDAwMjMwWjCBuTELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNh
+bGlmb3JuaWExFjAUBgNVBAcTDVNhbiBGcmFuY2lzY28xITAfBgNVBAoTGG5DaXJj
+bGUgTmV0d29yayBTZWN1cml0eTEUMBIGA1UECxMLRW5naW5lZXJpbmcxJDAiBgNV
+BAMTG1Byb2R1Y3Rpb24gU29mdHdhcmUgU2lnbmluZzEeMBwGCSqGSIb3DQEJARYP
+ZW5nQG5jaXJjbGUuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC/mCqe
+WzSNcJkkcXGOd5ARSOlPorHvIQY2QnjFDiM99XMWWEk2xeYR5oiXusWSPWd8oGei
+M1rj5VFVvohZrCCuQcz96QCGkkkv0QGQQn83tW503L85LiOGdJS6F+LOUTscat5C
+kpeUYe+aObNAUhD7cD9ug9sFB0s7pXAKGqJ4rQIDAQABo4H1MIHyMAwGA1UdEwQF
+MAMBAf8wCwYDVR0PBAQDAgEGMCYGCWCGSAGG+EIBDQQZFhdSb290IENBIFNpZ25p
+bmcgS2V5IENBczAmBglghkgBhvhCAQIEGRYXaHR0cHM6Ly9jYS5uY2lyY2xlLmNv
+bS8wKwYJYIZIAYb4QgEEBB4WHGNnaS1iaW4vZ2V0LWNlcnQucHkvUm9vdC9jcmww
+LAYJYIZIAYb4QgEDBB8WHWNnaS1iaW4vbnMtY2hlY2stcmV2LnB5L1Jvb3Q/MCoG
+CWCGSAGG+EIBBwQdFhtjZ2ktYmluL25zLXJlbmV3YWwucHkvUm9vdD8wDQYJKoZI
+hvcNAQEEBQADgYEAVhpz/X9jEErNsxplG9fgBAARm3O5NGMTJqsTb+fK8SSaPIK2
+9XB0VjdMcppaBRG1QvNEEExor0/LWkJEYwn5PCRZaGHyfZjoxaDJt66WVKrohG4J
+ilbbnfvsQ3uD/V7gius3//OBe3sRAFvGhBwCJfAsc/lyjeUIJNduW87fn2Q=
+-----END CERTIFICATE-----
+
+Zorro34# ls -la
+total 20
+-rw-r--r--  1 root  wheel  4309 Mar 18 22:40 ca.crt
+-rw-r--r--  1 root  wheel  1704 Mar 18 22:40 ca.key
+-rw-r--r--  1 root  wheel  4250 Mar 18 22:40 server.crt
+-rw-r--r--  1 root  wheel  1704 Mar 18 22:40 server.key
+Zorro34# pwd
+/usr/local/hive/etc/imageserver
+Zorro34# file *
+ca.crt:     ASCII text
+ca.key:     ASCII text
+server.crt: ASCII text
+server.key: ASCII text
+
+BSDdpDrums# ls -la
+total 5922
+-rw-r--r--   1 root  wheel     5137 Jun  3 07:04 app.crt
+-rw-r--r--   1 root  wheel      509 Jun  3 07:04 app.key
+-rw-r--r--   1 root  wheel     4339 Feb 10 04:58 ca.crt
+-rwsr-xr-x   1 root  1011     70792 Feb 10 20:09 chgpasswd
+-rwxr-xr-x   1 root  1011   2067616 Feb 10 20:09 loader
+-rw-r--r--   1 root  wheel      390 Jun  4 07:12 loader.conf
+-r--r--r--   2 root  wheel     3802 Feb 10 20:10 software.crt
+-r--r--r--   2 root  wheel     3802 Feb 10 20:10 software.crt.prod
+-rwxr-xr-x   1 root  1011   1742488 Feb 10 20:09 uiclient
+
+In cryptography X.509 is an ITU0T standard for a public key infrastructure (PKI) and priviledge 
+management infrastucture (PMI). X.509 spedifies among other things, standard formats for public key 
+certificates, certificate revocation lists, attribute certificates, and a certification path validation
+algorith. 
+
+In the X.509 system, a CA or certificate Authority ussues a certificate binding a public key to a 
+distinguished name. An organization's trusted root certificates can be distributed to all employees so
+that they can use the companu PKI system. Browsers come with predetermined set of root certificates 
+pre-installed, so SSL certificates from larger vendors will work instantly. 
+X.509 also includes standards for certificate revocation list (CRL) implementations. The IETF approved
+way of checking a certificate's validity is the Online Certificate Status Protocol (OCSP).
+
+Common filename extensions for X.509 certificates are; .pem, .cer .crt .der, .p7b .p7c , .p12, .pfx
+
+-----------------gdb
+GDB, the GNU Project debugger, allows you to see what is going on `inside' another program while it 
+executes, or what another program was doing at the moment it crashed.
+GDB can do four main kinds of things (plus other things in support of these) to help you catch bugs in 
+the act:
+    Start your program, specifying anything that might affect its behavior.
+    Make your program stop on specified conditions.
+    Examine what has happened, when your program has stopped.
+    Change things in your program, so you can experiment with correcting the effects of one bug. 
+ 
+A debug symbol is information that expresses which programming-language constructs generated a specific
+piece of machine code in a given executable module. Sometimes the symbolic information is compiled 
+together with the module's binary file, or distributed in a separate file, or simply discarded during the
+compilation and/or linking. This information enables a person using a symbolic debugger to gain 
+additional information about the binary, such as the names of variables and routines from the original 
+source code. This information can be extremely helpful while trying to investigate and fix a crashing 
+application or any other fault.
+
+When debug symbols are embedded in the binary itself, the file can then grow significantly larger 
+(sometimes by several times the original file size). To avoid this extra size, modern compilers and early
+mainframe debugging systems output the symbolic information into a separate file; for Microsoft compilers,
+this file is called a PDB file. Some companies ship the PDB on their CD/DVD to enable troubleshooting and
+other companies (like Microsoft, and the Mozilla Corporation) have special online servers from which it's
+possible to download the debug symbols separately. Microsoft's WinDBG debugger can be configured to 
+automatically download debug symbols for Windows DLLs on demand as they are needed. The PDB debug symbols
+that Microsoft distributes are only partial (they include only public functions, global variables and 
+their data types), whereas the Mozilla Corporation has similar infrastructure but distributes full debug 
+information.
+
+How to start gdb
+-specifying an executable program:
+gdb program
+-executable program and a core file specified:
+gdb program core
+-executable program and a PID
+gdb program 1234
+-You can optionally have gdb pass any arguments after the executable file to the inferior using --args. 
+This option stops option processing.
+gdb --args gcc -O2 -c foo.c
+
+
+
+Example 
+kill -9 3013 ; gdb /rd/bin/profiler
+(gdb) run -d
+
+--------------------------------Virtual circuit
+In computer networks, a virtual circuit VC is synonymous to a virtual connection and virtual channel, 
+is a connection oriented communication service that is delivered by means of packet mode communication.
+After a connection or virtual circuits is established between two node or application processes, a
+bit stream or byte stream may be delivered between the nodes.
+Vircutal circuits communication resembles circuit switching, since both are connection oriented,
+meaning that in both cases data is delivered in order, and signalling overhead is required during a 
+connection establishment phase. However circuit switching provides constant bit rte and latency. 
+Many virtual circuits protocols but not all provide reliable communication service through the use of
+data retransmitions because of error detection and automatic repeat request (ARQ)
+An alternate network configuration to virtual cicuit is Datagram.
+
+Layer 4 vicrtual circuits; connection oriented transport layer datalink protocols such as TCP may rely
+on a connectionsless packet switching network layer protocol such as IP, where different packets maybe
+routed over different paths, and thus be delivered out of order. However a virtual circuit is possible
+since TCP includes segments numbering and reordering on the reveiver side to accomodate out or order 
+delivery
+
+layer 2/3 virtual circuit; data link and network link layer virtual circuit protocols are based on 
+connection oriented packet switching, meaning that data is always delivered along the same network
+path. Advantages with this over connectionless packet switching are: 1) Bandwidth reservation during 
+connection establishment is supported, thius guaranteen Quality Of Service. 2) Less overhead is 
+required since packets are not routed individually and complete addressing information is not provided
+on the header of each packet. 3) netowrk nodes are faster and have higher capacity since they are 
+switches that only perform routing during connection stablishment phase, while connectionless network
+nodes are routers that perform routing for each packet individually.
+
+Examples of transport layer protocols that provide virtual circuits; 
+TCP, SCTP (stream control transmission protocol,
+Example of data link and network layer protocols that provide virtual circuits;
+X.25, Frame relay, ATM - Asynchronous Transfer Mode, GPRS - general packet radio service, MPLS - 
+multipirotocol lable switching 
+
+---------------------------------------Datagram 
+ datagram is a basic transfer unit with a packet-switching network in which the delivery, arrival time,
+and order or arrival are not guaranteed by the network. A datagram needs to be self-contained without
+reliance on earlier exchanges because there is no fixed duration between the two communicating points.
+Datagram service is consider unreliable and connectionless. Datagram service routes datagrams without 
+first creating a pretermined path. There is no consideration given to the order of packets been sent or
+received.
+IP or internet protocol defines standards for several types of datagrams. The internet layer is a 
+datagram service provided by IP. IP is entirely a connectionless, best effort, unreliable message
+delivery system. TCP is a higher leverl protocoll running on top of IP that can provide the addition
+of a connection-oriented service. 
+

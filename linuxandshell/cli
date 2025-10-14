@@ -1,0 +1,103 @@
+arp_add                   Add an entry to the network ARP table.           
+arp_delete                Remove an entry from the network ARP table.      
+bandwidth_add_class       Add a Bandwidth Management class.                
+bandwidth_clear_interface Clear Bandwidth Management.                      
+bandwidth_delete_class    Delete a Bandwidth Management class.             
+bandwidth_set_interface   Set Bandwidth Management to an interface. VnE traf
+cert_install_ca           Replace the CA TLS certificate.                  
+cert_install_client       Replace the client TLS certificate.              
+cert_install_server       Replace the server TLS certificate.              
+cert_show_ca              Show the CA TLS certificate.                     
+cert_show_client          Show the client TLS certificate.                 
+cert_show_server          Show the server TLS certificate.                 
+dp_disable_application    Disable the Device Profiler.                     
+dp_enable_application     Enable the Device Profiler.                      
+dp_reboot_ccm             Reboot to CCM mode                               
+dp_restart_loader         Restart the loader process.                      
+dp_set_auth_key           Set the authentication key for the VnE.          
+dp_set_proxy_address      Set the DP proxy ip address.                     
+dp_set_proxy_authtype     Set the DP proxy authentication type.            
+dp_set_proxy_enabled      Enable/Disable the DP proxy.                     
+dp_set_proxy_password     Set the DP proxy password.                       
+dp_set_proxy_port         Set the DP proxy port number.                    
+dp_set_proxy_username     Set the DP proxy username.                       
+dp_set_vne                Set the IP address of the VnE.                   
+dp_set_vne_port           Set the access port of the VnE.                  
+dp_show_config            Show the Device Profiler's current configuration.
+dp_show_status            Shows the status of loader connections/tasks.    
+dp_upgrade                Upgrade the profiler if a new version is available
+exit                      Logout of the CLI.                               
+fips_disable              Disables FIPS mode.                              
+fips_enable               Enables FIPS mode.                               
+help                      Get help on commands.                            
+https_disable             Disable the web GUI and product API.             
+https_enable              Expose the web GUI and product API.              
+interface_add             Set the IP and netmask for an interface.         
+interface_alias_add       Add an IP alias to an interface.                 
+interface_alias_delete    Delete an IP alias from an interface.            
+interface_dhcp            Configure DHCP for an interface.                 
+interface_disable         Disable the network interface.                   
+interface_enable          Enable the network interface.                    
+interface_media           Configure the speed and duplex of an interface.  
+ip6_static_add            Set the static IPv6 address and netmask for an int
+ip6_static_delete         Delete the static IPv6 address and netmask for an
+logout                    Logout of the CLI.                               
+maintenance               Switch the product to maintenance mode.          
+manual                    Print a manual containing all help text.         
+mount_upgrade             Mount upgrade media                              
+nameserver_add            Add nameserver.                                  
+nameserver_del            Remove nameserver.                               
+nameserver_list           Show nameservers.                                
+netstat                   Execute the netstat command.                     
+password                  Set the administrator password.                  
+ping                      Execute the ping command.                        
+portscan                  Execute the portscan command.              
+ready                     Check if the system is in its normal operation run
+reboot                    Reboot the system.                               
+route6_add                Add a IPv6 network route.                        
+route6_add_default        Set the default IPv6 network route.              
+route6_delete             Delete a IPv6 network route.                     
+route6_delete_default     Delete the default IPv6 network route.           
+route_add                 Add a network route.                             
+route_add_default         Set the default network route.                   
+route_delete              Delete a network route.                          
+search_log                View or search a log file.                       
+service_restart           Restarts a service.                              
+set_hostname              Set the system hostname.                         
+show_arp                  Show the network ARP table.                      
+show_bandwidth            Show Bandwidth Management info/stats for configure
+show_bandwidth_classes    Show Bandwidth Management classes.               
+show_bandwidth_details    Show raw Bandwidth Management info/stats for confi
+show_cputop               View process stats by CPU usage.                 
+show_disks                Show disk usage information.                     
+show_hardware             Get hardware model information.                  
+show_interfaces           List active network interfaces.                  
+show_iostat               View summary CPU and disk stats.                 
+show_iotop                View disk I/O intensive tasks.                   
+show_log                  View the nCircle log.                            
+show_network_information  View ifconfig output for interfaces.             
+show_routes               Show network routes.                             
+show_routes6              Show IPv6 network routes.                        
+show_system_upgrades      List available system upgrades.                  
+show_update_packages      List available component updates.                
+show_update_version       View the product component update version.       
+shutdown                  Shutdown and poweroff the system.                
+sshd_disable              Disable SSH access to the system.                
+sshd_enable               Enables SSH access to the system.                
+supportlogin              Control nCircle support login access.            
+syslog_recipient_add      Adds an email to to the syslog email recipients li
+syslog_recipients_clear   Will clear the emails from the emails file.      
+system_revert             Revert to the previous system version.           
+system_upgrade            Upgrade the product to a new version.            
+tail_log                  Tail the nCircle log.                            
+test                      Run system self-tests.                           
+traceroute                Execute the traceroute command.                  
+update                    Install product component updates.               
+upgrade_in_progress       Check if the system is currently running any upgra
+version                   Get the product version.                         
+vlan_add                  Add a VLAN to an interface.                      
+vlan_alias_add            Add an IP alias to a VLAN.                       
+vlan_alias_delete         Remove an IP alias from a VLAN.                  
+vlan_delete               Delete a VLAN from an interface.                 
+vlan_dhcp_disable         Disable DHCP for a VLAN interface.               
+vlan_dhcp_enable          Enable DHCP for a VLAN interface.                 
