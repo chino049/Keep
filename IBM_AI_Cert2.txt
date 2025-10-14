@@ -1,0 +1,748 @@
+INTRODUCTION TO ARTIFICIAL INTELLIGENCE 
+
+-----------------------------------------------------------------Module 1 Introduction and application of AI
+
+---Introducing AI
+AI's history can be traced back to the very origins of computing. Since the days of the abacus and early calculators, humans have strived to automate mental tasks. The formal journey began in the 1950s, when Alan Turing proposed the Turing Test for machine intelligence, and John McCarthy coined the term artificial intelligence. Progress from early programs like ELISA and SHERDLU in the 1960s to the rise of expert systems in the 1970s, the 1980s witnessed a surge in machine learning, setting up the stage for further progress. 
+
+The 1990s introduced neural networks, and the 2000s marked the ascent of deep learning. From 2010 to 2020, AI applications spread across industries, with applications like natural language processing, NLP, and computer vision. AI has continued its rapid expansion in the present decade, including advancements in deep learning models, autonomous systems, and healthcare applications.
+
+But what exactly is AI? Artificial intelligence, or AI, refers to the simulation of human intelligence processes by computer systems. It involves using algorithms and data to enable machines to perform tasks that typically require human intelligence, such as learning, reasoning, problem solving, and decision making. AI can range from simple automation to complex deep learning and neural networks.
+
+The internet has revolutionized connectivity and given us faster access to more information. Distributed computing scales data processing, enabling efficiency. IoT proliferates connected devices, generating massive amounts of data. Social networking has encouraged most of us that data to be unstructured. Together, they reshape our digital landscape, accelerating information access and innovation. With augmented intelligence, information that subject matter experts need is placed at their fingertips and backed with evidence, enabling them to make informed decisions. Experts are encouraged to scale their capabilities and let the machines handle the time-consuming work.
+
+How do we define innate intelligence? Human beings have innate intelligence, which is defined as the intelligence that governs every activity in our body. This intelligence is what causes an oak tree to grow out of a little seed and a complex organism, like an elephant, to evolve from a single-celled organism. How does AI learn? The only innate intelligence machines have is what we give them. We provide machines with the ability to examine examples and create machine learning models based on the inputs and desired outputs. We do this in different ways, such as with supervised learning, unsupervised learning, and reinforcement learning, about which you will learn in more detail later. 
+
+AI can be divided into categories based on strength, breadth, and application. Considering the strength of AI, it can be of 
+three types – weak AI or narrow AI, 
+strong AI or generalized AI, 
+and super AI or conscious AI. 
+
+Weak or narrow AI is AI that is applied to a specific domain. Applied AI can perform specific tasks but not learn new ones, making decisions based on programmed algorithms and training data. For example, language translators, virtual assistants, AI-powered web searches, recommendation engines, and intelligent spam filters. 
+
+Strong AI or generalized AI refers to artificial intelligence capable of engaging in and performing a diverse array of distinct and unrelated tasks. It possesses the ability to acquire new skills to tackle novel challenges, achieving this by autonomously learning fresh approaches. 
+Generalized AI is the combination of many AI strategies that learn from experience and can perform at a human level of intelligence. Its use cases include finance, human resources, information technology, research and development, and supply chain. 
+
+Super AI or conscious AI extends the concept of generative AI to a more advanced level. It is an AI with human-level consciousness, which would require it to be self-aware, showing advanced cognitive abilities and developing its own thinking skills. Because we are not yet able to adequately define what consciousness is, it is unlikely that we will be able to create a conscious AI in the near future. Super AI could demonstrate capabilities beyond human intelligence in areas like healthcare, autonomous vehicles, robotics, natural language understanding, and environmental conservation. AI is the fusion of many fields of study. 
+
+Computer science and electrical engineering determine how AI is implemented in software and hardware. 
+Mathematics and statistics determine viable models and measure performance. Because AI is modeled on how we believe the brain works, psychology and linguistics play an essential role in understanding how AI might work. 
+Philosophy, on the other hand, provides guidance on intelligence and ethical considerations. While the science fiction version of AI may be a distant possibility, we already see more and more AI involved in the decisions we make every day. Over the years, AI has proven to be useful in different domains, impacting our society in meaningful ways. 
+
+In this video, you learned how AI is defined as augmented intelligence, aiming to extend human capabilities and tackle tasks beyond human and machine capabilities. 
+You also learned that machine learning models are developed through supervised learning, unsupervised learning, and reinforcement learning. 
+Finally, you learned how AI can be divided based on its strengths. You learned about weak or narrow AI, an AI tailored for specific domains. Strong or generalized AI, an AI with diverse capabilities across unrelated tasks. super or conscious AI, an AI having human-level consciousness. 
+
+---Artificial Intelligence vs. Augmented Intelligence
+
+Agumented intelligence = AI + human intelligence
+
+Augmented intelligence is really a sweet spot that combines all of these human strengths with a bit of a helping hand from our machine counterparts. By using AI to help us see and understand the world in new ways, we are able to do things that would be impossible for us humans on our own. 
+
+---Introducing Generative AI and Its Use Cases
+
+As artificial intelligence continues to grow, generative AI emerges as an innovative frontier. While traditional AI tends to focus on analyzing data and making decisions, generative AI or Gen AI takes a step forward and creates new content from scratch.
+
+Genai is an AI technology capable of creating new and novel data, ranging from text and images to music and videos. Unlike conventional AI models, generative AI does not rely on predefined rules and patterns. Instead, it uses deep learning techniques and relies on vast data sets to generate new ideas. 
+
+Generative AI can use large language models, or LLMs, for processing and generating human-like text. LLMs can perform a variety of natural language processing tasks, including, text generation, translation, and summarization. Alternatively, generative AI can design and incorporate LLM into a larger, more advanced AI system to perform various advanced tasks such as decision making and problem solving. Generative AI's capabilities drive its rapid integration across various aspects of our lives. It can facilitate the creation of new content in diverse formats, including text, images, videos, and audio. Generative AI is capable of human-like intelligence conversations. Through data augmentation, it allows to generate new training data, enhancing the accuracy of machine learning models. 
+
+According to recent research conducted by Goldman Sachs, the use of generative AI could help the global economy grow by about 7%, which is nearly $7 trillion. The research also conveyed that generative AI could elevate productivity growth by 1.5% over ten years. Generative AI is boosting creativity and customer experiences across diverse sectors. In marketing, it helps companies create personalized advertisements, email campaigns, or social media posts based on individual preferences and behaviors. In creative fields, generative AI can produce unique digital art, music, and video content for advertising and marketing campaigns and generate soundtracks for films or video games. Product development is another area where generative AI is making an impact. By analyzing trends and consumer feedback, it can help to generate ideas and even optimize existing designs for better performance and cost effectiveness. 
+
+Generative AI is reshaping industries, driving innovation, and improving efficiency. In the field of healthcare and precision medicine Generative AI can support physicians by providing tailored treatments. It can also simulate surgeries and produce medical images to aid doctors in developing treatments. In gaming, generative AI can create interactive game worlds by generating new levels, characters, and objects that adapt to player behavior. In fashion, generative AI can design and produce virtual try-on experiences for customers, and recommend personalized fashion choices based on customer behavior and preferences. In education, generative AI can create customized learning materials and interactive learning environments that adjust to students learning styles and paces. 
+
+In this video, you learned that generative AI is a type of artificial intelligence that can generate content across various mediums such as written texts, images, audio, or videos. 
+LLMs are advanced neural network architectures for processing and generating human-like text. Capabilities of generative AI include diverse content creation capabilities, human-like conversation, and data augmentation. Domain-specific use cases of generative AI are marketing, creative, and product development. Industry-specific use cases of generative AI are healthcare, gaming, fashion, and education and training.
+
+---Different types of AI
+
+Artificial intelligence (AI) encompasses a range of systems designed to mimic, enhance, or exceed human capabilities. AI can be categorized based on its capabilities and functionalities. Understanding these types and their capabilities highlights the diverse applications and potential of AI technologies.
+
+AI types:
+1 - Diagnostic/descriptive AI
+Diagnostic or descriptive AI focuses on assessing the correctness of behavior by analyzing historical data to understand what happened and why. This type of AI is instrumental in identifying patterns and trends, performing comparative analyses, and conducting root cause analyses.
+
+Capabilities:
+Scenario planning: Helps in creating different future scenarios based on historical data.
+Pattern/trends recognition: Identifies recurring patterns and trends within data sets.
+Comparative analysis: Compares various data points to find correlations and insights.
+Root cause analysis: Determines the underlying reasons behind specific outcomes.
+
+2 - Predictive AI
+Predictive AI is concerned with forecasting future outcomes based on historical and current data. This type of AI is used extensively in predicting customer behavior, market trends, and other forward-looking insights.
+
+Capabilities:
+Forecasting: Predicts future trends and events.
+Clustering and classification: Groups similar data points and classifies them into predefined categories.
+Propensity model: Assesses the likelihood of specific outcomes based on current data.
+Decision trees: Utilize a tree-like model of decisions to predict outcomes.
+
+3 - Prescriptive AI
+Prescriptive AI focuses on determining the optimal course of action by providing recommendations based on data analysis. It goes beyond prediction by suggesting actions that can help achieve desired outcomes.
+
+Capabilities:
+Personalization: Tailors recommendations and experiences to individual needs.
+Optimization: Identifies the most efficient ways to achieve goals.
+Fraud prevention: Detects and prevents fraudulent activities through analysis.
+Next best action recommendation: Provides actionable insights on the next steps to take.
+
+4 - Generative/cognitive AI
+Generative or cognitive AI is involved in producing various types of content, such as code, articles, images, and more. This type of AI mimics human creativity and cognitive processes to automate and assist in content creation.
+
+Capabilities:
+Advises: Offers expert advice and recommendations.
+Creates: Produces new content, such as text, images, and code.
+Protects: Enhances security measures through intelligent analysis.
+Assists: Provides assistance in various tasks, improving efficiency.
+Automates: Automates repetitive tasks to save time and resources.
+
+5 - Reactive AI
+Reactive AI systems are designed to respond to specific inputs with predetermined responses. They do not have memory or the ability to learn from past experiences, making them suitable for tasks that require immediate reactions.
+
+Capabilities:
+Rule-based actions: Executes specific actions based on predefined rules.
+Instant responses: Provides immediate responses to inputs.
+Static data analysis: Analyzes current data without considering past interactions.
+
+6 - Limited memory AI:
+Limited memory AI systems have the ability to use past experiences to inform current decisions. They can learn from historical data to improve their performance over time. This type of AI is commonly used in autonomous vehicles and recommendation systems.
+
+Capabilities:
+Learning from data: Uses historical data to make informed decisions.
+Pattern recognition: Identifies patterns over time to improve accuracy.
+Adaptive responses: Adapts responses based on previous interactions.
+
+7 - Theory of Mind AI:
+Theory of Mind AI is an advanced type of AI that aims to understand human emotions, beliefs, and intentions. It is still in the research stage and seeks to interact more naturally with humans by comprehending their mental states.
+
+Capabilities:
+Emotion recognition: Identifies and responds to human emotions.
+Social interaction: Engages in more natural and human-like interactions.
+Intent prediction: Predicts human intentions based on context and behavior.
+
+8 - Self-aware AI:
+Self-aware AI represents the most advanced form of AI, which has its own consciousness and self-awareness. This type of AI can understand and react to its own emotions and states. It remains a theoretical concept and has not yet been realized.
+
+Capabilities:
+Self-diagnosis: Evaluates its own performance and health.
+Autonomous learning: Learns independently without human intervention.
+Adaptive behavior: Adjusts behavior based on self-awareness.
+
+9 - Narrow AI (Weak AI):
+Narrow AI is designed to perform a specific task or a limited range of tasks. It excels in a single area but lacks generalization capabilities. Most current AI applications fall under this category.
+
+Capabilities:
+Task specialization: Excels in performing specific tasks.
+High accuracy: Achieves high performance in its designated area.
+Efficiency: Operates efficiently within its scope of specialization.
+
+10 - General AI (Strong AI):
+General AI, like human intelligence, can understand, learn, and apply knowledge across a wide range of tasks. It can also transfer knowledge from one domain to another and adapt to new situations autonomously.
+
+Capabilities:
+Cross-domain learning: Applies knowledge across various domains.
+Autonomous decision making: Makes decisions independently in diverse scenarios.
+Human-like understanding: Understands and processes information similar to humans.
+AI in Daily Life
+Summary:
+
+In this reading, you learned about the following:
+
+The different types of AI include:
+Diagnostic/descriptive AI: Focuses on assessing the correctness of behavior by analyzing historical data to understand what happened and why.
+
+Predictive AI: Concerned with forecasting future outcomes based on historical and current data.
+
+Prescriptive AI: Focuses on determining the optimal course of action by providing recommendations based on data analysis.
+
+Generative/cognitive AI: Involved in producing various types of content, such as code, articles, images, and more.
+
+Reactive AI: Designed to respond to specific inputs with predetermined responses.
+
+Limited memory AI: Have the ability to use past experiences to inform current decisions.
+
+Theory of Mind AI: Advanced type of AI that aims to understand human emotions, beliefs, and intentions.
+
+Self-aware AI: Represents the most advanced form of AI, which has its own consciousness and self-awareness.
+
+Narrow AI (Weak AI): Designed to perform a specific task or a limited range of tasks.
+
+---The Evolution of AI: Traditional AI vs. Generative AI
+
+How does generative AI differ from AI that we were doing 5, 10, 20, maybe even 30 years ago? Generative AI, is you started off with a repository, and a repository is exactly what it sounds like. It's just where you keep all of your information. They can be, data and tables, rows and columns, it can be images, it can be documents. It could really be anything. It's just as an organization, where you keep all of your historical information or stuff. 
+
+The second part is what we call an analytics platform. In the IBM world, an example of a analytics platform is SPSS modeler or Watson Studio. Then the third component is the application layer. Let's say you're a telco. You have all your information about the customers in the repository. Let's say you want to know which customers are likely to churn or cancel their service, so you would take that information in the repository, move it into an analytics platform. Inside the analytics platform, you would build your models. In this case, who isn't likely to churn or cancel their service. Then once you have those models built, you would put them in some application. The application is where you try to prevent those people from canceling. For example, if somebody is likely to cancel, maybe you reach out to them and try to convince them not to or give them some benefit so that they stick around as a customer. But this in itself, I wouldn't call this AI. This is more of a predictive analytics or a predictive model. To make this AI, you have to provide a feedback loop. A feedback loop allows you to automate the process. For example, you're a telco, and you have your information on your customers, you figure out who's going to cancel. You take action through an application to try to keep them from canceling. But your models here sometimes they're right, sometimes they're wrong. What the feedback loop allows you to do is to learn from that experience. If there's situations where you predicted somebody was going to cancel and they didn't, maybe you can drill in and make your models better so that you don't make that same mistake a second time. Think of it like this. Fool me once, shame on you. Fool me twice, shame on me. That's what you want your AI to do. You want your AI to learn from its previous mistakes, and its previous successes too, and a feedback loop allows you to do that. This is the way that it always existed. 
+
+With generative AI, you start off with data, not from your organization, not from a repository inside the walls of your company, but you start off with data with this massive quantity of information. Information about everything. That information then is used by large language models. But these large language models, they're very powerful. They're very big, and they're remarkable, to be honest. But a lot of times they don't have the specifics that you need to guide you in your business. For example, a large language model might know, in general, why people cancel a particular service if you're a telco, but they wouldn't have the nuances and the idiosyncrasies of why your specific customers cancel. That's when you use what's called prompting and tuning. 
+The prompting and tuning layer is where you take the large language models, which are very general models and make them specific to your use case. Going back to our telco, who's trying to deal with customer churn, they would have this model that's built not just on customer churn or your customers, but built on massive quantities of information that have everything in it. 
+LLMs are derived from that massive quantity of information. Then you use this prompting and tuning layer to try to fine tune those models so that they're specific to your organization. Then the final part is you have an application layer just like you do with traditional AI. The application, again, is where you take the AI so that it's consumed so that it's going to fulfill its specific purpose. Also, just like with traditional AI, you also have a feedback loop. But the feedback loop typically just goes back to the prompting and tuning part of it, because these are typically outside of your organization. 
+That's why large language models are generative AI is different because the fundamental architecture is different, and primarily, it has to do with the size and the quantity, both of the data coming in and the models being built. These models in this data is way too big for any organization to hold in the repository. That's why we need a fundamentally different architecture. 
+ 
+---AI in Daily Life
+
+The world of AI, where AI algorithms work to personalize your digital experience or learn your routines and preferences to provide a smart home experience. A report published on statista.com suggested that within the last five years, the number of digital voice assistants being used in devices worldwide for day to day activities has rapidly increased from 4.2 billion to 8.4 billion units. AI is all around us. Whether providing personalized experiences, streamlining tasks with efficiency and automation, enhancing accessibility, improving day to day convenience. Boosting safety and security, optimizing navigation routes, or enhancing healthcare facilities, AI provides numerous benefits in daily life. Let's explore a few such examples. AI makes our lives efficient and convenient by automating repetitive tasks and processes, saving time and effort in daily activities. 
+
+Virtual assistants like Siri, Google Assistant, and Alexa employ AI algorithms to interpret and act upon voice instructions and help complete tasks. 
+Such as scheduling reminders, answering queries, delivering weather forecasts, and managing smart home devices. Further, in your smart home setup, AI empowers devices like thermostats, lights, and security cameras to understand user habits and preferences over time. This allows you to automate tasks such as temperature adjustments, lighting control, and security alert notifications, enhancing convenience and energy efficiency. 
+
+AI uses a recommendation system to analyze vast amounts of data to provide personalized recommendations in areas such as entertainment, social media, and online shopping. Have you used streaming platforms like Netflix, Amazon Prime, or Spotify to watch movies, podcasts, or music? All these platforms offer personalized suggestions based on the user's viewing history and preferences. Similarly, social media platforms like Facebook and Instagram personalize the content based on the user's interests and past interactions. 
+
+Likewise, E-commerce platforms like Amazon and eBay use AI algorithms to provide personalized product recommendations based on the user's browsing history and purchase behavior. AI-driven chatbots aid customers with their queries. And visual search technology enables them to find products by uploading images, further enhancing the online shopping experience. AI plays a significant role in enabling security across various domains with which we interact in our daily lives. These include cybersecurity such as encryption, access control and risk assessment. Fraud detection to detect fraudulent activities in financial transactions, online payments and identity verification. Biometric authentication systems that use facial recognition, fingerprint scanning or voice recognition. And AI-enabled video analytics, which enhances surveillance systems that monitor our investments, detect fraudulent transactions, identify credit card fraud, and prevent financial crimes. AI is transforming the healthcare sector, impacting our lives in several ways. AI chatbots and virtual assistants can provide 24/7 support, reminding you to take medication or offering basic healthcare information. AI-powered wearables, such as fitness trackers and smartwatches monitor your heart rate, sleep patterns, and even blood oxygen levels. This data is crucial for identifying potential health risks early and monitoring your well being. AI algorithms can help you diagnose diseases and personalized treatment plans through data-driven insights. AI is integrated into smart devices in numerous ways, enhancing user experience and functionality and making them valuable tools in our daily lives. 
+
+AI enhances smartphone cameras with features like facial recognition, scene detection, portrait mode, and automatic image enhancement, enabling users to capture high-quality photos and videos effortlessly. AI-powered navigation apps utilize real-time traffic data, historical traffic patterns, and user feedback to optimize routes. Estimate travel times accurately, and provide alternative routes to avoid congestion, improving the efficiency of daily commutes and travel planning. AI algorithms are utilized in keyboards and messaging apps to suggest words or phrases as you type. Predict the next word in a sentence, and correct spelling and grammar mistakes, streamlining text input on mobile devices. 
+
+In this video, you learned that AI's use cases and benefits in daily life are profound and multifaceted. You learned how virtual assistants and smart home devices use AI to automate routine tasks, making our lives efficient and convenient. 
+How AI uses a recommendation system to provide personalized suggestions across various streaming, social media, and e-commerce platforms. Further, you learned how it boosts security and safeguards us against potential threats via biometric authentication and fraud detection. You also learned how AI transforms healthcare with wearables and diagnostics. Finally, you learned how AI's integration into smart devices enhances user experience and functionality. 
+
+---AI Chatbots and Smart Assistants
+
+AI chatbots are revolutionizing how we interact with technology by handling tasks and conversations that once required human intervention. From setting your reminders to controlling smart home devices with just a voice command, AI chatbots can significantly simplify your life. 
+
+AI chatbots and smart assistants are AI-driven software programs that understand and respond to queries, provide information, and perform tasks. They use advanced algorithms and natural language processing or NLP techniques to understand and respond to user inputs in a way that simulates human-like conversation. As AI has advanced, chatbots have undergone a remarkable evolution from simple rule-based systems where interactions follow predefined patterns to AI-powered personal assistance. The most recent breakthrough comes with generative AI models, which enable chatbots to engage in intelligent, context-based conversations, and offer personalized recommendations. Today, several chatbot platforms and smart assistants exist, each offering unique features and capabilities. 
+
+Examples of some chatbot platforms include IBM WatsonX Assistant, Chatfuel, Wit.ai, and more. 
+Some popular smart assistants include Siri, Google Assistant, Amazon Alexa, Microsoft Cortana, and so on. 
+Examples of popular generative AI chatbots are ChatGPT and Google Gemini.
+
+AI chatbots use a database of information, deep learning, machine learning, and NLP (Natural Language Processing), to understand the patterns in conversation. First, the chatbot analyzes your input to recognize the intent and keywords. If it is a speech input, the chatbot converts it into text and then processes it further. Once the input is processed, the chatbot uses AI algorithms and NLP engines to recognize your intent and context of the input, and accordingly categorize the input to determine the appropriate response. The chatbot also analyzes previous interactions and user preferences for more relevance. Next, the dialogue management system selects the appropriate response from the chatbot's knowledge base. Meanwhile, the machine learning algorithm updates the chatbot's knowledge base with information from the current conversation. Finally, the chatbot generates the response, which can include providing information, answering questions, performing tasks, or engaging in a conversation with you to gather more information. 
+
+Let's assume you want to know about the weather in your location. To provide an accurate response, the chatbot will access the weather application programming interface or API to retrieve the current weather forecast for your location. Some of the benefits of AI chatbots include their all-time availability, which ensures that you can access information anytime and anywhere. They offer scalability to handle large volumes of inquiries and interactions without significant overhead costs. The benefits also include providing personalized services and suggestions, as chatbots can tailor responses and recommendations based on user preferences and prior interactions. It enables natural conversation and response by utilizing NLP.
+
+Chatbots can also be trained to communicate in multiple languages, expanding their reach and effectiveness. AI chatbots have diverse applications across various industries and domains. Let's discuss some of them. In the field of customer service, chatbots handle routine inquiries and provide instant assistance. Another application is in E-commerce, where chatbots recommend products based on preferences and facilitate transactions. In healthcare, chatbots assist patients with appointment scheduling, medication reminders, and symptom assessment. Whereas in the field of education, chatbots are used for language learning and tutoring. 
+
+As the chatbot industry grows, it will continue to reshape business communications profoundly. Businesses are now focused on building more human-like chatbots using machine learning and NLP. With the help of sentiment analysis, chatbots will be able to analyze whether the conversation is going well and will respond to customer emotions accordingly. Enterprises will use chatbots for internal tasks as well, like HR inquiries and IT support, automating these processes to improve work efficiency. Chatbots are also expected to automate tasks, such as processing refunds. These future trends and innovations signify an exciting era for AI chatbots, where they will become more intelligent and versatile. 
+
+In this video, you learned that AI chatbots and smart assistants are AI-driven software programs that understand and respond to queries, provide information, and perform tasks. 
+Chatbots have evolved from simple rule-based systems to AI-powered personal assistants and generative AI chatbots that are capable of complete conversations. Their benefits include all-time availability, scalability, personalized services and suggestions, natural conversations, and multilingual communication. Applications of AI chatbots span across industries, including customer service, E-commerce, healthcare, and education. Future trends in AI chatbots involve more human-like interactions, sentiment analysis, automated HR and IT support tasks, and handling processes like refunds. 
+
+---What Is a Chatbot? 
+
+This is where the Flora Chatbot comes in. This is Flora over here. Now, if a customer has a simple question. Let's say they just want to know, what time do you guys open? They can ask Flora, Hey, what time do all open? Then Flora is going to be able to respond with the appropriate answer. She's going to say, maybe we open Monday at 9:00 AM. All without me having to interact with the Chatbot or the customer so that I'm free to do what I love to do, which is designing Floral arrangements. 
+Now, let's think of a more complex example. Say you have the bank here. You as the customer, you would like to check and see what your balance is. I just got paid. I don't know how much money is in the bank, but I need to go buy some socks. Rather than having to call the bank and wait on hold and wait for a teller to pull up your information and check your account status, you could actually interact with Bertie, the banking bot. In this case, I'm going to ask Bertie, what is my balance? How much money do I have currently? Bertie is going to come back and ask, I can help you with that. But what is your account number, your pin number, you know, some identifying information. I'm going to be able to provide this information back to Bertie. My account number, maybe, my date of birth, a pin number, et cetera. From there, all without any tellers or any employees having to interact with Bertie, she's going to be able to go and ask the bank. She's going to pass along all this information, my account number, my date of birth, and my pin number. She's going to say, hey, bank, how much money does this person have in their account? The bank is going to authorize me and say this is all the appropriate information that we need. The bank is going to respond with, I'm sorry, you only have five dollars. Maybe enough for socks, maybe not. But then Bertie is going to be able to take that response and pass it back to me, the customer, all without having to interact with any humans, and it's very simple. How does this really work? Let's dive in. 
+
+Going back to the Floral shop example. Let's say tomorrow's Mother's Day, and you forgot to order flowers, like we normally do. Here's you, my customer. Now, like we mentioned before, the floral shop owner is very busy. She's putting together all these arrangements. She doesn't really have time to answer the phone. Luckily, there are a few different ways that you the user can interact with our Chatbot to, actually, automate ordering some flowers for your mother. 
+On the Floral shop website, there could be a little pop up, maybe at the bottom that has Flora. This is Flora the Flora bot. She's here, and she's going to be able to pop up and ask me, what flowers would you like to order? Obviously, yellow roses because those are my mother's favorite. If we don't want to use the website, we could actually just call in, so it can be either text based or voice based. If I call the Chatbot, she says, welcome to Flowers Supply 101. What would you like to place your order for? 
+a dozen yellow roses, and it's just conversational and she's going to take my order and be able to process it. You can also use various instant messaging services for different social media platforms. You can integrate. You have all these different ways that you can interact with the chatbot. 
+
+Now, let's think about how that actually works on the back-end. I think by now, we're all familiar with the Cloud. It's the buzzword of the year. 
+This is actually where our Chatbot is going to live. You'll have a Chatbot service provider. This Chatbot is going to integrate with various services to, actually, process whatever speech it is that the user is saying. It's going to use natural language processing, as well as artificial intelligence to take what I'm saying and then, actually, translate it into something that a computer can understand. I'm saying, whether it's via phone or via instant messenger or to the web page, via text or voice, I would like to purchase some yellow roses. We'll say purchase. Yellow roses. 
+Maybe I want to do a dozen. Maybe next year, I'll do two dozen. I should. Then I'm going to pass this information to either the web page or IM or voice. This is actually whatever this medium is, it's going to send this information up to the Cloud. Now, the cloud is going to take this and it's going to process it. It's going to say, I see that the user wants to purchase this specific item. 
+In this case, 12 yellow roses. Now, we have to make sure that we actually have these roses in stock. If I try to place an order and then I pay for it, and then I get a notice, sorry, we're out of stock. Well, that's just not a good user experience. The way this is going to work is we'll use various cloud services, and we're actually going to go over here and connect to what I'm going to call floral systems. This is, basically, just going to be our database on the back end. It's going to show maybe I have 36 yellow roses in stock. 
+I've also got let's say 14 red tulips and three succulants. I've sent this information to the web page already as the user. Now, the web page is going to say, all right purchase and then 12 yellow roses. Now, this is going to send this information to the Cloud to my chatbot service provider. Then that is actually going to go out here and check the database. I'll say 12 yellow roses is what we're looking for. Then we can see. We've actually got 36. 
+We have plenty of roses. This is good. Now we're going to send a response back. We're going to say, yes, we have more than enough roses in stock, so we can go ahead and place this order. The cloud is going to come back and say, yes, let's place this order. Then the web page is going to come back to me and say, absolutely, you're in luck. You didn't wait too long. 
+Maybe next year, try to do it a little quicker, but we're going to be able to fulfill your order. Let's say I'm over here. The floral shop owner. I'm just building floral arrangements. Maybe I'll get a notification off to the side. But all in all, the whole thing is automated, so I don't have to stop what I'm doing to, actually, take care of this and it's going to save me a lot of time. Now, let's talk about the benefits of why would we want to use a chatbot? 
+It is nice to have that human interaction whenever you're dealing with your customers. But I think probably the number one reason that someone may want to use a chatbot is to save time. What I mean by that is not only are you saving time when it comes to interacting with your customers and getting someone to place an order. But again, you're leaving time off to the side for you to go and maybe you've got to do some bookkeeping. You've got to put these floral arrangements together, whatever it is, it's going to save you hours and hours over the course of even just a month. Two, simplicity. Chatbots, believe it or not, are surprisingly simple to build. 
+You don't have to know how to write any code in most cases. If you want to do more in depth integrations, you might need to know some code, but for the most part, it's just natural language based. You could say, Hey, Chatbot, I want you to tell users that I'm open Monday through Friday, 9:00 AM to 6:00 PM. It's going to be able to relay that information without having to know any Python or Java script or anything like that. Lastly, time to launch. What that means is that it does not take a lot of time to build a Chatbot. Like I said earlier, you don't have to know any code. 
+Since it's cloud based, you don't have to build up any of the underlying infrastructure from the time you start building the Chatbot to the time it's completed, could be as quick as one hour. These are some of the reasons that you may want to build a Chatbot for your business. I hope this helped explain what a chatbot is, how it works, and why you may want to use it. Thank you for watching. 
+
+---Applications of AI in Different Industries
+
+AI has been evolving like never before, and its involvement in different industries has been increasing rapidly. A recent global survey conducted by statista.com on AI's adoption in business estimates that 23% of company chief executive officers or CEOs have already adopted AI in their business operations, whereas 43% plan to explore options for adopting AI in the future. Among chief medical officers or CMOs, 32% have adopted AI, with 39% planning to explore it in the future. Imagine how a manufacturing plant deals with the challenge of unexpected machine failures or how the reliability of critical medical equipment is insured in the healthcare industry. 
+
+Deploying AI-driven predictive maintenance systems in various industries helps detect potential failures before they occur. This further leads to minimized downtime, increased productivity, and reduced maintenance expenses, ultimately resulting in enhanced efficiency and cost-effectiveness. Let's delve into the impacts and applications of AI across diverse industries in more detail. In manufacturing, AI is a driving force behind a new era of efficiency and optimization. AI-driven robotics and automation transform production processes by handling repeated tasks and assembly. This frees up human workers for more complex and creative tasks, increasing speed, accuracy, and scalability. For instance, in BMW's manufacturing units, cobots or collaborative robots are used alongside humans in a shared workspace to enhance efficiency and increase productivity.
+
+AI uses an image recognition system to inspect products for defects on assembly lines, ensuring that only top quality products are delivered to customers. This helps reduce waste and enhance customer satisfaction. AI can optimize energy consumption and manufacturing facilities by analyzing usage patterns and identifying opportunities for savings. Through smart grids and AI-driven energy management systems, AI can significantly reduce energy costs and improve sustainability. For instance, the food and beverage manufacturing industry leverages AI-powered quality control systems to inspect defects, contamination, and freshness in food products, ensuring that only safe and high-quality food items are packed and distributed. AI is a game changer in healthcare, offering innovative solutions and providing tangible benefits across various domains. As part of medical imaging analysis, AI can analyze medical images such as X-rays, MRIs, and CT scans to assist radiologists in detecting abnormalities and making diagnoses. 
+
+In predictive analytics, AI systems analyze electronic health records or EHRs, patient data, and historical trends to predict patient outcomes and identify individuals at risk of developing specific conditions. This empowers healthcare providers to anticipate and prevent diseases, resulting in more proactive and effective patient management. Moreover, AI enhances operational efficiency by optimizing the allocation of resources, streamlining scheduling, and managing supply chains more effectively. A popular use case of AI in healthcare includes drug discovery and development. AI speeds up the process of discovering drugs by examining molecular structures, predicting drug target interactions, and simulating clinical trials. Organizations like BenevolentAI leverage AI algorithms to identify potential drug candidates for various diseases, significantly reducing the time and cost involved in the drug development process. This can lead to the discovery of novel treatments for ailments such as cancer and Alzheimer's. 
+
+In the financial sector, AI is a strategic partner in revolutionizing banking, investment, and risk management. AI-powered chatbots provide personalized assistance and real-time support for banking transactions, enhancing customer experience. Investment analysis in line with the AI algorithm helps customers identify trends, opportunities, and risks in financial markets by processing large amounts of data. AI enables risk management strategies to become more proactive and precise, thereby predicting potential threats, mitigating frauds, and optimizing portfolio performance. Robo-advisors use AI algorithms to offer automated algorithm-driven investment suggestions, portfolio management, and financial planning services. Have you heard of Bank of America's AI tool, Erica? To provide customers with a more convenient way to manage their finances, Bank of America leveraged AI and introduced Erica, an AI-powered virtual assistant. Erica uses AI to assist customers with various tasks, such as balance inquiries, bill payments, budgeting, fraud alerts, and financial insights. AI has also significantly impacted customer engagement, inventory management, and marketing in the retail sector. AI-powered recommendation engines analyze customer's preferences and browsing behavior to provide personalized product recommendations. For instance, amazon.com uses AI to suggest products to customers based on past purchases and similar items viewed by other users. AI-driven demand forecasting algorithms analyze historical sales data, market trends, and external factors to predict future product demand. This enables retailers to optimize inventory levels, reduce stockouts, and minimize excess inventory holding costs. AI enables retailers to personalized marketing campaigns and promotions based on individual customer profiles and behavior.
+
+For instance, AI-driven marketing automation platforms like Salesforce Marketing Cloud use machine learning algorithms to segment customers, target them with personalized messages, and optimize campaign performance. Nowadays, entirely cashierless stores are beginning to emerge. AI-powered cashierless stores leverage computer vision and machine learning algorithms to enable frictionless retail shopping experiences. For instance, Amazon Go stores have utilized AI technology to automatically detect when customers take products from shelves and charge them through their Amazon account upon exiting the store. As AI continues to evolve, its potential for further innovation and growth is boundless. It promises transformative advancements that will reshape industries and revolutionize how we live and work. 
+
+In this video, you learned about AI's transformative influence across various industries. 
+You learned how AI-driven robotics and image recognition systems have brought a new era to the manufacturing industry and how AI optimizes energy consumption. 
+You also learned how AI has offered innovative solutions through medical imaging analysis and predictive analytics and how it improves operational efficiency in the healthcare industry. 
+Similarly, the finance industry has seen enhanced customer service and investment analysis. 
+Finally, you learned how AI has impacted areas like customer engagement, inventory management, and marketing areas of the retail sector and how cashierless stores have redefined retail experiences. 
+
+---Generative AI Tools and Applications
+
+Generative AI has sparked a revolution across numerous fields by enabling machines to autonomously create new content. Imagine detailed images, fascinating videos, and compelling stories all generated by advanced AI algorithms. This powerful technology has demonstrated immense potential. Undoubtedly, language stands as the most crucial application area for Generative AI. 
+
+To create new content, Generative AI tools are built on underlying AI models, such as large language models or LLMs. But initially, LLMs could only accept text inputs and create text outputs. When OpenAI first released ChatGPT, it was built on the text-only LLM GPT-3. However, with the development of multimodal LLMs, these models can now process multiple forms of data, including audio, images, and even videos. Now, Generative AI has seen significant advancements with multimodal models. 
+
+OpenAI's GPT models can now process both text and image data. They excel at solving complex problems with greater accuracy. Similarly, Google introduced two groundbreaking language models, Palm Models and Gemini Models, that unlocked Generative AI's potential. Both of them excel in textual and linguistic tasks. 
+
+While Palm Models are limited to text-in and out workflows, Gemini family of models has multimodal capabilities that include captioning an image, answering questions about photos, describing videos, and even discussing multimedia content. In fact, it is the foundational model that powers the functionalities of Google Gemini tool that we use today. These models and tools have provided new narratives to authors, journalists, and content creators. And this is just the beginning. 
+
+Other large language models such as Amazon's Titan Models, Metas Llama Models, and Anthropic's Claude Models are revolutionizing how you create and interact with content. Generative AI has also influenced the visual arts and design sphere, empowering artists and designers with new tools and techniques for creative expression. 
+
+For example, Stable Diffusion are among the most advanced in text-to-image technology. Another advancement, like DAL-E model, exhibits the ability to generate images that precisely match the input text. Did you know? Generative AI has contributed to the advancements in image generation. For instance, StyleGAN model is used for producing high-quality images of faces and other objects. Super Resolution is another model used for enhancing the resolution of an image by increasing the number of pixels. Along with text and image generation, Generative AI also facilitates the domains of voice and music generation. 
+
+For instance, Murph is a platform at the forefront of AI voice generation technology, excelling in generating synthetic voices that closely replicate human speech nuances and tones. OpenAI introduced Whisper, an open-source model that enables transcription in multiple languages as well as translation from those languages into English. Did you ever imagine generating music with just a few words? AI-powered music generators can now produce a wide array of genres, from classical compositions to contemporary beats. Not just genres, but generators can tailor music to evoke specific moods, ranging from cheerful melodies to melancholic tunes. Musicians, producers, filmmakers, videographers, and businesses are all experimenting with Generative AI tools at some level. 
+
+Tools like Jukedeck and Amper Music use Generative AI algorithms to compose original music tracks based on user input. Other than those, AIVA allows you to generate new songs in more than 250 different styles in a matter of seconds. So, whether you're a complete beginner or an experienced professional, you can use these AI tools to create your own songs. Generative AI algorithms can generate videos that closely resemble reality. These algorithms analyze human features and movements from existing data, creating characters and backgrounds that display lifelike qualities. Generative AI models can not only generate visuals, but also craft compelling stories, creating highly engaging videos. 
+
+Google's Imogen video is a machine learning model that generates high-definition videos. 
+OpenAI Sora is another model that can create realistic and imaginative scenes from text instructions. 
+
+Many popular companies are leveraging the power of Generative AI. According to a recent poll conducted by Gartner, 55% of organizations, that is more than half, are in piloting or production mode with Generative AI. 
+
+Google utilizes Generative AI in Google Photos for image enhancements, Google Duplex for natural language understanding, and Google Magenta for music generation. 
+
+Salesforce and OpenAI introduced a ChatGPT app named Einstein for its Slack platform. The app is said to leverage ChatGPT's AI technology. Adobe utilizes Generative AI in Adobe Sensei, the company's AI and machine learning platform. It powers features such as automated photo editing and font recognition. 
+
+Additionally, IBM has introduced WatsonX, an advanced AI and data platform to help businesses create custom AI applications. It provides tools for training models, managing data, following rules, and working well with other systems. 
+
+In this video, you learned that Generative AI has revolutionized multiple industries, which has given rise to multiple applications. 
+Various LLMs like GPT, Palm, and Gemini are used for text generation. 
+Various tools such as ChatGPT and Google Gemini are based on such large language models. 
+Generative AI also helps with image generation, with advanced models like Stable Diffusion and Dolly. 
+Generative AI enhances voice and music generation, creating genres and moods with tools like MIRV and AIVA. 
+Generative AI algorithms can create lifelike videos and models, like Google's Imogen Video and OpenAI Sora. 
+You also learned that popular companies such as Google, Salesforce, Adobe, and IBM have adopted and integrated with the technology of Generative AI. 
+
+---Ten Everyday AI and Machine Learning Use Cases
+
+Everybody is talking about generative AI, but Gen AI is a subset of the larger field of machine learning. 
+And I'm going to give you ten use cases of how machine learning, or ML, is used today in everyday life. And by machine learning, I'm talking about the subfields of artificial intelligence, in which machines learn from datasets and past experiences by recognizing patterns and generating predictions. Now, machine learning is projected to become a $200 billion industry by 2029. But it's already very much here today, so let's get into it. Now, one aspect of machine learning that's seen huge utility is NLP, or natural language processing. That's the ability for machines to make sense of the unstructured mess that we like to call human language. 
+
+So use case number one is customer service. Text-based queries can be handled by chatbots, which act as virtual agents that many businesses provide on their e-commerce sites. The chatbots can resolve many queries themselves. And where they can't, they can route customers to where they can find the appropriate help from a human customer service representative. ML also powers voice assistants, things like Siri and Alexa, where first speech-to-text and then NLP machine learning models help understand a spoken command. That same capability is used by services like Slack and YouTube to power autotranscription of spoken words in video content. 
+
+Now, number three is ML and mobile apps. Where would we be without Spotify's ML models for generating song recommendations, or LinkedIn's use of ML to make employment suggestions? Your phone is likely filled with apps that call out to services running machine learning models. And actually, ML in smartphones really deserves its own category, because with the power of modern smartphones, some of that machine learning is performed directly on the device. Such as computational photography to generate background blur in your selfie shots, or unlocking your phone with facial recognition. Or onboard device image classification models that help you to search your photo library. 
+
+case number five, that is financial transactions. Now, in the US alone, there are 150 million credit card transactions every day, and the vast majority of those are legitimate. How to detect the fraudulent ones? Well, ML and deep learning are widely used in fraud detection. Where financial institutions train ML models and classification algorithms to recognize suspicious online transactions and flag them for further investigation. 150 million credit card transactions every day is 1739 every second. So this is a task that would be near impossible to perform manually. 
+Well, did you also know that between 60 and 73% of all stock market trading is conducted by ML algorithms? And that percentage is increasing every year. All right, let's quickly knock out a couple more. So ML is used frequently in cybersecurity. Reinforcement learning uses ML to train models to identify and respond to cyberattacks and detect intrusions. ML informs a lot of our transportation these days. For instance, Google Maps uses ML algorithms to check current traffic conditions and determine the fastest route. 
+And ride-sharing apps like Uber and Lyft use ML to match riders to the drivers. And ML plays a large role in filtering email messages, as well through classification of incoming messages and autocomplete responses. 
+
+Now, number nine, that's healthcare. This is one example where machine learning can help augment and speed up human capabilities. Now, it's estimated that doctors evaluating mammograms miss between 30 to 40% of cancers, and the rate of false positives is even higher. ML is already helping here, where pattern recognition models are trained to classify tumors that are hard to see with the human eye. This is increasing not only the accuracy of interpreting radiology imaging, but it's also increasing the reading time of radiologists. 
+Allowing them to focus their attention on the more suspicious examinations flagged by the ML models. There are also ML successes in early lung cancer screening and finding bone fractures. 
+
+one last one, and a question for you. In general, which department in an organization uses AI and machine learning the most? Well, according to Forbes, it is the marketing and sales department. Marketers use ML for lead generation, data analytics, and search engine optimization, and they often build on top of existing ML models. So for example, consider how recommendation algorithms, like those at Netflix, make TV and movie suggestions as to what to watch next based on your derived tastes and interests. 
+Well, the marketing and sales department can use those same ML models for targeted, personalized marketing campaigns tailored to those very same tastes and interests. Look, we hear so much these days about the future of AI, and in particular, AGI, artificial general intelligence, that will one day match and surpass the intelligence of humans. But right now, that level of AI doesn't exist, it's theoretical. But machine learning, that's AI that is already here, and it really is very much part of our everyday lives. 
+
+---Lab: Generative AI Tools in Action
+
+Generative AI models can generate new content based on contextual understanding and mimic human creative skills. They are trained on massive data sets of text, code, images, or audio and then use that information to produce new outputs.
+
+Generative AI models are used in different applications and tools to enable users to leverage generative AI's potential. Some common generative AI tools are:
+Gemini from Google - https://gemini.google.com/?hl=en
+ChatGPT from OpenAI - https://chat.openai.com/
+Copilot from Microsoft - https://copilot.microsoft.com/
+
+These tools can be useful for a number of tasks in daily life, including creative writing (writing stories and poems), travel planning, cooking, learning new concepts, skills, or languages, getting advice on physical fitness and mental health, writing emails, and summarizing text. 
+
+---Module Summary 
+
+Congratulations! You have completed this module. At this point in the module, you know: 
+-Artificial Intelligence (AI)
+
+AI is an augmented intelligence aiming to extend human capabilities and tackle tasks beyond human and machine capabilities.
+
+Machine learning models are developed through supervised learning, unsupervised learning, and reinforcement learning.
+
+    AI can be divided based on its strengths: 
+        Weak (narrow) AI: Specific domains 
+        Strong (generalized) AI: Diverse capabilities across unrelated tasks
+        Super AI: Hypothetical AI that surpasses human intelligence in all domains.   
+
+-Generative AI
+
+Generative AI is a type of artificial intelligence that can generate content across various media, such as written texts, images, audio, or videos.
+
+Large language models (LLMs) are advanced neural network architectures for processing and generating human-like text.
+
+The capabilities of generative AI include diverse content creation capabilities, human-like capabilities, and data augmentation.
+
+Domain-specific use cases of generative AI are:
+        Marketing
+        Creative
+        Product development
+
+Industry-specific use cases of generative AI are: 
+        Healthcare
+        Gaming
+        Fashion
+
+        Education and training
+
+
+-Benefits of AI
+
+Virtual assistants and smart home devices use AI to automate routine tasks, making our lives efficient and convenient. 
+
+AI uses a recommendation system to provide personalized suggestions across various streaming, social media, and e-commerce platforms.
+
+AI boosts security and safeguards us against potential threats via biometric authentication and fraud detection.
+
+AI’s integration into smart devices enhances user experience and functionality.
+
+-Generative AI Use Cases
+
+Various LLMs, such as GPT, PaLM, and Gemini, are used for text generation. Tools such as ChatGPT and Google Gemini are based on such large language models.
+
+Generative AI also helps with image generation using advanced models like Stable Diffusion and DALL-E.
+
+Generative AI enhances voice and music generation, creating genres and moods with tools like Murf and AIVA.
+
+Generative AI algorithms can create lifelike videos and models like Google’s Imagen Video and OpenAI’s Sora.
+
+-AI Chatbots and Smart Assistants
+
+AI chatbots and smart assistants are AI-driven software programs that understand and respond to queries, provide information, and perform tasks. 
+
+Chatbots have evolved from simple rule-based systems to AI-powered personal assistants and generative AI chatbots that are capable of complete conversations.
+
+Chatbots' benefits include 24/7 availability, scalability, personalized services and suggestions, natural conversations, and multilingual communication.
+
+Applications of AI chatbots span across industries, including customer service, e-commerce, healthcare, and education. It involves more human-like interactions, sentiment analysis, automated HR and IT support tasks, and handling processes like refunds.
+
+-AI’s Impact on Industries
+
+AI’s transformative influence across various industries:
+
+Manufacturing: AI-driven robotics, image recognition systems
+
+Healthcare: Medical imaging analysis, predictive analytics, operational efficiency
+
+Finance: Enhance customer service, investment analysis
+
+Retail: Customer engagement, inventory management, marketing, cashier-less stores
+
+-- TEST 
+Your grade: 100%
+Your latest: 100%•
+Your highest: 100%•
+To pass you need at least 70%. We keep your highest score.
+1.
+Question 1
+
+Imagine a company building an AI that can analyze financial data and human-like reports, assist in hiring decisions, and design marketing strategies. This AI learns from experience and can apply its knowledge to new, unrelated problems without being reprogrammed. What type of AI does this scenario best represent? 
+
+YES - An AI that can learn new skills and solve unrelated problems like a human
+
+A smart assistant that checks the weather and sets alarms
+
+An AI with human-level consciousness and emotions
+
+A spam filter that detects unwanted emails based on keywords
+Correct
+
+Generalized AI mimics human-level learning and reasoning across domains.
+1 / 1 point
+2.
+Question 2
+
+When Maria opens her favorite streaming app, it suggests movies and shows based on her past viewing behavior and preferences. Which AI capability supports this personalized experience?
+
+Offering trending shows from global charts only
+
+YES - Using recommendation algorithms to analyze preferences and history
+
+Showing the most-watched videos regardless of user behavior
+
+Rotating featured content on a random schedule
+Correct
+
+AI uses recommendation systems to personalize content by analyzing viewing behavior and preferences, creating a customized and relevant experience for each user.
+1 / 1 point
+3.
+Question 3
+
+What marks a key architectural difference between traditional predictive models and generative AI, as discussed in the video?
+
+Generative AI begins with structured records such as tables and rows before training any models.
+
+Traditional AI uses feedback loops primarily in the application layer to refine general models.
+
+YES - Generative AI leverages external data sources and tunes general models for domain-specific tasks.
+
+Traditional AI and generative AI both begin with general-purpose models, then apply specific analytics tools.
+Correct
+
+Traditional AI depends on structured organizational data stored in internal repositories, followed by model building using analytics tools. Generative AI, in contrast, starts with massive, generalized data sources from outside the organization and adapts pre-trained LLMs through a prompting and tuning layer before integrating them into applications.
+1 / 1 point
+4.
+Question 4
+
+Which feature of generative AI allows applications to engage users in conversations that feel intelligent and context-aware?
+
+YES - Generating text using LLMs that simulate human conversation
+
+Selecting from a list of scripted prompts
+
+Preloading response templates into the interface
+
+Manually tagging frequently asked questions
+Correct
+
+Generative AI leverages large language models (LLMs) to hold dynamic conversations by understanding input and producing text that reflects nuanced language patterns, tone, and context.
+1 / 1 point
+5.
+Question 5
+
+A hospital is using AI to analyze patient history and long-term clinical data to identify individuals at risk of developing chronic conditions. Which system supports this capability?
+
+X-rays
+
+YES- EHRs
+
+MRIs
+
+CT scans
+Correct
+
+Electronic Health Records (EHRs) enable AI systems to track patient data over time, identify trends, and predict health risks. This supports early intervention and more personalized, preventative care.
+1 / 1 point
+6.
+Question 6
+
+Which feature uniquely defines multimodal AI models in contrast to earlier text-only models?
+
+YES - Combining inputs from multiple formats such as images, audio, and text
+
+Classifying user feedback for dashboard reporting
+
+Generating summaries using predefined templates
+
+Optimizing search results using tabular databases
+Correct
+
+Multimodal AI models go beyond traditional input types by understanding and generating responses using a blend of data formats, enabling more flexible and realistic interactions.
+1 / 1 point
+7.
+Question 7
+
+Amy is using a chatbot that not only responds conversationally but also helps her draft messages and content. Based on its generative capabilities, which chatbot is she most likely using?
+
+Siri
+
+Amazon Alexa
+
+YES - ChatGPT
+
+Microsoft Cortana
+Correct
+
+ChatGPT is a generative AI chatbot designed to create human-like text, assist with writing, and generate content across contexts based on user prompts.
+1 / 1 point
+8.
+Question 8
+
+An editor finds that an AI-generated marketing campaign draft includes unrelated ideas and inconsistent messaging throughout. What does this issue most likely indicate about the generative AI?
+
+The generative AI is incapable of revising its output once generated.
+
+YES - Poor training data can lead to incoherent or irrelevant content.
+
+The generative AI only uses highly structured data sources, limiting creativity.
+
+The generative AI’s algorithms inherently avoid generating varied content.
+Correct
+
+Generative AI heavily depends on diverse and high-quality training data to produce coherent and relevant outputs; insufficient data quality can cause disjointed or off-topic results.
+1 / 1 point
+9.
+Question 9
+
+What is one of the major technical challenges companies face when deploying AI chatbots in customer-facing roles?
+
+Preventing chatbots from collecting sensitive user data during interactions
+
+Managing integration with platforms that already support voice-based user authentication
+
+Training chatbots to respond only with pre-approved scripts in multiple languages
+
+YES - Ensuring the chatbot can interpret and respond accurately to varied and context-rich inputs
+Correct
+
+AI chatbots must go beyond recognizing keywords. They need to understand user intent and conversational context to provide accurate, helpful responses.
+1 / 1 point
+10.
+Question 10
+
+Generative AI tools are increasingly used in creative industries, including composing original music in different styles and genres. Which tool enables users to generate music in over 250 styles using Generative AI?
+
+DALL·E
+
+Whisper
+
+Palm
+
+YES - AIVA
+Correct
+
+Artificial Intelligence Virtual Artist (AIVA) is a music composition tool that uses Generative AI algorithms to create original soundtracks. It supports a wide range of musical styles, making it valuable for musicians, filmmakers, and game developers.
+1 / 1 point
+
+-----------------------------------------------------------------Module 2 AI Concepts, Terminology, and Application Domains
+--- Cognitive Computing
+
+Cognitive computing is one such technology that can evaluate an individual's performance and offer personalized recommendations. It provides enhanced functionality, adaptability, and intelligence across various domains. The term cognitive involves intellectual activities, such as thinking, reasoning, and problem-solving. Similarly, cognitive computing aims to create systems that mimic these human cognitive processes. 
+It is a branch within AI that mimics human thought processes to create intelligent machines. Cognitive computing makes machines active partners, not just tools. These advanced systems do more than execute commands. They grasp your needs, anticipate your questions, and proactively deliver valuable insights. 
+For instance, the cognitive computing system can help a bank detect fraudulent transactions, or it can be employed by a company to improve its customer support through the chat bot. 
+
+When we as humans seek to understand something and to make a decision, we go through four key steps. 
+First, we observe visible phenomena and bodies of evidence. 
+Second, we draw on what we know to interpret what we are seeing to generate a hypothesis about what it means. 
+Third, we evaluate which hypotheses are right or wrong. 
+Finally, we decide choosing the option that seems best and acting accordingly. 
+
+Just as humans become experts by going through the process of observation, evaluation, and decision-making, cognitive systems use similar processes to reason about the information they read, and they can do this at massive speed and scale. 
+
+Cognitive computing has three core elements: perception, learning, and reasoning. 
+Perception is the basis of cognitive computing to interpret and understand the environment. The components of perception include sensing, where data, whether structured or unstructured, is gathered from various sources. Cognitive computing employs machine learning algorithms to analyze the data and extract meaningful information from the data. By analyzing patterns and trends within the data, the system gains a detailed idea of complex relationships and makes accurate predictions. This repetitive process highlights the evolving nature of cognitive computing. Some of the key benefits of cognitive computing include elevated decision-making due to the analysis of huge datasets. It improves efficiency, as it saves time and resources by automating tasks. Additionally, it enables more human-like and interactive communication between machines and humans with the help of natural language processing. Cognitive computing has multiple applications from healthcare and finance to education and entertainment. Several companies across various industries are using cognitive computing technologies to enhance their products, services, and operations. 
+Some notable examples include IBM Watson, which uses cognitive computing in the fields of healthcare, finance, retail, and customer service. 
+Google utilizes cognitive computing techniques in its products and services, including Google Search, Google Assistant, and Google Translate. 
+Amazon's Alexa virtual assistant employs cognitive computing to understand and respond to voice commands, manage smart home devices, and provide personalized recommendations to users. 
+JPMorgan Chase and Wells Fargo use cognitive computing to detect fraud, assess risk, and automate customer service. 
+
+In this video, you learned that cognitive computing technology mimics human cognitive processes like thinking, reasoning, and problem-solving. 
+he core elements of cognitive computing include perception, which refers to gathering and interpreting data from various sources, 
+learning, which refers to using machine learning algorithms to analyze data, 
+and reasoning, which refers to making accurate predictions and decisions based on data analysis. 
+The benefits of cognitive computing include improved decision-making, increased efficiency, and more interactive human machine communication. Companies like IBM, Google, Amazon, JPMorgan Chase, and Wells Fargo use cognitive computing to enhance their services and operations. 
+
+---Terminologies and Related Concepts of AI
+
+AI enables a world where machines can not only understand human language, but also predict our needs, recognize our faces, and provide safety against threats. In this age of AI, understanding the language, key terms, and related concepts of AI becomes crucial. These will not only enhance your knowledge, but also enable you to leverage AI's full potential, drive innovation, and stay ahead in your field. For instance, autonomous vehicles or self driving cars rely heavily on AI technologies, such as machine learning, deep learning, natural language processing, and computer vision to navigate and make real-time decisions. Understanding these key terms can provide valuable insights into how these vehicles operate, their benefits, and their challenges. Before discussing various terminologies and key concepts of AI, let's begin with understanding AI. 
+
+Artificial intelligence is a branch of computer science that focuses on creating systems capable of performing tasks that typically require human intelligence. AI systems will typically demonstrate behaviors associated with human intelligence, such as planning, learning, reasoning, problem solving, knowledge representation, perception, motion, manipulation, social intelligence, and creativity.
+
+AI is categorized into narrow AI, general AI, and super AI. 
+Narrow AI or weak AI perform specific tasks. 
+General AI, also known as strong AI, possesses human like cognitive skills and is capable of learning and adapting across various tasks, 
+Super AI aims to surpass human intelligence and is currently theoretical and not yet realized. 
+
+Machine learning is a subset of AI that uses computer algorithms to analyze data and make intelligent decisions based on what it has learned without being explicitly programmed. Machine learning algorithms are trained with large datasets and learn from examples. They do not follow rule based algorithms. Machine learning enables machines to solve problems on their own and make accurate predictions using the provided data. 
+
+Deep learning is an important concept and a specialized subset of machine learning. It uses multi-layered neural networks, known as deep neural networks to analyze complex data and simulate human decision making. Deep learning algorithms can label and categorize information and identify complex patterns in data. It enables AI systems to learn continuously and improve the quality and accuracy of results by evaluating the correctness of decisions. 
+
+Another important concept is neural networks, a computation model inspired by the human brain's neural structure. Neural networks consist of interconnected nodes or neurons and have three layers. While the input layer receives and processes raw data, hidden layers perform complex computations and transform data. The output layer converts process data into output format, producing the result. 
+
+In this video, you learned how AI simulates human intelligence and machines, and how it can be divided into three categories, weak AI for specific tasks, strong AI with human like cognitive abilities, and super AI, which aims to surpass human intelligence. 
+You also learned how machine learning, a subset of AI, uses algorithms to analyze data, make decisions without explicit programming, and enables autonomous problem solving. 
+Additionally, you learned that deep learning uses neural networks with multiple layers to analyze complex data. 
+Finally, you learned about neural networks, a computational model consisting of interconnected nodes with three layers. 
+
+---Machine Learning
+
+Machine learning, a subset of AI, uses computer algorithms to analyze data and make intelligent decisions based on what it has learned. Instead of following rules-based algorithms, machine learning builds models to classify and make predictions from data. 
+
+So what is the difference between machine learning and statistical analysis to create an algorithm? An algorithm is a mathematical technique. With traditional programming, we take data and rules and use these to develop an algorithm that will give us an answer. 
+
+Machine learning, on the other hand, takes data and answers and creates the algorithm. Instead of getting answers in the end, we already have the answers. What we get is a set of rules that determine what the machine learning model will be. The model determines the rules and the if-then-else statement when it gets the inputs. Essentially, what the model does is determine what the parameters are in a traditional algorithm, and instead of deciding arbitrarily that beats per minute plus BMI equals a certain result, we use the model to determine what the logic will be. 
+
+This model, unlike a traditional algorithm, can be continuously trained and used in the future to predict values. Machine learning relies on defining behavioral rules by examining and comparing large datasets to find common patterns. 
+
+This type of machine learning is called supervised learning, where an algorithm is trained on human-labeled data. The more samples you provide a supervised learning algorithm, the more precise it becomes in classifying new data. 
+
+Unsupervised learning, another type of machine learning, relies on giving the algorithm unlabeled data and letting it find patterns by itself. You provide the input, but not labels, and let the machine infer qualities that the algorithm ingests unlabeled data, draws inferences, and finds patterns. This type of learning can be useful for clustering data, where data is grouped according to how similar it is to its neighbors and dissimilar to everything else. Once the data is clustered, different techniques can be used to explore that data and look for patterns. For instance, you provide a machine learning algorithm with a constant stream of network traffic and let it independently learn the baseline, normal network activity, as well as the outlier and possibly malicious behavior happening on the network.
+
+The third type of machine learning algorithm, reinforcement learning, relies on providing a machine learning algorithm with a set of rules and constraints and letting it learn how to achieve its goals. You define the state, the desired goal, allowed actions, and constraints. 
+The algorithm figures out how to achieve the goal by trying different combinations of allowed actions and is rewarded or punished depending on whether the decision was a good one. The algorithm tries its best to maximize its rewards within the constraints provided. You could use reinforcement learning to teach a machine to play chess or navigate an obstacle course. A machine learning model is an algorithm used to find patterns in the data without the programmer having to explicitly program these patterns. 
+
+In this video, you learned that machine learning is a subset of AI that uses computer algorithms to analyze data and make decisions. Unlike traditional programming, which uses fixed rules, machine learning models evolve by learning from data. 
+There are three main types of machine learning. 
+Supervised learning, which is trained on labels to classify new data. The more samples you provide a supervised learning algorithm, the more precise it becomes in classifying new data. 
+Unsupervised learning that finds patterns in unlabeled data. It is useful for clustering similar data points and detecting anomalies. 
+And reinforcement learning that learns to achieve goals within a set of rules and constraints by maximizing rewards. It is applicable in tasks like playing chess or navigating obstacle courses. 
+
+---Machine Learning: Techniques and Training
+
+Machine learning is a broad field that can be divided into three categories: 
+supervised learning, 
+unsupervised learning, 
+and reinforcement learning. 
+
+Supervised learning involves using datasets with predefined class labels to train models for predicting or classifying new data points. This means the data you receive includes labels indicating what each data point represents. 
+
+With unsupervised learning, you do not have class labels and you must discover class labels from unstructured data. This could involve deep learning, which looks at pictures in unstructured data, interprets them, and processes them, further grouping them into clusters based on their features. 
+
+Reinforcement learning is a different subset, and what this does is it uses a reward function to penalize bad actions or reward good actions. 
+
+Supervised learning can be split into three categories: 
+regression, 
+classification, 
+and neural network. 
+
+Regression models are built by looking at the relationships between features x and the result y, where y is a continuous variable. Essentially, regression estimates continuous values. 
+
+Neural networks refer to structures that imitate the structure of the human brain to process input data, recognize patterns, and make decisions or predictions. 
+
+Classification, on the other hand, focuses on discrete values it identifies. You can assign discrete class labels y based on many input features x. In the previous example, given a set of features x, such as beats per minute, body mass index, age, and sex, the algorithm classifies the output y as two categories, true or false, predicting whether the heart will fail or not. In other classification models, you can categorize results into multiple groups. For instance, you can predict whether a movie belongs to the genres of action, comedy, drama, or horror. Some forms of classification include decision trees, support vector machines, logistic regression, and random forests. 
+Classification allows us to extract features from the data. The features in this example would be beats per minute or age. Features are distinctive properties of input patterns that help determine the output categories or classes of output. Each column is a feature, and each row is a data point. Classification is the process of predicting the class of given data points. Our classifier uses training data to understand how given input variables relate to that class. What exactly do we mean by training? 
+Training refers to using a learning algorithm to determine and develop the parameters of your model. Imagine you are training a model to predict whether an email is spam or not, true for spam, false for not spam. To do this, you start by showing the algorithm some real-life emails that are labeled as true, indicating they are spam. Then you show more emails labeled as false, indicating they are not spam. You continue this process with emails labeled as true or false. The algorithm adjusts its internal parameters until it has learned to distinguish from the data which e-mails are spam, that is true, and which are not, that is false. 
+
+In machine learning, a dataset is usually divided into three parts: 
+training, 
+validation, 
+and test sets. 
+
+The training set is used to train the algorithm. 
+The validation set helps to validate the results and adjust the algorithm's parameters. 
+The test set contains data the model has not seen before and is used to assess the model's performance. You can then measure the model's effectiveness using terms like accuracy, precision, and recall. 
+
+In this video, you explored the three main categories of machine learning: 
+supervised learning, which builds models using labeled data; 
+unsupervised learning, which discovers patterns in unlabeled data, often through clustering; 
+and reinforcement learning, which employs a reward system to guide actions. 
+
+Additionally, you learned how supervised learning is divided into 
+regression, 
+classification, 
+and neural networks. 
+
+Regression estimates continuous values by analyzing the input output relationship. 
+Neural networks imitate the human brain structure to process data, 
+and classification focuses on discrete values by assigning class labels based on input features. 
+
+Lastly, you learned how model training involves splitting the dataset into 
+training, 
+validation, 
+and testing sets. 
+The training set trains the algorithm. 
+The validation set fine-tunes and validates it, 
+and the testing set evaluates its performance on new data. 
+
+---Deep Learning
+
+While machine learning is a subset of artificial intelligence, deep learning is a specialized subset of machine learning. Deep learning layers algorithms to create a neural network, which is an artificial replication of the brain structure and functionality. This enables AI systems to continuously learn on the job and improve the quality and accuracy of results. It also allows these systems to learn from unstructured data, such as photos, videos, and audio files. Deep learning, for example, enables natural language understanding capabilities of AI systems and allows them to work out the context and intent of what is being conveyed. 
+
+Deep learning algorithms do not directly map input to output, instead, they rely on several layers of processing units. Each layer passes its output to the next layer, which processes it and passes it to the next. The many layers are why it's called deep learning. When creating deep learning algorithms, developers and engineers configure the number of layers and the type of functions that connect the outputs of each other to the inputs of the next. Then they train the model by providing it with lots of annotated examples. For instance, you give a deep learning algorithm thousands of images and labels that correspond to the context of each image. The algorithm will run those examples through its layered neural network and adjust the weights of the variables in each layer of the neural network to be able to detect the common patterns that define the images with similar labels. 
+Deep learning fixes one of the major problems present in older generations of learning algorithms. While the efficiency and performance of machine learning algorithms plateau as the datasets grow, deep learning algorithms continue to improve as they are fed more data. Deep learning has proven to be very efficient at various tasks, including image captioning, voice recognition and transcription, facial recognition, medical imaging, and language translation. Deep learning is also one of the main components of driverless cars. 
+
+In this video, you learn that deep learning is a specialized subset of machine learning that layers algorithms to create a neural network. Deep learning enables AI systems to continuously learn and improve. Deep learning enhances AI's natural language understanding by grasping context and intent. 
+Deep learning is highly effective in tasks like image captioning, voice recognition, facial recognition, medical imaging, language translation, and even driverless car technology. 
+
+---Neural Networks
+
+Imagine teaching a machine to learn in a manner like a human brain, like recognizing faces and images or driving cars independently. The mechanism behind such remarkable capabilities lies within neural networks. 
+Neural networks are computational models influenced by the human brain's neural structure. An artificial neural network consists of interconnected nodes known as neurons. The neurons take incoming data, like the human brain's neurological network, and learn to make decisions over time. By providing the network with data such as images of cats and dogs, it can learn to recognize patterns and form connections. The more data it is exposed to, the more effectively it learns. 
+A neural network consists of one input layer and one output layer. It can also have one or more hidden layers. The input layer receives the data. For example, in an image recognition task, the input layer would take in the image's pixel values. Hidden layers process the data. Each hidden layer transforms the input data by applying an activation function. Activation functions are mathematical functions that allow the network to learn complex patterns. Finally, the output layer of a neural network produces the final result of the network's processing. Note that as a network includes more hidden layers, it becomes deeper, which is why the term deep learning is used. Neural networks learn through a process called training. 
+
+Let's understand the steps of this process. 
+Firstly, as part of the forward pass or forward propagation step, the data passes through the layers of the neural network. In this step, the network computes an output. This output is compared to the actual answer to calculate the difference, called the error or loss. This step shows how well the network's predictions match the actual results. Then, in the backward pass or back propagation step, this error is sent back through the network to adjust the internal parameters such as weights and biases. This adjustment aims to reduce the error for future predictions. The forward pass, error calculation, and backward pass are repeated many times with different sets of data until the neural network consistently makes accurate predictions. 
+
+There are various types of neural networks. Let's look at some, including 
+perceptron neural networks, 
+feed-forward neural networks, 
+deep feed-forward neural networks, 
+modular neural networks, 
+convolutional neural networks, 
+and recurrent neural networks. 
+
+The perceptron neural networks are the simplest type of artificial neural network, consisting of only input and output layers. 
+
+In a feed-forward neural network, information flows in one direction, that is, forward. Each neuron in a layer receives input from neurons in the previous layer and then passes its output to neurons in the next layer. 
+
+A deep feed-forward neural network is similar to feed-forward network with just more than one hidden layer. 
+
+The modular neural network combines two or more neural networks to arrive at the output. 
+
+A convolutional neural network, or CNN, is a type of neural network that is particularly well suited for analyzing visual data. The term convolutional refers to a mathematical operation where a function is applied to another function, and the result is a mixture of the two functions. In CNNs, this process takes place through multiple layers, with each layer performing a convolutional on the output from the previous layer. 
+
+In recurrent neural networks, or RNNs, each of the neurons in hidden layers receives an input with a specific delay in time. This allows the RNN to consider the context of the input. You can use this type of neural network where you need to access previous information in current iterations. For example, it's useful in predicting the next word in a sentence, as it considers the context and flow of a conversation. 
+
+In this video, you learned that neural networks are building blocks of AI systems inspired by the structure of the human brain. 
+Neural networks consist of layers, including an input layer, one or more hidden layers, and an output layer. 
+Neural networks rely on forward propagation to process data from input to output layers. Backpropagation adjusts internal parameters based on the loss calculated during forward propagation. 
+Various types of neural networks include perceptron neural network, feed-forward, deep feed-forward, modular, convolutional neural network, and recurrent neural network. 
+
+---Machine Learning vs deep learning
+
+
+
+-----------------------------------------------------------------Module 1 Introduction and application of AI
+-----------------------------------------------------------------Module 1 Introduction and application of AI
+

@@ -1,0 +1,1300 @@
+
+INTRODUCTION TO SOFTWARE ENGINEERING
+----------------------------------------------------------------------------------Module 1 The Software Development Cycle
+
+software development lifecycle (SDLC)
+Unified Modeling Language (UML) 
+object-oriented analysis and design (OOAD)
+
+---What is Software Engineering?
+Software engineering is the application of scientific principles to the design and creation
+of software
+
+computer-aided software engineering or CASE. 
+CASE tools can be divided into six categories: business analysis and modeling, development tools such as debugging environments, verification and validation tools, configuration management, metrics and measurement, and project management. 
+
+software engineers use that knowledge to build entire systems 
+Software engineers are often employed on larger scale projects and they are focused on the broad structure rather than solving an immediate problem.
+Software engineers are tasked with designing, building, and maintaining software systems. Their Responsibilities include writing and testing code, and consulting with stakeholders such as clients, third party software vendors, security specialists, and other team members.
+
+software developers use their knowledge to write code to implement specific functionality within a system.
+
+Today, the development process is typically guided by the Software Development Lifecycle or SDLC.
+The SDLC identifies the steps needed to develop high-quality software
+
+Software engineering is the systematic approach to design and development of software.
+Responsibilities of a software engineer include:
+Designing, building, and maintaining software systems, writing and testing code, and consulting with stakeholders, third party vendors, security specialists, and other team members. 
+
+software engineers build systems while software developers implement specific functionalities. 
+
+---Introduction to the SDLC, software development lifecycle
+
+is a systematic process to develop high-quality software in a predictable timeframe and budget.
+It is a cycle of planning, design, and development that can be implemented as an iterative approach to software development. Adherence to the SDLC minimizes risks and costs to the development of high-quality, deployable software. 
+
+The first advantage is that it gives development teams a process to follow rather than using an ad hoc approach to improve efficiency and reduce risks. Secondly, there are discrete phases to the SDLC
+
+The SDLC provides room for iteration where, at the end of a cycle, the process can circle back to incorporate additional requirements as needed. Problem solving is incorporated early in the cycle so problems are addressed in a timely
+fashion and can be addressed in the design phase rather than during coding
+
+SDLC provides a systematic process for software development.
+Its initial development in the 60s and 70s was driven by the need for a systematic approach because of the growing complexity of software.
+Key advantages of the SDLC include:
+A roadmap to the software development process, helping to reduce risk and improve efficiency, Increased communication between the team and stakeholders, Clearly defined and understood responsibilities for each team member, and
+The ability to be used iteratively, allowing for changing requirements. 
+
+---Phases of the SDLC
+There are generally six phases in the SDLC process, planning, design, development, testing, deployment, and maintenance. 
+
+When planning a software solution, the following factors must be considered:
+users of the solution
+the overall purpose of the solution,
+data inputs and outputs,
+legal and regulatory compliance,
+risk identification,
+quality assurance requirements,
+allocation of human and financial resources, and
+project scheduling.
+
+As part of the planning process, labor and material costs are estimated and weighed against time constraints. Also, project teams are identified, and roles of each team member are proposed.
+
+If stakeholders are struggling to define requirements, often the development team may produce prototypes during the planning stage to tease out those requirements. A prototype is a small-scale replica of the end product used to get stakeholder feedback and establish requirements.
+A prototype is used to test basic design ideas. Though prototyping usually occurs during the planning stage, prototyping can occur at various phases of the SDLC whenever requirements need to be reconsidered or clarified as the project
+develops. 
+
+After requirements have been gathered, they are combined into a document called a software requirements specification, or SRS, document. The SRS needs to be clearly understood and approved by all stakeholders. 
+
+In the design phase, the requirements gathered from the SRS are used to develop the software architecture. The document created in this phase is called a design document, and is used by developers
+
+The development phase, sometimes called the “building" phase or the "implementation" phase, is when the developers start the coding process once the design document is completed. The project planners use the design document to determine and assign coding tasks. This phase often requires the use of programming tools, different programming languages, and
+software stacks.
+
+The testing phase is next in the process once the coding is complete. Product bugs are reported, tracked, and fixed, and code is retested until the software is stable. Some common levels of testing include unit testing, integration testing, system testing, and acceptance testing.
+
+The deployment phase is where the application is released into the production environment and made available to users.
+This can also happen in stages— first, it is released onto a user acceptance testing, also called UAT, platform and once
+the customer signs off on the functionality, it is released to production.
+
+Finally, the maintenance phase happens once the code has been deployed into a production environment. This phase helps to
+find any other bugs, identify user interface issues, or UI for short, and identify other requirements that may not have been listed in the SRS. Code enhancements can also be identified at this stage. 
+
+The SDLC can be divided into six phases. Planning involves requirement gathering and development of the SRS.
+The architecture is developed during the design phase and the design document is created. The Development phase is when coding takes place, and then during the testing phase issues with the code are found and fixed if possible.
+Deployment is when the code is released to the production environment. And finally, in the maintenance stage feedback is collected from stakeholders, other UI issues may be identified, and code enhancements suggested. And this information then can be fed into another software development cycle if necessary. 
+
+---Building Quality Software
+common software engineering processes; 
+requirements gathering,
+design,
+coding for quality,
+testing,
+releases, and
+documenting. 
+
+The software requirements specification, or SRS, encompasses the process of collecting and documenting the set of requirements that the software needs to adhere to.
+Software requirements can be classified into four broad categories:
+functional,
+external and User Interface, or UI,
+system features,
+and non-functional
+
+Software design is the process of transforming the requirements into a structure that is implementable using code.
+The software design process translates the requirements into a language the developers can use to write the code. It transforms the requirements into a software solution. 
+The system design incorporates guidance on system functions, performance, security, and platform characteristics.
+The design communicates business rules and application logic, application programming interface design, which is how apps talk to each other or communicate with the database,
+user interfaces, and database design
+
+Code quality refers to the characteristics of the code including attributes such as
+maintainability,
+readability,
+testability,
+and security.
+Quality code must fulfill the intended requirements of the software without defects. 
+Software testing is the process of verifying that the software matches established requirements and is free of bugs.
+Properly tested software ensures reliability, security, performance, and efficiency.
+
+Unit testing is often done by the developer and tests the smallest component of code that can be isolated from the rest of the system. Once the components are integrated into the larger product, integration testing occurs. Then, after the larger product is deemed completed, system testing can take place. User acceptance testing, or UAT for short and sometimes called beta testing, is when the software is tested by the intended end user. Types of testing can broadly be divided
+into three categories, functional, non-functional, and regression. 
+
+When the newest version of the software is distributed, it is referred to as a “release.” Different types of releases are intended for different audiences. There is generally an “alpha,” a “beta,” and a “GA” release. GA stands for general
+availability. The alpha release is the first functioning version of the system released to a select
+group of stakeholders. 
+The beta release, also called a limited release, is given to the stakeholders outside of the developing organization.
+he beta release should meet all the functional requirements. Then, after beta release changes are agreed upon, made, and tested, and a stable version is released. The audience for the GA release is all users. 
+
+Software documentation should be provided to both non-technical end-users and technical users.
+
+Requirement gathering is collecting and documenting the set of requirements that the software needs to adhere to.
+Designing transforms requirements into a structure that developers can use. Coding for quality entails following a set of coding practices during development. Testing is the process of verifying that the software matches established requirements and is free of bugs There are three types of releases including: alpha, beta, and general availability. And finally, documenting requires text or video that explains the software to technical and non-technical
+users. 
+
+---Requirements
+six-step process of defining a problem to be solved and documenting how to go about solving that problem. These steps include:
+identifying stakeholders,
+establishing goals and objectives,
+eliciting requirements from the stakeholders,
+documenting the requirements,
+analyzing and confirming the requirements, and
+prioritizing. 
+
+Key personnel from the organization may include
+decision-makers,
+end-users,
+system administrators,
+engineering,
+marketing,
+sales,
+and customer support personnel. 
+
+objectives should be identified. Objectives are more specific than goals and they are actionable and measurable actions that achieve the stated goals. The next three steps, eliciting, documenting,
+and requirement confirmation are usually completed iteratively. 
+
+After confirmation, requirements should be prioritized. Labels such as
+“must-have,”
+“highly desired,”
+and “nice to have” are helpful. 
+
+Typically, there may be three documents that result from the requirements gathering process:
+software requirements specification, or SRS,
+user requirements specification, or URS,
+and system requirements specification,
+or SysRS. 
+
+The software requirements specification, or SRS, is a document that captures the functionalities that the software should perform and also establishes benchmarks or service levels for its performance.
+Parts of an SRS include:
+A purpose statement that contains the intended use of the SRS, its audience and scope, constraints, assumptions and dependencies, and requirements, which can be sorted into four categories:
+Functional requirements 
+External Interface requirements
+System Features
+and Non-functional requirements
+
+The product’s purpose describes who will have access to the SRS and how they should use it.
+The scope describes the benefits of the software, its goals, and objectives.
+The second part of the SRS should detail constraints, assumptions, and dependencies. 
+
+Requirements can be classified into four categories.
+Functional requirements are those that cover the functionalities of the software.
+External requirements are the requirements that address the behavior of the software in relation to external entities such as users and interactions with other hardware or software.
+System features are a subset of functional requirements.
+These are required features for the system to function.
+There are also non-functional requirements such as specifying performance, safety, security, and quality standards.
+
+User requirements describe the business need and expectations of the end-users from the software system.
+The user requirements are written as “user stories” or “use cases” that answer three questions:
+Who is the user?
+What is the function that needs to be performed?
+And why does the user want this functionality?
+User acceptance testing determines if these requirements have been met. 
+
+ The SRS details the expectations of the software system.
+The System Requirement Specification document, or SysRS, to differentiate it from the SRS, clearly outlines the requirements of an entire system. The system requirement specification is often used interchangeably with software requirement specification, but the SysRS is actually broader in scope than the SRS
+
+In this video you learned that:
+The requirement gathering process entails identifying stakeholders, establishing goals and objectives, and eliciting, documenting, confirming, and then prioritizing requirements.
+The SRS documents functional, external, system, and non-functional requirements.
+The URS documents user stories. 
+And finally, the SysRS documents system capabilities and acceptance criteria,
+and policy, regulation, personnel, performance, security, and hardware requirements. 
+
+---Software Development Methodologies
+three of these approaches:
+Waterfall,
+V-shape model,
+and Agile
+
+Waterfall is a sequential method of software development where the output of one phase
+is the input for the next phase of the cycle. Development and work on the next phase start only after the completion of the previous phase. All planning, such as defining requirements and architectural design, is done up front. The customer usually does not see the product until it is in the testing phase. That said, waterfall lacks flexibility. Since all planning is done upfront if a requirement is changed or overlooked that change can be hard to incorporate at a later date. 
+
+The V-shape model is named as such because the phases form the shape of a V. The phases going down the left side of the V are called “verification". Then, going up the right side of the V, those phases are called, "validation." The V-shape model is like waterfall in that it is also sequential. Each phase in verification corresponds with a validation phase.
+There are four stages that occur on each side of the V. Going down the V are planning, system
+design, architecture design, and then module design.
+The bottom of the V is the coding phase. And going back up the V are the four phases that correspond to the phases going down the V: unit testing, integration testing, system testing, and acceptance testing. The tests are written during the verification phases on the left and executed during the validation stages on the right. V-shape model is simple and easy to use.
+It is even more rigid than waterfall but designing test plans during the verification phase saves considerable time during coding and validation phases. Drawbacks are also similar to waterfall because it does not readily accommodate changing requirements. 
+
+Now, the Agile model is different. It focuses on a collaborative software development process over multiple short cycles rather than a strictly top-down linear process. Agile is what is called an iterative approach to development. It still aligns with the SDLC, but each phase is short. Teams work in cycles, or sprints, which are usually one to four weeks long. Unit testing happens in each sprint to minimize the risk of failure. Rather than the “maintenance” stage of the SDLC, the final stage of the sprint is a feedback stage. At the end of each sprint, a chunk of working code is released at a meeting called the “sprint demo” where stakeholders can see the new functionality and provide feedback. After the sprint demo, the entire process is repeated for every sprint cycle. After several sprint cycles, a minimum viable product, or MVP, is developed so stakeholders can provide feedback on the basic feature set. The MVP contains a feature set to validate assumptions about the software.
+The four core values of Agile development outlined in what is known as the "Agile manifesto"
+are: 
+individuals and interactions over processes and tools
+working software over comprehensive documentation
+customer collaboration over contract negotiation, and
+responding to change over following a plan.
+The main difference between traditional SDLC methods such as waterfall and the v-shape model compared to the Agile method of software development is the former are sequential whereas
+Agile is cyclical. Traditional SDLC methods, such as waterfall and V-shape, center around the whole product being developed before soliciting customer feedback, whereas
+Agile focuses on quick, short bursts of development.
+
+Agile development is different, relying on ongoing research, planning, and testing during
+product development. When adding new features to a project, development still goes through the same phases as in traditional SDLC, but with Agile, new, and changing requirements are handled quickly and easily because planning is initiated at the beginning of each sprint cycle
+
+
+Agile development is different, relying on ongoing research, planning, and testing during
+product development. When adding new features to a project, development still goes through the same phases as in traditional SDLC, but with Agile, new, and changing requirements are handled quickly and easily because planning is initiated at the beginning of each sprint cycle
+
+In this video, you learned that:
+Three of the common approaches to software development include waterfall, V-shape model, and Agile waterfall and V-shape are sequential whereas Agile is iterative both waterfall and V-shape models are easy to implement but neither accommodates changing requirements well and Agile allows for changing requirements but resource allocation can be challenging. 
+
+---Software Versions
+the first number indicates major changes to the software, such as a new release.
+The second number indicates that minor changes were made to the software. 
+The third number in the version number indicates patches or minor bug fixes.
+Finally, the fourth number indicates a build number or a build date.
+
+In this video, you learned that: Version numbers indicate the history of changes, updates, and patches to software, Some version numbers follow the semantic numbering system and have 4 parts separated by a period, Compatibility with old and new versions of software is a common problem, and you should view the version of the software you are using to determine software compatibility. 
+
+---Software Testing
+Software Testing is the practice of integrating quality checks throughout the software development
+cycle. The purpose of testing is to check whether the software matches expected requirements and
+ensure error-free software.
+
+A test case contains: steps, inputs, data, and the expected corresponding outputs.  test cases
+should always be written after requirements are finalized. 
+
+Types of testing can be broadly classified into three categories:
+Functional testing,
+Non-Functional testing,
+and Regression testing
+
+Functional testing usually involves black box testing which is a method of testing without looking at source code or internal structure. Functional testing is only concerned with inputs and corresponding outputs of the system under test, also called the SUT. The goal is to test the functionality of the application making sure the application is usable and accessible. Functional testing tests the SUT, to make sure it meets functional requirements. 
+
+Non-functional testing includes testing the application for attributes like performance, security,
+scalability, and availability. Non-functional testing checks to see if the SUTs non-functional behavior is performing properly.
+
+Regression testing, also called maintenance testing, confirms that a recent change to the application, such as a bug fix, does not adversely affect already existing functionality.
+Regression testing should occur when there has been a change in requirements or when
+defects have been fixed. In order to conduct regression testing, all or some of the test cases should be selected to test against the application.
+
+There are four testing levels: unit, integration, system, and acceptance. Each level occurs at a different time in the SDLC. There are 4 different levels in order to reduce the amount of time spent on testing by preventing overlap.
+
+Unit testing refers to tests that verify the functionality of a specific section of code, usually at the function level. It is performed by the software developer or engineer during the development phase of the software development life cycle. Unit testing aims to eliminate construction errors before code is integrated with other modules. Unit testing is intended to increase the quality of the resulting software as well as the efficiency of the overall development process. 
+
+Integration testing seeks to identify errors when two or more smaller, independent code modules are combined. Integration testing is another type of black-box testing. Integration testing exposes bugs that occur when those smaller units of code interact with each other. 
+
+System testing occurs after integration testing and is conducted on a complete, integrated
+system to evaluate the system's compliance with its specified requirements. It validates the system as a fully completed software product. System testing is both functional and non-functional.
+System testing is done in a staging environment, which should be similar to the production
+environment. 
+
+acceptance testing is formal testing with respect to user needs, requirements, and business
+processes. It determines whether a system satisfies the needs of the users, customers, and
+other stakeholders. Acceptance testing is usually done by the customer or the stakeholders
+during the maintenance stage of the SDLC. 
+
+In this video you learned that:
+There are three categories of testing: functional, non-functional, and regression . Unit testing verifies small, independent chunks of code. Integration testing looks for errors when two or more small chunks of code are combined. System testing validates the system as a fully completed software product and acceptance testing verifies correct implementation of user requirements and business processes. 
+
+---Software Documentation
+Software documentation is information about the software that describes what the product is and how to use it. These can be
+written, video, or graphical assets associated with a software product’s development and use. 
+
+
+Software Documentation can be written for different types of audiences – such as end users, software developers, QA engineers, system administrators and other stakeholders
+
+Documentation can be divided into two categories, product and process. Product documentation relates to the product’s functionality, whereas process documentation describes how to complete a task.
+
+There are many types of documentation, and we will discuss five categories including requirements, design,
+technical, quality assurance, and user documentation. 
+Requirements documentation is written during the planning phase of the SDLC and is intended
+for the development team including the developers, architects, and QA personnel. Requirements documentation describes the expected features and functionality of the software system. It includes the software requirements specifications, system requirement specifications, and user
+acceptance specifications. Design documentation is written by the software architects and the development team to explain
+how the software will be built to meet the requirements. It consists of both conceptual and technical design documents.
+Technical documentation includes comments written in the code to help other developers read the code to understand its behavior. 
+Quality assurance documentation includes all documents that pertain to a testing team’s strategy, progress, and metrics.
+Types of test documentation include test plans, test data, test scenarios, test cases, test strategies, and traceability matrices. Traceability matrices map test cases to their requirements.
+User documentation is intended for end-users and explains how to operate the software or help them to install or troubleshoot the system.
+End-user documentation includes frequently asked questions, installation and help guides, tutorials, and user manuals. Standard operating procedures, called SOPs, often accompany process documentation. Process documentation provides an overview of a process, but SOPs go through much greater detail. The SOP is written documentation that explains step-by-step how to accomplish a common, yet complex task that is organization specific.
+
+In this video you learned that:
+Documentation comes in three formats: written, video, or graphical.
+Process documentation describes how to complete a task.
+Product documentation relates to how a product functions.
+The types of product documentation include requirements, design, technical, QA, and user.
+And SOPs are written instructions detailing an organization's specific procedure. 
+
+---Roles in Software Engineering Projects
+Traditional SDLC methods have project managers but in Agile the equivalent role is called a Scrum master. A project manager makes sure the project runs smoothly and facilitates communication about the project. The project manager often deals with bigger picture issues such as:
+Planning, scheduling, and budgeting; Allocating personnel and resources; Executing the software plan; and Team communication.
+In Agile, there is a Scrum master. Rather than focusing on planning, the Scrum master is focused on ensuring team and individual success. Remember that the four core Agile values prioritize people and communication over process, and the Scrum master is responsible for facilitating that communication. 
+
+The stakeholders are the people for whom the product is being designed. They include individuals such as the customer, end-users, decision-makers, system administrators, and other key personnel. The stakeholder is mainly responsible for defining project requirements and providing feedback if the team members need clarification on requirements or if a proposed solution cannot be solved as planned.
+The stakeholders may also sometimes participate in beta testing and acceptance testing before
+the software is released.
+
+The system architect, designs and describes the architecture of a project as well as communicates that architecture to team members. They are sometimes also called a software architect or a solution architect. They are responsible for designing the essential characteristics of the inner structure and technical aspects of the software. The architect provides technical support across the different stages
+of the SDLC. 
+
+UX means user experience. The goal of a UX designer is to balance making the software intuitive but also as robust as it needs to be to address requirements. They define how the software behaves from the user’s perspective. The UX designer determines how the software communicates its functionality
+to the end-user and how the end-user interacts with it. 
+
+the developers write the code that powers the software.
+Responsibilities include implementing the architecture laid out in
+the design document, incorporating the requirements laid out in
+the software requirements specification, and employing the UX requirements determined by
+the UX designers. 
+
+Testers or QA engineers are in-charge of ensuring the quality of the product and that the software solution meets customer requirements. They are responsible for writing and executing test cases to identify bugs or deficiencies and provide this feedback to the development teams
+
+The product manager or product owner has the vision of what the product should look like. They have an intimate understanding of the client’s requirements, and the end-user’s needs. They are responsible for
+leading development efforts to create the software and for ensuring the product provides the value stakeholders are looking for. 
+
+the technical writer or information developer writes documentation for the end-user. They write documentation on technical material geared towards a non-technical audience. 
+
+Technical writers may be asked to write user manuals, reports, white papers, and press releases.
+
+---------Summary & Highlights
+
+Congratulations! You have completed this module. At this point, you know: 
+
+    Software engineering is the application of scientific principles to the design and creation of software. 
+
+    Responsibilities of a software engineer include designing, building, and maintaining software systems.  
+
+    Using the SDLC can improve efficiency and reduce risks by:  
+
+    letting team members know what they should be working on and when  
+
+    facilitating communication between the customer, other stakeholders, and the development team 
+
+    letting stakeholders know where they fit into that process and  
+
+    letting cross-domain teams know when they have completed their tasks so development can move to the next phase.   
+
+    Common software engineering processes are requirements gathering, design, coding, testing, releasing, and documenting. 
+
+    The requirement gathering process entails identifying stakeholders, establishing goals and objectives, eliciting requirements from the stakeholders, documenting the requirements, analyzing, prioritizing, and confirming the requirements. 
+
+    An SRS is a document that captures the functionalities that the software should perform and also establishes benchmarks or service levels for its performance. 
+
+    A URS is a subset of the SRS that details user specification requirements. 
+
+    The SysRS contains the same information as an SRS, but can also additionally include system capabilities, interfaces, and user characteristics, policy requirements, regulation requirements, personnel requirements, performance requirements, security requirements, and system acceptance criteria. 
+
+    Waterfall, V-shape model, and agile are all different methodologies for implementing the software development life cycle. 
+
+    Functional testing is concerned with inputs and corresponding outputs of the system under test, non-functional testing tests for attributes such as performance, security, scalability, and availability. Whereas regression testing confirms that a recent change to the application, such as a bug fix, does not adversely affect already existing functionality. 
+ayatem
+    Types of documentation include requirements, design, technical, quality assurance, and user. 
+
+    There are many different roles involved in a software engineering project. Some of them include project manager or scrum master, stakeholder, system or software architect, UX designer, software developer, tester or QA engineer, site reliability or Ops engineer, product manager or owner, and technical writer or information developer. 
+
+----------------------------------------------------------------------------------Module 2 Introduction to Software Development
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+---Overview of Web and Cloud Development
+
+Content displayed by websites can contain elements that are either previously stored on the server (called “static”) or generated each time they are requested by the client (called “dynamic”). Dynamic elements can involve information coming from other systems and applications, such as databases. Most websites contain static and dynamic elements to provide the best user experience. 
+
+Cloud Apps are built to work seamlessly with a Cloud-based back-end infrastructure, Cloud-based
+data storage and data processing, and other Cloud services, making them very scalable
+and very resilient.The environment for building websites and Cloud Applications is divided into two primary areas: front-end and back-end.
+
+The front-end deals with everything that happens at the client-side – everything the user
+can see and interact with.
+
+The back-end deals with everything that happens on the server before the code and data are
+sent to the client. The back-end coding usually handles the logic and functionality that make the website or app work, and the authentication processes that keep data secure. Back-end developers may also work with relational or noSQL databases, even collaborating with database administrators in bigger projects.
+
+Full-stack developers have skills, knowledge, and experience in both front-end and back-end
+environments. 
+
+Integrated Development Environments or IDEs incorporate some of these additional capabilities beyond just code editing and make it easier to build and manage your code. 
+
+You learned about:
+The basic communication between client and servers.
+How websites are built and displayed.
+Front-end development is about what happens on the client side.
+Back-end development is about what happens on the server.
+Full-stack development includes both front-end and back-end development.
+IDEs will help you create and manage your code. 
+
+---Learning Front-End Development
+To create a website, web developers usually use Hypertext Markup Language (HTML), Cascading
+Style Sheets (CSS) and JavaScript. These languages are designed to work in conjunction with each other. HTML is used to create the physical structure of a website. The physical structure contains elements such as text, links, images/videos, page dividers and buttons. The HTML code ensures a proper formatting of all text and image elements so that browsers display the page consistently.
+
+The backend developer codes the structure of the website. Developers use CSS to create stylish websites. CSS provides front-end developers with a standard method to define, apply, and manage different sets of style characteristics for a website and each of its components.
+CSS ensures uniformity in look and feel, style, colors, fonts, designs and layouts.
+So, HTML is used to create the structure and CSS is used to design it and make it appealing.
+CSS is also used to create websites that have cross browser compatibility. JavaScript is an object-oriented programming language that is used in conjunction with HTML and CSS to add interactivity to a website. 
+
+A new front-end development language is Syntactically Awesome Style Sheets called SASS.
+It is an extension of CSS that is compatible with all versions of CSS. SASS enables you to use things like variables, nested rules, and inline imports to keep things organized. SASS allows you to create style sheets faster and more easily. 
+
+Another language that is being used now is Learner Style Sheets or LESS. LESS enhances CSS, adding more styles and functions. It is backwards compatible with CSS. Less.js is a JavaScript tool that converts the LESS styles to CSS styles. 
+
+Using all these languages, websites are designed as reactive and responsive. Reactive or adaptive websites display the version of the website designed for a specific screen size; PC, mobile device. Responsive design of a website means that it will automatically resize to the device it is being accessed from; PC, mobile device, tables.
+
+A JavaScript framework is an application framework that is written in JavaScript. Programmers can manipulate the different functions, use them wherever required and can create device responsive applications. A few examples of several frameworks being used are: Angular framework: an open-source framework being maintained by Google. Angular frameworks allow websites to render the HTML pages quickly and efficiently. It has built-in tools for routing and form validation. React.js has been developed and maintained by Facebook. It is a JavaScript library that builds and renders components for a web page. It is not a complete suite of tools. React.js only helps build and drop components into a page. Vue.js is maintained by the community and its main focus is the view layer which includes user interface, buttons, and visual components. It is flexible, scalable and integrates well with other frameworks. It is very adaptable. It can be a library, or it can be the framework.
+The task of a front-end developer evolves continuously. 
+
+The technologies are upgraded constantly and so front-end developers needs to keep
+upgrading the websites that they create. The websites that they create should work in multiple browsers, multiple operating systems and multiple devices. 
+
+---The Importance of Back-End Development
+A front-end developer creates websites and Cloud applications using HTML, CSS, and JavaScript to create what the user sees and interacts with in the client's software.
+
+A back-end developer creates and manages all the resources that are needed to respond to
+the requests that the user makes through the client. The back-end developers tasks focus on enabling this server infrastructure or back-end to process requests, supply data, and provide other services securely.
+
+Front-end and back-end developers must work together very closely. Each needs to understand
+the requirements of the solution and how their respective parts will interact before the development process can begin. 
+
+The back-end developers write and maintain the parts of the application that process the inputs. User account management, authentication and authorization can be the responsibility
+of the back-end developer too. Back-end developers use APIs, routes, and endpoints to process incoming requests. 
+
+An API is code that works with data, usually using JSON or XML. APIs have set rules and structure. A route is a path to a website or page that the user interacts with. Routes generally take user input and show results based on the input and end point maybe an API or may simply be a path.
+
+Back-end developers must create and maintain this server side routing. Along with back-end APIs, routes effectively allow the front-end client to plug into the correct socket at the back-end. APIs provide a mechanism for Cloud apps, mobile apps, and other types of software to
+access resources from the back-end. 
+
+JavaScript is also being used on the back-end with new releases adding server-side functionality. JavaScript has many frameworks, but two of the most well-known are Node.js and Express. Python is another popular language. It's very flexible and easy to learn.
+Python has wide functionality. It can be used for everything from creating webpages to connecting to a database, to performing data analysis. Two well-known Python frameworks are Django and Flask.
+
+Back-end developers often work with data and databases. You will also benefit from learning some SQL. To help handle requests from databases, back-end developers can use object relational mapping tools or ORM to connect to the databases and retrieve the correct data.
+Although an ORM can hide some of the complexity of querying databases, it's useful to understand the fundamentals of databases so that you can troubleshoot any issues that arise.
+The day-to-day tasks of a back-end developer focus on the behind the scenes functionality that keeps websites, Cloud apps, and mobile apps up and running. Back-end development covers a wide range of technologies, from managing user accounts, authentication and authorization to ensuring that sensitive data is stored and transferred securely. Back-end developers also work with databases, retrieving, processing, and storing data as required. Life for a back-end developer is very challenging and ever-changing. 
+
+---Teamwork and Squads
+Some organizations that follow Agile development methodologies may call a team a squad.
+Typically, a squad is a small team of up to 10 developers. It is likely to consist of:
+A squad leader who acts as the anchor developer and coach for the squad. And a few software engineers who develop and implement the product features and test cases. It may also include one or two user experience developers or designers. In some squads the developers may work together in pairs to practice pair programming.
+
+In this video, you learned that:
+Software engineering teams meet regularly throughout the duration of a project.
+Good teamwork encourages creativity, shares knowledge, and results in better quality code.
+Squads are small teams used in agile development. 
+
+---Pair Programming
+​Pair programming is an extension of teamwork where two developers work side-by-side at
+one computer. They can either be physically at the same computer or work virtually via video link or shared screens. Pair programming is a type of Agile development where two developers can plan and discuss their ideas continually as they create a solution, generally resulting in a better end product. There are various styles of pair programming: Driver/navigator style is the most common style, where one developer is the driver, typing in the code, and the other is the navigator, reviewing the code as it’s written and giving directions where to go next. The navigator also keeps an eye on the bigger picture of the overall solution. When working in this way, it’s important to regularly swap roles to keep both of the pair engaged across the whole task.
+
+Ping-pong style incorporates test-driven development. For each task, one developer writes a failing test and then the second developer writes code to pass that test. For each new task, they swap roles, so regularly changing who writes the test and who writes the implementation. The two developers work together at the end of each task refactoring the successful code to refine and improve it. 
+
+Strong style pair programming is a good way for junior software engineers to learn from more experienced ones. The defining rule for this is that for an idea to go from your head to the computer, it must go through someone else’s hands. So, the more experienced of the pair is the navigator and the driver learns from witnessing their implementation and thought processes. For this to work well, the driver shouldn’t challenge any ideas until the full implementation
+is complete so as not to interrupt the flow of ideas from the navigator. 
+
+Now pair programming has many benefits. It’s a good way to share knowledge and skills from one developer to another or between the two and a great way for a new team member to get up to speed on a project. As well as enhancing the technical skills of the pair, it’s also a good way of building soft skills such as communication and problem solving. Having two sets of eyes on the code often results in fewer typos, logic errors, and bugs. And it enables code reviews to be done on the fly. While this doesn’t replace formal code reviews, it does enable another layer of review. Having two people thinking about a problem can result in multiple initial ideas, but is likely to result in the optimal approach being chosen earlier in the process.
+And although pair programming can take longer than individuals writing the same solutions,
+it’s likely to result in better code with less time spent reviewing, testing, and bug
+fixing. 
+
+There are also a few challenges to overcome. Working in a pair requires long periods of focus which can be exhausting for the two programmers. And personal or other work commitments can impact the pair schedule. Sometimes one of the pair can end up controlling the entire process, resulting in a more typist/programmer pairing which doesn’t benefit from any of the positives of pair programming. And at other times, individual personalities may not work well together.
+When multiple sets of pair programmers are present, their discussions can result in a noisy environment for the other workers in the room.
+
+In this video, you learned that: Pair programming is an Agile development technique where two
+developers work alongside each other.
+There are multiple styles of pair programming.
+And pair programming builds technical and soft skills, results in better quality code
+and solutions, and increases overall efficiency. 
+
+---Introducing Application Development Tools
+A cloud application developer’s workbench includes: Version Control, Libraries, and Frameworks. Version control systems keep track of what changes were made when and by whom and resolve any conflicts between changes. Properly used, it can give you a way to revert to an older version of your code if something goes wrong and gives you some basic information about how the code developed over time. Version control functionality is generally tied to the storage system you are using, which is why a code repository is recommended, even for beginners. 
+
+Git and GitHub are extremely popular for source code storage and management. Git stores files in repositories where you can track changes, split code into different branches for more focused development, and then merge them back into the main body of code. Libraries are collections of code, like standard programs and subroutines, that you can use within your code. Being able to reuse code in this way makes developing your app much quicker and easier. Multiple code libraries can be integrated into your existing project. You determine when to call the required method as needed. The control returns to the program flow once the subroutine is finished. When you use a code library, you are in control.
+Code libraries are generally used to solve a specific problem or add a specific feature set.
+
+Here are some examples of code libraries:
+jQuery is a JavaScript library that simplifies DOM manipulation.
+Email-validator is a small library that checks an email address is correctly constructed and valid.
+Apache Commons Proper is a repository of reusable Java components. 
+
+Frameworks provide a standard way to build and deploy applications. You can think of a framework as being a skeleton that you can extend by adding your own code, providing a scaffold on which to build your apps. The framework you intend to use must be determined early in your development planning and used right from the beginning. New frameworks can’t be incorporated into an existing project. Your chosen framework dictates the architecture of your program and controls the program flow. The framework determines which subroutines and methods will be called when. When working with a framework, there is a specific structure that you must follow. The framework calls on your code, rather than you calling on the framework. Frameworks are less flexible than libraries, allowing you less control, but they do provide good standardization and can help you create efficient code. 
+
+Here are some examples of frameworks:
+AngularJS is a JavaScript-based framework for dynamic web applications.
+Vue.js is a JavaScript framework focused on the user interface.
+Django is a framework that uses Python for web development.
+
+Frameworks define the workflow that you must follow, unlike libraries, which allow you to call functions as and when required. When using a framework, it can sometimes feel like you, as a developer, are not in full control of the development process. This sense of the framework and its predefined workflow controlling the development process is referred to as inversion of control. Frameworks that have a lot of control are known as opinionated – they have opinions
+on how their workflow should be used and remove a lot of the decisions you would otherwise have to make about how code is written, the location of files, and even file names. Frameworks often include their own libraries, which they call when needed. Inversion of control allows you to create standardized apps, and takes away a lot of the tedious configuration work, so you can focus on the code for your app. 
+
+In this video, you’ve learned about some of the tools that you will utilize in your career as a developer including:
+Version control, libraries, and frameworks. 
+A cloud application developer’s workbench includes:
+Version Control, Libraries, and Frameworks.
+
+---More Application Development Tools
+
+Let’s look at some tools which can help you get your app built and deployed:
+CI/CD, Build Tools, Packages, and Package Managers.
+
+CI/CD refers to the practices of continuous integration and either continuous delivery or continuous deployment. CI/CD is a best practice for devops teams enabling developers to deliver frequent changes reliably. Implemented through a build-automation server, Continuous Integration (CI) ensures that all the code components work together smoothly. A CI build environment enables you to integrate newly developed code frequently, at least every day, if not every hour, depending on how quickly the project changes. Continuous delivery (CD) begins where CI ends. The CI process automatically builds and tests your code, then CD deploys all code changes in a build to a testing or staging environment. 
+
+A build tool transforms your source code into the binaries needed for installation. Build tools organize your source code, set compile flags, and manage dependencies. They are most important in environments where there are many inter-connected projects, with multiple developers contributing to each project. In these environments, it can be very difficult to keep track of what changes were made, in what order, what dependencies exist, and what needs to be incorporated in the next build, so automation is key to keeping everything running smoothly. Build automation can automate a wide variety of tasks that developers do in their day-to-day activities like:
+Downloading dependencies.
+Compiling source code into binary code.
+Packaging that binary code.
+Running tests.
+And deployment to production systems.
+
+You can initiate a build from the command line or from an IDE.
+There are two categories of Build Tools widely in use:
+Build-automation utilities, which generate build artifacts like executables, by compiling and linking source code.
+Build-automation servers, which execute build-automation utilities on a scheduled or triggered basis.
+Some examples of build tools are:
+Webpack – a module bundler for JavaScript.
+Babel – a JavaScript compiler.
+And Web Assembly - a binary instruction format that runs in your browser.
+
+Packages are archive files that contain the app files, instructions for installation, and any metadata that you choose. They have their own metadata too, including the package description, package version, and any dependencies, like other packages that need to be installed beforehand. Once you have bundled your app into a package, you can use a package manager to distribute it. Package managers take care of the tasks of finding, installing, maintaining or uninstalling software packages at the user's request.
+
+Package management systems: Coordinate with file archivers to extract package archives. Verify checksums and digital certificates to ensure the integrity and authenticity of the package. Locate, download, install, or update existing software from a software repository. And manage dependencies to ensure a package is installed with all packages it requires. Some commonly used package managers for each of the major platforms are listed here:
+On Linux - Debian Package Management System (DPKG). Red Hat Package Manager (RPM).
+On Windows - Chocolatey.
+On Android - Package Manager.
+On MacOS - Homebrew and MacPorts.
+
+Any libraries or utility code that is developed as part of the application is managed with the cloud application package managers.
+Here are some examples of package managers for popular languages:
+For Node.js/Javascript - npm.
+For Java - Gradle and Maven.
+For Ruby - RubyGems.
+For Python - Pip and Conda.
+
+In this video you’ve learned about some of the tools that you will utilize
+in your career as a developer , including:
+CI/CD, Build Tools, Packages, and Package Managers. 
+
+---Introduction to Software Stacks
+A software stack is a combination of technologies that includes software and programming languages. Developers use a software stack to create applications and solutions such as web and mobile apps. The set of individual technologies is stacked in a hierarchy and work together to support the execution of an application. The higher levels in the stack provide tasks or services for the user and the lower levels interact with the computer hardware. 
+
+Software stacks typically include:
+Front-end technologies such as programming languages, frameworks, and user interface tools. And back-end technologies such as programming languages, frameworks, web servers, app servers, operating systems, messaging applications, and databases. You might hear the term technology stack used in place of software stack. However, a technology stack is a broader term that includes hardware and infrastructure like virtual machines, containers, storage, and load balancers, as well as the software stack. The simplest implementation of a software stack consists of a presentation layer, a business logic layer, and a data layer. However, more complex applications use more complex stacks, which could include software for virtualization, scheduling and orchestration, runtime environments, database connectivity, networking, and security.
+
+The software and services that make up a stack can be from a variety of sources: from internal resources, to third party providers, to cloud providers. There’s no formal definition of the structure of a stack, the only rule being that the software and services included must support an application’s development, functionality, or deployment. When you’re using a software stack, you don’t have to use all of the available layers, you only need to use those which are relevant to your solution.
+
+There are many different examples of software stacks, The Python-Django stack, uses the popular Python programming language alongside the
+Django web framework. This combination is all open source and commonly used for large-scale, fast-changing web applications.
+The Ruby on Rails stack, uses the Ruby programming language with a server-side web application framework. Ruby on Rails is great with JSON or XML for data transfer and HTML, CSS, and JavaScript for front-end development.
+And the ASP.NET stack includes Microsoft technologies such as the ASP.NET MVC framework, the IIS web server, SQL Server, and Azure.
+
+You’ll learn more about the LAMP, MEAN, MEVN, and MERN stacks next.
+The LAMP stack runs on the Linux operating system. It uses the Apache HTTP or Web server, MySQL databases, and the PHP programming language. LAMP is an example of an early incarnation of a software stack designed for building websites and cloud applications. All its constituent parts are open source and loosely coupled, so it’s easy to swap different options into the stack. 
+The MEAN stack uses a MongoDB database with an Express.js web application server framework, the Angular.js framework for front-end JavaScript development, and the Node.js platform for server-side scripting. The MEAN software and services are platform agnostic, free, and open source. There are other stacks related to the MEAN stack, including: The MERN stack which replaces Angular.js with React, and is a flexible and high-performing framework for developing front-ends. And the MEVN stack which replaces Angular.js with Vue.js. Vue is a lighter-weight JavaScript framework with less capabilities, but it can provide better performance than Angular.js.
+
+Let’s consider some advantages and disadvantages of three different software stacks:
+MEAN, MEVN, and LAMP.
+MEAN is a free and open-source JavaScript software stack used for building web applications. The biggest advantage of the MEAN stack is that all of the parts use JavaScript, so developers only
+need to know a single language. The stack is also open source which means the cost is lucrative to businesses and there is a lot of documentation and re-usable code for developers to use. Development
+can happen quickly because Node.js has a huge collection of free, reusable module libraries. However, the MEAN stack may not be well-suited for large-scale applications. When using Express.js, the business logic often resides on the server preventing the reuse of some services like batching operations. And MongoDB is great for unstructured data, but it doesn’t provide the same level of functionality as a relational database. The MEVN stack is a web stack like MEAN,
+but it uses Vue.js instead of Angular.js for user interfaces. MEVN and MEAN stacks have similar advantages, but Vue.js is a much newer technology and doesn't have as many reusable libraries as Angular.js. Like MEAN and MEVN, the software and services in the LAMP stack are open source meaning there are lots of reusable chunks of code available to the developers. And because LAMP is one of the oldest software stacks it’s easy to find support and reusable solutions. However, because the Linux operating system is an integral part of the stack, it isn’t as flexible as MEAN and MEVN which are platform agnostic. MySQL is a relational database, so the stack cannot take advantage of
+unstructured data. The other disadvantage of the LAMP stack is that the back-end runs on PHP, Perl, or Python, whereas the front-end uses JavaScript and HTML, making it harder for developers to switch back and forth than the MEAN and MEVN stacks which use JavaScript throughout. 
+
+In this video, you learned that:
+Software stacks are a combination of technologies for creating applications and solutions. 
+Software stacks can range from simple three-layered systems to many layers.
+There are numerous types of software stacks for different developers and environments.
+The biggest advantage of the MEAN stack is that all of the parts use JavaScript, so developers only need to know a single language.
+And, the LAMP stack on Linux works well for relational data. 
+
+---Tools and Technologies
+For front end development, you're primarily using HTML, CSS, and JavaScript
+
+For back end development the tools are quite a bit more varied. But if you choose Node.js, 
+
+JavaScript is a very powerful language. It lets you do pretty much anything you can imagine, The practices I typically follow with JavaScript include proper scoping of variables and functions. And writing unit and integration tests for my features.
+
+React JS was developed at Facebook very popular. 
+Angular is a framework operated by Google that allows for development of single page applications. 
+
+SPA's jQuery is possibly the most popular and oldest library out there, created by John Resig in 2006, and jQuery is frequently used with both Angular and React. Backbone is a lightweight JavaScript library that is very popular in terms of back-end languages and frameworks.
+
+Node.js is an open source server side platform built on the Google Chrome JavaScript engine. It uses an asynchronous single threaded architecture that allows it to serve a very large number of concurrent connections. 
+
+Flask is a framework used on Python that is popular with Pythonistas and the Spring framework based on Java has been around for years and remains popular
+
+React JavaScript framework it is better than Angular in terms of speed and efficiency. React is easier to learn than other JavaScript frameworks, which makes its adoption in the team easy. It also resolves the problems related to cross browser issues. Another great feature of React is the use of JSX. JSX is helpful when working with UI inside the JavaScript code. It helps react to show more useful error and warning messages.
+
+My favorite front end JavaScript framework would be React JS, I love the whole component driven design and architecture that you have then that you have to follow when you create a React JS based application. I also like the idea of, you know, props and states to hold your, the state of your application.
+
+By using Express JS for back-end development, we are able to scale applications quickly. We can code both front-end and back-end with the help of JavaScript easily by using Express JS. Express JS is supported with the Google V8 engine with the help of which you will be able to get higher performance without any lag or error in processing. It also supports the caching features, so you would not have to re-execute the codes again and again. Moreover, moreover, it will help web pages to load faster than ever 
+
+When working with Node.js, I'll, I'll give you two of my favorite packages that I use on a daily basis. So first is making requests to web services. I use a library like Axios, that helps me create these requests with the right headers, and also provide me with callback functions and or promises to be able to handle the responses that come back. My second package would be when I'm working with databases, I'll use NPM packages, more likely than not to talk to an  external database, regardless of if it's, if it's a relational database, or a no SQL database.
+
+So in writing JavaScript, I really like to take advantage of the features and ES6, because it can make my code look cleaner, easier to read, and, and just more beautiful, such as the arrow functions, or the dot dot dot operator. And so I encourage you to, after learning JavaScript, dive into ES6 a bit and have fun with it. 
+
+
+
+----------------------------------------------------------------------------------Module 3 Basics of Programming
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+
+---Interpreted and Compiled Programming Languages
+
+Programming languages help us tell computers what to do. Computers don’t use human language; they use their own language, called machine code. Machines understand binary code, that is 1s and 0s. 
+
+Two common categories for programming languages are: Interpreted and compiled. 
+
+Interpreted language is also commonly referred to as scripted or scripting language. Programs written in interpreted or scripted language, like Python and HTML, run through the programming interpreter on your computer’s operating system or in your web browser. The interpreter takes the human-readable scripted code and then translates it into machine code, enabling the computer to complete the requested task. All interpreted programming languages need an interpreter to translate the source code. Translators are built into your web browser or they require a program on your computer to translate the code.
+
+Several different interpreted programming languages exist. Some examples of common interpreted programming language types are:
+• JavaScript, a simpler scripting language that runs through the web browser interpreter
+• Python, a language that is popular because it is easy to learn and use for developers
+• Lua, a general purpose, lightweight game scripting language that is easy to learn and use
+• HTML, a markup language used for formatting web pages 
+
+Another category of programming languages is the compiled programming languages. Compiled programs are applications and programs. The programs are packaged --or compiled-- into one executable file. They are usually larger programs.
+Compiled programs are used to help solve more challenging problems, like interpreting source code. Compiled programming languages are often referred to more simply as programming languages. A compiler program creates a program file, which runs the software. Simply put: It piles the code into one file that runs when you double-click on the app on your device. The program runs faster and it can be done repeatedly. The source code is converted from the programming language to machine code. Then it is compiled into one executable file. Finally, the program runs when you select the icon or file on your device.
+
+Some examples of compiled programming languages are:
+C and its variations C++ and C#, which are used in many operating systems, like Microsoft
+Windows, Apple’s macOS, and the open-source operating system Linux.
+Java is another compiled programming language. It shouldn’t be confused with the interpreted language JavaScript.
+The Android OS is written in Java because it works well across computing platforms.
+
+In this video, you learned that:
+Interpreted programming languages run scripts that are repetitive and need to be run often.
+Interpreted programming languages are more versatile and can be used across platforms as long as there is the correct interpreter.
+Some examples of interpreted programming languages are JavaScript, Python, and HTML.
+
+Compiled programming languages are for more complex programs that complete larger tasks.
+Compiled programming languages are used for creating executable files that can run directly from your device.
+And some examples of compiled programming languages are C and Java. 
+
+---Comparing Compiled and Interpreted Programming Languages
+
+How do developers choose a programming language? Developers choose which programming language is best to use depending on what they have the most experience with and what they trust, what is best for their users, and what is the most efficient to use.
+
+What are interpreted and compiled programming languages? 
+Interpreted programming languages are used to create a scripted source code for smaller tasks. The source code goes through an interpreter. The interpreter is built into the operating system on a computer or on a web browser. Compiled programming languages are used to create files. The files are executable files. They are then grouped in programs that you can run on a computer or device. Interpreted programming languages are also called script code or scripting, because they are used to automate tasks. Interpreter programs read and execute the source code line by line like someone would read a script. Each time the program runs, the source code needs to be executed to receive the desired output, and source code written in one of the interpreted programming languages runs on almost any operating system with the right interpreter. 
+
+Compiled programming languages are also called programming languages for short. They are used for more complex programs that complete larger tasks, like running a spreadsheet program on your computer. A compiled programming language is used to write a larger program, usually installed on your device as an executable file. Writing code in a compiled language does take longer, but the payoff is that the programs code runs faster, because compiled programs are installed on the device. And once the program is coded, the compiled program is grouped into one downloadable file. 
+
+What are the major differences between interpreted programming languages and compiled programming languages?
+First, there's interpreted programming. These programs are available across multiple platforms or in the cloud. The scripting languages are easier to learn and use, and they're better for websites because they tackle smaller, repeated processes.
+Then there's compiled programming. These programs are available to users with the same operating system coded in the same language. However, compiled programming languages are more difficult to learn and use, because they are larger programs with more parts, and they're better for larger tasks, like running the operating system on your computer.
+
+To better understand more of the similarities and  differences of programming languages, let's take a look at some examples.
+A few of the most common programming languages are C, C++ and C#. C is a compiled programming language. C is the original language, and C++ and C# are variations. C and its variations are case-sensitive languages. The C programming language is the basis for Windows and other common operating systems, and it takes more time to learn and use for coding but requires less memory and the code runs faster. Another common programming language is Java. It is a compiled programming language. It is also a case-sensitive, object-oriented programming language. The Java virtual machine or JVM is required to run the code written in Java. It is the primary programming language for some operating systems,
+like the Android OS. And a benefit of Java is that it is a cross-platform language, which means it runs the same code on macOS, Windows, and Linux. 
+Python is an example of an interpreted programming language. It is also referred to as a scripting language. Python is a popular general-use, case-sensitive programming language. It is used with Windows, macOS, and Linux operating systems, and with server-side web app code, and it requires the Python engine to interpret code. JavaScript is another interpreted programming language. It is a scripting language that runs on the client side in web browsers. JavaScript is case sensitive. Simple scripts are run with HTML. Complex scripts are run in separate files. And while it sounds similar, it shouldn't be confused with Java, the compiled programming language. Another example of a common programming language is HTML. It is an interpreted programming language. HTML stands for Hypertext Markup Language. HTML is mostly case insensitive with some exceptions, and it uses tags to format webpages on client-side web browsers. 
+
+In this video, you learned that interpreted programming languages create source code that runs through an interpreter in your device's operating system or on your web browser.
+Compiled programming languages create executable files that are grouped in programs on your device.
+Compiled programming languages like C and Java are used to write larger programs, like operating systems and other executable files.
+
+And interpreted programming languages like Python and HTML are used to write code that can complete repetitive tasks within a web browser or a computer.
+
+---Query and Assembly Programming Languages
+
+Categorize programming languages into two levels – high-level and low-level.
+A high-level programming language is more sophisticated and uses the common English language to make its code more understandable and to increase the speed of coding and debugging programs. Examples of high-level programming languages include query languages such as Structured Query Language (or SQL), structured programming languages such as Pascal, and object-oriented programming languages such as Python. 
+
+A low-level programming language uses a set of symbols to represent machine code. And examples of low-level programming languages include assembly languages such as ARM, MIPS, and X86. A query is a request for information from a database. The database handles the query and searches its tables for the information requested and returns the results to the querying entity. When querying a database, it is important that both the user application making the query
+and the database handling the query are speaking the same language. In programming terms, writing a query means using predefined and understandable instructions to make the request to a database. This is achieved using programmatic code and this is what we refer to as a query language. A query language may also be referred to as a database query language. By far the most prevalent query language for database queries and database management is SQL. However, there are other query languages available such as AQL, CQL, Datalog, and DMX. 
+
+In addition to SQL databases, there is another type of database called NoSQL, which stands for Not Only SQL. The key difference between these two types of databases is their data structures. While SQL databases are relational
+and use structured, predefined, schemas, NoSQL databases are non-relational in nature and have dynamic schemas for unstructured data. A query language is predominantly used to request data from a database or to create, read, update, and delete data in a database. You will likely see the term CRUD used to refer to these last four key database operations. Typically, a user enters a command to either make a query or perform a CRUD operation using syntax that is understandable to the database management system hosting the database. And a database typically consists of structured tables made up of multiple rows and columns of data. When a user performs a query, the database retrieves the data from the relevant rows and columns in the table and arranges it into some sort of order, ready to be returned and presented in the query results. Database queries are either a select command, or an action command, such as CREATE, INSERT, UPDATE, or a mixture of both. The term “statement” is more commonly used to describe these commands. Select queries request data from a database, whereas action queries manipulate data in a database. Query statements can also be used to perform other administrative functions such as creating users and modifying permissions. This table lists some of the most common SQL query statements. Here are some simple syntax examples of common SQL statements. 
+
+Assembly languages are less sophisticated than query languages, structured programming languages, and object-oriented programming languages. As an assembly language uses a simple set of symbols to represent the 0s and 1s of machine code, it is categorized as a low-level programming language. Assembly languages are closely tied to the processor architecture from hardware manufacturers and therefore, each CPU type will typically have its own assembly language.
+For this reason, there are a large number of assembly languages in use today, which vary among hardware manufacturers. Assembly languages use a simple readable format for their statements, and they are entered one line at a time, with one statement per line. Assembly language statements use the standard format shown here. In this syntax all fields in curly brackets { } are optional, and the statement has two main parts. The first part is the instruction (or the mnemonic), and the second part includes the parameters (or the operands). There may also be optional useful comments added on the end of the statement. One other key difference with assembly languages is that they are translated using an assembler instead of a compiler or interpreter, and one statement translates into just one machine code instruction, as opposed to high-level languages where one statement can be translated into multiple machine code instructions.
+Assemblers translate assembly language into machine code using mnemonics such as Input (INP), Output (OUT), Load (LDA), Store (STA), and Add (ADD). The statements consist of opcodes that tell the processor what to do with the data,
+and operands that tell the processor where to find the data. 
+
+In this video, you learned that:
+Query languages, structured programming languages, and object-oriented programming languages are categorized as high-level programming languages.
+Assembly languages are categorized as low-level programming languages.
+A query language is predominantly used to request data from a database or to manipulate data in a database.
+The most prevalent query language for database queries and database management is Structured Query Language (SQL).
+Select queries request data from a database, whereas action queries manipulate data in a database.
+You also learned that:
+Assembly languages use a simple set of symbols to represent the 0s and 1s of machine code.
+Assembly languages are closely tied to the processor architecture from hardware manufacturers.
+Assembly languages are translated using an assembler instead of a compiler or interpreter.
+And assembly language instructions have a one-to-one association with their machine code counterpart. 
+
+---Understanding Code Organization Methods
+
+Planning out code in a visual format helps improve the code base once it is written and reduces the chance of bugs and errors throughout the lifespan of a project. Organizing code before programming has a positive impact on the quality of the program and helps provide a consistent and logical format to use while coding. 
+There are two main methods of organizing code: flowcharts and pseudocode.
+The main difference between pseudocode and a flowchart is that the former is a basic, high-level description of an algorithm. An algorithm is a step-by-step sequence of solving a given problem. A flowchart is a pictorial representation of an algorithm showing the steps as boxes of various shapes and colors connected by arrows that indicate their order. Flowcharts are used in designing or documenting a process or program. Pseudocode provides a beneficial bridge to the project code because it closely follows the logic that the code will. Pseudocode also helps programmers share ideas without spending too much time creating code, and it provides a structure that is not dependent on any one programming language. 
+Flowcharts are especially beneficial for smaller concepts and problems, while pseudocode is more efficient for larger programming projects. And flowcharts provide an easy method of communication about the logic and offer a good starting
+point for the project because they are easier to create than pseudocode in the beginning stages. A flowchart is the graphical or pictorial representation of an algorithm using different symbols, shapes, and arrows in different sizes and colors to demonstrate a process or a program. The main purpose of using a flowchart is to analyze different methods of solving a problem or completing a process. Several standard symbols are applied in a flowchart, and you can easily highlight certain elements and the relationships between each part in the process. Some traditional flowchart shapes used for programming concepts are:
+Start/End (a capsule),
+Process (a rectangle),
+Decision (a diamond),
+Data (a parallelogram),
+And Connecters (as arrows).
+
+Flowchart software is an application that provides various functionalities to create flowcharts by providing the ability to drag shapes into the desired order using an easy-to-use editor. Flowchart software also provides team collaboration for creating flowcharts.
+Some of the well-known flowchart software programs include:
+Microsoft Visio,
+Lucidchart,
+Draw.io,
+And DrawAnywhere.
+
+Pseudocode is an informal type of programming description that does not require any strict programming language syntax or underlying technology considerations. System designers write pseudocode to ensure that programmers understand a software project's requirements and align code accordingly. Pseudocode is used for creating an outline or a rough draft of a program that summarizes a program’s flow but excludes underlying details. Pseudocode acts as the bridge between the programmer’s brain and the computer’s code executor that provides the ability to plan instructions that follow a logical pattern, without including all the technical details. Pseudocode is a great way of getting started with software programming as a beginner without worrying about coding syntax. Pseudocode helps both programmers and non-programmers agree about the program’s goal and the basics of how the task should be done. 
+
+There are many advantages of using pseudocode over flowcharts.
+The main benefit of pseudocode is that it’s simple and explains exactly what each line of an application should do. The coder can focus more on logic than on program language syntax. Removing the distractions of coding when using pseudocode makes the code development stage easier. Words and phrases in pseudocode represent lines of basic computer operations that simplify translation from the pseudocode algorithm to the specific programming language. Pseudocode allows programmers working in different computer languages to interact with each other. Pseudocode can be reviewed by different development groups easier than real code. Pseudocode is easier for non-programmers to read and enables quick and easy translation to any computer language. Writing pseudocode is more concise and easier to modify, so changes to the design can be easily incorporated. And lastly, unlike some flowcharts, pseudocode is usually less than one page.
+
+In this video, you learned that:
+Organizing and planning out software design enables programmers to write cleaner and more reliable code, and organized code is very important from a readability, maintainability, and scalability standpoint.
+Two main methods of organizing and planning software code are by developing flowcharts or writing pseudocode.
+
+A flowchart is a pictorial representation of an algorithm showing the steps as boxes of various kinds connected by arrows that indicate their order. And the main goal of pseudocode is to explain exactly what each line of a program should do, making the code construction phase easier for the programmer. 
+
+---Branching and Looping Programming Logic
+
+There are two major types of programming logic: branching and looping. Both types use Boolean expressions and variables:
+A Boolean expression is a type of programming statement with only two values, either "true" or "false." And variables have assigned values that are passed into a function or subroutine within a more extensive program. Computers use Boolean logic to make decisions. The computer takes one action if a Boolean expression is true and a different action if the expression is false. Typically, a program consists of instructions that tell the computer what to do and data that the program uses when it is running. A variable has a value that can change, depending on conditions or information passed to the program. Boolean logic, along with variables, form the basis of programming.
+
+Branching logic is where a computer program makes a decision following a different set of instructions, depending on whether certain conditions are met during the program's execution. Each possible code pathway creates another branch. The branch of code that runs depends on the values assigned to the parameters of the branching procedure. There is no limit to the number of branches to implement complex logic. The values of these parameters may be input by the user or generated by the output from a previous procedure. Branching contains constructs that occur and are processed to determine the path a program takes when running. Branching statements (also known as constructs) allow the execution flow to jump to a different part of the program. The common branching statements used within other control structures include:
+if,
+if-then-else,
+Switch,
+and GoTo.
+The if statement is a decision-making construct that guides a program to make decisions based on specified criteria. The if statement executes one code set when a specific condition is met (TRUE) or another code set if the condition is not met (FALSE). The if-then-else is a conditional construct that executes its substatement, which follows the “then” keyword. This only occurs if the provided condition is true.
+The if-else statement extends the “if” statement by specifying an action if the “if” (true/false expression) is false. With the if-else statement, the program will execute either the true code block or the false code block, so something is always performed with an if-else statement.
+In computer programming languages, a switch statement is a type of selection control mechanism used to allow the value of a variable or expression to change the control flow of program execution via search and map. 
+GoTo is a statement found in many computer programming languages that performs a one-way transfer of control to another line of code. In contrast, a function call typically returns control.
+
+Now, let’s look at the logic of looping programming. A loop is a sequence of instructions that continually repeats until reaching a specific condition. Typically, a particular process is performed, such as retrieving and changing data, and then some conditions are checked, such as whether a counter has reached a prescribed number. If it has not, the next instruction in the sequence is to return to the first instruction in the series and repeat
+the sequence. If the condition is reached, the next instruction "falls through" to the next sequential instruction or branches outside the loop. A loop is a fundamental programming idea commonly used in writing programs.
+There are three basic loop statements:
+While
+For
+And Do-while.
+In a While loop, a condition is evaluated before processing the body of the loop. If a condition is true then and only then the body of a loop is executed.
+In a For loop, the initial value is performed only once, then the condition tests and compares the counter to a fixed value after each iteration, stopping the For loop when false is returned.
+In a Do-while loop, the condition is always executed after the body of a loop. It is also called an exit-controlled loop.
+
+In this video, you learned that:
+There are two major types of programming logic: branching and looping. Both types of logic use Boolean expressions and variables.
+Boolean expressions have only two possible values, either true or false, and variables have assigned values that are passed into a function or subroutine within a more extensive program. Variables have values that can change, depending on conditions or information passed to the program.
+And branching is deciding what actions to take, while looping is deciding how many times to perform a certain action. 
+
+---Introduction to Programming Concepts Part 1
+
+To fully understand software programming, there are some fundamental programming concepts you need to know first. The first concepts you will look at are identifiers. Software developers use an identifier to reference a program component such as a stored value, a method, an interface, or a class, by assigning a custom-named label to it. If the identifier stores data, then the data values in the program can be one of two types: either a constant, or a variable.
+A constant is a data item whose value does not change within a program. This could be a numerical constant such as the mathematical value of Pi, or it could be a text string that remains constant such as a player’s name within a game. Constants are also referred to as ‘named constants.’ You assign a value to a constant when you define it. There are a couple of major benefits to using constants in your programs; one is for ease of readability in your code, and the other is that if the specified value changes in the future, you only need to change it once on the constant, rather than finding every instance of that numerical value within your code and changing it.
+The other type of identifier used in programming is a variable. As the name suggests, this kind of identifier is not constant; its value can change during the program’s execution, such as a user entering their age in an application or a high score in a game. Variables can be strings of text, numerical values, or any other type of data. Using a variable as an identifier is a useful way to refer to program items that are unknown to you,
+such as a username, a service, or a file name for instance. If you don’t use a variable, then you will need to hard code all the names and values in your program, which is not considered best practice. Variables can be declared and assigned a data type and initial value as they are defined, or you can decide not to assign an initial value when you define a variable, and instead have the value assigned later by instructions within the program.
+In addition to the identifier data structures already discussed, there are also special kinds of identifiers that can reference multiple elements in a program, and these are referred to as containers. Being able to specify multiple elements means that you don’t have to create a variable for every individual element. This makes it faster and more efficient.             
+            
+There are two types of containers to specify multiple elements: arrays and vectors. The simplest of these container types is an array.
+In an array, a fixed number of elements of the same type are stored in sequential order, starting from index zero. When you declare an array,
+you specify the data type of the values it contains, such as an integer, or boolean, or a string, and then the maximum number of elements it can contain. The syntax for declaring an array is to specify the data type first, then the name of the array, then the maximum size of the array in square braces. 
+In contrast to arrays that have a fixed size, vectors have a dynamic size, and they will automatically resize themselves as you add
+elements to them or remove elements from them. For this reason, you may also see them referred to as dynamic arrays. Because they are dynamic in nature, vectors take up more memory space than arrays, and their elements also take a little longer to access than elements in an array, as they are not stored in sequential memory locations. The syntax for declaring a vector is to specify the container type of the vector first, then specify the data type in angle brackets, then the name of the array. Note that because it is a vector, you do not need to specify a maximum number of values it can contain because the size is not fixed, it is dynamic.
+
+In this video, you learned that:
+Software developers use an identifier to reference a program component. If an identifier stores data, then it can either be a constant or a variable.
+A constant is a data item whose value does not change within the program. A variable is not constant; it can change during the program’s execution.
+In an array, a fixed number of elements of the same type are stored in sequential order, starting from zero. 
+And vectors have a dynamic size, and they automatically resize themselves as elements are added or removed. 
+
+---Introduction to Programming Concepts Part 2
+
+Functions are a consequence of the modular programming software development methodology that encourages the separation of a program into multiple modular components, where each performs a specific task within a program. A function is essentially a piece of structured, stand-alone, and reusable code that will perform a single specific action. This enables software developers to take a substantial, complex program and divide it into smaller,
+more manageable, and focused pieces. Although some programming languages may refer to them as something else, such as subroutines, procedures, methods, or modules, most modern programming languages refer to them as functions.
+
+Functions take in data as an input, then process the data, and then return the result as an output. There are essentially two types of functions. Standard library functions are the built-in functions provided by the programming language. Common examples include the ‘If’, ‘Else’, ‘While ’ and ‘Print’ functions. But programming languages also allow you to write your own functions. And once you’ve written a function, you can use it over and over again. The way that the blocks of code that make up a function are identified is different across programming languages. Some use braces, some use begin and end statements, and others use indentations for example. There are a few steps to using functions. The first thing you need to do is define (or create) a function. When you define a function, you provide a function keyword, then give the function a unique name, and you provide the statements that make up the body of the function. Once a function has been defined, it then needs to be called (or invoked). When you call a function, the specified actions within the function are performed using any specified parameters. While defining and calling functions are common to all programming languages, some programming languages, such as C and C++ , also require you to declare a function. 
+
+Next, let’s look at the concept of objects. Understanding what objects are is key to understanding object-oriented programming. Object-oriented programming (or OOP) is a programming methodology that is focused on objects rather than functions, which is what procedure-oriented programming is focused on. The objects themselves will contain data in the form of properties (or attributes) and code in the form of procedures (or methods).
+
+The key distinction between the two methodologies is that where procedural programming uses methods to operate on separate data structures, OOP packages them both together, so an object operates on its own data structure.
+
+Objects store their properties in fields (referred to as variables in some programming languages), and expose their behaviors through methods (referred to as functions in some programming languages).
+
+In this video, you learned that:
+A function is a piece of structured, stand-alone, and reusable code that will perform a single specific action.
+The defining and calling of functions is common to all programming languages.
+Object-oriented programming is a programming methodology that is focused on objects rather than functions.
+Software objects consist of properties and methods. 
+
+---Summary & Highlights
+
+Interpreted programming languages create source code that runs through an interpreter and is built into your operating system (OS) on your computer or on your web browser. 
+
+Compiled programming languages create executable files that are grouped in programs on your computer or device.  
+
+Query languages, structured programming languages, and object-oriented programming languages are categorized as high-level programming languages and assembly languages are categorized as low-level programming languages.  
+
+The two main methods of organizing and planning code are by developing flowcharts and by writing pseudocode. Flowcharts are pictorial representations of algorithms and pseudocode is an explanation of the function of each line of a program. 
+
+To reference a program component, software developers use an identifier, which can either be a constant or a variable.  
+
+A function is a piece of structured, stand-alone, and reusable code that will perform a single specific action.  
+
+Object-oriented programming is a programming paradigm based on the concept of objects, which contain data and behavior through attributes and methods.  
+
+
+------------------------------------------------------------------------------------Module 4 Software Architecture and Design
+
+---Introduction to Software Architecture
+
+Software design and documentation take place during the design phase of the SDLC. Software architecture, simply put, is the organization of the system.
+Software architecture serves as a blueprint for the software system that the programmers use to develop the interacting components of the software.
+The architecture comprises the fundamental structures of a software system and explains the behavior of that system. 
+
+The architecture defines how components should interact with each other, the operating environment, and the principles used to design the software.
+The software architecture captures early design decisions that are often costly to change once implemented. A software’s architecture addresses non-functional aspects of the application such as performance, scalability, maintainability, interoperability, security, and manageability.
+
+Well-designed software architecture is important for a number of reasons. First, it balances the differing needs of the stakeholders and serves as a basis for communication among team members. Next, the architecture represents the earliest design decisions, and those decisions conflate other coding implementation decisions later in the development process. Also, the well-designed architecture allows for agility due to changing requirements.
+A well-organized architecture increases the lifespan of the software system even when implementation details change.
+
+Architectural design also guides the choice of technology stacks used for the system. Remember that architecture addresses non-functional capabilities so choosing stacks that address these requirements is paramount in the design phase. Recall that a tech stack is a list of all the technologies including software, programming languages, libraries, and frameworks that will be used to create the system. The architects must be aware of the stack’s advantages and disadvantages to anticipate development needs.
+
+Much like blueprints communicate design decisions to the builders of a house, there are also several artifacts produced during the architectural design phase that are used to communicate the software design to the stakeholders. These artifacts include a software design document, or SDD, an architectural diagram, and unified modeling language, or UML, diagrams.
+
+The SDD is a collection of technical specifications that indicate how the design should be implemented. It provides a functional description of the software and design considerations such as assumptions, dependencies, constraints, requirements, objectives, and methodologies. The architectural diagram displays components, their interactions, their constraints, and their confines. It displays the architectural patterns used in the design.
+Architectural patterns are general, reusable solutions to commonly occurring problems and will be discussed in more detail in an upcoming video.
+
+UML diagrams are diagrams that communicate structure and behavior using common programming language agnostic notation. UML diagrams will also be discussed in more detail in another video.
+
+Another topic to be discussed in this module as it relates to software architecture includes production deployment considerations. The architecture drives choices about the environment in which the software is released. The production environment is comprised of the infrastructure that runs and delivers the application to the end-user such as the servers, load balancers, and databases.
+
+
+In this video you learned that:
+Software architecture functions as a blueprint and represents the underlying organization of the application. A good architectural design is important because it serves as a basis for communication among team members.
+Software architecture represents the earliest design decisions, is hard to change once development starts, and accommodates changing requirements during development. Architectural design influences technology stack choices and the production environment and Artifacts resulting from the design include the SDD, the architecture diagram, and UML diagram. 
+
+---Software Design and Modeling
+
+Software Design is a process during which structural components and behavioral attributes of the software are documented before it can be developed.
+One of the key activities of the design process is modeling the software to express its design. This involves creating visual or diagrammatic representations of the bigger software solution, and its sub-components, as well as the interactions between them. This can be done using simple flowcharts or more standardized methods like UML.
+
+A software system can be construed in terms of structural elements. Structured design conceptualizes a software problem into well-organized smaller solution elements called modules and sub-modules. Structured design stresses organization in order to achieve a solution. A well-structured design should contain modules that are cohesive and loosely coupled. Cohesion means that all functionally related elements are grouped together. Coupling is the communication between different modules. For a system to be loosely coupled the modules should be weakly associated so changes in one component have minimal effect on another. Loose coupling is an architectural principle often used in service-oriented architectures and microservices based architectural patterns, which will be discussed later in the module.
+
+The diagram shows a simplified example billing system. Modules are arranged in a hierarchy and communicate with each other. The rectangles represent the modules and sub-modules. You can see that “billing” is the main module, and the other rectangles are sub-modules to the main billing module. In this example the sub-modules are “insurance verification,” “submit claim,” and “output total.” The arrows represent the flow of the data in the system.
+Behavioral models describe what a system does, without explaining how it does it. The overall behavior of a system can be communicated through behavior models. 
+
+There are a number of different UML diagrams that can be used to communicate the behavior of a system. We will discuss two such diagrams, a state transition diagram, and an interaction diagram.
+
+When developing a complex software system with interconnected modules, it can be difficult to remember the relationships, behaviors, and hierarchies among different elements. UML, which stands for Unified Modeling Language, is a way to visually represent the architecture, design, and implementation of complex software systems. UML is a standardized modeling language that can be used throughout development processes. UML diagrams can be divided into two classes: either structural or behavioral. UML is programming language agnostic, so software developers can readily interpret and apply it to their work no matter which language they are developing in. There are several advantages of using UML to communicate architecture, behavior, and structure with development teams. The biggest advantage of UML diagrams is that they allow you to plan out features before any coding takes place which saves
+time and money. Secondly, the diagrams can be used to bring new team members or developers switching teams to get up to speed quickly. Also, the diagrams can be used to facilitate communication between technical and non-technical audiences more easily. And finally, having a visual representation of the system allows developers to navigate the source code because they can see the relationships among modules. So there are many types of UML
+diagrams but generally, UML diagrams can be classified as either behavioral or structural. We will discuss behavioral models next and then object oriented-design.
+
+The behavior of a system can be explained and represented with the help of a UML diagram called a state transition diagram. The state transition diagram is a collection of states and events that describes the different states that a system has and the events which cause a change of state in the system. 
+
+An interaction diagram is used to model the dynamic nature of a software system. They help visualize objects and their relationships. A sequence diagram, which is the type of interaction diagram shown here, displays the communication between objects with respect to time. 
+
+In this video you learned that:
+Structured design breaks down a software problem into well-organized smaller solution elements.
+Behavioral models describe the behavior of the system without explaining how the system implements the behavior.
+Developing UML diagrams saves time and money by helping developers quickly get up to speed on a project, plan features in advance of coding, and help developers navigate source code easily.
+A state transition diagram is a behavioral model containing a collection of states and events that describe the different states of a system and the events which cause a change of state.
+And finally, an interaction diagram describes how interacting objects communicate. 
+
+---Object-Oriented Analysis and Design
+
+Object-oriented analysis and design, or OOAD for short, is an approach for analyzing and designing a software system when the system will use
+object-oriented programming languages to develop it. Object-oriented programming
+in languages like, Java, C++, or Python.
+
+At the heart of OOAD are objects. Objects contain data, and they also have behaviors that prescribe the actions the object can take. The generic version of an object is called a “class”. Specific objects, also called instances, are created from “classes” which are blueprints or templates for an object. The class contains the object’s generic attributes – the properties and methods, but it is only when the object is created, which is called "instantiation,” inside the code that these generic attributes are set to particular values. And once the object has been instantiated its methods can be called to make the object perform some action. 
+
+OOAD is used for a system that can be broken down into objects that interact with each other. In this way, multiple developers can work on different aspects of the application at the same time. As noted earlier, visual UML diagrams can be created that show both the static structure and dynamic behavior of a system. A structural UML diagram called a “class diagram” next now that we know what classes are.
+
+Class diagrams are commonly used to communicate a software system’s structure in OOAD. The class diagram shows how the classes in an object-oriented design relate to one another. Each box represents a class and shows its attributes. Recall that an object’s attributes are both its properties or its data, and its available actions, called methods. A class diagram also shows the relationships between classes. A subclass is said to “inherit” its parent class attributes meaning it has the same properties and methods as the parent class but also may add additional properties and methods.
+
+In this video you learned that:
+Object-oriented analysis and design is the process of planning a software system based on the behaviors of interacting objects.
+Objects contain data, and they also have behaviors that prescribe the actions the object can take.
+Classes are blueprints for objects.
+And a class diagram is a structural UML diagram that shows the relationship between objects. 
+
+---Approaches to Application Architecture
+
+A component is an individual unit of encapsulated functionality that serves as a part of an application in conjunction with other components. There are six characteristics of components. Components should be
+reusable,
+replaceable,
+independent,
+extensible,
+encapsulated, and
+non-context specific. 
+
+Reusable implies that components should be designed such that they can be reused in different applications.
+Replaceable means that a component should be easily replaced with another component.
+Independent means the component should be designed so it doesn’t have dependencies on other components.
+Extensibility entails the ability to add behavior to a component without changing other components.
+Encapsulation consists of bundling a component’s data and methods to hide its internal state, so it doesn’t expose its specific implementation.
+Creating a component that is non-context-specific involves designing it so it operates in different environments. 
+
+Data that sets its internal state should be passed to the component rather than included within or accessed by the component.
+An API can be packaged as a component, if it can be reused across multiple systems and applications. A component can also be the interface for a database, called a data access object, that switches the user to a different database without the application knowing about the switch. And a controller is a type of component that determines which other components need to be called for a particular event. It controls the flow of data between two other components.
+
+Component-based architecture, then, focuses on the decomposition of the design into these logical components. Component-based architecture provides a higher level of abstraction than object-oriented designs. A component-based architecture should define, compose, and implement loosely coupled independent components so they work together to create an application. 
+
+A service is like a component, also a unit of functionality, but it is designed to be deployed independently and reused by multiple systems. A service focuses on a solution to a business need. A key difference between a component and a service is that a service will only have one unique, always running instance with whom multiple clients communicate. 
+
+Services are made of components and components consist of objects. A service is a type of component. It is meant to be deployed independently of the overall system.
+
+In a service-oriented architecture, or SOA, services are loosely coupled and interface with each other via a communication protocol over a network.
+SOA supports building distributed systems that deliver services to other applications through the communication protocol. 
+
+A distributed system is a system with multiple services located on different machines that coordinate interactions by passing messages to each other via a communication protocol such as hypertext transfer protocol, also known as HTTP. Even though the services on a distributed system operate on multiple machines, a distributed system appears to the end-user as a single coherent system. A distributed system shares resources such as hardware, software, and data. They are fault-tolerant, meaning if a node or a service fails the system continues to run also implying that the system may change during execution without service interruption. Multiple activities run concurrently on a distributed system reducing latency and increasing throughput. Another property of distributed systems is that they are scalable as the number of users increases. The computers running the distributed system do not need to use the same kind of hardware or operating systems. A distributed system may be made up of different kinds of computers and programming languages. 
+
+Now a node is any device on a network that can recognize, process, and transmit data to other nodes on the network. A distributed system consists of multiple interconnected nodes where the nodes are running one or more services in an SOA. Distributed systems generally use one or more of the following basic types of architecture:
+client-server,
+three-tier,
+peer-to-peer or
+microservices. 
+
+In this video, you learned that:
+Components are reusable, independent, replaceable, extensible, encapsulated, and non-context specific.
+Component-based architecture is the decomposition of the system into logical independent components.
+Services are made of components and components consist of objects.
+Services are deployed independently and can be reused by multiple systems.
+In an SOA services are loosely coupled and interface with each other via a communication protocol over a network.
+And lastly, distributed systems run on multiple services on different machines and they appear to the end-user as a single coherent system . 
+
+---Architectural Patterns in Software
+
+An architectural pattern is a repeatable solution to a problem in software architecture. Patterns highlight common internal elements and structures of a software system. Different architecture patterns may share related characteristics. We will discuss; 2-tier, 3-tier, peer-to-peer, event-driven, and
+microservices. However, there are many other patterns that will not be covered in this video. These patterns include model-view-controller, message-broker, blackboard, pipe-filter, and controller-responder.
+
+The 2-tier architecture, also called client-server, is a computing model in which the server hosts, delivers, and manages most of the resources and services delivered to the client. The interface resides on the client machine and makes requests to a server for data or services. This type of architecture usually has more than one client computer connected to a server component over a network connection.
+
+A 3-tier architecture, or an n-tier architecture where there are more than three layers, is the most common software architecture. The 3-tier architecture is composed of several horizontal tiers that function together as a single unit of software. A tier only communicates with other tiers located directly above and below it. Related components are placed within the same tier. Changes in one tier do not affect the other tier. The 3-tier architecture organizes applications into three logical and physical computing tiers:
+the presentation tier, or user interface
+the middle tier which is usually the application tier, is where business logic is processed
+the data tier, where the data is stored and managed 
+
+The peer-to-peer architecture, or P2P for short, consists of a decentralized network of nodes that are both clients and servers. The workload is partitioned among these nodes. Peers make a portion of their resources directly available to other network participants, without the need for central coordination by servers. Resources are things like processing power, disk storage, or network bandwidth. Peers both supply and consume resources, in contrast to the traditional client-server architecture in which the consumption happens strictly by the client and the servers, supply
+the resources. Peer-to-peer architecture is useful for file sharing, instant messaging, collaboration, and high-performance computing.
+
+An event is anything that results in a change of state. An event can be thought of as an action that is triggered by the end-user, such as a mouse
+click, or another part of the program. Event-driven architecture focuses on producers and consumers of events. Producers listen for and react to triggers while consumers process an event. The producer publishes the event to an event router. The router determines which consumer to push the event to. The triggering event generates a message, called an event notification, to the consumer which is listening for the event. The components in event-driven architectures are loosely coupled making the pattern appropriate for use with modern, distributed systems.
+
+Microservices are an approach to building an application that breaks its functionality into modular components called services. An application programming interface, also called an API, is the part of an application that communicates with other applications. An API defines how two applications share and modify each other’s data. APIs can be used to create a microservices-based architecture. The API Gateway routes the API from the client to a service. Orchestration handles communication between services.
+
+Let’s discuss an example for each of these patterns.
+A text messaging app is an example of a 2-tier pattern. The client initiates a request to send a text message through a server and the server responds
+by sending that message to another different client. Another example of the 2-tier pattern, is Database clients connecting with database servers.
+
+Many web apps use the 3-tier pattern. They use a web server to provide the user interface, an application server to process user inputs, and a database server that handles data management. 
+
+Ride-sharing apps such as Lyft and Uber are examples of event-driven patterns. The customer sends a notification that they need a ride from a particular location to another location, and that event is routed to a consumer. 
+
+Cryptocurrencies such as Bitcoin and Ethereum use a peer-to-peer pattern. Each computer in the blockchain acts as both server and client. 
+
+Finally, social media sites are composed of microservices. A user has an account. That account can request different services such as adding friends, targeted ad recommendations, and displaying content. 
+
+Architectural patterns are not necessarily mutually exclusive. In other words, two or more of these patterns can be combined. For instance, a three-tiered architecture can also be microservice-based, or a peer-to-peer architecture can also be event-driven. However, not all architectural patterns can be used in conjunction with others. A peer-to-peer cannot also be two-tier because a single machine in a peer-to-peer architecture represents both a client and a server whereas a two-tier architecture separates the client from the server. It is up to the system architect to determine which  architectural patterns the software system should adhere to.
+
+In this video, you learned that:
+An architectural pattern is a repeatable solution to an architectural problem
+A 2-tier pattern has a client and server. Text messaging apps use a 2-tier pattern.
+A 3-tier pattern has 3-tiers that interact with each other. Web apps use a 3-tier pattern.
+An event-driven pattern has actions that are produced and responded to by a consumer. Ride-sharing apps use an event-driven pattern.
+The peer-to-peer pattern consists of a decentralized network of nodes that act as clients and servers. Cryptocurrency is an example of the peer-to-peer pattern.
+Microservices are loosely coupled individual services that behave as a single system and interact with the client. Communication is orchestrated among services. Social media sites are an example and Two or more patterns can be combined in a single system but some are not mutually exclusive 
+
+---Application Deployment Environments
+
+
+An application environment is the combination of the hardware and software resources required to run an application. This includes: the application code and/or binary executables for its various components or modules the software stack it requires for running the application such as modules and libraries
+it depends on, third party applications and middleware, and the operating system, any networking components and infrastructure, as well as any physical or virtual hardware including computing or processing resources, memory, and storage.
+
+There are a variety of environment types depending on the application’s stage in the lifecycle. 
+The pre-production environments are those platforms that the application resides on in various forms as it gets prepared for production. Common pre-production environments are “development,” “QA,” which stands for quality assurance, and “staging.”
+
+The development environment is the platform on which the application is being actively coded, and in many cases it may just be the developer's workstation. 
+The QA environment, sometimes called “testing” is the environment that allows the QA team to test the application’s components.
+The staging environment is the environment that is as close to replicating the production environment as possible but is not meant for general users.
+The production environment, often just called “production” includes the entire solution stack consisting of both hardware and software on which the application runs as additional infrastructure components. The production environment is intended for all users. Unlike the pre-production environments, this robust environment must take the application “load” into consideration because it is the environment intended for general use, possibly by thousands or millions of people at the same time for enterprise-level applications.Production environments must also take into account non-functional requirements like security, reliability, and scalability. This makes the production environment more complicated than the pre-production ones.
+
+There are several options for deploying application environments. In on-premises deployment, the system and its infrastructure reside in-house, within
+the organization’s physical location, often behind a firewall. Firewalls prevent unauthorized access to or from a private network. If an organization desires greater security or control of an application and the data in use by that application, it may deploy the application on-premises. For on-premises software deployments, an organization is responsible for the system, hardware, related infrastructure, and maintenance required to run the application. On-premises deployment is usually more expensive when compared to cloud deployment. 
+
+There are three types of Cloud deployment models—public, private, and hybrid. The public cloud is when you leverage the software’s supporting infrastructure over the open internet on hardware owned by the cloud provider. That hardware and the associated services are shared with other companies. Public cloud providers include Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform, and IBM Cloud. The public cloud
+is the most common due to its scalability and cost. With a private cloud, the cloud infrastructure is provisioned for exclusive use by a single organization. The software system can be run on-premises, or the infrastructure could be owned, managed, and operated by a service provider. For example, AWS is also a private cloud service provider. The main advantage of a private cloud is increased security, but it also allows for more flexibility because it can be fully customized. A mix of both public and private clouds, working together seamlessly, is called a hybrid cloud
+model. A hybrid cloud potentially optimizes the advantages of both public and private cloud models with regard to cost, security, scalability, and flexibility.
+
+In this video you learned that:
+Application environments include: development, testing or QA, staging, and production.
+Production environments must also take into account non-functional requirements like load, security, reliability, and scalability.
+And application environments can be deployed either on-premises on traditional hardware, or on public, private, or hybrid cloud platforms. 
+
+---Production Deployment Components
+
+Let’s consider an n-tier architecture required to deploy an application in a production environment and represent the infrastructure using a diagram.
+The top tier is the presentation tier which contains the front-end client applications. All of the other tiers are located behind a firewall. Firewalls and other components mentioned in this diagram will be discussed in further detail later in the video.
+
+The next tier is the web tier which has a web load balancer that distributes incoming traffic to several web servers. 
+
+The tier below the web tier is the application server tier. This tier contains an app load balancer or a proxy server that routes traffic to different
+application servers.
+
+The bottom tier is the data tier that contains the database server. A high availability replica of the database is often also used to ensure reliability. Some environments may have additional components or tiers.
+
+Also not all of these components are necessary for every deployment. For example, in some environments there might not be a need for both application servers in addition to web servers.
+
+A firewall is a security device that monitors traffic between networks. It permits or blocks requested data based on a set of security rules. It acts as a barrier between networks to block viruses, malware, and hackers from accessing the internal network.
+
+The purpose of load balancers is to distribute network traffic efficiently amongst multiple servers, called a server farm, on a network. Load balancers are used to prevent server traffic overload and are located between clients and the servers. A load balancer determines which servers are capable of fulfilling those requirements in a manner that maximizes availability and responsiveness. Load balancers ensure that no one server is overworked. They manage concurrent requests from clients and return the correct data in a fast and reliable manner.
+
+Web and application servers are either software or machines that provides services, resources, data, or applications to another computer program, called the client. Servers store, process, and manage network data, devices, and systems. A web server delivers content such as web pages, files, images, and videos to a client. And a web server primarily responds to hypertext transfer protocol requests coming from a web browser such as a user accessing a website.
+
+An app server is a server that runs business logic and provides the application to the client rather than the client running the app on their own machine. Its primary job is to enable interaction between the end-user and the server-side application code. The application code represents the business logic that determines how data can be created, stored, and changed. And that logic dictates things like transaction results and what data is written to and retrieved from a database.
+
+A proxy server is an intermediate server that sits in between two tiers and handles requests between those tiers. A proxy server can serve multiple purposes such as load balancing, system optimization, caching, acting as a firewall, obscuring the source of the request, encryption, scanning for malware, and more. And a proxy server can improve the efficiency, privacy, and security of data flowing through a network.
+
+Finally, a database is a collection of related data, stored on a computer that can be accessed in various ways. A database is usually controlled by software called a database management system or DBMS. The DBMS controls a database by connecting the database to users or other programs. The database server controls the flow and storage of data. The DBMS connects the database server to an application so data stored in the database can be retrieved or manipulated by the application.
+
+In this video you learned that:
+Common components needed for a production environment include a firewall, a load balancer, web and application servers, proxy servers, and database servers.
+A firewall is a security device that monitors traffic between networks.
+A load balancer distributes network traffic amongst servers.
+A web server delivers content such as web pages, files, images, and videos to a client.
+An application server runs business logic and provides the application to the client rather than the client running the app on their own machine
+A database server stores and controls the flow of data through a database management system. 
+
+---Summary & Highlights
+
+Congratulations! You have completed this module. At this point, you know that: 
+
+Software architecture functions as a blueprint and represents the importance of a good architectural design. 
+
+Structured design breaks down a software problem into well-organized smaller solution elements 
+
+Behavioral models describe the behavior of the system without explaining how the system implements the behavior. 
+
+Developing UML diagrams saves time and money by helping developers quickly get up to speed on a project, plan features in advance of coding, and navigate source code easily. Types of UML diagrams include state transition, interaction, and class diagrams.  
+
+Objects contain data, and they also have behaviors that prescribe the actions the object can take, whereas classes are blueprints for objects.  
+
+A service-oriented architecture (SOA) consists of loosely coupled services that interface with each other via a communication protocol over a network.
+
+Distributed systems run on multiple services on different machines, but they appear to the end-user as a single coherent system. 
+
+An architectural pattern is a repeatable solution to an architectural problem. Types of architectural patterns include 2-tier, 3-tier, event-driven, peer-to-peer, and microservices. Two or more patterns can be combined in a single system, but some are mutually exclusive.  
+
+Application environments include development, testing or QA, staging, and production. Production environments tend to be more complex than pre-production because they must take into account non-functional requirements like load, security, reliability, and scalability.  
+
+Application environments can be deployed either on-premises on traditional hardware, or on public, private, or hybrid cloud platforms. 
+
+Common components needed for a production environment include a firewall, a load balancer, web and application servers, proxy servers, and database servers. 
+
+------------------------------------------------------------------------------------Module 5 Job Opportunities and Skillsets in Software Engineering
+
+---What does a software engineer do
+
+Welcome to What Does a Software Engineer Do?
+
+Software engineers use their talents in engineering, mathematics, and computing to design and develop software that solves real-world problems for their users. Software engineers develop a plethora of different types of software, from desktop to web applications, to mobile apps, games, operating systems, and network controllers. They use many technologies to do this, including programming languages, development environments, frameworks and libraries, databases, and servers. 
+
+There are two categories of software engineer:
+Back-end engineers, also known as system developers, who build the computer systems and networks that front-end applications use.
+And front-end engineers, or application developers, who are more client focused. They create the software that users will interact with, such as Android, iOS, and Windows applications, and platform agnostic websites.
+
+Software engineers work in a wide variety of settings. You could work in a team developing: Off-the-shelf software, Bespoke software to meet a specific client’s requirements, or Internal software for users in your organization And within your team, you might work on: Data integration layers which access and load data from a variety of sources into your solution, Business logic which applies real-world business rules to the data in your solution, or User interfaces which enable users to interact with your solution. 
+
+On a day-to-day basis you might undertake tasks such as: 
+Taking user specifications and designing new software systems to meet their requirements
+Writing code and testing that it works as expected
+Evaluating and testing new software programs
+Optimizing software programs for maximum efficiency
+Maintaining and updating existing software systems
+Documenting code so that other developers can understand it or,
+Presenting new systems to users and customers
+And some software engineers, such as DevOps practitioners, also integrate and deploy their code onto the underlying infrastructure. As well as building your own systems you'll also be testing, improving, and maintaining software built by your colleagues.
+
+The responsibilities of a software engineer are as many and varied as the tasks which they undertake. In a junior position you are likely to start out with a limited set of responsibilities focused on writing, testing, deploying and documenting code, but as your career progresses this will widen. And, in a senior role, you will likely have primary responsibility for multiple areas of the software solution including the planning and designing phases.
+
+In this video you learned that:
+Software engineers design and develop a range of software solutions
+Back-end engineers build the computer systems and networks
+And front-end engineers build the user interfaces
+Software engineers undertake a range of tasks, from designing and writing new software to maintaining and updating existing software
+And as your career develops, you will move from being responsible for one small section of code to many areas of one or more products 
+
+---Skills required for software engineering
+
+Hard skills are the practical skills needed to perform a particular role, so for a software engineer these will be the technical skills they need to design, build, maintain, and repair software solutions. Hard skills are learned skills. In the case of software engineering, they are usually learned in a school, college, or university environment, or by studying online courses, diplomas, or certificates. Alternatively, they can be gained from years of experience in the field. Hard skills are quantifiable, so it’s easy to measure whether an individual can demonstrate a particular skill and to certify them in that skill. Commonly required hard skills in the software engineering sphere include programming languages, version control, cloud computing, testing and debugging, monitoring, troubleshooting, Agile development, and database architecture.
+
+Soft skills on the other hand are less tangible. They are your personal characteristics and interpersonal skills. They’re the non-technical skills that are part of your personality and as such, are harder to define, quantify, or certify than hard skills. Because they’re not linked to a particular business though, they are easily transferable between roles and across industries. 
+
+The job requirements for any role will be a combination of hard skills and soft skills. 
+
+Hard skills that are relevant to a software engineer. Software analysis and design skills are essential for a software engineer. You need to be able to analyze your users’ needs through a variety of methods and then design effective solutions that meet those needs. You also need to be able to develop those solutions. Computer programming and coding are essential development skills. While some job roles require a specific language and/or toolset, employers will sometimes welcome you with experience in any language but expect you to cross-train into their preferred language. The coding bootcamp website, Coding Dojo, states that some of the most in-demand languages are currently Java, Python, C#, and Ruby. An understanding of a variety of frameworks and object-oriented principles are also key skills for a software engineer. While you’d hope to always create flawless solutions, it is likely that at times your code will either not work or not work in the way that you intended. You need testing skills to determine whether your code meets the functional specification of the solution and if it’s easy to use. And when your code isn’t working as expected, you need debugging skills to work out why. And when your solution is complete, you need deployment skills to distribute it to your users. These could include
+shell scripting,
+containers,
+and continuous integration and continuous delivery (or CI/CD) tools.
+You’ll also need monitoring skills so that you can review the performance of your solutions and troubleshooting skills to resolve any issues that may occur.
+
+Soft skills of a software engineer. Teamwork is a key soft skill. Software engineers work in a variety of teams, some based on the project they’re working on and some based on their specific role. If you’re practicing Agile development, you may also work in small teams known as squads. And you might also work closely alongside another developer in pair programming. Working in teams enables you to take advantage of each individual’s strengths as well as providing opportunities for you to gain new knowledge and skills. You’ll need to be able to communicate with a wide variety of stakeholders in your project – from technical colleagues to non-technical personnel.
+For example, you may need to ask:
+your peers for support and ideas,
+your manager for guidance and direction,
+your client for clarification of their needs,
+and your users how they’d best interact with your solution.
+
+Software solutions are often time-sensitive projects and as such, your manager will be keen that you meet their deadlines. Managing your own time is imperative to ensure that you don’t cause delays to others waiting for your work. And with increasing numbers of teams working across time-zones, what could previously only seem like a small local delay can create a whole day of lost time for someone located elsewhere in the world.
+
+Software engineers need great problem-solving skills to succeed. You need them:
+in the design phase to work out how to create an appropriate software solution,
+in the development phase to work out the code required to perform the task required,
+in the testing and debugging phase to locate and resolve any bugs,
+and throughout the lifecycle of the software to manage any issues that may arise. And when those issues do arise, you need to be adaptable to meet the changing needs of  the project.
+Examples of changes include:
+Your client requesting a change or addition to the functionality,
+Your manager requesting you to move onto a different area to meet a looming deadline,
+Or your user requesting an alternative method of achieving a specific task.
+And finally, you need to be open to feedback on your work.
+
+Most software teams use some type of peer review system where peers review each other’s code. This helps enforce any corporate standards and improves the code. In a junior role, you’ll also likely have a mentor who’ll provide feedback and pointers where you can improve. And your stakeholders will provide feedback on pre-release and final versions of your solution. Accepting all of this feedback in an open and welcoming way ensures that your solution becomes the best that it can be and that you progress in your role. 
+
+In this video, you learned that:
+a combination of hard and soft skills are essential to a software engineer.
+Hard skills are measurable, learned skills such as:
+Programming,
+testing,
+and troubleshooting,
+And, soft skills are your personality and characteristics, such as
+communication
+and problem solving. 
+
+---Job Outlook for Software Engineers
+
+There are various reasons behind the current high demand for software engineers. Almost all industries need software to compete and grow. This results in a continuous demand for software engineers. Most organizations require applications and websites for their company to function. Some apps and websites are for internal use, while others are used to interact with customers.
+
+The Internet of Things is also driving the need for software that interacts with products. This is a need that will continue to expand for the foreseeable future. All types of software programs, from messaging applications to commerce websites to office software, are available in different flavors from different vendors. Whenever one vendor releases a new version of their particular program, a competing company is likely to also update their program, requiring more software engineers to create the new releases, enhance functionality, and add new capabilities.
+
+The US Bureau of Labor Statistics predicts a higher than average 22% job growth rate for software developers, analysts, and testers from 2020 to 2030.
+That’s an average of almost 200,000 openings each year – in the United States alone! These roles are likely to be across many industries, from mobile application development to health and insurance. There is also predicted to be a large increase in security software due to the increase in computer security threats and cyber-crime. 
+
+Many software engineers are graduates with degrees in software engineering or computer science. However, increasingly employers like IBM, Google, and Tesla are starting to hire non-graduates who demonstrate the required skills for the role. This opens software engineering up to a wider range of society ensuring that the cost of obtaining a degree doesn’t preclude candidates from the industry. 
+
+Salaries for software engineers vary significantly with years of experience in the field. As you acquire more experience and become harder to replace, employers typically provide higher compensation. In the USA, salaries range from $90,000 for a junior role through to $120,000 or higher for an experienced position. The average of $110,000 per annum for a software engineer is more than 2.5 times the average base salary across the USA. This, alongside bonuses and benefits such as medical insurance, gym membership, profit shares, and retirement plans make a software engineering role an attractive proposition. 
+
+So, what should you expect from a software engineering role? Dress codes are unlikely to be formal unless you’re in a customer facing situation. Hours are often flexible, sometimes around core hours set in the middle of the day. You may occasionally be required to attend meetings or calls which can dictate a physical or online presence at a particular time of the day. The number of hours are likely to increase as you get near to product release dates, often without any matching increase in pay. The flexibility to work from home varies across employers, but there is no technological reasons why this cannot be done. In fact, some software teams are spread across the globe, working across all hours of the day.
+
+Software engineer employers include almost any type of business that you can imagine. From large technology companies such as Facebook, Amazon, Apple, Netflix, and Google (also known as FAANG), to medium-sized software companies that develop specific software and solutions, to small software houses and start-ups. And almost all large non-technology companies like banks, retailers, and pharmaceuticals need software engineers for their own internal or external systems.
+
+And lastly, most employers will encourage continual learning, whether that be expanding your technical skills or enhancing your soft skills. They’re usually keen to invest in keeping your skills up to date so that you can develop the best software solutions for them. Now in the software engineering world, regardless of your job title, there are different employment options to suit your lifestyle and situation. Employed roles in a company or organization provide stability and a regular income. These can range from an apprenticeship or internship, to a part-time role, through to a full-time role.  In software engineering, more so than a typical job, there is a huge independent contracting market and opportunities in the gig economy.
+These can range from simple website development to super-specialized skills, languages, stacks, and products. In this type of employment, you can provide contract or consultancy services to organizations on a time-based or project-based model or you can work on a freelance basis taking on short-term contracts to work on projects that interest you. And many software engineers also code for free as volunteers contributing to open source projects.
+This can help you gain experience, enhance your skills, improve your employment opportunities, and enhance your technical eminence. It also makes you feel good by doing something for a cause or community or social initiative that’s important to you.
+
+In this video, you learned that:
+the high demand for software engineers is due to increasing needs for software, increasing complexity of applications, and a continuing growth of technology
+the outlook for software engineers is promising the role of a software engineer can be flexible and satisfying 
+and that employment options for software engineers are flexible and varied, from full-time employment through to voluntary activities 
+
+---Career Paths in Software Engineering
+
+A career path in software engineering opens up as you gain experience and attain new skills. Often it heads in one of two directions: technical or management. If you thrive on working with code and solving problems, then the technical path enables you to continue working closely with technology as your career progresses. Or, if you exhibit strong leadership qualities alongside the soft skills of a good software engineer, you might progress onto managing a team of software engineers and the work that they do.
+
+You’re likely to start out in an entry-level position as a Junior Software Engineer or Associate Software Engineer. At this level you’ll be developing small chunks of software to meet agreed client specifications. You’ll be assigned a team leader or mentor who will guide you along the way and provide
+support when you need it. During this phase of your career, you’ll be on a steep learning curve, gaining new skills and experience with every block of code that you write. You could then move on to a Software Engineer position.
+
+In this role you’ll be expected to be more independent and able to able to break larger tasks down into smaller achievable sub-tasks. You may be learning new programming languages and demonstrating an understanding of the software development lifecycle. At this stage, you might be asked to mentor a junior software engineer or take responsibility for a larger part of a project.
+
+The next stage of your career could be a Senior Software Engineer position. In this role you’re likely to have involvement across the whole of a project and with an entire codebase. You may be asked to mentor software engineers and to conduct code reviews across the team. And from the experience you’ve gained in earlier roles, you’ll be expected to be able to solve a wide range of problems in an efficient way.  
+
+If you choose to follow the technical path, then your next role might be as a Staff Software Engineer. In this role you’ll work as part of the technical team developing, maintaining, and extending software. You’ll be responsible for ensuring that the software meets customer and user expectations
+and that it uses resources efficiently. 
+
+If you decide to follow a managerial career path, you could become a Technical Lead. In this role you’ll manage the team of developers and engineers developing the software in your organization. You could be responsible for the entire development lifecycle and report to the project stakeholders.
+
+Continuing along the technical path, you might progress to be a Principal Engineer or Technical Architect. At this stage you’ll be responsible for the architecture and design of a software solution, as well as the development of it. You’ll be expected to create processes and procedures for your team and provide technical direction.
+
+On the managerial path, you could become an Engineering Manager. In this role, you’ll ensure that the entire team is appropriately supported and encouraged to progress in their careers.
+
+Becoming a Director of Engineering could be the next stage in the progression of your career. It is a strategic and technical role. On the strategic side, you’ll determine priorities for the projects within the company, identify hiring needs, and define long term goals. On the technical side of the role, you’ll be involved in defining new projects, specifying requirements, and overseeing the project.
+
+The lead of an organization’s technology arm is likely to be the Chief Technology Officer (or CTO). In this role, you oversee all of the research and development in the company. You’ll also monitor the company’s systems and infrastructure to ensure that it meets your needs and budget. Even at this level, you’ll continue learning. As technology evolves and new products appear on the market, you’ll be responsible for deciding which ones meet your business needs and could give your organization a competitive advantage. Of course, not everyone who starts out as a Junior Software Engineer follows these traditional software engineering paths, but you’ll find that the skills you gain will benefit you in a wide variety of other roles.
+
+If after working on client projects for a while you decide that you prefer interacting with the clients to writing the code, you could transition into a technical sales or customer support role. 
+
+If you enjoy coding, but find working with numbers and data is more appealing, you could transition into a data engineer or data scientist role. 
+
+And, if you find the data side of your new role is your passion, you could move on to become a database administrator or database developer.
+
+And if you enjoy finding and fixing bugs, you might transition to a software tester role.
+
+IT is a vast field with an abundance of opportunities across many skill sets, so starting your career in software engineering is a great choice even if you use it as a stepping stone to move to other technical or leadership roles in the future.
+
+In this video, you learned that:
+A career in software engineering is likely to follow a technical or managerial path.
+At each stage on that path, you will take on more responsibility and a wider range of tasks.
+And, starting out as a software engineer enables you to take an array of other options at any
+stage in your career. 
+
+---Software Engineering Job Titles
+
+Job titles such as software engineer and software developer are very broad and can be used to describe a spectrum of roles. As well as these titles, you may come across other titles related to specific sub-domains in software engineering.
+
+Types of software engineer roles include:
+Front-end engineer
+Back-end engineer
+Full-stack engineer
+DevOps engineer
+Software quality assurance engineer
+Software integration engineer
+Software security engineer
+Mobile app developer
+Games developer
+
+Front-end engineers focus on developing the user interface, or UI, of a software solution. They’re also sometimes referred to as UI developers or web developers. In this type of role, you’re responsible for the visual design of the software, including the layout of UI elements and the overall aesthetics of the application or website. It’s important for a front-end developer to understand how users interact with software and the principles of user experience design. You’ll also need to understand how objects and code run differently on different operating systems, devices, and browsers to ensure that your solution works on the user’s chosen system. Key skills of a front-end engineer include: web development languages and UX and UI frameworks.
+
+Back-end engineers focus on the business logic of a software solution. In this type of role, you’re responsible for the core logic of the software implementing functionality to perform tasks such as accessing data and databases, logging information, and caching systems by using application programming interfaces, or APIs. You’ll also be responsible for ensuring the scalability and performance of the solution. Key skills of a back-end engineer include programming languages, application frameworks, web servers, app servers, load balancers, databases, and deployment and containerization tools and technologies.
+
+Full-stack engineers work across the whole software solution. In this type of role, you’re able to create both the user interface and the back-end functionality of an application or website using the skills of both front-end and back-end engineers. Key skills of a full-stack engineer include
+web development languages, programming languages, UX, UI, and backend frameworks, web and application servers, databases, APIs and web services, and deployment and containerization tools.
+
+DevOps, or development and operations, aims to deliver software in an agile manner by combining software development and IT operations. DevOps engineers apply agile processes and methodologies to streamline their product development, improvement, and maintenance as well as transcend the boundaries of the traditionally distinct development and operations teams. In a DevOps role you need familiarity with both front-end and back-end technologies. The skills, technologies, and products that a DevOps engineer is likely to use include source code management tools, programming languages and frameworks,
+scripts, and deployment, containerization, and monitoring tools. Depending on the actual job posting, you might use alternative products and services, but they will be of a similar nature to those shown here.
+
+Software quality assurance engineers, also referred to as software QA engineers or software test engineers, test, review, assess, and write software to validate the quality of an application. In a QA role, you’ll develop automated tests, tools, and procedures to test the functionality of software solutions. You’ll use bug tracking software to log any errors you discover and report them to the software development team. The key skills for software QA engineers include programming languages, shell scripting, bug tracking and issue management tools, testing automation tools, and specific software stacks depending on how the application is deployed.
+
+Software integration engineers write code to integrate software into hardware products enabling smart devices and the internet of things products. In this role, you’ll use programming languages and frameworks to program hardware such as consumer devices, home security systems, electronics, and other interfaces. The key skills for a software integration engineer include programming languages and proprietary technologies, frameworks, and toolkits.
+
+Software security engineers, sometimes referred to as white hat or ethical hackers, work to find security flaws and vulnerabilities in software. As a security engineer, you’ll create systems, methods, and procedures to test software solutions and exploit their security weaknesses so that they can be fixed before the solution ships. The key skills for a security engineer include programming languages, reverse engineering, shell scripting, tools for vulnerability and penetration testing, and network security and encryption tools.
+
+Mobile app developers design, develop, and implement software solutions for mobile devices such as smartphones and tablets. You’ll use web skills to create front-end apps as well as learn the various different platforms to write the back-end code interacting with the specific type of device. The key skills of a mobile app developer include mobile operating systems, web development languages, programming languages, as well as Web services and technologies.
+
+Games engineers write gaming software for a wide variety of devices, from PCs, to smartphones, to web browsers, to games consoles. As a games developer, you’ll work alongside graphic artists, sound technicians, and game designers to create the code used in games. 
+
+In this video, you learned that there are many different job titles under the umbrella term of software engineering, each of which has specific duties and responsibilities, and requires a specific set of skills. 
+
+---Code Ethics
+
+The Joint Task Force on Software Engineering Ethics and Professional Practices developed a Code of Ethics outlining their goals and standards for software engineers engaged in the design and creation of software. The task force was formed by the Institute of Electrical and Electronics Engineers Computer Society or IEEE-CS and the Association for Computing Machinery or ACM in order to recognize the prominence of computing in global commerce, government, and society. This IEEE-CS ACM joint task force championed the need to hold software engineers accountable so that the present and future status of the field as a beneficial and respected profession is maintained. 
+
+The Code of Ethics consists of eight principles that pertain to the specification analysis, design, development, testing, and maintenance of software, and are dedicated to serving the public interest. These principles are intended for anyone who is in or related to the profession, and includes engineers, mentors, instructors, managers, students, and policymakers.
+
+Here, we will summarize each principle. However, the full text of each principle and its additional clarifying clauses can be found on the IEEE-CS and ACM websites. The principles in the software engineering code of ethics focus on the following topics: Public Client or employer Product Judgement Management Profession Colleagues Self. The public principle comes first because it is expected that software engineers should act primarily in accordance to positively affect the public good. This includes accepting responsibility for their work with regard to safety, fairness, accessibility, and integrity. Next, software engineers should act in the best interests of both the clients and their employers. They should act honestly and be forthright when it comes to unethical actions such as plagiarism or illegal activities. They should seek consent where necessary and appropriate and honor confidentiality. The third principle relates to the product under production. Software engineers should seek quality while keeping in mind cost and timelines. This next principle outlines how software engineers act with integrity and independence in their professional judgment. They are expected to maintain objectivity and honesty when working with the software and relevant documents they are involved with. Software engineers should not engage in any inappropriate financial activities such as bribery and double billing, nor may they accept duties that create a conflict of interest. Software engineering managers and leaders should also behave in a manner consistent with these principles where it applies to them and those they manage. They should work to minimize risk and employ security procedures. Managers and leaders should also work to ensure realistic expectations of their staff, provide just compensation, and procure intellectual property rights whenever appropriate. The profession is principle describes the duty of software engineers to protect the reputation of the profession by acting with integrity and not elevating themselves at the expense of others. Software engineers should let managers, employers, and clients know they intend to act in compliance with this code of ethics and express concern over violations of the code. Similar to the profession principle, software engineers shall treat their colleagues with respect and fairness. They should encourage their peers to comply with this code of ethics and not take credit for the work of others. The final principle, focused on the software engineer themselves reminds software engineers about the importance of lifelong learning and professional development. 
+
+They should endeavor to create quality software and strive to conduct themselves in a professional manner. It should be noted that this code of ethics is not a replacement for conscientious decision-making and common sense, but it can be used as a supplemental guide. Knowing when and where to apply these principles will always be up to the discretion and wisdom of the individual. 
+
+In this video, you learned that: The code of ethics serves the public interest to hold software engineers accountable in the analysis, design, development, testing, and maintenance of software The eight principles in the code of ethics are Public Client or /employer Product Judgement Management Profession Colleagues and Self. 
+
+---Final Project: Develop Your Software Engineering Career Plan
+
+https://www.linkedin.com/jobs/search-results/?currentJobId=4297347584&eBP=CwEAAAGZeCEscm0u8MiShfrc8EFKdGky-79AAIbjFrmdV_tlsE_iC3aYgaGCBjDBjlaJJpK9GshM3nVhV4il2_qExNsFhqa4NiYpApRIQBVdESo6BuyD1RbyprR5wDy1lX7jVx53ABN4HNx343Jyz3j9COXbczIcqrKzF-qNDXWIvN66MnFat20MIB78PBJs68zx8nFaVLsvL99XbqJ45p9Q7QZf8v6X1eaKbC76NtepoOpLAT5QKmSMw7vMPim1ZYPKDMFst7DNr7ON_TmpraOv5b6JQieccwwK9EH4QOCPKyMfAfDJkf_V7cqgnuO16u6HWySjkzg05RVeG34VouePOS-axnqLq3YI_xIXtDd-kwdCECVWdL7SiCE3NkouGFzaAU-3Xkq476CZ4abUCLvmzfIYY6KTNxQkce1x9iLfIIb5uB_k2KMYDg6Z_cVNjqQv3by9bBOARs40TQCxL3Uql37tKgPSPhHF6VNhH90F1UEk-Ef_TfkCUhVJwl1L&keywords=software%20developer&origin=JOB_COLLECTION_PAGE_SEARCH_BUTTON&refId=ZcgFZqLoflUB9yU5DZNuKw%3D%3D&start=25&trackingId=TabXO9OEgVvlCv2xOwlTrg%3D%3D
+
+Applied Intuition, Software Engineer , Mountain View, CA · 
+
+Experience writing C, C++, or Python 
+Demonstrated ability to be a self-starter and can quickly become comfortable with new technical tools
+Experience designing efficient and effective solutions to a wide range of engineering challenges
+
+Skills: 10+ years of coding in Python, Java, and other scripting languages 
+Education: AA San Mateo college. Also, Various certificates on Telecommunications, Programming, and CyberSecutity
+Took initiative to create and coded solutions for customers that ultimately became part of the software application  
+
+Learn simulation and autonomy tools, especially in the Defense industry 
+Learn multi-domain EO/IR, RF) 
+Learn/brush up on containerization, or cluster orchestration frameworks (such as Docker, or Kubernetes)
+Research on radar systems, and digital signal processing 
+Research on software for defense systems
+
+
+---
+
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------Module 2
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------Module 2
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+
+CSS
+---------------------------Module 3
+---------------------------Module 4
+
