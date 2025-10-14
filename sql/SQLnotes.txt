@@ -1,0 +1,25 @@
+Postgres
+su -
+ yum install postgresql (for client)
+ yum install postgresql-server (for server)
+ yum search postgresql-contrib
+
+
+after a yum install postgres
+service postgresql initdb
+psql
+
+create USER jordonez;
+create database ice;
+GRANT ALL PRIVILEGES on database ice to jordonez;
+
+su - jordonez
+psql -d postgres
+
+psql -l
+
+su - 
+su - postgres
+psql -U postgres -d postgres -c "drop database ice;"
+psql -U postgres -d postgres -f /tmp/ice.sql
+

@@ -1,0 +1,25 @@
+ERROR: could not access status of transaction 4074217876
+DETAIL: Could not open file "pg_clog/0F2D": No such file or directory. 
+
+/hive/scripts/setmode maintenance
+
+su - postgres
+psql 
+reindex table nc_packet
+\q
+
+dd bs=256K count=1 if=/dev/zero of=/sql/data/pg_clog/0F2D
+psql
+reindex table nc_packet;
+
+
+
+set zero_damaged_pages = on;
+show zero_damaged_pages ; 
+vacuum full nc_packet;
+reindex table nc_packet;
+
+
+pg_dump -a -t nc_host_datum > /sql/nc_host_datum
+cat /sql/nc_host_datum | psql ice
+

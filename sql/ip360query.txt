@@ -1,0 +1,114 @@
+with host_scope (persistent_host_id, vuln_id, port, protocol, score, audit_id) as (
+    SELECT persistent_host_id, vrh.vuln_id, port, protocol, max(score) as score, max(a.audit_id) as last_audit
+    from nc_audit a
+    join nc_host h on h.audit_id = a.audit_id
+    join nc_host_persistent_host ph on ph.host_id = h.host_id
+    join nc_vuln_result_head vrh on vrh.host_id = h.host_id
+    join nc_vuln_protocol vp on vp.protocol_id = vrh.protocol_id
+    where
+    end_date > current_date - interval '700 days'
+    group by persistent_host_id, vrh.vuln_id, port, protocol
+    having max(score) > 10000
+), cve_scope as (
+	select vuln_id, string_agg(cve_number, ',') as cve_ids
+	from nc_vuln_cve vc
+	join nc_cve c on c.cve_id = vc.cve_id
+	group by vuln_id
+), vuln_scope(vuln_id, name, description, date, application, skill, solution, risk, type, strategy, cvssv2, cvssv3, cve_ids) as (
+    SELECT vuln_id, name, description, date, application, skill, solution, risk, type, strategy, cvssv2, cvssv3, cve_ids
+    from (
+        SELECT customer_vuln_id as vuln_id, cv.name, cv.description, date, a.name as application, 'Custom' as skill, 'Custom' as solution, 'Custom' as risk, 'Custom' as type, 'Custom' as strategy, 0 as cvssv2, 0 as cvssv3, '' as cve_ids
+        from nc_customer_vuln cv
+        join nc_custom_vuln_application ca on ca.custom_vuln_id = cv.customer_vuln_id
+        join nc_application_tree a on a.application_id = ca.application_id
+        where
+        scap = false and
+        deleted = false and
+        customer_id = 1
+        UNION ALL
+        SELECT v.vuln_id, v.name, v.description, v.date, v.application, s.name as skill, so.name as solution, r.name as risk, t.name as type, st.name as strategy, v.cvssv2, v.cvssv3, coalesce(cve_ids, '') as cve_ids
+        from nc_vuln v
+        join nc_skill s on s.skill_id = v.skill_id
+        join nc_risk r on r.risk_id = v.risk_id
+        join nc_type t on t.type_id = v.type_id
+        join nc_strategy st on st.strategy_id = v.strategy_id
+        join nc_solution so on so.solution_id = v.solution_id
+        left join cve_scope cve on cve.vuln_id = v.vuln_id
+    ) v
+    where
+        1 = 1
+        --and v.cvssv2 > 4
+        --and v.risk in ('Remote Privileged', 'Remote Access', 'Remote Availability', 'Local Privileged', 'Local Access', 'Local Availability', 'Exposure', 'Custom')
+        --and v.skill in ('Automated Exploit','Easy', 'Moderate', 'Difficult', 'Extremely Difficult', 'No Known Exploit', 'Custom')
+        --and v.strategy in ('Access Control Breach', 'Network Reconnaissance', 'DoS', 'Data-Driven Attack', 'Buffer Overflow', 'Custom')
+        --and v.solution in ('Patch', 'No Workaround or Patch', 'Workaround', 'Upgrade', 'Custom')
+        --and v.type in ('Remote', 'Local', 'Custom')
+), group_scope as (
+    select vuln_id, win, lin, oth, case when win > 0 and lin = 0 and net = 0 and oth = 0 then '51ab25e94f74da002b7128928110c74b'
+                                        when lin > 0 and win = 0 and net = 0 and oth = 0 then 'ddab25e94f74da002b7128928110c749'
+                                        when net > 0 and win = 0 and lin = 0 and oth = 0 then 'c1ab25e94f74da002b7128928110c740'
+                                                                                         else 'f4ab25e94f74da002b7128928110c73e' end as vuln_group
+    from (
+        select vuln_id, sum(win) as win, sum(lin) as lin, sum(net) as net, sum(oth) as oth
+        from (
+            select vuln_id, win, lin, net, case when win = 0 and lin = 0 and net = 0 then 1 else 0 end as oth
+            from (
+                select dns_name, vuln_id, o.name, case when o.name like 'Windows%' then 1 else 0 end as win,
+                                                  case when o.name like '%Linux%' then 1 when dns_name like 'lnx%' then 1 else 0 end as lin,
+                                                  case when o.name like 'Cisco IOS%' then 1 else 0 end as net
+                from host_scope sc
+                join nc_persistent_host h on h.persistent_host_id = sc.persistent_host_id
+                join nc_os o on o.os_id = h.os_id
+            ) g
+        ) g
+        group by vuln_id    
+    ) g
+)
+
+
+
+
+SELECT
+    case
+        when netbios_name <> '' then netbios_name
+        when dns_name not in ('', 'Name not in DNS', 'DNS Timed Out') and dns_name <> host(ip_address) then dns_name
+        else host(ip_address) end
+                                                 as ip360nodename,
+    host(ip_address)                             as ciname,
+    1                                            as urgency,
+    2                                            as impact,
+    h.persistent_host_id                         as host_persistent_id,
+    sc.audit_id                                  as host_audit_id,
+    to_char(a.end_date, 'YYYY-MM-DD HH24:MI:SS') as host_audit_date,
+    dns_name                                     as host_dns_name,
+    h.ip_address                                 as host_ip_address,
+    o.name                                       as host_os,
+    h.netbios_name                               as host_netbios_name,
+    n.name                                       as host_network_name,
+    sc.port                                      as vuln_port,
+    sc.protocol                                  as vuln_protocol,
+    sc.score                                     as vuln_score,
+    v.vuln_id                                    as vuln_id,
+    v.name                                       as vuln_name,
+    v.description                                as vuln_description,
+    to_char(v.date,'YYYY-MM-DD')                 as vuln_publication_date,
+    v.application                                as vuln_application,
+    skill                                        as vuln_skill,
+    risk                                         as vuln_risk,
+    type                                         as vuln_type,
+    strategy                                     as vuln_strategy,
+    solution                                     as vuln_solution,
+    v.cvssv2                                     as vuln_cvssv2,
+    v.cvssv3                                     as vuln_cvssv3,
+    v.cve_ids                                    as vuln_cve_ids,
+    g.vuln_group                                 as vuln_group
+FROM
+    host_scope sc
+    join group_scope g on g.vuln_id = sc.vuln_id
+    join nc_persistent_host h on h.persistent_host_id = sc.persistent_host_id
+    join nc_os o on o.os_id = h.os_id
+    join nc_network n on n.network_id = h.network_id
+    join vuln_scope v on v.vuln_id = sc.vuln_id
+    join nc_audit a on a.audit_id = sc.audit_id
+WHERE
+    n.name = '10.20.0.0/24'
