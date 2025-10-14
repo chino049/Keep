@@ -1,0 +1,14 @@
+\connect ice
+CREATE OR REPLACE FUNCTION cor_jop() RETURNS text  AS 
+$$ 
+DECLARE
+   result text := '';
+   vmatch text := '';
+BEGIN
+   FOR vmatch in EXECUTE 'select ip360_version from nc_version' LOOP
+        result := vmatch;
+   END LOOP;
+   RETURN result;
+END;
+$$ LANGUAGE 'plpgsql';
+

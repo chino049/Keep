@@ -1,0 +1,51 @@
+pgAdmin - Open Source Management tool for PostgreSQL databases. Features full unicode support,
+fast, multithreaded qury and data editing tools. 
+Includes a GUI, an SQL query tool, a procedural code editor and much more. 
+
+phpPgAdmin - Supports browsing and modification of most types of PostgreSQL database objects,
+plus execution of ad-hoc queries. 
+
+TeamPostgreSQL - browser-based, webserver included. AJAX/Javascript-powered web interface
+for PostgreSQL administration. Supports SSH for both the web interface and the database
+connections.
+
+Adminer - Formerly phpMinAdmin; is a full-featured database management tool written in PHP.
+
+RHDB - Red Hat Database Tool. It ships with redhat database for the benefit of the 
+postgreSQL community. 
+
+Gnome-DB - Database administrator/user tool for GNOME, based on libgda/libgnomedb,
+which are complete database-independdent access layers for unix systems, with support
+for postgreSQL and other DB's.
+
+GUI Database tools
+-Datastudio
+-DbDesigner fork
+DbSchena
+dbwrench
+
+--------DDL
+Data Definition Language or Data Description Language DDL is a syntax similar to a
+computer programming language for defining data structures, especially database schemas
+
+--------DDL
+Description Definition Language is part of the MPEG-7 standard. It gives an 
+important set of tools for the users to create their own DS Description Schemes
+and Ds descriptors. DDL defines the syntax rules to define, combine, extend
+and modify description Schemes and Descritors.
+DDL is not a modeling language, such as the United Modeling Language (UML), but a
+schematic language to represent the audiovisual data results, which must confort to
+the descriptors, the description schemesm and the MPEG-7 descriptions.
+
+-------------------
+Installing postgres
+
+yum install postgresql-server
+yum install postgresql postgresql-contrib
+sudo su - postgres
+
+initdb -D /data/databaseHielo
+pg_ctl -D /data/databaseHielo -l logfile start
+psql
+create database hielo;
+

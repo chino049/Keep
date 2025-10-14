@@ -1,0 +1,21 @@
+\connect ice
+
+CREATE OR REPLACE FUNCTION get_ice_version() RETURNS text AS
+$$
+  DECLARE
+    --iceVer text := '';
+    iceVer INTEGER;
+  BEGIN
+    SELECT INTO iceVer version FROM nc_version;
+    --SELECT COUNT(*) INTO num_tables FROM USER_TABLES;
+    IF FOUND THEN
+       RETURN iceVer;
+    ELSE
+       RETURN NULL;
+    END IF;
+
+
+
+  END
+$$ LANGUAGE 'plpgsql';
+

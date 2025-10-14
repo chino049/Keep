@@ -1,0 +1,30 @@
+connect ice
+\timing
+
+----
+create or replace function upgrade() returns text as
+$$
+DECLARE
+  RC1 text := 'ERROR';
+  RC0 text := '0';
+  ver  text := '' '';
+BEGIN
+  ALTER table nc_version add column RES text;
+  raise info  'ALTER table nc_version add column RES text OK OK OK';
+  --ALTER table nc_version drop  column RES;
+  ALTER table nc_appJJ add column RES text;
+  raise notice 'ALTER table nc_appJJ add column RES text OK OK OK';
+  --select into ver version from nc_version;
+  return 'Upgrade to 684 sucessfull';
+EXCEPTION WHEN OTHERS THEN
+  --create table upgrade_error (error_list varchar(64));
+  --insert into upgrade_error values ('Error on upgrade');
+  RETURN 'Upgrade to 684 failed';
+END
+$$ LANGUAGE 'plpgsql';
+
+-----
+select upgrade();
+--drop table upgrade_error;
+drop function upgrade();
+

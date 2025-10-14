@@ -1,0 +1,15 @@
+CREATE FUNCTION mixedcase() RETURNS text AS'
+       DecLarE
+          -- DeCLaRes A vArIAblE to hOLd tHe STrInG
+          pHrAsE tExT;
+
+       bEGiN
+          -- pUTs hELlo WoRLd! IntO tHe pHrAsE
+          pHrAsE = ''Hello World!'';
+
+          -- dISplAys thE pHrAsE
+          ReTUrn pHrAsE;
+
+       eNd;
+       ' LANGUAGE 'plpgsql';
+

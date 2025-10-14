@@ -1,0 +1,24 @@
+CREATE OR REPLACE FUNCTION somefuntext(param_numcount integer)
+  RETURNS text AS
+$$
+DECLARE
+    result text := '';
+    searchsql text := '';
+    var_match text := '';
+BEGIN
+    searchsql := 'SELECT n || '' down'' As countdown 
+                FROM generate_series(' || CAST(param_numcount As text) || ', 1, -1) As n ';
+                
+    
+    FOR var_match IN EXECUTE(searchsql) LOOP
+        IF result > '' THEN
+            result := result || ';' || var_match;
+        ELSE
+            result := var_match;
+        END IF;
+    END LOOP;
+    RETURN result;
+END;
+$$
+LANGUAGE 'plpgsql' IMMUTABLE;
+

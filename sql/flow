@@ -1,0 +1,76 @@
+\connect ice
+\timing
+
+----
+create or replace function create_error_table() returns void as  
+$$
+begin
+ create table upgrade_error (error_list varchar(64));
+end
+$$ LANGUAGE 'plpgsql';
+
+-----
+CREATE OR REPLACE FUNCTION alter_nc_version() RETURNS text  AS
+$$
+DECLARE
+ RC1 text := 'ERROR';
+ RC0 text := '0';
+ ver  text := '';
+BEGIN
+    --ALTER table nc_versionX add column RES text;
+    select into ver version from nc_version;
+    return RC0;
+EXCEPTION WHEN OTHERS THEN
+  insert into upgrade_error values ('Error on nc_versionX add column RES text');
+  RETURN RC1;
+END
+$$ LANGUAGE 'plpgsql';
+
+-----
+CREATE OR REPLACE FUNCTION alter_nc_app() RETURNS text  AS
+$$
+DECLARE
+ RC1 text := 'ERROR';
+ RC0 text := '0';
+BEGIN
+    ALTER table nc_app add column RES text;
+    return RC0;
+EXCEPTION WHEN OTHERS THEN
+  insert into upgrade_error values ('Error on nc_app add column RES text');
+  RETURN RC1;
+END
+$$ LANGUAGE 'plpgsql';
+
+-----
+create or replace function check_errors() returns text as
+$$
+declare
+   count text  := '0';
+   bad_count integer := '1';
+   result  text  := '';
+begin
+  select into count error_list from upgrade_error;
+  IF count is NULL THEN
+     drop function alter_nc_version();
+     drop function alter_nc_app();
+     drop function create_error_table();
+     drop function check_errors();
+     drop table upgrade_error;
+     return 'count is null';
+  ELSE
+     return count;
+  END IF;
+end
+$$ LANGUAGE 'plpgsql';
+
+-----
+select create_error_table(); 
+select alter_nc_version();
+select alter_nc_app();
+select check_errors();
+--drop function alter_nc_version();
+--drop function alter_nc_app();
+--drop function create_error_table();
+--drop function check_errors();
+--drop table upgrade_error;
+
