@@ -1,0 +1,50 @@
+foreach ($i in {443,80,22}) {
+try {
+$socket = new-object System.Net.Sockets.TCPClient("10.248.230.102", $i);
+} catch {}
+if ($socket -eq $NULL) {
+echo "10.248.230.102:$i - Closed";
+} else {
+echo "10.248.230.102$i - Open";
+$socket = $NULL;
+}
+}
+
+-------------
+
+
+foreach ($r in {443,80,22,145} )
+
+{
+
+  if(Test-Connection -BufferSize 32 -Count 1 -Quiet -ComputerName 10.248.230.102 )
+
+   {
+
+     $socket = new-object System.Net.Sockets.TcpClient(10.248.230.102, $r )
+
+     If($socket.Connected)
+
+       {
+
+        "10.248.230.102 listening to port " , $r
+
+        $socket.Close() }
+
+         }
+
+ }
+
+foreach ($r in {443,80,22,145} )
+{
+
+	$r
+
+}
+
+foreach ($r in {1,2} )
+{
+
+	$r
+
+}

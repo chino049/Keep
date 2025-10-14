@@ -1,0 +1,210 @@
+﻿powershell
+-------------------
+net share 
+gwmi win32_service -computer 10.248.230.113 -credential administrator
+get-WMIObject win32_service -computer 10.248.230.113 -credential administrator
+
+get-ChildUtem
+---------------------
+
+new-webServiceProxy
+$creds =  Get-Credentials
+$host = "10.248.230.102"  or $host =  Read-Host -prompt "enter hostname"
+$url = "https:\\"+$host+"REST\V1"
+$rest_api = Invoke-RestMethod -uri $url -method GET -credentials $creds
+
+
+ 
+------------
+net user jordonez /domain
+-----------
+
+ $tcp=New-Object system.net.sockets.tcpclient
+ $tcp.connect("10.0.1.138",443)
+ $tcp.connected
+ 
+ Test-NetConnection 10.10.10.10 -port 443
+ 
+ net use e: \\9.45.3.2\admin$
+ or \\10.10.10.10\C$
+ or \\10.23.23.23\ADMIN$
+
+---------------------
+ nbtstat
+
+ ------------
+ get-content
+
+ 
+-----------
+net start
+net start | findstr "NetBios.Helper"
+
+reg query "HKLM\SOFTWARE\Policies\Microsoft"
+reg query "HKLM\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile" /v DoNotAllowExceptions
+
+
+
+
+--------------
+
+netsh int ip reset resetlog.txt
+
+neth winsock reset
+
+-------------
+
+jordonez cmd.exe
+
+-----------
+
+openssl s_client -connect 10.2.2.70:80 -tls1
+
+C:\Windows\system32>nmap --script ssl-enum-ciphers -p 443 pdxvne01
+
+C:\Users\adma\Desktop\SSLScan-1.8.2-win-r7>.\SSLScan.exe 10.2.2.76
+
+https://code.google.com/p/sslscan-win/ 
+
+openssl req -new -sha256 -key ~/domain.com.ssl/domain.com.key -out ~/domain.com.ssl/domain.com.csr
+
+
+-----------------
+powershell get-filehash -algorithm md5 <file_to_check>
+powershell get-filehash -algorithm sha1 <file_to_check>
+
+-----------------
+
+Try, the Softerra LDAP Browser 4.5. It is free for LDAP read-only operations
+
+http://www.ldapadministrator.com/download.htm
+
+
+
+Here is a simple tool to use to test with as well -   Runs from Windows.  (LDP Attached)
+
+And a command line based tool   CLI based (ADFIND Attached)
+
+OR  LDAP Browser Tool Link   http://www.ldapadministrator.com/download.htm
+
+
+
+Same applies for issue with soap/webservices interfaces. The free version of Eviware's SOAPUI is a 
+very powerful tool to verify, test AND simulate webservices.
+
+http://www.soapui.org/
+
+
+
+
+----------------
+
+ldap-rep -v -r auth_server_id [-n]
+
+-n is for test only
+----------------
+SMB credentials testing 
+from your laptop run \\10.x.x.x or \\10.x.x.c\C$
+from dp run portscan 10.x.x.x 135 or 139 or 445 , 137
+
+regedit, file, connect network registry
+\\10.x.x.x
+
+wbemtest
+namespace as \\10.x.x.x\root\cimV2
+enter user and password
+
+------------------
+Tcpdump for windows
+netsh trace start persistent=yes capture=yes tracefile=d:\filename 
+
+then
+
+netsh trace stop
+ 
+
+------------------
+AD server
+remote desktop administrator w3rdp@ss
+
+Name: CCM test AD
+Hostname: win2k8-ad.ccm2.atl.ncircle.com
+IP Address: 10.64.0.116
+Password: w3rdp@ss
+Kerberos Realm: CCM2.ATL.NCIRCLE.COM
+User: Administrator
+LDAP Path: cn=TestGroup,dc=ccm2,dc=atl,dc=ncircle,dc=com
+NOTE. for OU, start bottom up and not top bottom
+Example on the AD it displays 
+OU= OP Users
++Service Accounts
+++Manny
+the LDAP is OU=Service Accounts, OU=OP Users, dc=tripwire, dc=com
+
+for the path use, bottom up for OUs
+
+------------------------
+
+PsExec   executes processes on a remote computer
+
+
+
+PsFile   shows files that are opened on the remote computer through the network
+PsGetSid   displays the security identifier for a computer or user
+PsInfo   lists information about a system
+PsKill   kills processes by name or ID
+PsList   list information about processes on the command line
+PsLoggedOn   list accounts that are logged on either on the machine or connecting remotely
+PsLogList   pull the event log on the command line
+PsPasswd   change the password for users
+PsPing   a fairly simple ping utility with some additional features
+PsService   list and make changes to Windows services
+PsShutdown   shut down, log off, or suspend a computer
+PsSuspend   suspend and resume processes (rather than killing them)
+
+Here is a cheatsheet that some of the folks at SANS put out recently.
+
+https://blogs.sans.org/pen-testing/files/2016/05/PowerShellCheatSheet_v41.pdf
+
+
+---------------------
+
+to change computer name when change name is grayed out
+# enter domain admin when prompted. This stores them in a variable creds
+$Creds = get-credential 
+
+#rename the PC passing the saved credential object:
+rename-computer -newname 'pcNewName' -domainCredential $Creds
+
+-----------nerc
+
+
+
+Get-WmiObject -Class Win32_Product -ComputerName 192.168.204.198 | Select-Object Name, Version, Vendor
+Get-WmiObject -Class Win32_UserAccount -ComputerName 192.168.204.198 | Select-Object Name, FullName, Disabled, LocalAccount
+Get-WmiObject -Class Win32_Service -ComputerName 192.168.204.198 | Select-Object DisplayName, StartMode, State
+
+
+# Create a credential object with username and password
+$username = "administrator"
+$password = ConvertTo-SecureString "nCircle007" -AsPlainText -Force
+$credential = New-Object System.Management.Automation.PSCredential ($username, $password)
+
+# Specify the remote computer namewmi
+$remoteComputerName = "RemoteComputer"
+
+# Get information about services on the remote computer using the provided credentials
+Get-WmiObject -Class Win32_Service -ComputerName 192.168.204.27  -Credential $credential | Select-Object DisplayName, StartMode, State
+
+
+invoke-command -computer 192.168.204.27 -scriptblock { Get-WmiObject -Class Win32_Service -computer 192.168.204.27 }
+
+
+to test wmi, on a remote machine type
+New-CimSession -ComputerName 192.168.204.27 -SessionOption (New-CimSessionOption -Protocol Dcom) -Credential "administrator"
+
+$username = "administrator"
+$password = ConvertTo-SecureString "nCircle007" -AsPlainText -Force
+$credential = New-Object System.Management.Automation.PSCredential ($username, $password)
+Get-CimInstance -ClassName Win32_Product -ComputerName 192.168.204.27 -Credential $credential | Select-Object Name, Version, Vendor
+
