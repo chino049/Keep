@@ -1,0 +1,72 @@
+| tstats `tw_summariesonly` 
+						latest(combined_input.vuln_id) 
+						latest(combined_input.scan_id) 
+						from datamodel=tw_vm_dm_combined_input.combined_input 
+						where index="tw_scanned_vuln"
+
+| tstats `tw_summariesonly`
+                        latest(combined_input.scan_id),
+                        from datamodel=tw_vm_dm_combined_input.combined_input
+                        where index="tw_scanned_vuln"
+                       
+                        AND combined_input.scan_id IN (*)
+                        AND combined_input.data_source_id IN (*)
+                       
+                        BY combined_input.data_source_id, combined_input.scan_finish_timestamp , combined_input.scan_id | rename combined_input.* as *
+
+| tstats `tw_summariesonly`
+                        latest(combined_input.score_tw_vuln) as score_tw_vuln,
+                        latest(combined_input.app_id) as app_id
+                        from datamodel=tw_vm_dm_combined_input.combined_input
+                        where index="tw_scanned_vuln"
+                        AND combined_input.vuln_id!="null"
+                        AND combined_input.scan_network_id IN (*)
+                        AND combined_input.scan_id IN (*)
+                        AND combined_input.data_source_id IN (*)
+                        AND combined_input.vuln_id IN (*)
+                        AND (combined_input.score_tw_vuln >=30)
+                        BY combined_input.vuln_id, combined_input.scan_network_id, combined_input.reconciled_asset_id, combined_input.data_source_id, combined_input.scan_finish_timestamp , combined_input.scan_id | rename combined_input.* as * | lookup tw_vm_asset_current_state reconciled_asset_id output asset_ip asset_dns asset_net_bios_domain asset_net_bios_name asset_os scan_network_name
+                        | eval _time=scan_finish_timestamp
+						
+						
+| tstats `tw_summariesonly` 
+        latest(combined_input.scan_network_id) as scan_network_id ,
+        latest(combined_input.vuln_id) as vuln_id ,  
+	    latest(combined_input.scan_id) as scan_id ,
+        latest(combined_input.score_tw_vuln) as vuln_score, latest(combined_input.reconciled_asset_id) as reconciled_asset_id
+        from datamodel=tw_vm_dm_combined_input.combined_input
+        where index="tw_scanned_vuln" 
+	AND combined_input.vuln_id!="null" 
+	AND (combined_input.score_tw_vuln > 1000 ) 
+	BY combined_input.vuln_id, combined_input.scan_network_id, combined_input.scan_id
+        | rename combined_input.* as *
+        | lookup tw_vm_asset_current_state reconciled_asset_id output scan_network_name 
+     	| table vuln_id,  scan_network_name | stats count(vuln_id) as vuln_count BY scan_network_name
+		
+		
+		| tstats `tw_summariesonly` 
+        latest(combined_input.scan_network_id) as scan_network_id ,
+        latest(combined_input.vuln_id) as vuln_id ,  
+	    latest(combined_input.scan_id) as scan_id , latest(combined_input.app_id) as app_id 
+        latest(combined_input.score_tw_vuln) as vuln_score, latest(combined_input.reconciled_asset_id) as reconciled_asset_id
+        from datamodel=tw_vm_dm_combined_input.combined_input
+        where index="tw_scanned_vuln" 
+	AND combined_input.vuln_id!="null" 
+	AND (combined_input.score_tw_vuln > 10 ) 
+	BY combined_input.vuln_id, combined_input.scan_network_id, combined_input.scan_id
+        | rename combined_input.* as *
+        | lookup tw_vm_asset_current_state reconciled_asset_id output scan_network_name | lookup tw_vm_dim_app.csv app_id output app_name 	| table app_id,  scan_network_name | stats count(app_id) as app_count BY scan_network_name | rename app_count as "Application Count", scan_network_name as "Network"
+		
+		
+		
+		
+| inputlookup tw_network_lookup.csv where scan_network_group_list IN ("*") scan_network_group_list IN ("*") 
+scan_network_name IN ("*") `tw_vm_esc_network_string` 
+| stats count by scan_network_name,scan_network_name_esc
+
+| inputlookup tw_network_lookup.csv where scan_network_group_list IN ("*") scan_network_name IN ("*") 
+`tw_vm_esc_network_string` | stats count by scan_network_group_list, scan_network_group_list_esc
+
+| inputlookup tw_vm_latest_application_inputs.csv
+
+		

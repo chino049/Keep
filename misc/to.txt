@@ -1,0 +1,304 @@
+0x3a50F16f17EcF3C02372ff0b2C0112CbeD4C86D6 wallet metamax
+
+0x3a50F16f17EcF3C02372ff0b2C0112CbeD4C86D6 ethereum wallet address
+
+bisket (metabox page) 
+User Name :  chino049
+
+User Info :         0x8edf4fda5ce2e076ae5ccf65739e986be6cdff8f
+Wallet Address :    0x8edf4fda5ce2e076ae5ccf65739e986be6cdff8f
+
+
+Transaction hash has a token id  - 	41449167074288565198434386694104001625902264188460171632627393736483840578179  
+
+
+token contract address  0xc43Ee8027247d46765289F52839CeAC6Bb433fE0
+
+metamask private key 6fc36d67951b86a3a2376fa91f77b37935441a270035eded58d12713aeb9edd5
+
+
+Star Net is the Mainnet for NFTs. Ethereum has brought innovation to use blockchain in everyday life with smart contracts.
+
+MetaMask equips you with a key vault, secure login, token wallet, and token exchange. 
+It  provides the simplest yet most secure way to connect to blockchain-based applications. 
+
+
+----minting
+
+ERC-1155 multi token smart contract standard
+ERC-721 single token smart contract standard
+
+minting function - pass two variables, the recipient (address to receive your minted NFT) and NFT token URI (json string
+with metadata like name, desc, image, etc)
+
+pinata key
+API Key: d4804fa00c26aa031200
+API Secret: 1c9546901ab60112cd099206e4267ed2bc4f954a8ed319a91a8acd5bdba1787d
+JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiJhZGM2YmVmZC05ZTA1LTRiNDQtOWU0NS05NGQxZDFhOTI5OTAiLCJlbWFpbCI6ImNoaW5vMDQ5QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaW5fcG9saWN5Ijp7InJlZ2lvbnMiOlt7ImlkIjoiTllDMSIsImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxfV0sInZlcnNpb24iOjF9LCJtZmFfZW5hYmxlZCI6ZmFsc2V9LCJhdXRoZW50aWNhdGlvblR5cGUiOiJzY29wZWRLZXkiLCJzY29wZWRLZXlLZXkiOiJkNDgwNGZhMDBjMjZhYTAzMTIwMCIsInNjb3BlZEtleVNlY3JldCI6IjFjOTU0NjkwMWFiNjAxMTJjZDA5OTIwNmU0MjY3ZWQyYmM0Zjk1NGE4ZWQzMTlhOTFhOGFjZDViZGJhMTc4N2QiLCJpYXQiOjE2NTIwNTk2OTB9.hw6USLL0rZBmSzRoTCx25gsoZ069ifofLevp0qtjnIE
+
+http://localhost:3000/
+https://joptokheroku.herokuapp.com/   link to asset
+✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/0xda3a772802f70db07fad3da8ebd8260729da46c4636af455c3c01eab971e8dba
+
+----------------solidity smart contracts
+Ethereum protocol uses blockchain technology for smart contacts without centralized 
+oracles are devices that bring data into a blockchain
+Hybrid smart contracts , smart conteact with an off chain component
+chainlink allows for unlimited smart contract customization
+chainlink is a decentralized oracle network module
+blockchains are decentralized, node operators are individuals that make up blockchain
+all these independedn individuals make the blockchain networks decentralized
+blockchains are immutable
+freedom and trust
+blockchains are decentralized, transparent, speed/fast, immutable, remove conflicts, trusted, 
+hydryd smart contracts off-chain
+DAO - Decentrilized automonous organizations
+
+brave mm wall - another coconut casual much conduct gadget crop garlic lens ugly eternal portion
+
+0xf6C0DBd210394ddFfDDBC4eac66E58c63a05A2bC
+go to etherscan and type your wallet to see transactions
+
+etherscan is a block explorer to view transactions
+gas is unit of cumputational measurem, which is a fee to pay to node operators for including 
+a transaction into a blockchain
+
+we actually get to pick how much gas fee to pay for our transaction
+transaction fee = gas used * gas prices
+
+ethereum uses a Keccak256 hash (sha family) 
+a block is like a hash but with data fields like block, Nonce and Data
+the nonce is used by miners to come up with a hash that starts with 0000
+done by brute force
+
+a blockchain uses fields like block, nonce, data, but alse the hash from the previous blockchain
+ 
+a blockchain can be changed and re-mined again, however, the new blockchain will no match all other
+nodes. This blockchain will be excluded from all other blockchains that are in sync
+
+mining is the process of finding the solution to the blockchain problem - find a hash that starts
+with 0000. Nodes gert paid for mining blocks
+
+private key, only known to the holder, it is used to sign transactions
+public key, is ued to verify singed transactions where signed with your private key.  
+ 
+signing a transaction - A one way process. A private key signs a transaction by the private key
+being hashed with their trtansaction data. With your public key anyone can verify the transaction
+hash.
+
+consensus;  proof of work and proof of stake. Mechanism used to reach an agreement on state or a signle
+value on the blockchain. 
+The consensus process ha a chain selection altgorithm and a sybil resisteance mechanism.
+PoW - proof of work -  minning node, who the block author is, rce to come up with the solution
+PoS - proof of stake -
+Chain selection rule ; who the real blockchain is. Nakamoto Consensus -  pwo and longer chain rule.
+confirmation refers to the blocks after yours
+
+deterministic = concensus reached, meaning all nodes came to same result or conclusion.
+ex. deterministic is uint256 value is 1 + 1
+ex non deterministic is uint256 value = random() or unit256 value = api_call() ( blockchains cant all agree on API calls)
+
+
+sybil attack  and 51% attack
+ethereum will upgrade to eth2 to use proof of stake
+proof of stake nodes put up collateral as sybil resistence to behave honestly aka stake.
+in this system nodes put up collateral or stake and when misbehaved the stake looses money
+in proof of stake, nodes are randomly choosen to propose the new block and the rest or validators
+will verify the node has proposed the block honestly 
+
+
+ethereum two will use proof of stake and sharding. Sharding is a solution to scalability. A blockchain 
+of a blockchain.  
+layer 1 are base layer blockchain implementaions
+layer 2 is an application on top of layer 1
+
+eth and bts are proof of work blockchain that follow Nakamoto concensus
+eth2 will bve a proof of stake sharded bclockchain
+
+
+decentralized Computation --> Cnetralized Pracle --> Data Sources
+
+erc20 are token deployed on a chain using erc20 token standrd
+its s smart contract that represents a token
+why token ERC20
+1- governance
+2- secure underlying network
+3- create synthetic asset
+4- anything else
+
+build a a smart contrat that follows erc-20 standard and have specific functions
+
+
+Technically, “token” is just another word for “cryptocurrency” or “cryptoasset.” 
+But increasingly it has taken on a couple of more specific meanings depending on context. 
+The first is to describe all cryptocurrencies besides Bitcoin and Ethereum (even though they are technically also tokens).
+The second is to describe certain digital assets that run on top of another cryptocurrencies’ blockchain, 
+as many decentralized finance (or DeFi) tokens do. Tokens have a huge range of potential functions,
+ from helping make decentralized exchanges possible to selling rare items in video games. 
+ But they can all be traded or held like any other cryptocurrency.
+
+to sell a token go to
+app.uniswap.org, create a pool
+
+defipulse.com or defillama.com
+application that show top defi projects based on total assets locked on each protocol
+testnet.aave.com
+paraswap.io decentrilized exchange (exchange tokens)
+swap your tokens
+aave is a lending and borrowing application, you can gain by staking or depositing an asset
+aETH is an interest bearing token with can be converted back to ETH 
+you canj use ETH to borrow, like DAI stable coin to equal 1 USD, USDT and USDC are also stablecoins 
+stablcoinns are token that will be stable by mathing the value of another asset, or been less volitile
+
+borrowing 
+frictionless short selling
+obtain liquidity without selling your capital
+gain yield on your deposit collateral
+things impossible to do in the traditional fintech, like falsh loans
+
+with aave, if the amount you borrow is too high you can get liquidated and loose your asset, to pay someone else
+the health factor, reflect how close you are to been liquidated (reached 1)
+
+quantitive DEFI engineer
+
+the address of an aave contract is called WETHGateway, which swapped eth for weth
+weth is am erc20 version of ethereum, which allows to work with all other erc20s
+
+
+Aave is a decentralized non-custodial liquidity markets protocol where users can participate as depositors or borrowers. 
+Depositors provide liquidity to the market to earn a passive income, while borrowers are able to borrow in an 
+overcollateralized (perpetually) or undercollateralized (one-block liquidity) fashion.
+
+
+
+erc-20 are fungable token - Map 1 address and how much the address holds
+
+ntfs are also known as erc-721 - has unique token ID which an owner, and a token uri
+
+semi fungable token erc-1155
+
+you can view them on platforms like Opensea
+an erc-721 token can have metadata
+
+an uri is a string containing the identity of a phusical or logical resource, 2 types of uri; url and urn 
+
+to render an image on an nft
+1 get ipfs
+2 add tokenURI json file to IPFS
+3 add IPFS URI tp your NFT URI
+
+use chainlink to lern this process
+
+nfts are hybryd smart contracts, 
+
+A token uri is a distinct Uniform Resource Identifier (URI) for a given asset.
+
+To store data in a decentralized way, there are options
+ochain
+skynet
+arweave
+filecoin
+ipfs
+ethereum
+
+3 methoda to upgeade a contract
+-not really / parameterize, simplest, cant add storage nor add/update logic, who is the admin (consider governance)
+
+-social YEET / Mitigation, create a new one and tell everyone to use the latest, this will apply the immutable
+pros - true to blockchain values , easy to audit
+cons - work to convince all users to move, and different address
+
+
+-Proxie - truest for of upgrades, uses delegate call, one proxy contract that will have the same address forever 
+and will route users to the correct implementaion contract that has the logic. Tp upgrade, deploy a new implementaion contract and point the proxy to that new implementaion
+proxie contract has 
+1 implementation contract - all our code, when upgradr, we launch a brand new implementation contract
+2 proxy contract - points to which implementation is the correct one and routes function calls there
+3 the user - they make calls to proxy
+4 admin - user or group/voters to decide to upgrade to new implementation
+
+All storage/data will be stored on the proxy contract
+trillabits does not recommend proxies
+
+issues or gotchas are 
+1 storage clashes - you can only append new storage values, can change or reorder old ones
+2 function selector - 
+
+Transparent proxu pattern
+admins can only call admin functions and not implementation functions, users can only call functions in the implementation,
+admin functions are functions that govern upgrades and are located in the proxy contract
+
+Universal Upgradable proxy - UUPS
+puts all the upgrade logic in the implementation contract and not on the proxy
+
+Diamon proxy
+it allows multiple implementaion contracts
+
+The risk of upgrades is centralization; if you are the only wallet that controls the proxy then your application is
+centrilized. 
+
+
+
+Wrapped Ether (WETH) is a token pegged to Ether (ETH). WETH is used in several platforms and DApps that support ERC-20 tokens. 
+While ETH is used to pay for network transaction fees, it doesn't have the same functionality as ERC-20 tokens. You can easily convert ETH into WETH through a process known as wrapping.
+the contracl address is at 
+https://kovan.etherscan.io/token/0xd0a1e359811322d97991e03f863a0c30c2cf029c
+
+   
+https://usedapp.io/
+https://reactjs.org/
+
+install npm - npm install -g npx from npmjs.com
+install yarn - npm install --global yarn from classic.yarnpkg.com
+D:\bitbucket\contract\defi-Stake>npx --version
+8.5.0
+D:\bitbucket\contract\defi-Stake>yarn --version
+1.22.18
+
+
+
+	
+fund me lesson 3 2:26:20
+w3 lesson 4 3:26:27
+brownie lesson 5 4:27:45 
+brownie fundme lesson 6 5:06:23
+Smart Contract Lottery lesson 7 6:11:26
+defi and ave lesson 10  8:34:41
+
+
+kovan faucet 6:48:48
+ 
+chainlink-mix lesson 8 8:20:54
+erc20, eips, Token   lesson 9 8:23:12
+lesson 11 NFTs
+lesson 12 Upgrades 12 00 00
+
+13 full stack defi 12 45
+
+
+14 22
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

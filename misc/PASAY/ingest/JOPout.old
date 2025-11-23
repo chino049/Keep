@@ -1,0 +1,3 @@
+*.csv
+/home/jordonez/bitbucket/misc/PASAY/ingest/*.csv
+Error: 15 File name must contain the application name; xero or fidelity /home/jordonez/bitbucket/misc/PASAY/ingest/*.csv

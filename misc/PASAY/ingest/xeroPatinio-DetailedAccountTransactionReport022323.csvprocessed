@@ -1,0 +1,57 @@
+Detailed Account Transaction Report,,,,,,,,,,
+Patinio,,,,,,,,,,
+From 1 January 2023 to 28 February 2023,,,,,,,,,,
+Account Code,Account Name,Date,Type,Transaction,Reference,Gross,Tax,Net,Tax Rate,Tax Name
+200,Sales,1/01/2023,INV,Unit C - Dues Unit C,INV-2310,"₱1,000.00",₱0.00,"₱1,000.00",0.0%,Tax on Sales
+200,Sales,1/01/2023,INV,Unit C - Rent Unit C,INV-2288,"₱16,500.00",₱0.00,"₱16,500.00",0.0%,Tax on Sales
+200,Sales,1/01/2023,INV,Unit D - Dues Unit D,INV-2309,"₱1,000.00",₱0.00,"₱1,000.00",0.0%,Tax on Sales
+200,Sales,1/01/2023,INV,Unit C - Water Unit C,INV-2306,"₱1,518.00",₱0.00,"₱1,518.00",0.0%,Tax on Sales
+200,Sales,1/01/2023,INV,Unit B - Electricity Unit B,INV-2302,"₱4,403.00",₱0.00,"₱4,403.00",0.0%,Tax on Sales
+200,Sales,1/01/2023,INV,Unit D - Electricity Unit D,INV-2300,"₱2,614.00",₱0.00,"₱2,614.00",0.0%,Tax on Sales
+200,Sales,1/01/2023,INV,Unit G - Rent Unit G,INV-2297,"₱3,000.00",₱0.00,"₱3,000.00",0.0%,Tax on Sales
+200,Sales,1/01/2023,INV,Unit G - Dues Unit G,INV-2296,₱500.00,₱0.00,₱500.00,0.0%,Tax on Sales
+200,Sales,1/01/2023,INV,Unit G - Water Unit G,INV-2295,₱69.00,₱0.00,₱69.00,0.0%,Tax on Sales
+200,Sales,1/01/2023,INV,Unit G - Electricity Unit G,INV-2294,₱69.00,₱0.00,₱69.00,0.0%,Tax on Sales
+200,Sales,1/01/2023,INV,Unit B - Water Unit B,INV-2292,"₱1,104.00",₱0.00,"₱1,104.00",0.0%,Tax on Sales
+200,Sales,1/01/2023,INV,Unit B - Dues Unit B,INV-2290,"₱1,000.00",₱0.00,"₱1,000.00",0.0%,Tax on Sales
+200,Sales,1/01/2023,INV,Unit D - Rent Unit D,INV-2286,"₱16,500.00",₱0.00,"₱16,500.00",0.0%,Tax on Sales
+200,Sales,1/01/2023,INV,Unit B - Rent Unit B,INV-2285,"₱19,000.00",₱0.00,"₱19,000.00",0.0%,Tax on Sales
+200,Sales,1/01/2023,INV,Unit F - Dues Unit F,INV-2307,"₱1,000.00",₱0.00,"₱1,000.00",0.0%,Tax on Sales
+200,Sales,1/01/2023,INV,Unit F - Water Unit F,INV-2304,"₱1,518.00",₱0.00,"₱1,518.00",0.0%,Tax on Sales
+200,Sales,1/01/2023,INV,Unit F - Electricity Unit F,INV-2298,"₱1,998.00",₱0.00,"₱1,998.00",0.0%,Tax on Sales
+200,Sales,1/01/2023,INV,Unit F - Rent Unit F,INV-2289,"₱19,000.00",₱0.00,"₱19,000.00",0.0%,Tax on Sales
+200,Sales,1/01/2023,INV,Unit D - Water Unit D,INV-2305,"₱1,035.00",₱0.00,"₱1,035.00",0.0%,Tax on Sales
+200,Sales,1/02/2023,INV,Unit B - Rent Unit B,INV-2338,"₱19,000.00",₱0.00,"₱19,000.00",0.0%,Tax on Sales
+200,Sales,1/02/2023,INV,Unit D - Rent Unit D,INV-2337,"₱16,500.00",₱0.00,"₱16,500.00",0.0%,Tax on Sales
+200,Sales,1/02/2023,INV,Unit C - Rent Unit C,INV-2335,"₱16,500.00",₱0.00,"₱16,500.00",0.0%,Tax on Sales
+200,Sales,1/02/2023,INV,Unit F - Rent Unit F,INV-2334,"₱19,000.00",₱0.00,"₱19,000.00",0.0%,Tax on Sales
+200,Sales,1/02/2023,INV,Unit B - Dues Unit B,INV-2332,"₱1,000.00",₱0.00,"₱1,000.00",0.0%,Tax on Sales
+200,Sales,1/02/2023,INV,Unit C - Dues Unit C,INV-2331,"₱1,000.00",₱0.00,"₱1,000.00",0.0%,Tax on Sales
+200,Sales,1/02/2023,INV,Unit D - Dues Unit D,INV-2330,"₱1,000.00",₱0.00,"₱1,000.00",0.0%,Tax on Sales
+200,Sales,1/02/2023,INV,Unit F - Dues Unit F,INV-2328,"₱1,000.00",₱0.00,"₱1,000.00",0.0%,Tax on Sales
+200,Sales,1/02/2023,INV,Unit C - Water Unit C,INV-2325,"₱1,518.00",₱0.00,"₱1,518.00",0.0%,Tax on Sales
+200,Sales,1/02/2023,INV,Unit C - Electricity Unit C,INV-2319,"₱7,468.00",₱0.00,"₱7,468.00",0.0%,Tax on Sales
+200,Sales,1/02/2023,INV,Unit D - Electricity Unit D,INV-2318,"₱2,603.00",₱0.00,"₱2,603.00",0.0%,Tax on Sales
+200,Sales,1/02/2023,INV,Unit B - Water Unit B,INV-2326,"₱1,311.00",₱0.00,"₱1,311.00",0.0%,Tax on Sales
+200,Sales,1/02/2023,INV,Unit B - Electricity Unit B,INV-2320,"₱3,910.00",₱0.00,"₱3,910.00",0.0%,Tax on Sales
+200,Sales,1/02/2023,INV,Unit G - Rent Unit G,INV-2315,"₱3,000.00",₱0.00,"₱3,000.00",0.0%,Tax on Sales
+200,Sales,1/02/2023,INV,Unit G - Dues Unit G,INV-2314,₱500.00,₱0.00,₱500.00,0.0%,Tax on Sales
+408,Cleaning,7/01/2023,EC,Jasmin D - Rugs(3),Rugs,-₱100.00,₱0.00,-₱100.00,0.0%,Tax on Purchases
+408,Cleaning,7/01/2023,EC,Jasmin D - cleaning supply@ 3.3Ltrs.all purpose cleaner,,-₱798.00,₱0.00,-₱798.00,0.0%,Tax on Purchases
+429,General Expenses,7/01/2023,EC,Jasmin D - Fire extinguisher refill yearly,Refill,"-₱6,000.00",₱0.00,"-₱6,000.00",0.0%,Tax on Purchases
+433,Health Insurance,7/01/2023,EC,"Jasmin D - SSS last quarter(late update)oct,nov.dec",last quarte,"-₱1,200.00",₱0.00,"-₱1,200.00",0.0%,Tax on Purchases
+440,Taxes and Licenses,7/01/2023,EC,"Jasmin D - Bir,last quarter ",BIR,"-₱1,050.00",₱0.00,"-₱1,050.00",0.0%,Tax on Purchases
+440,Taxes and Licenses,19/01/2023,EC,Jasmin D - business permit 2023,permit,"-₱21,000.00",₱0.00,"-₱21,000.00",0.0%,Tax on Purchases
+445,"Meralco, Light, Power, Heating",3/01/2023,EC,Jasmin D - Meralco bill,Elect,"-₱22,481.24",₱0.00,"-₱22,481.24",0.0%,Tax on Purchases
+445,"Meralco, Light, Power, Heating",30/01/2023,EC,Jasmin D - meralco bill,elect,"-₱21,675.43",₱0.00,"-₱21,675.43",0.0%,Tax on Purchases
+446,Water,3/01/2023,EC,Jasmin D - Maynilad Bill,Water,"-₱7,796.04",₱0.00,"-₱7,796.04",0.0%,Tax on Purchases
+446,Water,30/01/2023,EC,Jasmin D - Maynilad bill,water,"-₱7,230.57",₱0.00,"-₱7,230.57",0.0%,Tax on Purchases
+461,Printing & Stationery,30/01/2023,EC,Jasmin D - maynilad bill xerox,xerox,-₱25.00,₱0.00,-₱25.00,0.0%,Tax on Purchases
+461,Printing & Stationery,30/01/2023,EC,Jasmin D - meralco bill xerox,xerox,-₱25.00,₱0.00,-₱25.00,0.0%,Tax on Purchases
+477,Wages and Salaries,7/01/2023,EC,Jasmin D - last quarter(oct.nov.dec.0,sal,"-₱4,500.00",₱0.00,"-₱4,500.00",0.0%,Tax Exempt
+477,Wages and Salaries,13/01/2023,EC,Jasmin D - salary bernadeth(1st quarter),Sal,"-₱5,100.00",₱0.00,"-₱5,100.00",0.0%,Tax Exempt
+477,Wages and Salaries,13/01/2023,EC,Jasmin D - Salary Mike,sal,"-₱10,000.00",₱0.00,"-₱10,000.00",0.0%,Tax Exempt
+477,Wages and Salaries,13/01/2023,EC,Jasmin D - Salary admin,,"-₱15,000.00",₱0.00,"-₱15,000.00",0.0%,Tax Exempt
+477,Wages and Salaries,15/02/2023,EC,Jasmin D - salary caretaker,sal,"-₱10,000.00",₱0.00,"-₱10,000.00",0.0%,Tax Exempt
+477,Wages and Salaries,15/02/2023,EC,Jasmin D - salary admin,sal,"-₱15,000.00",₱0.00,"-₱15,000.00",0.0%,Tax Exempt
+Total,,,,,,"₱39,156.72",₱0.00,"₱39,156.72",,

@@ -1,0 +1,56 @@
+( tecommander class)
+private static void init() 
+
+
+public static void main( final String[] args )  
+
+	System.out.println( "(c) 2010 
+	JavaEnvironmentCheck.execute();
+
+	TECommandManager manager=null;
+	if (args.length==0 
+		manager = new TECommandManager();
+	else 
+xx		manager = new TECommandManager(args[0]);	
+			x This produces mCommandMap with command analyzer and className TEAnalyzer
+			
+	dumpCommandLine(args, false);	
+
+	returnCode = TECommander.processCmd(manager, args, true);
+	
+
+static int processCmd(TECommandManager manager, String[] args, boolean firstCommand)
+xx	TECmd cmd = manager.getCommand(args[0].toLowerCase());
+		  
+		  
+		  
+		  
+teCommandManager class	
+public TECommandManager(String command) throws Exception {  
+	initClassMap();
+	String className = mClassMap.get(command);   ( returns analyzer wich maps to TEAnalyzer)
+	mCommandMap.put(command, loadSingleCommand(className)); ( which is command analyzer and classname TEAnalyzer )
+
+    private TECmd loadSingleCommand(String className) throws Exception {
+        TECmd cmd=null;
+		Class<TECmd> cmdClass = (Class<TECmd>)Class.forName("com.tripwire.app.tecommander.cmd."+className);
+		cmd = cmdConstructor.newInstance(this);
+  
+        return cmd; ( which is TEAnalyzer@1415 )
+
+teanalyzer class
+	constructor
+	do invoke
+
+
+	    public TECmd getCommand(String name)
+    {
+        return mCommandMap.get(name);
+    }
+	
+	
+	
+	
+teCmdStgd class
+	 public String getName() {
+        return mName;

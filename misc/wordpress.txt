@@ -1,0 +1,77 @@
+wordpress.com hosted service. No plugins and restrictions
+
+wordpress.org home to free wordpress software - self hosted
+
+https://localwp.com/ to download installer 
+https:/localsite/wp-admin to go to the admin
+or 
+sudo apt install mysql-server
+sudo systemctl start mysql.service
+mysql 
+create database rizordDB
+CREATE USER 'jordonez'@'localhost' IDENTIFIED BY 'nCircle007';
+GRANT ALL PRIVILEGES ON *.* TO 'jordonez'@'localhost' WITH GRANT OPTION;
+flush privileges;
+
+cd /var/www/html
+wget -c https://wordpress.org/latest.tar.gz
+tar -xvf latest.tar.gz
+apt update
+apt install libapache2-mod-php php-mysql
+service apache2 restart
+
+http://10.0.0.65/wordpress/wp-admin
+or 
+http://localhost/wordpress/wp-admin
+
+rizordDB,jordonez,nCircle007,localhost,wp_
+
+to login jordonez nCircle007
+
+if issues with file perms 
+root@winnerYear:/var/www/html# chown www-data:www-data wordpress
+root@winnerYear:/var/www/html# chmod 777 wordpress
+root@winnerYear:/var/www/html/wordpress# chown www-data:www-data -R *
+root@winnerYear:/var/www/html/wordpress# chmod 777-R  * 
+
+
+webhosting, need domain name and host
+bluehost (top recomendation), dreamhost, siteground
+
+add domain privacy and protection, bluehost will add as agent
+public who is 
+
+to upload themes on wordpress without an ftp 
+vi /var/html/wordpress/wp-config.php, and add
+define('FS_METHOD', 'direct');
+restart apache2
+service apache2 stop and start
+
+install kadence
+uninstall or deactivte all plugins
+under Users, create a user if not already created
+
+add network sites
+create database gst
+did not need it  -CREATE USER 'jordonez'@'localhost' IDENTIFIED BY 'nCircle007';
+did not need it - GRANT ALL PRIVILEGES ON *.* TO 'jordonez'@'localhost' WITH GRANT OPTION;
+did not need it - flush privileges;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

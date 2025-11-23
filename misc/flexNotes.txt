@@ -1,0 +1,161 @@
+Flex is an SDK used to build Flash Applications. It does not have a file type nor file extension associated with it directly.
+The code files that flex compiler processes are usually ActionScript (as) or MXML (mxml).
+The compiled results are either flex components (.swc) or Flash Movies (.swf)
+
+
+ http:// help.adobe.com
+-Developing application in MXML
+MXML is an XML language that you use to lay out user interface components for applications built in Abobe Flex. You also use
+mxml to declare and define nonvisual aspects of an application, such as server side data source and data bindings between user
+interface components and server-side data sources.
+Flex development uses 2 languages MXML and actionscript. MXML is an XML markup language to layout user interface components,
+declare and define nonvisual aspects of an application. MXML is much more structured and has a much richer tag set.
+It is good practice to include encoding information that specifies how the mxml file is encoded. On North America
+OS's ISO-8859-1 is the dominant encoding format. You can use UTF-8 encoding format to ensure maximum platform compatibility.
+The encoding tag specifies the encoding used.
+<?xml version="1.0" encoding="utf-8"?>
+In an XML document, tags are associated with a namespace. XML namespaces let you refer to more than set of XML tags in the
+same document. In flex you typically define 3 Universal Resource Identifiers (URI) namespaces
+xmlns:fx="http://ns.adobe.com/mxml/2009"   - This is the namespace of the top level actionscript elements, like Object, Number, 
+Boolean, Array, etc. It also includes the tags built into the MXML compiler. 
+xmlns:mx="library://ns.adobe.com/flex/mx   - This is the namespace for the MX component set.
+xmlns:s="library://ns.adobe.com/flex/spark - This is the namespace for the Spark component set.  
+Adobe implemented Flex as an ActionScript class library. The class library contains components (container and controls),
+manager classes, data-services classes, and other classes.
+
+MXML tags correspond to ActionScript classes or properties of classes. Flex parses MXMXL tags and compiles a SWF file that 
+contains the corresponding ActionScript objects. An MXML tag that corresponds to an AcxtionScript class uses the same naming 
+conventions as the ActionScript class. Class names begin with a capital letter. Every MXML tag attribute corresponds to a 
+property of the actionScript object, a style applied to the object, or an event listener for the object.
+Typically an MXML application contains the <s:Application> tag. A common coding practice is to divide your flex application 
+into functional units or modules.
+In Flex model view design pattern, user interface components represent the view. The MXML language supports two types of user 
+interface components; controls and containers. Control are form elements, like buttons, text fields, and containers are 
+rectangular regions of the screen. 
+Flex applications are driven by runtime events and event listeners, which consists of code for handling runtime events.
+Flex used curly braces ({}) to bind properties of components to each other. 
+RPC remote procedure calls services let your application interact with remote servers to provide data to your applications. or 
+for your application to send data to a server. Flex support SOAP simple Object Access Protocol, AMF, or http using xml. The MXML
+components that provide data access are called RPC components. This include WebService for SOAP, HTTPService for HTTP urls and
+RemoteObject for Java objects using AMF protocol. RPC components are defined using the non-visual component tag <fx:Decalarations> 
+A data model is an actionscript that provides properties for storing data. It also used the non-visual component 
+tag <fx:Decalarations>.
+MXML includes a set of standard validator components, like PhoneNumberValidator class and EmailValidator class. 
+Formatter components are actionscript components that perform a one-way conversion of raw data to a formatted string. This happens 
+right before data is displayed in a text field. Ex ZipCodeFormatter. 
+The tag <fx:Style) is used to declare the use of CSS standard cascading style sheets. 
+Skinning is the process of changing the appearance of a component by modifying or replacing its visual elements. 
+An effect is a change to a component that occurs over a period of time, like fading and resizing.  
+
+-MXML syntax
+Most MXML tags correspond to actionscript 3.0 classes or properties of classes. Flex parses MXML tags and compiles a SWF file
+that contains the corresponding actionscript objects. Actionscript 3.0 uses syntax based on the ECMAScript edition 4 draft
+language specification.
+MXML filenames must adhere to the following naming conventions:
+Filenames must be a valid actionscript identifiers and must start with a letter or underscore _
+Filenames can not be the same name as actionscript classes, component id values, or the word application.
+Filenames must end with an extension markup
+In MXML a component property uses the same naming conventions as the corresponding actionscript property. A property begins
+with a lowercase letter and capital letters separate words. 
+You can set most components properties as tag attributes. ex Label width or text. You can also set all components properties at 
+child tags.
+Usually you specify the value of a scalar property as a property of a component tag. ex <s:Label text="Holler"/>
+The default_property sets the default property . For spark list, the default property is the dataProvider property. 
+Curly brackets {} mean data binding operation
+Use a forward slash / to separate files and paths
+New lines can be used by including {'\n'} or #13 on the property value ex text="Z ball{'\n'}" or text="boat&#13race". Additionally
+you can create an actionscript string variable to insert a new line character. 
+The [Bindable] metadata tag indicates the variable property can be used as the source of a databind  expression.
+An array can be populated with a list of items, and array of objects. 
+A vector is an array whose elements all have the same data type. The data type is also known as vector base type. The vase class
+can be any class, including built in classes and custom classes. The base type is specified when declaring the vector. 
+ex <fx:Vector type="String">
+An event property of an XML tag lets you specify the event listener for an events. This property corresponds to setting the event
+listener in actionscript using the addEventListener() method. 
+Ex. using xml, <s:TextArea id="Goal" creationComplete="creationCompleteHandler();"/> 
+Ex using actionscript, Goal.addEventListener("creationComplete", creationCompleteHandler);
+some MXML tags, such as <fx:Script> tag, have a property that takes a URL. MXML supports absolute paths 
+ex "http://localhost/mystyles.css">. It also support path relatives to locations, and the use of ContextRoot, 
+ex <mx:HTTPService url="@ContextRoot()/dire/myfil.xml"/>
+MXML also supports regEx. example <myNameSpace:MyComponent regExpression="/\Wcat/gi"/>
+MXML compiler tags include <fx:Binding>, Component, Declarations, Definitions, DesignLayer, Library, MetaData, Model, Private,
+Reparent, Script, Style
+
+-Using ActionScript
+You use MXML tags to declare things like containers, controls, effects, formatters, validators, and web services that your 
+application requires, and to lay out the user interface. Each of these components provides the standard behavior you would expect.
+A declarative language like MXML is not appropriate for things like events and actions. A procedural language like actionscript, 
+offers executable methods, storage devices, and code flow control, among other things. In a sense MXML implements the static aspects 
+of your application and actionscript implements the dynamic aspects. ActionScript is an object oriented procedural language. 
+The Flex compiler transforms the main XXML file and other files into a single actionscript class. As a result, you cannot define 
+classes or use statement outside of functions in the MXML files and the included actionscript files.
+An XMXL application ( <s:Application> tag ) defines a subclass of the Spark Application class. Similarly an XMXL component like 
+<s:Button> defines a subclass of that component. 
+To insert actionscript blocks of code, use the <fx:Script> tag, which must be a child of <s:Application>. New classes can not be 
+declared or interfaces in <fx:Script> instead they must be placed in separate AS files and need to be imported. All actionscript
+in the block is added to the enclosing file's class when Flex compiles the application.
+Most actionscript statements must be inside functions in an <fx:Script> blocks, except import, car, include, const, and namespace.
+When using <fx:Scripts> blocks, you must wrap the statements in a CDATA construct. 
+<fx:Script> <![CDATA [ ..... ] ]> </fx:Script>
+Flex does not parse CDATA construct 
+To invoke component's public methods the syntax is componentInstance.method([parameters]);
+Like in other languages the word 'this' refers to the current instance the class or component. IT refers to the current scope and 
+not to the application object scope.  
+Including and importing are not the same. Including copies lines of code from one file to the other, kind of like pasting. Importing
+adds a reference to a cleass file or package so objects and properties can be accessed. 
+You cannot include cannot define classes in included files. 
+Flex MXML file is a class itself. 
+You can create reusable components that use action script and reference this components in your applications as xmxl tags. You can also
+base your custom components on the set of components by extending from the flex class hierarchy. 
+Object introspection is a technique for determining the elements of a class at run time.  such as its properties and methods. You can
+use a for.. in loop  to iterate over objects and output their properties and their values.  You can also use the introspection API ny 
+the use of describeType() method and parse the results using tge E4X API. The method does not return any private member  
+ 
+-Events
+The flex Event model is based on the document nobject model DOM level 3.
+Events handlers or event listeners are functions or methods that respond to verious events. Components generate and dispatch events and
+listen to other events. An object that requires information about anohter object's event rgister a listener with that object. When an 
+event occurs, the object dispathces the event to all registered listeners by calling a function that was requested during registration.
+All visual objects, including flex controls and containers, are subclasses of the displayObject class. They are in a tree of visible objects
+that make up your application. The root class is the Stage. Belaow hat is the systemManager object. Child and containers are leaf nodes 
+of the tree. That tree is known as the display list. 
+
+
+-SDK configuration
+
+
+
+chapter 4
+-Flex visual components
+Flex includes a component based development model to develop an application and user interface. You can use built-in visual
+components, extend components to add new properties and methods.
+The characteristics of visual components include;
+Size -
+Events - Applications or user actions that requires a component response.
+Styles -
+Effects - visible or audible changes to the components, triggered by an application or user action
+Skins - controls visual component appearance
+
+-Spark and MX components
+Flex defines two sets of components: Spark and MX.
+The Spark components are new for Flex 4 and are defined in the spark.* packages
+The MX components are older components are are defined in the mx.* packages
+The main differences between Spark and MX are how you use CSS Styles with the components and how you skin them. There are
+additional differences about how the containers perform layout.
+Spark and MX both define same components, we suggest you use spark components. They also define components that are unique.
+
+-Class hierarchy for visual components
+Flex visual components are implemented as a class hierarchy in ActionScript. Each visual component in your application is
+an instance of an ActionScript class. All visual components are derived from the UIComponent class and its superclasses,
+the Flex Sprite through Object classes, and inherit the properties and methods of their superclasses.
+
+ALL COMPONENTS-> UI COMPONENT-> FLEXSPRITE-> SPRITE-> DISPLAYOBJECTCONTAINER-> INTERACTIVEOBJECT-> DISPLAYOBJECT->
+EVENTDISPATCHER-> OBJECT
+
+-UIComponent class
+This is the base class for all Flex visual components. List of the most commonly used properties of components that extends
+the UIComponents class
+doubleClickEnabled, enabled, height, id, percentHeight, percentWidth, styleName, tooTip, visible, width, x, y
+
+Every Flex component has an MXML API and an ActionScript API. A component's mxml tag attributes are equivalent to its
+ActionScript properties, styles, effects, and events. You can use both MXML and ActionScript when working with components.

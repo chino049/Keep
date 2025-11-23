@@ -1,0 +1,38 @@
+﻿Account Number,Account Name,Symbol,Description,Quantity,Last Price,Last Price Change,Current Value,Today's Gain/Loss Dollar,Today's Gain/Loss Percent,Total Gain/Loss Dollar,Total Gain/Loss Percent,Percent Of Account,Cost Basis Total,Average Cost Basis,Type
+Z21480840,Trust: Under Agreement,FCASH**,CASH,122.58,$1.00,$0.00,$122.58,$0.00,0.00%,n/a,n/a,0.35%,n/a,n/a,Cash
+Z21480840,Trust: Under Agreement,BDC,BELDEN INC,129,$79.36,+$0.64,$10237.44,+$82.56,+0.81%,+$3350.13,+48.64%,29.22%,$6887.31,$53.39,Cash
+Z21480840,Trust: Under Agreement,HUT,HUT 8 MINING CORP COM NPV ISIN #CA44812T1021 SEDOL #BF11385,700,$1.885,+$0.015,$1319.50,+$10.50,+0.80%,-$3587.50,-73.11%,3.77%,$4907.00,$7.01,Cash
+Z21480840,Trust: Under Agreement,PBF,PBF ENERGY INC COM USD0.001,35,$45.41,+$1.66,$1589.35,+$58.10,+3.79%,-$65.45,-3.96%,4.54%,$1654.80,$47.28,Cash
+Z21480840,Trust: Under Agreement,PLUG,PLUG POWER INC,111,$15.37,-$0.97,$1706.07,-$107.67,-5.94%,+$1309.62,+330.33%,4.87%,$396.45,$3.57,Cash
+Z21480840,Trust: Under Agreement,VWSYF,VESTAS WIND SYSTEMS DKK0.20 ISIN #DK0061539921 SEDOL #BN4MYF5,500,$29.10,+$0.2735,$14550.00,+$136.75,+0.94%,+$4590.00,+46.08%,41.52%,$9960.00,$19.92,Cash
+Z21480840,Trust: Under Agreement,WPM,WHEATON PRECIOUS METALS CORP COM NPV ISIN #CA9628791027 SEDOL #BF13KN5,120,$45.97,-$0.49,$5516.40,-$58.80,-1.06%,+$1573.80,+39.91%,15.74%,$3942.60,$32.86,Cash
+Z29077372,Individual - TOD,FCASH**,CASH,4.33,$1.00,$0.00,$4.33,$0.00,0.00%,n/a,n/a,100.00%,n/a,n/a,Cash
+216748698,ROTH IRA,CORE**,FDIC-INSURED DEPOSIT SWEEP,462.75,$1.00,$0.00,$462.75,n/a,n/a,n/a,n/a,1.21%,n/a,n/a,Cash
+216748698,ROTH IRA,BTG,B2GOLD CORP COM ISIN #CA11777Q2099 SEDOL #B29VFC4,3000,$4.10,-$0.09,$12300.00,-$270.00,-2.15%,+$5107.17,+71.00%,32.05%,$7192.83,$2.40,Cash
+216748698,ROTH IRA,IRDM,IRIDIUM COMMUNICATIONS INC,130,$59.16,-$0.13,$7690.80,-$16.90,-0.22%,+$3986.59,+107.62%,20.04%,$3704.21,$28.49,Cash
+216748698,ROTH IRA,NIO,NIO INC SPON ADS EACH REP 1 ORD SHS CLASS A,450,$12.17,+$0.54,$5476.50,+$243.00,+4.64%,+$2630.00,+92.39%,14.27%,$2846.50,$6.33,Cash
+216748698,ROTH IRA,PBF,PBF ENERGY INC COM USD0.001,55,$45.41,+$1.66,$2497.55,+$91.30,+3.79%,+$44.55,+1.81%,6.51%,$2453.00,$44.60,Cash
+216748698,ROTH IRA,RGLD,ROYAL GOLD INC COM ISIN #US7802871084,75,$129.72,-$1.71,$9729.00,-$128.25,-1.31%,+$4464.88,+84.81%,25.35%,$5264.12,$70.19,Cash
+216748698,ROTH IRA,SKYE,SKYE BIOSCIENCE INC COM,7800,$0.028,+$0.0055,$218.40,+$42.90,+24.44%,+$39.78,+22.27%,0.57%,$178.62,$0.02,Cash
+229076430,Traditional IRA,FDRXX**,FIDELITY GOVERNMENT CASH RESERVES,124.75,$1.00,$0.00,$124.75,n/a,n/a,n/a,n/a,0.09%,n/a,n/a,Cash
+229076430,Traditional IRA,ABBV,ABBVIE INC COM USD0.01,90,$147.40,-$0.39,$13266.00,-$35.10,-0.27%,+$7216.65,+119.29%,9.88%,$6049.35,$67.22,Cash
+229076430,Traditional IRA,AG,FIRST MAJESTIC SILVER CORP COM NPV ISIN #CA32076V1031 SEDOL #2833583,2000,$8.19,-$0.17,$16380.00,-$340.00,-2.04%,+$7472.05,+83.88%,12.20%,$8907.95,$4.45,Cash
+229076430,Traditional IRA,BE,BLOOM ENERGY CORP COM CL A,420,$24.77,-$0.52,$10403.40,-$218.40,-2.06%,+$3138.41,+43.19%,7.75%,$7264.99,$17.30,Cash
+229076430,Traditional IRA,BTG,B2GOLD CORP COM ISIN #CA11777Q2099 SEDOL #B29VFC4,1450,$4.10,-$0.09,$5945.00,-$130.50,-2.15%,+$1915.14,+47.52%,4.43%,$4029.86,$2.78,Cash
+229076430,Traditional IRA,EOG,EOG RESOURCES INC,33.689,$135.93,+$3.43,$4579.34,+$115.55,+2.58%,+$479.37,+11.69%,3.41%,$4099.97,$121.70,Cash
+229076430,Traditional IRA,MODG,TOPGOLF CALLAWAY BRANDS CORP COM,500,$23.48,-$0.04,$11740.00,-$20.00,-0.18%,+$4735.00,+67.59%,8.75%,$7005.00,$14.01,Cash
+229076430,Traditional IRA,NIO,NIO INC SPON ADS EACH REP 1 ORD SHS CLASS A,550,$12.17,+$0.54,$6693.50,+$297.00,+4.64%,-$1281.50,-16.07%,4.99%,$7975.00,$14.50,Cash
+229076430,Traditional IRA,RGLD,ROYAL GOLD INC COM ISIN #US7802871084,100,$129.72,-$1.71,$12972.00,-$171.00,-1.31%,+$4336.05,+50.20%,9.66%,$8635.95,$86.36,Cash
+229076430,Traditional IRA,TSLA,TESLA INC COM,60,$160.27,+$15.84,$9616.20,+$950.40,+10.96%,+$2950.20,+44.25%,7.16%,$6666.00,$111.10,Cash
+229076430,Traditional IRA,VRTX,VERTEX PHARMACEUTICALS INC,25,$321.02,+$5.74,$8025.50,+$143.50,+1.82%,+$4926.55,+158.97%,5.98%,$3098.95,$123.96,Cash
+229076430,Traditional IRA,WPM,WHEATON PRECIOUS METALS CORP COM NPV ISIN #CA9628791027 SEDOL #BF13KN5,750,$45.97,-$0.49,$34477.50,-$367.50,-1.06%,+$23080.80,+202.52%,25.69%,$11396.70,$15.20,Cash
+19432,FORTRA 401(K) PLAN,FSPGX,FID LG CAP GR IDX,2249.377,$22.40,+$0.33,$50386.04,+$742.29,+1.50%,+$1987.18,+4.11%,23.86%,$48398.86,$21.52,
+19432,FORTRA 401(K) PLAN,MIDLX,MFS INTL NEW DISC R6,1721.31,$31.25,+$0.08,$53790.94,+$137.71,+0.26%,+$2967.32,+5.84%,25.47%,$50823.62,$29.53,
+19432,FORTRA 401(K) PLAN,MVCKX,MFS MID CAP VALUE R6,1802.89,$29.96,+$0.21,$54014.58,+$378.60,+0.71%,+$3341.49,+6.59%,25.58%,$50673.09,$28.11,
+19432,FORTRA 401(K) PLAN,WSCAAX,SMALL CAP VAL II I1,3352.459,$15.80,+$0.12,$52968.85,+$402.29,+0.77%,+$4879.38,+10.15%,25.08%,$48089.47,$14.34,
+
+"The data and information in this spreadsheet is provided to you solely for your use and is not for distribution. The spreadsheet is provided for informational purposes only, and is not intended to provide advice, nor should it be construed as an offer to sell, a solicitation of an offer to buy or a recommendation for any security by Fidelity or any third party. Data and information shown is based on information known to Fidelity as of the date it was exported and is subject to change. It should not be used in place of your account statements or trade confirmations and is not intended for tax reporting purposes. For more information on the data included in this spreadsheet, including any limitations thereof, go to Fidelity.com."
+
+"Brokerage services are provided by Fidelity Brokerage Services LLC, 900 Salem Street, Smithfield, RI 02917. Custody and other services provided by National Financial Services LLC. Both are Fidelity Investment companies and members SIPC, NYSE."
+
+"Date downloaded 01/26/2023 8:41 PM ET"

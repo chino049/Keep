@@ -1,0 +1,73 @@
+Programmng Paradigm are a way to classify programming languages based on their features. 
+Some paradigms are concerned with implications for the execution model of the language while other
+paradigms are concerned with the way code is organized such as grouping a code into units along 
+with the state that is modified by the code.
+
+Common programming paradigms include:
+
+-Imperative which allows side effects. Imperative programming is a programming paradigm that uses 
+statements that change a program's state. Imperative programming focuses on describing how a program operates.
+Imperative programming changes state with commands in the source code, the simplest example being assignment. 
+Imperative programming does have functions—not in the mathematical sense—but in the sense of subroutines. 
+They can have side effects that may change the value of program state. Functions without return values therefore 
+make sense. Because of this, they lack referential transparency, i.e., the same language expression can result in 
+different values at different times depending on the state of the executing program.
+
+-Functional which disallows side effects. Functional programming is a style of building the structure and elements 
+of computer programs—that treats computation as the evaluation of mathematical functions and avoids changing-state 
+and mutable data. It is a declarative programming paradigm, which means programming is done with expressions or 
+declarations instead of statements. In functional code, the output value of a function depends only on the arguments
+that are passed to the function, so calling a function f twice with the same value for an argument x produces the 
+same result f(x) each time; this is in contrast to procedures depending on a local or global state, which may produce 
+different results at different times when called with the same arguments but a different program state. Eliminating 
+side effects, i.e., changes in state that do not depend on the function inputs, can make it much easier to understand 
+and predict the behavior of a program, which is one of the key motivations for the development of functional programming.
+
+
+-Declarative which does not state the order in which operations execute. Declarative programming is a style of building 
+the structure and elements of computer programs—that expresses the logic of a computation without describing its control
+flow. Many languages that apply this style attempt to minimize or eliminate side effects by describing what the program 
+must accomplish in terms of the problem domain, rather than describe how to accomplish it as a sequence of the programming 
+language primitives (the how being left up to the language's implementation). This is in contrast with imperative programming, 
+which implements algorithms in explicit steps. Declarative programming often considers programs as theories of a formal logic, 
+and computations as deductions in that logic space. Declarative programming may greatly simplify writing parallel programs.
+Common declarative languages include those of database query languages (e.g., SQL, XQuery), regular expressions, logic 
+programming, functional programming, and configuration management systems.
+
+-Object-oriented which groups code together with the state the code modifies. OOP is a programming paradigm based on the 
+concept of "objects", which may contain data, in the form of fields, often known as attributes; and code, in the form of 
+procedures, often known as methods. A feature of objects is that an object's procedures can access and often modify the 
+data fields of the object with which they are associated (objects have a notion of "this" or "self"). In OOP, computer 
+programs are designed by making them out of objects that interact with one another. There is significant diversity of OOP 
+languages, but the most popular ones are class-based, meaning that objects are instances of classes, which typically also 
+determine their type. Many of the most widely used programming languages (such as C++, Object Pascal, Java, Python etc.) 
+are multi-paradigm programming languages that support object-oriented programming to a greater or lesser degree, 
+typically in combination with imperative, procedural programming. Significant object-oriented languages include Java, 
+C++, C#, Python, PHP, Ruby, Perl, Object Pascal, Objective-C, Dart, Swift, Scala, Common Lisp, and Smalltalk.
+
+-Procedural which groups code into functions. Derived from structured programming, based upon the concept of the procedure
+call. Procedures, also known as routines, subroutines, or functions (not to be confused with mathematical functions, but 
+similar to those used in functional programming), simply contain a series of computational steps to be carried out. Any given
+procedure might be called at any point during a program's execution, including by other procedures or itself. The first major
+procedural programming languages first appeared circa 1960, including Fortran, ALGOL, COBOL and BASIC. Pascal and C were 
+published closer to the 1970s, while Ada was released in 1980. Go is an example of a more modern procedural language, 
+first published in 2009. Computer processors provide hardware support for procedural programming through a stack register 
+and instructions for calling procedures and returning from them. Hardware support for other types of programming is possible, 
+but no attempt was commercially successful (for example Lisp machines or Java processors.
+
+-Logic which has a particular style of execution model coupled to a particular style of syntax and grammar. Logic programming 
+is a type of programming paradigm which is largely based on formal logic. Any program written in a logic programming language 
+is a set of sentences in logical form, expressing facts and rules about some problem domain. Major logic programming language
+families include Prolog, Answer set programming (ASP) and Datalog. In all of these languages, rules are written in the form of
+clauses.
+
+-Symbolic programming which has a particular style of syntax and grammar. Symbolic programming is a programming paradigm in which
+the program can manipulate its own formulas and program components as if they were plain data. Through symbolic programming, 
+complex processes can be developed that build other more intricate processes by combining smaller units of logic or functionality. 
+Thus, such programs can effectively modify themselves and appear to "learn", which makes them better suited for applications 
+such as artificial intelligence, expert systems, natural language processing, and computer games. Languages that support symbolic
+programming include Wolfram Language,LISP and Prolog.
+
+
+
+Functional languages

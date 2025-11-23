@@ -1,0 +1,117 @@
+--------------------------------To setup IP360 Commander
+Download and install Python 2.7.8: https://www.python.org/ftp/python/2.7.8/python-2.7.8.msi
+Download https://bootstrap.pypa.io/get-pip.py and run it to install pip
+Download and install the MS Visual C++ compiler: https://www.microsoft.com/en-us/download/details.aspx?id=44266
+c:\python27\scripts\pip.exe install xlrd
+c:\python27\scripts\pip.exe install requests
+c:\python27\scripts\pip.exe install cx_freeze==4.3.3
+c:\python27\scripts\pip.exe install pyodbc
+
+install https://visualstudio.microsoft.com/visual-cpp-build-tools/  
+open up visual studio build tools 2020
+
+install 
+
+
+c:\python27\scripts\pip.exe install simple-crypt
+c:\python27\scripts\pip.exe install jsonrpclib
+c:\python27\scripts\pip.exe install xlsxwriter
+c:\python27\scripts\pip.exe install psycopg2
+
+JOP (venv) D:\dev\repos\ip360commander-core>c:\Python278\Scripts\pip.exe install netaddr
+
+also pylint 
+λ c:\Python27\Scripts\pip install http_client --no-deps ???
+
+
+
+if cxfreeze' is not recognized as an internal or external command, operable program or batch file.
+then run python cxfreeze-postinstall, c:\Python27\python.exe c:\Python27\Scripts\cxfreeze-postinstall
+
+
+if when running cxfreeze, you get an error.
+open C:\Python278\Lib\site-packages\cx_Freeze\freezer.py and change this
+
+        # Copy Python extension modules from the list built above.
+        origPath = os.environ["PATH"]
+        for module, target in filesToCopy:
+            try:
+                if module.parent is not None: 
+                    if module.parent.path is not None: 
+                        path = os.pathsep.join([origPath] + module.parent.path) 
+                        os.environ["PATH"] = path 
+                        self._CopyFile(module.file, target, copyDependentFiles) 
+                    else: 
+                        path = os.pathsep.join([origPath, os.path.dirname(module.parent.file)]) 
+                        os.environ["PATH"] = path 
+                              
+                #JOP
+                #if module.parent is not None:
+                #    path = os.pathsep.join([origPath] + module.parent.path)
+                #    os.environ["PATH"] = path
+                #self._CopyFile(module.file, target, copyDependentFiles)
+            finally:
+                os.environ["PATH"] = origPath
+
+
+-----------------------------To build ip360 Commander
+from repo ip360Commander-core, 
+from master, git pull, then create your local branch.
+cd D:\dev\repos\ip360commander-core\src\main\python
+
+c:\python27\scripts\cxfreeze D:\dev\repos\ip360commander-core\src\main\python\ip360cmd.py --include-module decimal --target-dir ip360cmd
+
+
+
+
+
+then gradlew uA
+(venv) D:\dev\repos\ip360commander-core>gradlew uA
+
+then open intelliJ with ip360Commander-bundler
+refresh and uA
+
+
+
+
+
+
+
+
+
+
+
+    qry_str = """select c.name as customer__name, n.network_id as network__id, n.name as network__name, a.audit_id as audit__id, 
+        a.start_date as start__date, a.end_date as end__date
+        from nc_network n join nc_customer c on n.customer_id=c.customer_id
+        left join (select network_id, audit_id, start_date, end_date from (select network_id, audit_id, start_date, end_date, row_number() 
+        over (partition by a.network_id order by end_date desc) as rownum from nc_audit a where a.status_id = 4) la 
+        where rownum = 1) a on a.network_id = n.network_id 
+        where n.network_id not in (select a.network_id from nc_audit a where a.status_id =4 and (a.end_date > (now() - (30 * interval '1 days') ) ) )
+        and n.deleted ='f' and c.deleted ='f'
+        and n.network_type = 'default'
+        order by customer__name, network__id;""" #% (args.params, args.params, args.params)
+
+    cur = conn.cursor()
+
+    cur.execute(qry_str)
+    rows = cur.fetchall()
+    #last_host_id = 0
+
+    for r in rows:
+        print r
+    #        last_host_id = str(r[1])
+    #        print('*' * 80)
+    #        print('*%sHost%s*' % (" " * 37, " " * 37))
+    #        print('* IP Address: %s%s*' % (r[7], " " * (78 - 13 - len(str(r[7])))))
+    #        print('* NetBIOS   : %s%s*' % (r[6], " " * (78 - 13 - len(str(r[6])))))
+    #        print('* DNS Name  : %s%s*' % (r[5], " " * (78 - 13 - len(str(r[5])))))
+    #        print('* MAC       : %s%s*' % (r[9], " " * (78 - 13 - len(str(r[9])))))
+    #        print('* OS        : %s%s*' % (r[13], " " * (78 - 13 - len(str(r[13])))))
+    #        print('* Last Seen : %s%s*' % (r[8], " " * (78 - 13 - len(str(r[8])))))
+    #        print('* Last Vuln : %s%s*' % (r[11], " " * (78 - 13 - len(str(r[11])))))
+    #        # print '* Host Score: %s%s*' % (" "*78)
+	
+	
+	
+	

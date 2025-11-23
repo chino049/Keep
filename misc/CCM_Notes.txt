@@ -1,0 +1,307 @@
+﻿
+CCM
+----------
+Database configuration with a different port 
+database,port (CCM_DB,2234)
+
+--------
+set active all
+write
+reboot
+set hostname <INSERTHOSTNAME>
+set interface 1 address <INSERTDPIP>
+set interface 1 netmask 255.255.255.0
+set interface 1 gateway <INSERTDPGATEWAY>
+set mgmtAddr <INSERTMGMTIPADDR>
+set serverprint <INSERT>:<SERVER>:<FINGERPRINT>
+set authkey random
+set ssh on
+write
+reboot
+NOTE: After reboot, run “show config” and record the authKey
+show interface 1 config
+show status
+show log
+
+on Server manager
+settings->system
+scan engines->appliance management->appliance image server
+check "enable appliance image server" and hit apply
+
+Connected CCM dp to CCM server and had it be ready. Took a while and an extra command  “set active all”
+
+--------------------------
+
+CCM Scan Engine uses port 3400 to register with CCM Manager 
+It needs 3397 to communicate with dp
+It needs 3398 to communicate with user console
+
+3397 is only open if they've turned on image port
+For dps
+Settings->system->scan engines
+In user console
+
+at a miminum 3400 should be opened. That should allow the customer to see if the firewall rules at in place. Thank you
+
+------------------------------
+CCM
+on dbloader error - Error importing from CCM The request failed with HTTP status 405: method not allowed
+Solution, on Server roles, web server ISS, Application Development, add features  
+
+--------------
+
+ccmcmd report compliance ip "YOURIP" "Output_File_Name.xlsx" -l ccm-e
+ccmcmd report compliance assetgroup "AssetGRoup Name" "Output_File_Name.xlsx" -l ccm-e
+ccmcmd report compliance ip "YOURIP" "Output_File_Name.xlsx" -r fail -l ccm-e
+ccmcmd report compliance assetgroup "AssetGRoup Name" "Output_File_Name.xlsx" -r fail -l ccm-e
+ccmcmd syncnetworkprofile "Existing Profile" "NewUnfound" "HST path" -l ccm-e
+ccmcmd setpassword -l ccm-e
+ccmcmd report category assetgroup "All Assets" -cn "Software Installed"
+
+
+edit the ccmcmd.json file and add ip addrress od CCM mgmt server
+ccmcmd set password
+ccmcmd listofnetworksprofiles net.csv
+ccmcmd importnetworksprofiles net.csv
+
+
+----------------
+ccm scan errors
+CCM Reports 											Recommendation
+Logon failed due to bad username or password 			Credentials should be configured on machines where logon failures are being reported
+
+OpenSCManager (Access is denied)						This error can occur if file root or share access is prevented- AV for example.
+														add administrators to users and enable admin share
+
+NetShareEnum failed: Access is denied					This error can occur if file root or share access is prevented- AV for example,
+														the admin$ share missing or renamed, or insufficient permissions.
+													
+RegConnectRegistryFailed
+(the network path was not found, 53)					(NB: Ensure the remote registry service is running, we should be covering this already 
+														with the compliance scan for remote registry enablement!)… Remote registry service is stopped or not accessible 	
+														this should be enabled. 
+														
+Activation failed: 80070422                             The WMI service is likely disabled or access for our user account is not permitted. WMI needs to be enabled.
+
+NetQueryDisplayInformation failed (access denied) 		The admin$ share is likely missing, or permissions to the CCM user has not be granted (user may not be a local admin)
++
+
+The specified network name is no longer available		Firewall may have blocked traffic (common ports should be opened).
+
+Connect failed, host is probably not running DCOM		Turn on DCOM service
+servce port 135 
+
+logon session does not exist. It may have been 			The credentials do work and can be used on RDP, however, using them from CCM do not work. Seesion terminates?
+terminated
+
+Activation Failed: 800706BA								Enable RPC service???
+
+Network path not found									creds?
+
+Connect timed out, host is probably firewall 135		disabled firewall or allow port 135 
+
+------------------
+
+From the CCM scan engine, can you run regedit and connect to the remote registry as the CCM scan credential? 
+
+•	HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion
+•	HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion
+•	HKLM\SYSTEM\CurrentControlSet\Control\Windows
+
+
+-------------------------
+CCM API
+http://localhost/nCircleWeb/WebClientAPI.asmx?wsdlres
+
+I specified the username in the url (like this: http://10.248.230.107/nCircleWeb/Dashboard/dashboard.htm?#user=admin&auth=) and it let me into the 
+dashboard but didn't load the data. So then I clicked where it says "Unable to load: click for details". And I got that error message.
+
+
+Ports needed for CCM
+Management Server
+80/443 - inbound communications from clients and API
+3397 - inbound imageserver communications from device profilers
+3398 - inbound communications from CCM console access
+3400 - inbound communications from scan engines and DPs
+
+----------------------------
+How to copy a CCM policy
+
+Export the Windows 2003 policy via the CCM console. 
+Open the XML file in Notepad++.
+
+--------------------------
+Do a find/replace as follows:
+
+ Name="DISA STIG Windows Server 2008 R2 DM v1r16"
+
+Find:
+ Name="(.*?)"
+Replace:
+ Name="Medicare \1"
+
+Note that there’s a leading space before Name in both regexes
+
+After complete, do another find/replace as follows:
+
+Find:
+IsSystem="True"
+Replace:
+IsSystem="False"
+------------------------------
+
+When importing on CCM for the first time, you can choose to Create.
+Any changes after that ,choose Overwrite
+
+
+--------------------------------------
+ Name="Medicare DISA STIG Windows Server 2008 R2 DM v1r16"
+
+Find:
+Name="Medicare (.*?)"
+Replace:
+Name="Medicare Citrix \1"
+
+----------------------------------------
+
+how to add a pager for more and press any key
+
+.*(([-]+.*[mM]ore.*[-]+)|(any key)).*
+----------------------------------------
+CCM explore
+
+For this to work, we need direct access to the database. So, worst case scenario,
+this needs to be placed on the ccm mgmt. server.
+
+If you're using Windows Auth, then these are you setup commands:
+
+ccmcmd setprofile dbserver yourdbip\yourdbinstance
+ccmcmd setprofile dbname yourdbname
+ccmcmd setprofile dbwinauth True
+
+If you're not logged in as the Windows Auth user, you'll need to run this via runas:
+
+runas /user:yourdomain\youruser "ccmcmd explore"
+
+If you're not using windows auth, then these are the setup commands:
+
+ccmcmd setprofile dbserver yourdbip\yourdbinstance
+ccmcmd setprofile dbname yourdbname
+ccmcmd setprofile dbuser youruser
+ccmcmd setprofile dbpasswd yourpwd
+
+Then run it simply: ccmcmd explore
+
+
+https://ccmserver/nCircleWeb/WebClientAPI.asmx?wsdl
+
+-----------------------------
+
+For code examples, there’s a C# project in the code repository written by Bob Thomas,
+and then there’s the “CCMAPI” class that I wrote here: https://github.scm.tripwire.com/PS/ccmapi
+
+You can also find examples of specific calls in the test file:
+https://github.scm.tripwire.com/PS/ccmapi/blob/master/CCMAPI_test.py
+
+To talk to your specific example, do you know the difference between a scan task and a scan task instance?
+Scan Task: The configured scan (discovery, compliance, advanced, port) scan
+Scan Task Instance: An occurrence of a “Scan Task” that is either currently running or ran at some time in the past. Note that scan task instances are created by network profile. So, if you have a scan task assigned to an asset group, then you will have a scan task instance for each network profile in scope. Weird, huh?
+
+If you’re using Python and would like to examine the calls that are available, you can “print client” 
+to see a list of all the available methods/inputs. This is often an easier way to explore the API vs. 
+reading the WSDL or using SoapUI.
+
+Creating a scan task is largely undocumented. I have taken the time to research how to create a ping scan task. 
+You’ll find the code in CreatePingSweepScanTask in CCMAPI. I have not researched how to create an advanced scan 
+task or compliance scan task, unfortunately.
+
+One final note: if you look at the CCMAPI code, you’ll see that in some cases, I use “GetEntireTable” API call. 
+This is a SIH integration call that I use to just select the entire contents of a SQL table. I try to avoid 
+using this API call when possible, but in some cases, you have no choice since the API doesn’t provide any 
+other method to getting the data.
+
+---------------
+Drop Foreing Key from Revision Table
+Alter schema (Drop and Alter) of tables:  ScanTaskInstanceAssetAsn,ScanTaskInstance,SCAPScanResult,SCAP12ScanResult,ScanTaskInstanceAssetAsn, Revision
+Alter schema (Add PK, Add FK, Create Index) of tables: ScanTaskInstanceAssetAsn,ScanTaskInstance,SCAPScanResult,SCAP12ScanResult,ScanTaskInstanceAssetAsn, Revision
+Add Index IX_Revision_AssetRecordId_RevisionTime on Revision Table
+
+02-19-2019 13:09:30:090 SMIP020-Mgmt General/EventManager.LogFailureEvent (T: 6): System Health event: Error when performing the database upgrade: System.Exception: Error in task Update Vista/i5 Policies: Exception has been thrown by the target of an invocation. ---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileNotFoundException: Could not find file 'D:\Program Files (x86)\Tripwire\Configuration Compliance Manager\Policies\FDCC WinXP.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(String filename)
+   at Cambia.CM.Setup.DBMerge.DBUtil.UpdateCompliancePolicy(String filename, Int32 sourceid)
+   at Cambia.CM.Setup.DBMerge.UpgradeTasks.UpgradeTasks.AddVistaPolicies(DBUtil conn)
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Cambia.CM.Setup.DBMerge.DBUpgrader.Upgrade(DBContext context, String driver, String connectstr, Boolean writesih)
+   --- End of inner exception stack trace ---
+   at Cambia.CM.Setup.DBMerge.DBUpgrader.Upgrade(DBContext context, String driver, String connectstr, Boolean writesih)
+   at Cambia.CM.MgmtServer.ServiceImpl.UpdateDB()
+02-19-2019 13:09:30:105 SMIP020-Mgmt General/ServiceImpl.ThreadFunc (T: 6): Sleeping, then will retry the database task.
+02-19-2019 13:09:40:115 SMIP020-Mgmt General/ServiceImpl.UpdateDB (T: 6): Running database upgrade:
+02-19-2019 13:09:40:146 SMIP020-Mgmt General/ServiceImpl.UpdateDB (T: 6): Update Vista/i5 Policies
+Update Vista/i5 Policies Part 2
+Add ScreenOS Policy
+
+SOLUTION re-install database, eun install wizard
+If the db has been created, prior to the install, give user access to drop/create db
+
+------------------
+
+CCM Commander 
+
+ccmcmd.exe create  -s 10.248.230.107 -u admin  -p nCircle007 networkprofile net2
+
+edit j.txt, 
+net2, ryu, 10.12.12.12,........
+
+ccmcmd.exe importnetworkprofiles   -s 10.248.230.107 -u admin  -p nCircle007 j.txt
+
+ccmcmd.exe -s 10.248.230.107 -u admin -p nCircle007 licenseasset 10.248.230.1
+
+ccmcmd.exe startnetworkprofile -s 10.248.230.107 -u admin -p nCircle007 net2
+
+
+ensure the soap api works 
+http://10.248.230.107/nCircleWeb/WebClientAPI.asmx?wsdl
+http://10.248.230.107/nCircleWeb/WebClientAPI.asmx?op=ApiVersion
+http://10.248.230.107/nCircleWeb/WebClientAPI.asmx?op=StartScan
+
+ensure the ret api works
+
+Rest API
+add  <RestApiRoot>https://0.0.0.0/</RestApiRoot>
+     <restapienabled>true</restapienabled>
+to mgmsettings file 
+
+https://192.168.204.205/swagger-ui/index.html?url=/swagger.json&validatorUrl=
+
+----------
+error 
+C:\Program Files\Tripwire\CCM\ccmcmd>ccmcmd.exe
+The application has failed to start because its side-by-side configuration is incorrect. Please see the application event log or use the command-line sxstrace.exe tool for more detail.
+
+install vcredist_x86.exe from https://www.microsoft.com/en-us/download/details.aspx?id=29
+----------
+
+odbc driver msodbcsql which installs as ODBC Driver 11 for SQL Server - ENU\x86\msobdcsql.msi
+
+----------
+pip install ipaddress
+pip install pypyodbc
+
+
+

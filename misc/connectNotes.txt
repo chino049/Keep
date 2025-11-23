@@ -1,0 +1,1019 @@
+
+rav cant be added to for
+admincli 
+system data partition reset CONFIRM on rav and for
+
+rav webui is spinning, admincli and run 
+rav keycloak database reset
+system service rav keycloak restart
+rav keycloak hostname show
+
+https://hostname/en-US/account/login?loginType=splunk and then use tw-connect-administrator (trip*wire), setting licensing
+
+                en-US/app/launcher/home
+
+
+Connect 
+c4a09321a7361e8c   forwarder  38
+f82e90351bc03a5c   rav        39
+
+3bb7182399388c96   rav 		  51   exsi
+
+
+https://192.168.204.39/en-US/app/tripwire-connect/dashboards
+
+https://192.168.204.39/en-US/account/login?loginType=Splunk
+tw-connect-administrator   ne9xbd4i  
+
+------------------
+
+https://192.168.10.41/en-US/account/login?loginType=Splunk
+1d1cf40152516999  
+
+
+on forwarder .40 esxi
+b1547e460da24539
+cat /data/rav/configuration/.splunkrc | grep tw-connect-administrator
+tw-connect-administrator=2gux93a8
+
+
+https://192.168.10.41/en-US/account/login?loginType=Splunk
+tw-connect-administrator 2gux93a8
+
+
+
+
+on 4.6 
+/data/splunk/etc/apps/tripwire-connect/default/data/ui/views on rav
+where report templates are
+
+/data/splunk/etc/apps/tripwire-connect/local/data/ui/views
+for custom
+
+
+
+
+
+
+
+
+
+
+
+
+                                       
+
+
+
+                   | rename combined_input.* as *   
+                  | where scan_finish_timestamp &gt; (relative_time(now(), "$prmTimeV.earliest$")) 
+                  | lookup tw_vm_asset_current_state reconciled_asset_id output tag_set_values scan_network_name  asset_ip asset_dns asset_net_bios_domain asset_net_bios_name asset_os
+                  | lookup tw_vm_dim_app.csv app_id output app_name 
+                  | lookup tw_vm_dim_vuln.csv vuln_id output vuln_name 
+ xxxxxxxxxxx                   | fillnull value="" tag_set_values
+					
+ XXXXXXXXXXXXX                 | where isnotnull([`tw_scm_tag_filter_string(tagSet=$prmTagSet|s$, tagValue=$prmTagValue|s$)`])
+                  | 
+				  search NOT asset_os IN ($prmOS$) 
+                  | search vuln_name IN (*Obsolete*)
+                  | table asset_ip, asset_dns, asset_net_bios_domain, asset_net_bios_name, asset_os, app_name, vuln_name, scan_network_name, scan_id
+
+4.3 version works, 4.4 does not work. need the isnotnull 
+
+
+
+| inputlookup tw_vm_dim_vuln.csv
+
+| inputlookup tw_vm_dim_vuln.csv  where vuln_id = 449376 | table aspl_version, vuln_publish_date , vuln_advisory_id
+
+| inputlookup tw_vm_dim_vuln.csv  where vuln_id = 449376 | makemv delim="\n" vuln_advisory_id | table aspl_version, vuln_publish_date , vuln_advisory_id
+
+	CVE-2020-1147\n AV:N/AC:M/Au:N/C:P/I:P/A:P\n CVE-2020-1147\n 6.8\n Released in ASPL 895 on 2020-07-15\n (E:H/RL:OF/RC:C)\n 5.9\n CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H\n 7.8\n Yes\n (E:H/RL:O/RC:C)\n 9.4
+
+
+	
+| inputlookup tw_vm_dim_vuln.csv  where vuln_id = 449376  
+    | rex field=vuln_advisory_id ".*(?<Released>).*" 
+	| table aspl_version, vuln_publish_date , vuln_advisory_id	
+	
+| inputlookup tw_vm_dim_vuln.csv  where vuln_id = 449376  
+    | eval field vuln_advisory_id =   "Released in ASPL" 
+    | table aspl_version, vuln_publish_date , vuln_advisory_id	
+
+ 
+| inputlookup tw_vm_dim_vuln.csv  where vuln_id = 449376     
+    | table aspl_version, vuln_publish_date , vuln_advisory_id	
+	| makemv delim="\n " vuln_advisory_id  
+	| mvexpand vuln_advisory_id
+	| rex field=vuln_advisory_id "(?<vuln_advisory_publisher_id>.*?)-(?<advisory>.*)" 
+ 
+ 
+ | inputlookup tw_vm_dim_vuln.csv  where vuln_id = 449376     
+    | table aspl_version, vuln_publish_date , vuln_advisory_id	
+	| makemv delim="\n " vuln_advisory_id  
+	| mvexpand vuln_advisory_id 
+	| search vuln_advisory_id IN ("*Released in ASPL*")
+	
+ | inputlookup tw_vm_dim_vuln.csv  where vuln_id = 449376     
+    | table aspl_version, vuln_publish_date , vuln_advisory_id	
+	| makemv delim="\n " vuln_advisory_id  
+	| mvexpand vuln_advisory_id 
+	| where like (vuln_advisory_id, "%Released in ASPL%")
+	
+
+| inputlookup tw_vm_dim_vuln.csv where vuln_id > 303097 and vuln_id < 303600
+	| table vuln_res, vuln_name_date, vuln_id, vuln_name, vuln_advisory_id 
+	| eval vuln_res=if(match(vuln_name,"MS-"), vuln_name, vuln_advisory_id) 
+	| eval vuln_name_date=substr(vuln_name,1,11)
+
+-------
+| inputlookup tw_vm_dim_vuln.csv where vuln_id > 303097 and vuln_id < 303100 and vuln_name like("MS-%")
+| table vuln_id, vuln_name, vuln_advisory_id, vuln_name , _time 
+| rex field=vuln_name "(?<year>[0-9][0-9][0-9][0-9])" 
+| rex field=vuln_name "MS-.*-(?<month>.*):.*" 
+| rex field=vuln_name "(?<year_month>[0-9][0-9][0-9][0-9]-.*):" 
+| eval year_month_h=strftime(_time, "%y-%m") 
+| eval asdf=typeof(year_month) 
+| eval vuln_unix_timestamp=strptime(year_month+"-01", "%Y-%b-%d")
+
+	
+| inputlookup tw_vm_dim_vuln.csv where vuln_id > 303138 and vuln_id < 303600 
+	| table vuln_id, year_month_aspl, vuln_name, vuln_advisory_id 	
+	| makemv delim="\n " vuln_advisory_id  
+	| mvexpand vuln_advisory_id | search vuln_advisory_id IN ("*Released in ASPL*")
+	| rex field=vuln_name "(?<year>[0-9][0-9][0-9][0-9])" 
+	| rex field=vuln_name "MS-.*-(?<month>.*):.*" 
+	| rex field=vuln_name "(?<year_month>[0-9][0-9][0-9][0-9]-.*):" 
+	| eval year_month_h=strftime(_time, "%y-%m") 
+	| eval vuln_unix_timestamp=strptime(year_month+"-01", "%Y-%b-%d") | eval year_month_aspl=if(match(vuln_name,"MS-"), year_month, vuln_advisory_id)
+
+| inputlookup tw_vm_dim_vuln.csv where vuln_id > 303138 and vuln_id < 303600 
+	| table vuln_id, year_month_aspl, vuln_name, vuln_advisory_id 	
+	| makemv delim="\n " vuln_advisory_id  
+	| mvexpand vuln_advisory_id | search vuln_advisory_id IN ("*Released in ASPL*")
+	| rex field=vuln_name "(?<year_month>[0-9][0-9][0-9][0-9]-.*):" 
+| eval year_month_aspl=if(match(vuln_name,"MS-"), year_month, vuln_advisory_id)
+
+-------------------
+
+
+| inputlookup tw_vm_dim_vuln.csv  where vuln_id >  303138 and vuln_id < 303600 
+	| table vuln_id, year_month_aspl, vuln_name, vuln_advisory_id, vuln_publish_date 
+	| makemv delim="\n " vuln_advisory_id  
+	| mvexpand vuln_advisory_id 
+	| search vuln_advisory_id IN ("*Released in ASPL*") 
+	| rex field=vuln_advisory_id "Released.*in.* ASPL.*(?<releasedaspl_date>[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]).*"
+	| eval rad=releasedaspl_date 
+	| eval releasedaspl_timestamp=strptime(rad, "%Y-%m-%d") 
+	| eval rad=strftime(releasedaspl_timestamp, "%Y-%m-%d")    
+	| rex field=vuln_name "MS-(?<vulnname_date>[0-9][0-9][0-9][0-9]-.*):" 
+	| eval vn=vulnname_date+"-01" 
+	| eval vulnname_timestamp=strptime(vn, "%Y-%B-%d") 
+	| eval vn=strftime(vulnname_timestamp,"%m/%d/%Y") 
+	| eval year_month_aspl=vuln_publish_date	
+	| eval year_month_aspl=if(match(vunl_advisory_id, "Released"), releasedaspl_timestamp, vuln_publish_date)
+	| eval year_month_aspl=if(match(vuln_name,"MS-"), vulnname_timestamp, releasedaspl_timestamp) 
+	
+	| where year_month_aspl=relative_time(now(),"-2mon@mon")
+
+
+
+| inputlookup tw_vm_dim_vuln.csv  where vuln_id >  10000
+	| table vuln_id, year_month_aspl, vuln_name, vuln_advisory_id, vuln_publish_date
+ 	| eval publishdate_timestamp=strptime(vuln_publish_date, "%Y-%m-%d") 	
+	
+	| makemv delim="\n " vuln_advisory_id  
+	| mvexpand vuln_advisory_id 
+	| search vuln_advisory_id IN ("*Released in ASPL*") 
+	| rex field=vuln_advisory_id "Released.*in.* ASPL.*(?<releasedaspl_date>[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]).*"
+	| eval releasedaspl_timestamp=strptime(releasedaspl_date, "%Y-%m-%d") 
+	| rex field=vuln_name "MS-(?<vulnname_date>[0-9][0-9][0-9][0-9]-.*):" 
+	| eval vulnname_timestamp=strptime(vulnname_date+"-01", "%Y-%B-%d") 
+	| eval year_month_aspl=publishdate_timestamp	
+	| eval year_month_aspl=if(match(vunl_advisory_id, "Released"), releasedaspl_timestamp, publishdate_timestamp)
+	| eval year_month_aspl=if(match(vuln_name,"MS-"), vulnname_timestamp, releasedaspl_timestamp)
+
+
+
+| inputlookup tw_vm_dim_vuln.csv 
+	| table vuln_id, year_month_aspl, vuln_name, vuln_advisory_id, vuln_publish_date 	
+| where NOT (vuln_name="MS-*") AND NOT (vuln_advisory_id="*Released*") AND (vuln_publish_date="null")
+
+8936 results 
+
+
+
+
+| inputlookup tw_vm_dim_vuln.csv 
+	| table vuln_id, year_month_aspl, vuln_name, vuln_advisory_id, vuln_publish_date 	
+| where like (vuln_name, "MS-%") AND like (vuln_publish_date, "%null%")
+
+8740
+
+| inputlookup tw_vm_dim_vuln.csv 
+	| table vuln_id, year_month_aspl, vuln_name, vuln_advisory_id, vuln_publish_date 	
+| where like (vuln_name, "MS-%") AND like (vuln_publish_date, "%null%") and not like (vuln_advisory_id, "%Released%")
+
+0
+
+| inputlookup tw_vm_dim_vuln.csv 
+	| table vuln_id,  vuln_name, vuln_advisory_id, vuln_publish_date 	
+| where like (vuln_name, "MS-%") and not like (vuln_advisory_id, "%Released%")
+
+0
+
+| inputlookup tw_vm_dim_vuln.csv 
+	| table vuln_id,  vuln_name, vuln_advisory_id, vuln_publish_date 	
+| where like (vuln_publish_date, "%null%") and not like (vuln_advisory_id, "%Released%")
+
+1504
+
+
+| inputlookup tw_vm_dim_vuln.csv | rex field=vuln_name "MS-(?<vulnname_date>[0-9][0-9][0-9][0-9]-.*):"   | table vuln_name vulnname_date
+
+| inputlookup tw_vm_dim_vuln.csv where (vuln_name="MS-*") | table vuln_name
+
+nng__vulnerability_summary_monthly_v21?form.searchfilter_osname=*windows*&form.searchfilter_showzero=0&form.searchfilter_vuln_calc=vuln_count
+
+
+https://192.168.10.51/en-US/app/tripwire-connect/nng__vulnerability_summary_monthly_v21?form.searchfilter_osname=*windows*&form.searchfilter_showzero=0&form.searchfilter_vuln_calc=vuln_count
+https://192.168.10.51/en-US/app/tripwire-connect/nng__vulnerability_summary_monthly_v21?form.searchfilter_osname=windows&form.searchfilter_showzero=0&form.searchfilter_vuln_calc=vuln_count
+
+----------------
+| inputlookup tw_vm_dim_vuln.csv 
+	| table vuln_id, year_month_aspl, vuln_name, vuln_advisory_id, vuln_publish_date 	
+| where NOT (vuln_name="MS-*") AND NOT (vuln_advisory_id="*Released*")
+
+277,464 
+
+
+
+
+
+                        | tstats `tw_summariesonly` latest(combined_input.scan_id) as scan_id
+                        from datamodel=tw_vm_dm_combined_input.combined_input
+                        where index="tw_scanned_vuln"
+                        AND combined_input.vuln_id!="null"
+                        AND combined_input.scan_network_id IN (*)
+                        AND combined_input.scan_id IN (*)
+                        AND combined_input.data_source_id IN (*)
+                        AND combined_input.app_id IN (*)
+                      <!--  AND (combined_input.vuln_id IN (*)) -->
+                        AND (combined_input.score_tw_vuln * *)
+                        BY combined_input.vuln_id, combined_input.scan_network_id, combined_input.reconciled_asset_id, combined_input.data_source_id, combined_input.scan_finish_timestamp
+                        | rename combined_input.* as *
+	
+
+
+| tstats `tw_summariesonly` latest(combined_input.scan_id) as scan_id
+                        from datamodel=tw_vm_dm_combined_input.combined_input
+                        where index="tw_scanned_vuln"
+                        AND combined_input.vuln_id!="null"
+                        AND combined_input.scan_network_id IN (*)
+                        AND combined_input.scan_id IN (*)
+                        AND combined_input.data_source_id IN (*)
+                        AND combined_input.app_id IN (*)
+                        AND (combined_input.vuln_id IN (*))
+                      
+                        BY combined_input.vuln_id, combined_input.scan_network_id, combined_input.reconciled_asset_id, combined_input.data_source_id, combined_input.scan_finish_timestamp
+                        | rename combined_input.* as * | lookup tw_vm_dim_vuln.csv vuln_id 
+	| table vuln_id, year_month_aspl, vuln_name, vuln_advisory_id 	
+	| makemv delim="\n " vuln_advisory_id  
+	| mvexpand vuln_advisory_id | search vuln_advisory_id IN ("*Released in ASPL*")
+	| rex field=vuln_name "(?<year_month>[0-9][0-9][0-9][0-9]-.*):" 
+| eval year_month_aspl=if(match(vuln_name,"MS-"), year_month, vuln_advisory_id)
+
+
+| where vuln_publish_timestamp=relative_time(now(),"-0mon@mon")
+                        | fields vuln_severity $searchfilter_vuln_calc$ vuln_publish_month_use
+
+------------	
+	
+| inputlookup tw_vm_dim_vuln.csv  
+    | table vuln_id, aspl_version, vuln_publish_date , vuln_advisory_id	
+    | where not like (vuln_advisory_id, "%Released in ASPL%")
+
+
+| inputlookup tw_vm_dim_vuln.csv where vuln_advisory_publisher_id=*101*
+
+| inputlookup tw_vm_dim_vuln.csv where vuln_advisory_publisher_id in (*90*) ??? does not work
+
+
+| inputlookup tw_vm_dim_vuln.csv where vuln_advisory_publisher_id=*101*  ( for NGG CISA BOD )
+
+| inputlookup tw_vm_dim_advisory.csv 
+
+
+| inputlookup tw_vm_dim_vuln.csv where vuln_id > 303097 and vuln_id < 303600
+| table vuln_res, vuln_id, vuln_name, vuln_advisory_id | eval vuln_res=if(match(vuln_name,"MS-"), vuln_name, vuln_advisory_id)
+
+
+| inputlookup tw_vm_dim_vuln.csv where vuln_id > 303097 and vuln_id < 303600  has 332
+
+
+| lookup tw_vm_dim_vuln.csv vuln_id OUTPUT vuln_advisory_publisher_id  
+| eval vuln_advisory_publisher_id =split(vuln_advisory_publisher_id, ",") 
+| mvexpand vuln_advisory_publisher_id 
+| lookup tw_vm_dim_advisory.csv adpub_id as vuln_advisory_publisher_id Output adpub_name 
+| search adpub_name="Tripwire CVSSv3 Temporal Vector"
+
+
+ 
+| inputlookup tw_vm_dim_vuln.csv where vuln_id= 449376
+	| table vuln_id vuln_advisory_id vuln_advisory_publisher_id
+	| makemv delim="\n " vuln_advisory_id
+	| makemv delim="," vuln_advisory_publisher_id
+	| lookup tw_vm_dim_advisory.csv adpub_id as vuln_advisory_publisher_id OUTPUTNEW adpub_lookup_url
+	| eval advisory=mvzip(adpub_lookup_url,vuln_advisory_id,"")
+	| eval advisory=mvzip(vuln_advisory_publisher_id,advisory,"-")
+	| table vuln_id advisory
+	| mvexpand advisory
+	| rex field="advisory" "(?<vuln_advisory_publisher_id>.*?)-(?<advisory>.*)"
+	| lookup tw_vm_dim_advisory.csv adpub_id as vuln_advisory_publisher_id OUTPUTNEW adpub_lookup_url_append adpub_name adpub_url
+	| eval advisory=mvzip(advisory,adpub_lookup_url_append,"")
+	| table adpub_name advisory
+	| rename adpub_name as "Advisory Name" advisory as "Advisory URL" 
+
+| tstats summariesonly=true
+						latest(combined_input.data_source_id) as data_source_id
+						latest(combined_input.reconciled_asset_id) as reconciled_asset_id
+						latest(combined_input.vuln_id) as vuln_id
+						from datamodel=tw_vm_dm_combined_input.combined_input 
+						by combined_input.reconciled_asset_id combined_input.scan_id combined_input.vuln_id
+						
+		| lookup tw_vm_dim_vuln.csv vuln_id OUTPUT vuln_advisory_publisher_id  
+| eval vuln_advisory_publisher_id =split(vuln_advisory_publisher_id, ",") 
+| mvexpand vuln_advisory_publisher_id 
+| lookup tw_vm_dim_advisory.csv adpub_id as vuln_advisory_publisher_id Output adpub_name 
+| search adpub_name="Tripwire CVSSv3 Temporal Vector"
+				
+
+
+					  
+					  
+	| tstats summariesonly=true
+                      latest(combined_input.data_source_id) as data_source_id
+                      latest(combined_input.reconciled_asset_id) as reconciled_asset_id
+                      latest(combined_input.asset_os_id) as asset_os_id
+                      latest(combined_input.scan_id) as scan_id
+                      latest(combined_input.score_cvssv2) as score_cvssv2
+                      latest(combined_input.score_cvssv3) as score_cvssv3
+                      latest(combined_input.score_tw_vuln) as score_tw_vuln
+                      latest(combined_input.vuln_id) as vuln_id
+                      from datamodel=tw_vm_dm_combined_input.combined_input
+                      where (earliest=-6mon@mon)
+                  
+                      AND index="tw_scanned_vuln"
+                      AND combined_input.score_tw_vuln>0
+                      by combined_input.reconciled_asset_id combined_input.scan_id combined_input.vuln_id
+                      | rename combined_input.* as * | 					   lookup tw_vm_dim_vuln.csv vuln_id OUTPUT vuln_advisory_publisher_id | search vuln_advisory_publisher_id IN ("*85*")
+					  
+					  
+					  
+					  
+					  
+					  
+					  
+					  
+					  
+					   lookup tw_vm_dim_vuln.csv vuln_id OUTPUT vuln_advisory_publisher_id | search vuln_advisory_publisher_id IN ($searchfilter_vulnsource$)
+					  
+					                        | lookup vm_asset_map reconciled_asset_id OUTPUTNEW common_asset_id
+					  Eric P the tw_asset_map lookup has changed to vm_asset_map
+					  
+| tstats `tw_summariesonly`
+                        latest(combined_input.score_tw_vuln) as score_tw_vuln,
+                        latest(combined_input.app_id) as app_id
+                        latest(combined_input.scan_id) as scan_id
+                        from datamodel=tw_vm_dm_combined_input.combined_input
+                        where index="tw_scanned_vuln"
+                        AND combined_input.vuln_id!="null"
+                        AND combined_input.scan_network_id IN (*)
+                        AND combined_input.scan_id IN (*)
+                        AND combined_input.data_source_id IN (*)
+                        AND (combined_input.vuln_id IN ("*"))
+                        AND (combined_input.score_tw_vuln > 0 )
+                        BY combined_input.vuln_id, combined_input.scan_network_id, combined_input.reconciled_asset_id, combined_input.data_source_id, combined_input.scan_finish_timestamp
+                        | rename combined_input.* as *
+                        | lookup tw_vm_dim_vuln.csv vuln_id OUTPUT vuln_advisory_publisher_id 
+                        | search vuln_advisory_publisher_id IN (*)
+                        | eval _time=scan_finish_timestamp
+                        | lookup tw_vm_dim_app.csv app_id output app_name
+                        | fillnull value="---" app_name
+                        
+                        `tw_vm_agging_filter`
+                        | lookup tw_vm_asset_current_state reconciled_asset_id scan_id output tag_set_values is_latest_common_asset scan_network_name
+                        | search is_latest_common_asset="True" scan_network_name IN (CASE("*"))
+                        | fillnull value="" tag_set_values
+                        | where isnotnull([`tw_scm_tag_filter_string(tagSet=*, tagValue=*)`])
+                        | lookup tw_vm_dim_vuln.csv vuln_id output vuln_skill_name vuln_risk_name score_cvssv3 vuln_name
+                        | fillnull value="0" score_cvssv3
+                        | fillnull value="NA" vuln_skill_name vuln_risk_name vuln_name
+                        | search (score_cvssv3 > 0)
+                        | search vuln_skill_name IN("*") AND vuln_risk_name IN("*")
+                        | search vuln_name IN (*)
+                        | eventstats max(scan_finish_timestamp) as latest_scan_finish_timestamp by reconciled_asset_id
+                        | where latest_scan_finish_timestamp=scan_finish_timestamp
+                        | stats latest(app_name) as app_name latest(vuln_name) as vuln_name latest(score_cvssv3) as score_cvssv3 dc(reconciled_asset_id) as "Asset Count" max(score_tw_vuln) as "Vulnerability Score" latest(scan_network_name) as scan_network_name, latest(scan_finish_timestamp) as "Last Scan Date" by vuln_id, scan_network_id
+                        | rename vuln_id as "Vulnerability ID",vuln_name as "Vulnerability Name", app_name as "Application Name", score_cvssv3 as "CVSSv3 Score", scan_network_name as "Network Name"
+                        | table
+                        "Network Name",
+                        "Vulnerability ID",
+                        "Vulnerability Name",
+                        "Application Name"
+                        "Asset Count",
+                        "Vulnerability Score",
+                        "CVSSv3 Score",
+                        "Last Scan Date"
+                        | sort 0 -"Vulnerability Score"
+                        | fieldformat "Last Scan Date" = `connect_time_format('Last Scan Date')`					  
+					  
+					  
+					  
+			  
+					  
+   | stats latest(app_name) as app_name latest(vuln_name) as vuln_name latest(score_cvssv3) as score_cvssv3 dc(reconciled_asset_id) as "Asset Count" max(score_tw_vuln) as "Vulnerability Score" latest(scan_network_name) as scan_network_name, latest(scan_finish_timestamp) as "Last Scan Date" by vuln_id, scan_network_id					  
+		
+
+-----------------------------------		
+| tstats summariesonly=true
+            latest(combined_input.data_source_id) as data_source_id
+            latest(combined_input.reconciled_asset_id) as reconciled_asset_id
+            latest(combined_input.asset_os_id) as asset_os_id
+            latest(combined_input.scan_id) as scan_id
+            latest(combined_input.score_cvssv2) as score_cvssv2
+            latest(combined_input.score_cvssv3) as score_cvssv3
+            latest(combined_input.score_tw_vuln) as score_tw_vuln
+            latest(combined_input.vuln_id) as vuln_id
+            from datamodel=tw_vm_dm_combined_input.combined_input
+            where (earliest=-1mon@mon)
+            AND index="tw_scanned_vuln"
+           
+            by combined_input.reconciled_asset_id combined_input.scan_id combined_input.vuln_id
+            | rename combined_input.* as *
+
+                        | lookup vm_asset_map reconciled_asset_id OUTPUTNEW common_asset_id
+
+            | lookup tw_vm_dim_asset_os.csv os_id as asset_os_id OUTPUTNEW os_name
+            | search os_name IN (*windows*)
+            | eventstats max(scan_id) as max_vuln_scan_id by common_asset_id
+            | where scan_id=max_vuln_scan_id
+            | append
+            [| tstats summariesonly=true
+            latest(asset_snapshot.data_source_name) as data_source_name
+            latest(asset_snapshot.scan_id) as scan_id
+            from datamodel=tw_vm_dm_iv_asset_snapshot.asset_snapshot
+            where (earliest=-1mon@mon) AND
+            asset_snapshot.asset_os IN ("%windows%")
+            by asset_snapshot.reconciled_asset_id asset_snapshot.scan_id
+            | rename asset_snapshot.* as *
+                                   | lookup vm_asset_map reconciled_asset_id OUTPUTNEW common_asset_id            | inputlookup append=true tw_vm_asset_current_state
+            | fillnull value=0 app_count vulnerability_count
+            | search asset_os IN (*windows*)
+            | eventstats max(scan_id) as max_asset_scan_id by common_asset_id
+            | where scan_id=max_asset_scan_id
+            | dedup common_asset_id max_asset_scan_id sortby -app_count -vulnerability_count
+            | table common_asset_id max_asset_scan_id
+            ]   | eventstats values(max_asset_scan_id) as max_asset_scan_id by common_asset_id
+            | where scan_id=max_asset_scan_id
+            | lookup tw_vm_dim_vuln.csv vuln_id OUTPUTNEW vuln_name vuln_description vuln_mitigation vuln_remediation vuln_publish_date vuln_cve_list vuln_risk_name vuln_skill_name vuln_solution vuln_strategy     | eval vuln_severity=case(score_tw_vuln>=5000,"Critical", score_tw_vuln>=3000 AND score_tw_vuln<5000, "High", score_tw_vuln>1000 AND score_tw_vuln<3000, "Medium", score_tw_vuln>0 AND score_tw_vuln<1000, "Low", score_tw_vuln==0 OR isnull(score_tw_vuln) OR score_tw_vuln=="null", "Zero")  | eval vuln_severity=case(
+            vuln_severity="Zero", "Zero",
+            vuln_risk_name="Exposure" AND vuln_skill_name="Automated Exploit", "Low",
+            vuln_risk_name="Exposure" AND vuln_skill_name="Easy", "Low",
+            vuln_risk_name="Exposure" AND vuln_skill_name="Moderate", "Low",
+            vuln_risk_name="Exposure" AND vuln_skill_name="Difficult", "Low",
+            vuln_risk_name="Exposure" AND vuln_skill_name="Extremely Difficult", "Low",
+            vuln_risk_name="Exposure" AND vuln_skill_name="No Known Exploit", "Low",
+            vuln_risk_name="Local Availability" AND vuln_skill_name="Automated Exploit", "Medium",
+            vuln_risk_name="Local Availability" AND vuln_skill_name="Easy", "Medium",
+            vuln_risk_name="Local Availability" AND vuln_skill_name="Moderate", "Medium",
+            vuln_risk_name="Local Availability" AND vuln_skill_name="Difficult", "Low",
+            vuln_risk_name="Local Availability" AND vuln_skill_name="Extremely Difficult", "Low",
+            vuln_risk_name="Local Availability" AND vuln_skill_name="No Known Exploit", "Low",
+            vuln_risk_name="Local Access" AND vuln_skill_name="Automated Exploit", "High",
+            vuln_risk_name="Local Access" AND vuln_skill_name="Easy", "High",
+            vuln_risk_name="Local Access" AND vuln_skill_name="Moderate", "Medium",
+            vuln_risk_name="Local Access" AND vuln_skill_name="Difficult", "Medium",
+            vuln_risk_name="Local Access" AND vuln_skill_name="Extremely Difficult", "Low",
+            vuln_risk_name="Local Access" AND vuln_skill_name="No Known Exploit", "Low",
+            vuln_risk_name="Local Privileged" AND vuln_skill_name="Automated Exploit", "High",
+            vuln_risk_name="Local Privileged" AND vuln_skill_name="Easy", "High",
+            vuln_risk_name="Local Privileged" AND vuln_skill_name="Moderate", "High",
+            vuln_risk_name="Local Privileged" AND vuln_skill_name="Difficult", "Medium",
+            vuln_risk_name="Local Privileged" AND vuln_skill_name="Extremely Difficult", "Medium",
+            vuln_risk_name="Local Privileged" AND vuln_skill_name="No Known Exploit", "Low",
+            vuln_risk_name="Remote Availability" AND vuln_skill_name="Automated Exploit", "Critical",
+            vuln_risk_name="Remote Availability" AND vuln_skill_name="Easy", "Critical",
+            vuln_risk_name="Remote Availability" AND vuln_skill_name="Moderate", "High",
+            vuln_risk_name="Remote Availability" AND vuln_skill_name="Difficult", "High",
+            vuln_risk_name="Remote Availability" AND vuln_skill_name="Extremely Difficult", "High",
+            vuln_risk_name="Remote Availability" AND vuln_skill_name="No Known Exploit", "Medium",
+            vuln_risk_name="Remote Access" AND vuln_skill_name="Automated Exploit", "Critical",
+            vuln_risk_name="Remote Access" AND vuln_skill_name="Easy", "Critical",
+            vuln_risk_name="Remote Access" AND vuln_skill_name="Moderate", "Critical",
+            vuln_risk_name="Remote Access" AND vuln_skill_name="Difficult", "High",
+            vuln_risk_name="Remote Access" AND vuln_skill_name="Extremely Difficult", "High",
+            vuln_risk_name="Remote Access" AND vuln_skill_name="No Known Exploit", "Medium",
+            vuln_risk_name="Remote Privileged" AND vuln_skill_name="Automated Exploit", "Critical",
+            vuln_risk_name="Remote Privileged" AND vuln_skill_name="Easy", "Critical",
+            vuln_risk_name="Remote Privileged" AND vuln_skill_name="Moderate", "Critical",
+            vuln_risk_name="Remote Privileged" AND vuln_skill_name="Difficult", "Critical",
+            vuln_risk_name="Remote Privileged" AND vuln_skill_name="Extremely Difficult", "High",
+            vuln_risk_name="Remote Privileged" AND vuln_skill_name="No Known Exploit", "High"
+            ) 
+			| eval scan_network_name=mvindex(scan_network_name,0)   
+			| table data_source_id vuln_id score_cvssv2 score_cvssv3 score_tw_vuln vuln_publish_date vuln_name vuln_severity
+
+			| eval vuln_publish_timestamp=if(isnull(vuln_publish_date) OR vuln_publish_date="null" OR round(strptime(vuln_publish_date, "%Y-%m-%d"),0)<relative_time(now(),"-11mon@mon"),round(relative_time(now(),"-12mon@mon"),0),round(strptime(vuln_publish_date, "%Y-%m-%d"),0) ) | eval vuln_publish_month_use=strftime(vuln_publish_timestamp,"%Y-%b")
+            | eval vuln_publish_month_tmp=round(strptime(vuln_publish_month_use+"-01","%Y-%b-%d"),0)
+            | eval vuln_publish_month_use=vuln_publish_month_tmp+"_"+vuln_publish_month_use
+
+            | stats count(eval(if(isnotnull(score_tw_vuln),1,null()))) as vuln_count dc(vuln_id) as dc_vuln_count by vuln_publish_month_use vuln_severity
+            
+			| append
+            [| gentimes start=-400 end=1
+            | eval vuln_publish_timestamp=if(starttime<=relative_time(now(),"-11mon@mon"),round(relative_time(now(),"-12mon@mon"),0),starttime)
+            | eval vuln_publish_month_use=strftime(vuln_publish_timestamp,"%Y-%b")
+            | eval vuln_publish_month_tmp=round(strptime(vuln_publish_month_use+"-01","%Y-%b-%d"),0)
+            | eval vuln_publish_month_use=vuln_publish_month_tmp+"_"+vuln_publish_month_use
+            | dedup vuln_publish_month_use
+            | table vuln_publish_month_use
+            
+			| eval vuln_severity="Critical,High,Medium,Low,Zero"
+            | makemv tokenizer="([^,]+),?" vuln_severity
+            | mvexpand vuln_severity
+						
+            | table vuln_publish_month_use vuln_severity]
+            | fillnull value=0 vuln_count dc_vuln_count
+            | dedup vuln_publish_month_use vuln_severity sortby -vuln_count
+            | eval rank=case(vuln_severity="Critical",5,vuln_severity="High",4,vuln_severity="Medium",3,vuln_severity="Low",2,vuln_severity="Zero",1)
+            | sort 0 -vuln_publish_month_use -rank
+            
+            | rex field="vuln_publish_month_use" "(?<vuln_publish_timestamp>.*)_(?<vuln_publish_month_use>.*)"
+
+			| where vuln_publish_timestamp=relative_time(now(),"-5mon@mon")
+	
+	
+| tstats summariesonly=true
+    latest(combined_input.data_source_id) as data_source_id
+    latest(combined_input.reconciled_asset_id) as reconciled_asset_id
+    latest(combined_input.asset_os_id) as asset_os_id
+    latest(combined_input.scan_id) as scan_id
+    latest(combined_input.score_cvssv2) as score_cvssv2
+    latest(combined_input.score_cvssv3) as score_cvssv3
+    latest(combined_input.score_tw_vuln) as score_tw_vuln
+    latest(combined_input.vuln_id) as vuln_id
+    from datamodel=tw_vm_dm_combined_input.combined_input
+    where (earliest=-1mon@mon)
+    AND index="tw_scanned_vuln"
+    by combined_input.reconciled_asset_id combined_input.scan_id combined_input.vuln_id 
+| rename combined_input.* as * 
+| lookup vm_asset_map reconciled_asset_id OUTPUTNEW common_asset_id 
+| lookup tw_vm_dim_asset_os.csv os_id as asset_os_id OUTPUTNEW os_name 
+| search os_name IN (*windows*) 
+| eventstats max(scan_id) as max_vuln_scan_id by common_asset_id 
+| where scan_id=max_vuln_scan_id 
+| append 
+    [| tstats summariesonly=true
+        latest(asset_snapshot.data_source_name) as data_source_name
+        latest(asset_snapshot.scan_id) as scan_id
+        from datamodel=tw_vm_dm_iv_asset_snapshot.asset_snapshot
+        where (earliest=-1mon@mon) AND
+        asset_snapshot.asset_os IN ("%windows%")
+        by asset_snapshot.reconciled_asset_id asset_snapshot.scan_id 
+    | rename asset_snapshot.* as * 
+    | lookup vm_asset_map reconciled_asset_id OUTPUTNEW common_asset_id 
+    | inputlookup append=true tw_vm_asset_current_state 
+    | fillnull value=0 app_count vulnerability_count 
+    | search asset_os IN (*windows*) 
+    | eventstats max(scan_id) as max_asset_scan_id by common_asset_id 
+    | where scan_id=max_asset_scan_id 
+    | dedup common_asset_id max_asset_scan_id sortby -app_count -vulnerability_count 
+    | table common_asset_id max_asset_scan_id
+        ] 
+| eventstats values(max_asset_scan_id) as max_asset_scan_id by common_asset_id 
+| where scan_id=max_asset_scan_id 
+| lookup tw_vm_dim_vuln.csv vuln_id OUTPUTNEW vuln_advisory_id vuln_name vuln_description vuln_mitigation vuln_remediation vuln_publish_date vuln_cve_list vuln_risk_name vuln_skill_name vuln_solution vuln_strategy 
+
+         | eval vuln_publish_date=if(isnull(vuln_publish_date) OR vuln_publish_date="null" OR round(strptime(vuln_publish_date, "%Y-%m-%d"),0)&lt;relative_time(now(),"-11mon@mon"),round(relative_time(now(),"-12mon@mon"),0),round(strptime(vuln_publish_date, "%Y-%m-%d"),0) ) 
+            
+
+ | eval publishdate_timestamp=strptime(vuln_publish_date, "%Y-%m-%d") 	
+            | makemv delim="\n " vuln_advisory_id  
+          	| mvexpand vuln_advisory_id 
+          	| search vuln_advisory_id IN ("*Released in ASPL*") 
+          	| rex field=vuln_advisory_id "Released.*in.* ASPL.*(?<releasedaspl_date>[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]).*"
+          	
+          	| eval releasedaspl_timestamp=strptime(releasedaspl_date, "%Y-%m-%d") 
+
+
+          	| rex field=vuln_name "MS-(?<vulnname_date>[0-9][0-9][0-9][0-9]-.*):" 
+          	| eval vulnname_timestamp=strptime(vulnname_date+"-01", "%Y-%B-%d") 
+
+          	| eval year_month_aspl=publishdate_timestamp	
+          	
+          	| eval year_month_aspl=if(match(vunl_advisory_id, "Released"), releasedaspl_timestamp, publishdate_timestamp)
+          	
+          	| eval year_month_aspl=if(match(vuln_name,"MS-"), vulnname_timestamp, releasedaspl_timestamp)
+          	
+          	   | eval year_month_aspl=if(isnull(year_month_aspl) OR year_month_aspl="null" OR round(year_month_aspl,0)<relative_time(now(),"-11mon@mon"),round(relative_time(now(),"-12mon@mon"),0),round(year_month_aspl,0) ) 
+
+
+
+
+	| eval vuln_severity=case(score_tw_vuln>=5000,"Critical", score_tw_vuln>=3000 AND score_tw_vuln<5000, "High", score_tw_vuln>=1000 AND score_tw_vuln<3000, "Medium", score_tw_vuln>0 AND score_tw_vuln<1000, "Low", score_tw_vuln==0 OR isnull(score_tw_vuln) OR score_tw_vuln=="null", "Zero")
+
+| eval vuln_severity=case(
+    vuln_severity="Zero", "Zero",
+    vuln_risk_name="Exposure" AND vuln_skill_name="Automated Exploit", "Low",
+    vuln_risk_name="Exposure" AND vuln_skill_name="Easy", "Low",
+    vuln_risk_name="Exposure" AND vuln_skill_name="Moderate", "Low",
+    vuln_risk_name="Exposure" AND vuln_skill_name="Difficult", "Low",
+    vuln_risk_name="Exposure" AND vuln_skill_name="Extremely Difficult", "Low",
+    vuln_risk_name="Exposure" AND vuln_skill_name="No Known Exploit", "Low",
+    vuln_risk_name="Local Availability" AND vuln_skill_name="Automated Exploit", "Medium",
+    vuln_risk_name="Local Availability" AND vuln_skill_name="Easy", "Medium",
+    vuln_risk_name="Local Availability" AND vuln_skill_name="Moderate", "Medium",
+    vuln_risk_name="Local Availability" AND vuln_skill_name="Difficult", "Low",
+    vuln_risk_name="Local Availability" AND vuln_skill_name="Extremely Difficult", "Low",
+    vuln_risk_name="Local Availability" AND vuln_skill_name="No Known Exploit", "Low",
+    vuln_risk_name="Local Access" AND vuln_skill_name="Automated Exploit", "High",
+    vuln_risk_name="Local Access" AND vuln_skill_name="Easy", "High",
+    vuln_risk_name="Local Access" AND vuln_skill_name="Moderate", "Medium",
+    vuln_risk_name="Local Access" AND vuln_skill_name="Difficult", "Medium",
+    vuln_risk_name="Local Access" AND vuln_skill_name="Extremely Difficult", "Low",
+    vuln_risk_name="Local Access" AND vuln_skill_name="No Known Exploit", "Low",
+    vuln_risk_name="Local Privileged" AND vuln_skill_name="Automated Exploit", "High",
+    vuln_risk_name="Local Privileged" AND vuln_skill_name="Easy", "High",
+    vuln_risk_name="Local Privileged" AND vuln_skill_name="Moderate", "High",
+    vuln_risk_name="Local Privileged" AND vuln_skill_name="Difficult", "Medium",
+    vuln_risk_name="Local Privileged" AND vuln_skill_name="Extremely Difficult", "Medium",
+    vuln_risk_name="Local Privileged" AND vuln_skill_name="No Known Exploit", "Low",
+    vuln_risk_name="Remote Availability" AND vuln_skill_name="Automated Exploit", "Critical",
+    vuln_risk_name="Remote Availability" AND vuln_skill_name="Easy", "Critical",
+    vuln_risk_name="Remote Availability" AND vuln_skill_name="Moderate", "High",
+    vuln_risk_name="Remote Availability" AND vuln_skill_name="Difficult", "High",
+    vuln_risk_name="Remote Availability" AND vuln_skill_name="Extremely Difficult", "High",
+    vuln_risk_name="Remote Availability" AND vuln_skill_name="No Known Exploit", "Medium",
+    vuln_risk_name="Remote Access" AND vuln_skill_name="Automated Exploit", "Critical",
+    vuln_risk_name="Remote Access" AND vuln_skill_name="Easy", "Critical",
+    vuln_risk_name="Remote Access" AND vuln_skill_name="Moderate", "Critical",
+    vuln_risk_name="Remote Access" AND vuln_skill_name="Difficult", "High",
+    vuln_risk_name="Remote Access" AND vuln_skill_name="Extremely Difficult", "High",
+    vuln_risk_name="Remote Access" AND vuln_skill_name="No Known Exploit", "Medium",
+    vuln_risk_name="Remote Privileged" AND vuln_skill_name="Automated Exploit", "Critical",
+    vuln_risk_name="Remote Privileged" AND vuln_skill_name="Easy", "Critical",
+    vuln_risk_name="Remote Privileged" AND vuln_skill_name="Moderate", "Critical",
+    vuln_risk_name="Remote Privileged" AND vuln_skill_name="Difficult", "Critical",
+    vuln_risk_name="Remote Privileged" AND vuln_skill_name="Extremely Difficult", "High",
+    vuln_risk_name="Remote Privileged" AND vuln_skill_name="No Known Exploit", "High"
+    ) 
+| eval scan_network_name=mvindex(scan_network_name,0) 
+| table data_source_id vuln_id score_cvssv2 score_cvssv3 score_tw_vuln vuln_name vuln_severity year_month_aspl 
+| stats count(eval(if(isnotnull(score_tw_vuln),1,null()))) as vuln_count dc(vuln_id) as dc_vuln_count by year_month_aspl vuln_severity 
+| eval year_month_aspl=ceil(year_month_aspl)
+| append 
+    [| gentimes start=-400 end=1 
+    | eval vuln_publish_timestamp=if(starttime<=relative_time(now(),"-11mon@mon"),round(relative_time(now(),"-12mon@mon"),0),starttime) 
+    | eval year_month_aspl=strftime(vuln_publish_timestamp,"%Y-%b") 
+    | eval vuln_publish_month_tmp=round(strptime(year_month_aspl+"-01","%Y-%b-%d"),0) 
+    | eval year_month_aspl=vuln_publish_month_tmp 
+    | dedup year_month_aspl 
+    | table year_month_aspl 
+    | eval vuln_severity="Critical,High,Medium,Low,Zero" 
+    | makemv tokenizer="([^,]+),?" vuln_severity 
+    | mvexpand vuln_severity 
+    | table year_month_aspl vuln_severity] 
+| fillnull value=0 vuln_count dc_vuln_count
+| dedup year_month_aspl vuln_severity sortby -vuln_count
+
+            | eval rank=case(vuln_severity="Critical",5,vuln_severity="High",4,vuln_severity="Medium",3,vuln_severity="Low",2,vuln_severity="Zero",1)
+            | sort 0 -vuln_publish_month_use -rank
+			
+			| where year_month_aspl=floor(relative_time(now(),"-2mon@mon")) 
+| fields vuln_severity vuln_count year_month_aspl
+| eval vuln_publish_month_use=strftime(year_month_aspl,"%Y-%b")
+			
+
+
+		
+		
+		
+| tstats summariesonly=true
+						latest(combined_input.data_source_id) as data_source_id
+						latest(combined_input.reconciled_asset_id) as reconciled_asset_id
+						latest(combined_input.asset_os_id) as asset_os_id
+						latest(combined_input.scan_network_id) as scan_network_id
+						latest(combined_input.scan_id) as scan_id
+						latest(combined_input.score_cvssv2) as score_cvssv2
+						latest(combined_input.score_cvssv3) as score_cvssv3
+						latest(combined_input.score_tw_vuln) as score_tw_vuln
+						latest(combined_input.vuln_id) as vuln_id
+						from datamodel=tw_vm_dm_combined_input.combined_input
+						where index="tw_scanned_vuln" AND (earliest=-1mon@mon) AND
+						combined_input.score_tw_vuln>0
+						by combined_input.reconciled_asset_id combined_input.scan_id combined_input.vuln_id 
+						| rename combined_input.* as * 
+						
+
+					             | lookup vm_asset_map reconciled_asset_id OUTPUTNEW common_asset_id
+
+						| lookup tw_vm_dim_asset_os.csv os_id as asset_os_id OUTPUTNEW os_name 
+						| search os_name IN ($searchfilter_osname$) 
+						| eventstats max(scan_id) as max_vuln_scan_id by common_asset_id 
+						| where scan_id=max_vuln_scan_id 
+						| append 
+						[| tstats summariesonly=true
+						latest(asset_snapshot.data_source_name) as data_source_name
+						latest(asset_snapshot.scan_id) as scan_id
+						from datamodel=tw_vm_dm_iv_asset_snapshot.asset_snapshot
+						where (earliest=-1mon@mon) AND
+						asset_snapshot.asset_os IN (*windows*)
+						by asset_snapshot.reconciled_asset_id asset_snapshot.scan_id 
+						| rename asset_snapshot.* as * 
+						
+
+											| lookup vm_asset_map reconciled_asset_id OUTPUTNEW common_asset_id
+
+						| inputlookup append=true tw_vm_asset_current_state 
+						| fillnull value=0 app_count vulnerability_count 
+						| search asset_os IN (*windows*)
+						| eventstats max(scan_id) as max_asset_scan_id by common_asset_id 
+						| where scan_id=max_asset_scan_id 
+						| dedup common_asset_id max_asset_scan_id sortby -app_count -vulnerability_count 
+						| table common_asset_id max_asset_scan_id 
+						] 
+						| eventstats values(max_asset_scan_id) as max_asset_scan_id by common_asset_id 
+						| where scan_id=max_asset_scan_id 
+						| lookup tw_vm_dim_network.csv scan_network_id OUTPUTNEW scan_network_name 
+						| eval scan_network_name=mvindex(scan_network_name,0) 
+
+						| lookup tw_vm_dim_vuln.csv vuln_id OUTPUTNEW vuln_advisory_id vuln_name vuln_description vuln_mitigation vuln_remediation vuln_publish_date vuln_cve_list vuln_risk_name vuln_skill_name vuln_solution vuln_strategy 
+				
+
+            
+            | eval publishdate_timestamp=strptime(vuln_publish_date, "%Y-%m-%d") 	
+            | makemv delim="\n " vuln_advisory_id  
+          	| mvexpand vuln_advisory_id 
+          	| search vuln_advisory_id IN ("*Released in ASPL*") 
+          	| rex field=vuln_advisory_id "Released.*in.* ASPL.*(?<releasedaspl_date>[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]).*"
+          	
+          	| eval releasedaspl_timestamp=strptime(releasedaspl_date, "%Y-%m-%d") 
+
+
+          	| rex field=vuln_name "MS-(?<vulnname_date>[0-9][0-9][0-9][0-9]-.*):" 
+          	| eval vulnname_timestamp=strptime(vulnname_date+"-01", "%Y-%B-%d") 
+
+          	| eval year_month_aspl=publishdate_timestamp	
+          	
+          	| eval year_month_aspl=if(match(vunl_advisory_id, "Released"), releasedaspl_timestamp, publishdate_timestamp)
+          	
+          	| eval year_month_aspl=if(match(vuln_name,"MS-"), vulnname_timestamp, releasedaspl_timestamp)
+          	
+          	| eval year_month_aspl=if(isnull(year_month_aspl) OR year_month_aspl="null" OR round(year_month_aspl,0)<relative_time(now(),"-11mon@mon"),round(relative_time(now(),"-12mon@mon"),0),round(year_month_aspl,0) ) 
+				
+				
+						| eval vuln_severity=case(score_tw_vuln>=5000,"Critical", score_tw_vuln>=3000 AND score_tw_vuln<5000, "High", score_tw_vuln>=1000 AND score_tw_vuln<3000, "Medium", score_tw_vuln>0 AND score_tw_vuln<1000, "Low", score_tw_vuln==0 OR isnull(score_tw_vuln) OR score_tw_vuln=="null", "Zero") 
+						| eval vuln_severity=case(
+						vuln_severity="Zero", "Zero",
+						vuln_risk_name="Exposure" AND vuln_skill_name="Automated Exploit", "Low",
+						vuln_risk_name="Exposure" AND vuln_skill_name="Easy", "Low",
+						vuln_risk_name="Exposure" AND vuln_skill_name="Moderate", "Low",
+						vuln_risk_name="Exposure" AND vuln_skill_name="Difficult", "Low",
+						vuln_risk_name="Exposure" AND vuln_skill_name="Extremely Difficult", "Low",
+						vuln_risk_name="Exposure" AND vuln_skill_name="No Known Exploit", "Low",
+						vuln_risk_name="Local Availability" AND vuln_skill_name="Automated Exploit", "Medium",
+						vuln_risk_name="Local Availability" AND vuln_skill_name="Easy", "Medium",
+						vuln_risk_name="Local Availability" AND vuln_skill_name="Moderate", "Medium",
+						vuln_risk_name="Local Availability" AND vuln_skill_name="Difficult", "Low",
+						vuln_risk_name="Local Availability" AND vuln_skill_name="Extremely Difficult", "Low",
+						vuln_risk_name="Local Availability" AND vuln_skill_name="No Known Exploit", "Low",
+						vuln_risk_name="Local Access" AND vuln_skill_name="Automated Exploit", "High",
+						vuln_risk_name="Local Access" AND vuln_skill_name="Easy", "High",
+						vuln_risk_name="Local Access" AND vuln_skill_name="Moderate", "Medium",
+						vuln_risk_name="Local Access" AND vuln_skill_name="Difficult", "Medium",
+						vuln_risk_name="Local Access" AND vuln_skill_name="Extremely Difficult", "Low",
+						vuln_risk_name="Local Access" AND vuln_skill_name="No Known Exploit", "Low",
+						vuln_risk_name="Local Privileged" AND vuln_skill_name="Automated Exploit", "High",
+						vuln_risk_name="Local Privileged" AND vuln_skill_name="Easy", "High",
+						vuln_risk_name="Local Privileged" AND vuln_skill_name="Moderate", "High",
+						vuln_risk_name="Local Privileged" AND vuln_skill_name="Difficult", "Medium",
+						vuln_risk_name="Local Privileged" AND vuln_skill_name="Extremely Difficult", "Medium",
+						vuln_risk_name="Local Privileged" AND vuln_skill_name="No Known Exploit", "Low",
+						vuln_risk_name="Remote Availability" AND vuln_skill_name="Automated Exploit", "Critical",
+						vuln_risk_name="Remote Availability" AND vuln_skill_name="Easy", "Critical",
+						vuln_risk_name="Remote Availability" AND vuln_skill_name="Moderate", "High",
+						vuln_risk_name="Remote Availability" AND vuln_skill_name="Difficult", "High",
+						vuln_risk_name="Remote Availability" AND vuln_skill_name="Extremely Difficult", "High",
+						vuln_risk_name="Remote Availability" AND vuln_skill_name="No Known Exploit", "Medium",
+						vuln_risk_name="Remote Access" AND vuln_skill_name="Automated Exploit", "Critical",
+						vuln_risk_name="Remote Access" AND vuln_skill_name="Easy", "Critical",
+						vuln_risk_name="Remote Access" AND vuln_skill_name="Moderate", "Critical",
+						vuln_risk_name="Remote Access" AND vuln_skill_name="Difficult", "High",
+						vuln_risk_name="Remote Access" AND vuln_skill_name="Extremely Difficult", "High",
+						vuln_risk_name="Remote Access" AND vuln_skill_name="No Known Exploit", "Medium",
+						vuln_risk_name="Remote Privileged" AND vuln_skill_name="Automated Exploit", "Critical",
+						vuln_risk_name="Remote Privileged" AND vuln_skill_name="Easy", "Critical",
+						vuln_risk_name="Remote Privileged" AND vuln_skill_name="Moderate", "Critical",
+						vuln_risk_name="Remote Privileged" AND vuln_skill_name="Difficult", "Critical",
+						vuln_risk_name="Remote Privileged" AND vuln_skill_name="Extremely Difficult", "High",
+						vuln_risk_name="Remote Privileged" AND vuln_skill_name="No Known Exploit", "High"
+						) 
+						
+						| table data_source_id scan_network_name vuln_id score_cvssv2 score_cvssv3 score_tw_vuln vuln_publish_date vuln_name vuln_severity year_month_aspl
+			
+
+						
+						| stats count(eval(if(isnotnull(score_tw_vuln),1,null()))) as vuln_count dc(vuln_id) as dc_vuln_count by year_month_aspl data_source_id scan_network_name vuln_publish_month_use vuln_severity 
+						
+						| eval year_month_aspl=ceil(year_month_aspl)
+						
+						| append 
+						[| gentimes start=-400 end=1 
+						| eval vuln_publish_timestamp=if(starttime<=relative_time(now(),"-11mon@mon"),round(relative_time(now(),"-12mon@mon"),0),starttime)
+						
+						| eval year_month_aspl=strftime(vuln_publish_timestamp,"%Y-%b") 
+            | eval vuln_publish_month_tmp=round(strptime(year_month_aspl+"-01","%Y-%b-%d"),0) 
+            | eval year_month_aspl=vuln_publish_month_tmp 
+            | dedup year_month_aspl 
+            | table year_month_aspl 
+						
+						
+						| eval vuln_severity="Critical,High,Medium,Low,Zero" 
+						| makemv tokenizer="([^,]+),?" vuln_severity 
+						| mvexpand vuln_severity 
+						
+            | table year_month_aspl vuln_severity
+					
+						
+						| inputlookup append=true tw_vm_dim_network.csv 
+						| table vuln_publish_month_use vuln_severity scan_network_name  
+						| eventstats values(scan_network_name) as scan_network_name 
+						| where isnotnull(vuln_publish_month_use) 
+						| table vuln_publish_month_use vuln_severity scan_network_name 
+						| mvexpand scan_network_name]		
+						
+						
+33333333333333333333333333333333
+---Search Command - tstats
+
+Use the tstats command to perform statistical queries on indexed fields in tsidx files. The indexed fields can be from indexed data or accelerated data models.
+Because it searches on index-time fields instead of raw events, the tstats command is faster than the stats command.
+By default, the tstats command runs over accelerated and unaccelerated data models.					
+
+	
+---Search Command - stats
+
+Calculates aggregate statistics, such as average, count, and sum, over the results set. This is similar to SQL aggregation. If the stats command is used without a BY clause, only one row is returned, which is the aggregation over the entire incoming result set. If a BY clause is used, one row is returned for each distinct value specified in the BY clause.
+
+The stats command can be used for several SQL-like operations. If 
+
+
+---Search Command - eventstats
+
+Generates summary statistics from fields in your events and saves those statistics in a new field.
+
+Only those events that have fields pertinent to the aggregation are used in generating the summary statistics. The generated summary statistics can be used for calculations in subsequent commands in your search. 
+
+
+---Search Command - Append
+
+Appends the results of a subsearch to the current results. The append command runs only over historical data and does not produce correct results if used in a real-time search.
+
+For more information about when to use the append command, see the flowchart in the topic About event grouping and correlation in the Search Manual.
+############################AESO
+| tstats summariesonly=true  latest(combined_input.scan_id) as scan_id  from  datamodel=tw_vm_dm_combined_input
+then look at the data model tw_vm_dm_combined_input
+
+
+----------------------NNG - Vulnerability Summary Monthly By Site / OS
+| tstats summariesonly=true
+						latest(combined_input.data_source_id) as data_source_id
+						latest(combined_input.reconciled_asset_id) as reconciled_asset_id
+						latest(combined_input.asset_os_id) as asset_os_id
+						latest(combined_input.scan_id) as scan_id
+						latest(combined_input.score_cvssv2) as score_cvssv2
+						latest(combined_input.score_cvssv3) as score_cvssv3
+						latest(combined_input.score_tw_vuln) as score_tw_vuln
+						latest(combined_input.vuln_id) as vuln_id
+						from datamodel=tw_vm_dm_combined_input.combined_input
+						where index="tw_scanned_vuln" AND (earliest=-1mon@mon) AND
+						combined_input.score_tw_vuln>0
+						by combined_input.reconciled_asset_id combined_input.scan_id combined_input.vuln_id 
+						| rename combined_input.* as * 
+						| lookup vm_asset_map reconciled_asset_id OUTPUTNEW common_asset_id 
+						| lookup tw_vm_dim_asset_os.csv os_id as asset_os_id OUTPUTNEW os_name
+						| search os_name IN (*)
+						| eventstats max(scan_id) as max_vuln_scan_id by common_asset_id 
+						| where scan_id=max_vuln_scan_id 
+						| append 
+						[| tstats summariesonly=true
+						latest(asset_snapshot.data_source_name) as data_source_name
+						latest(asset_snapshot.scan_id) as scan_id
+						from datamodel=tw_vm_dm_iv_asset_snapshot.asset_snapshot
+						where (earliest=-1mon@mon) AND
+						asset_snapshot.asset_os IN (*)
+						by asset_snapshot.reconciled_asset_id asset_snapshot.scan_id 
+						| rename asset_snapshot.* as * 
+						| lookup vm_asset_map reconciled_asset_id OUTPUTNEW common_asset_id
+						| inputlookup append=true tw_vm_asset_current_state 
+						| fillnull value=0 app_count vulnerability_count 
+						| search asset_os IN (*)
+						| eventstats max(scan_id) as max_asset_scan_id by common_asset_id 
+						| where scan_id=max_asset_scan_id 
+						| dedup common_asset_id max_asset_scan_id sortby -app_count -vulnerability_count 
+						| table common_asset_id max_asset_scan_id 
+						] 
+						| eventstats values(max_asset_scan_id) as max_asset_scan_id by common_asset_id
+						| where scan_id=max_asset_scan_id 
+						| lookup tw_vm_dim_vuln.csv vuln_id OUTPUTNEW vuln_name vuln_description vuln_mitigation vuln_remediation vuln_publish_date vuln_cve_list vuln_risk_name vuln_skill_name vuln_solution vuln_strategy 
+						
+						xxxxxxx
+						
+						| eval vuln_severity=case(score_tw_vuln>=5000,"Critical", score_tw_vuln>=3000 AND score_tw_vuln<5000, "High", score_tw_vuln>=1000 AND score_tw_vuln<3000, "Medium", score_tw_vuln>0 AND score_tw_vuln<1000, "Low", score_tw_vuln==0 OR isnull(score_tw_vuln) OR score_tw_vuln=="null", "Zero")
+						| eval vuln_severity=case(
+						vuln_severity="Zero", "Zero",
+						vuln_risk_name="Exposure" AND vuln_skill_name="Automated Exploit", "Low",
+						vuln_risk_name="Exposure" AND vuln_skill_name="Easy", "Low",
+						vuln_risk_name="Exposure" AND vuln_skill_name="Moderate", "Low",
+						vuln_risk_name="Exposure" AND vuln_skill_name="Difficult", "Low",
+						vuln_risk_name="Exposure" AND vuln_skill_name="Extremely Difficult", "Low",
+						vuln_risk_name="Exposure" AND vuln_skill_name="No Known Exploit", "Low",
+						vuln_risk_name="Local Availability" AND vuln_skill_name="Automated Exploit", "Medium",
+						vuln_risk_name="Local Availability" AND vuln_skill_name="Easy", "Medium",
+						vuln_risk_name="Local Availability" AND vuln_skill_name="Moderate", "Medium",
+						vuln_risk_name="Local Availability" AND vuln_skill_name="Difficult", "Low",
+						vuln_risk_name="Local Availability" AND vuln_skill_name="Extremely Difficult", "Low",
+						vuln_risk_name="Local Availability" AND vuln_skill_name="No Known Exploit", "Low",
+						vuln_risk_name="Local Access" AND vuln_skill_name="Automated Exploit", "High",
+						vuln_risk_name="Local Access" AND vuln_skill_name="Easy", "High",
+						vuln_risk_name="Local Access" AND vuln_skill_name="Moderate", "Medium",
+						vuln_risk_name="Local Access" AND vuln_skill_name="Difficult", "Medium",
+						vuln_risk_name="Local Access" AND vuln_skill_name="Extremely Difficult", "Low",
+						vuln_risk_name="Local Access" AND vuln_skill_name="No Known Exploit", "Low",
+						vuln_risk_name="Local Privileged" AND vuln_skill_name="Automated Exploit", "High",
+						vuln_risk_name="Local Privileged" AND vuln_skill_name="Easy", "High",
+						vuln_risk_name="Local Privileged" AND vuln_skill_name="Moderate", "High",
+						vuln_risk_name="Local Privileged" AND vuln_skill_name="Difficult", "Medium",
+						vuln_risk_name="Local Privileged" AND vuln_skill_name="Extremely Difficult", "Medium",
+						vuln_risk_name="Local Privileged" AND vuln_skill_name="No Known Exploit", "Low",
+						vuln_risk_name="Remote Availability" AND vuln_skill_name="Automated Exploit", "Critical",
+						vuln_risk_name="Remote Availability" AND vuln_skill_name="Easy", "Critical",
+						vuln_risk_name="Remote Availability" AND vuln_skill_name="Moderate", "High",
+						vuln_risk_name="Remote Availability" AND vuln_skill_name="Difficult", "High",
+						vuln_risk_name="Remote Availability" AND vuln_skill_name="Extremely Difficult", "High",
+						vuln_risk_name="Remote Availability" AND vuln_skill_name="No Known Exploit", "Medium",
+						vuln_risk_name="Remote Access" AND vuln_skill_name="Automated Exploit", "Critical",
+						vuln_risk_name="Remote Access" AND vuln_skill_name="Easy", "Critical",
+						vuln_risk_name="Remote Access" AND vuln_skill_name="Moderate", "Critical",
+						vuln_risk_name="Remote Access" AND vuln_skill_name="Difficult", "High",
+						vuln_risk_name="Remote Access" AND vuln_skill_name="Extremely Difficult", "High",
+						vuln_risk_name="Remote Access" AND vuln_skill_name="No Known Exploit", "Medium",
+						vuln_risk_name="Remote Privileged" AND vuln_skill_name="Automated Exploit", "Critical",
+						vuln_risk_name="Remote Privileged" AND vuln_skill_name="Easy", "Critical",
+						vuln_risk_name="Remote Privileged" AND vuln_skill_name="Moderate", "Critical",
+						vuln_risk_name="Remote Privileged" AND vuln_skill_name="Difficult", "Critical",
+						vuln_risk_name="Remote Privileged" AND vuln_skill_name="Extremely Difficult", "High",
+						vuln_risk_name="Remote Privileged" AND vuln_skill_name="No Known Exploit", "High"
+						)
+							
+						| eval scan_network_name=mvindex(scan_network_name,0) 
+						| table data_source_id vuln_id score_cvssv2 score_cvssv3 score_tw_vuln vuln_publish_date vuln_name vuln_severity
+						| eval vuln_publish_timestamp=if(isnull(vuln_publish_date) OR vuln_publish_date="null" OR round(strptime(vuln_publish_date, "%Y-%m-%d"),0)<relative_time(now(),"-11mon@mon"),round(relative_time(now(),"-12mon@mon"),0),round(strptime(vuln_publish_date, "%Y-%m-%d"),0) )
+						| eval vuln_publish_month_use=strftime(vuln_publish_timestamp,"%Y-%b") 
+						| eval vuln_publish_month_tmp=round(strptime(vuln_publish_month_use+"-01","%Y-%b-%d"),0) 
+						| eval vuln_publish_month_use=vuln_publish_month_tmp+"_"+vuln_publish_month_use 
+						| stats count(eval(if(isnotnull(score_tw_vuln),1,null()))) as vuln_count dc(vuln_id) as dc_vuln_count by vuln_publish_month_use vuln_severity 
+12318    scan id 898						
+						xxxxxxxxxxxxxxxxx
+						| append 
+						[| gentimes start=-400 end=1 
+						| eval vuln_publish_timestamp=if(starttime<=relative_time(now(),"-11mon@mon"),round(relative_time(now(),"-12mon@mon"),0),starttime) 
+						| eval vuln_publish_month_use=strftime(vuln_publish_timestamp,"%Y-%b") 
+						| eval vuln_publish_month_tmp=round(strptime(vuln_publish_month_use+"-01","%Y-%b-%d"),0) 
+						| eval vuln_publish_month_use=vuln_publish_month_tmp+"_"+vuln_publish_month_use 
+						| dedup vuln_publish_month_use 
+						| table vuln_publish_month_use 
+						| eval vuln_severity="Critical,High,Medium,Low,Zero" 
+						| makemv tokenizer="([^,]+),?" vuln_severity 
+						| mvexpand vuln_severity 
+						| table vuln_publish_month_use vuln_severity] 
+						| fillnull value=0 vuln_count dc_vuln_count
+						| dedup vuln_publish_month_use vuln_severity sortby -vuln_count 
+						| eval rank=case(vuln_severity="Critical",5,vuln_severity="High",4,vuln_severity="Medium",3,vuln_severity="Low",2,vuln_severity="Zero",1) 
+						| sort 0 -vuln_publish_month_use -rank 
+						| eval vuln_severity="("+$searchfilter_vuln_calc$+") "+vuln_severity 
+						| rex field="vuln_publish_month_use" "(?<vuln_publish_timestamp>.*)_(?<vuln_publish_month_use>.*)"
+						| where vuln_publish_month_use="2022-Aug"
+						| eventstats sum(vuln_count) as sum_vuln_count sum(dc_vuln_count) as sum_dc_vuln_count
+						| fields vuln_severity (*) vuln_publish_month_use sum_vuln_count sum_dc_vuln_count
+--------------check for duplicates - assets belonding to multiple networks
+
+
+[1:24 PM] Igor Majdov
+| tstats distinct_count(scanned_hostdatum.scan_network_name) as scan_network_name
+values(scanned_hostdatum.scan_network_name) AS scan_network_names
+values(scanned_hostdatum.data_source_name) AS data_source_names
+from datamodel=tw_vm_dm_scanned_hostdatum.scanned_hostdatum
+by scanned_hostdatum.asset_ip scanned_hostdatum.asset_dns scanned_hostdatum.reconciled_asset_id    | rename scanned_hostdatum.* as *
+

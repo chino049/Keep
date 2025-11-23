@@ -1,0 +1,19 @@
+λ java -cp C:\Users\jesus.ordonez\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-api\4.1.1\6ef6d7c46779caf989f47fc3fabedc25b469839e\selenium-api-4.1.1.jar;xxxx;C:\Users\jesus.ordonez\Engagements\Cazoleta\build\libs\Cazoleta-1.0-SNAPSHOT.jar;. com.pek.crawl_twcc c:\Users\jesus.ordonez\Engagements\Cazoleta\src\main\java\twcc.runFile
+
+
+tasks.register('pepe',Copy) {
+    from (configurations.runtimeClasspath.files)
+    into "C:\\Users\\jesus.ordonez\\LIB"
+
+}
+
+jar {
+    manifest {
+        attributes ('Main-Class':'com.pek.crawl_twcc',
+                'Class-Path': configurations.runtimeClasspath.files.collect {"C:\\Users\\jesus.ordonez\\LIB\\"+it.name}.join(" "))
+    }
+}
+
+java -cp C:\Users\jesus.ordonez\LIB\*;C:\Users\jesus.ordonez\Engagements\Cazoleta\build\libs\Cazoleta-1.0-SNAPSHOT.jar;. crawl_twcc c:\Users\jesus.ordonez\Engagements\Cazoleta\src\main\java\twcc.runFile
+
+java -jar C:\Users\jesus.ordonez\Engagements\Cazoleta\build\libs\Cazoleta-1.0-SNAPSHOT.jar C:\Users\jesus.ordonez\Engagements\Cazoleta\src\main\java\twcc.runfile

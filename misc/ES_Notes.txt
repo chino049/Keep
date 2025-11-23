@@ -1,0 +1,18 @@
+Event Sender
+
+TEAbstractEventSenderPlugIn.Java
+
+public class 
+
+boolean connect to connect to local syslog on UDP, if not UDP
+gets  sys log facility, sever ID, port, default severity
+set message format to rfc 5425
+sets sysLogMessageSender to udp of tcp 
+Does not account for none 
+returns true
+
+public disconnect
+why empty
+
+
+

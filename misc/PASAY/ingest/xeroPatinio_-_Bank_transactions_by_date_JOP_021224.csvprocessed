@@ -1,0 +1,983 @@
+Account Transactions,,,,,,,,,,,,,,,,,
+Patinio,,,,,,,,,,,,,,,,,
+For the period 1 July 2023 to 31 October 2033,,,,,,,,,,,,,,,,,
+Accrual Basis,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+Account Code,Account,Date,Account Type,Contact,Description,Invoice Number,Reference,Gross,Tax,Source,Related Account,Net,Tax Rate,Contact Group,Debit,Credit,Tax Rate Name
+801,Unpaid Expense Claims,03 Jul 2023,Liability,,Payment: Jasmin D,,,"(57,757.31)",0.00,Expense Claim Payment,Cash in Hand,"(57,757.31)",0.00%,,"57,757.31",0.00,
+,Cash in Hand,03 Jul 2023,Asset,,Payment: Jasmin D,,,"(57,757.31)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(57,757.31)",0.00%,,0.00,"57,757.31",
+,Cash in Hand,03 Jul 2023,Asset,Unit B,Payment: Unit B,,water,"1,381.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,381.00",0.00%,,"1,381.00",0.00,
+610,Accounts Receivable,03 Jul 2023,Asset,Unit B,Payment: Unit B,,Water,"(1,381.00)",0.00,Receivable Payment,Cash in Hand,"(1,381.00)",0.00%,,0.00,"1,381.00",
+,Cash in Hand,03 Jul 2023,Asset,Unit A,Payment: Unit A,,elect,"3,792.00",0.00,Receivable Payment,610 - Accounts Receivable,"3,792.00",0.00%,,"3,792.00",0.00,
+610,Accounts Receivable,03 Jul 2023,Asset,Unit A,Payment: Unit A,,Electricity,"(3,792.00)",0.00,Receivable Payment,Cash in Hand,"(3,792.00)",0.00%,,0.00,"3,792.00",
+,Cash in Hand,03 Jul 2023,Asset,,Payment: Jasmin D,,,(35.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(35.00),0.00%,,0.00,35.00,
+801,Unpaid Expense Claims,03 Jul 2023,Liability,,Payment: Jasmin D,,,(35.00),0.00,Expense Claim Payment,Cash in Hand,(35.00),0.00%,,35.00,0.00,
+,Cash in Hand,03 Jul 2023,Asset,Unit A,Payment: Unit A,,water,614.00,0.00,Receivable Payment,610 - Accounts Receivable,614.00,0.00%,,614.00,0.00,
+610,Accounts Receivable,03 Jul 2023,Asset,Unit A,Payment: Unit A,,Water,(614.00),0.00,Receivable Payment,Cash in Hand,(614.00),0.00%,,0.00,614.00,
+610,Accounts Receivable,11 Jul 2023,Asset,Unit D,Payment: Unit D,,Electricity,"(3,895.00)",0.00,Receivable Payment,Cash in Hand,"(3,895.00)",0.00%,,0.00,"3,895.00",
+,Cash in Hand,11 Jul 2023,Asset,Unit D,Payment: Unit D,,elect,"3,895.00",0.00,Receivable Payment,610 - Accounts Receivable,"3,895.00",0.00%,,"3,895.00",0.00,
+610,Accounts Receivable,11 Jul 2023,Asset,Unit B,Payment: Unit B,,Water,"(1,368.00)",0.00,Receivable Payment,Cash in Hand,"(1,368.00)",0.00%,,0.00,"1,368.00",
+,Cash in Hand,11 Jul 2023,Asset,Unit B,Payment: Unit B,,water,"1,368.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,368.00",0.00%,,"1,368.00",0.00,
+610,Accounts Receivable,11 Jul 2023,Asset,Unit D,Payment: Unit D,,Rent,"(15,729.00)",0.00,Receivable Payment,Cash in Hand,"(15,729.00)",0.00%,,0.00,"15,729.00",
+,Cash in Hand,11 Jul 2023,Asset,Unit D,Payment: Unit D,,rent,"15,729.00",0.00,Receivable Payment,610 - Accounts Receivable,"15,729.00",0.00%,,"15,729.00",0.00,
+,Cash in Hand,11 Jul 2023,Asset,Unit C,Payment: Unit C,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,11 Jul 2023,Asset,Unit C,Payment: Unit C,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+801,Unpaid Expense Claims,11 Jul 2023,Liability,,Jasmin D,,,"10,000.00",0.00,Expense Claim,477 - Wages and Salaries,"10,000.00",0.00%,,0.00,"10,000.00",
+610,Accounts Receivable,11 Jul 2023,Asset,Unit B,Payment: Unit B,,Electricity,"(5,869.00)",0.00,Receivable Payment,Cash in Hand,"(5,869.00)",0.00%,,0.00,"5,869.00",
+,Cash in Hand,11 Jul 2023,Asset,Unit B,Payment: Unit B,,elect,"5,869.00",0.00,Receivable Payment,610 - Accounts Receivable,"5,869.00",0.00%,,"5,869.00",0.00,
+610,Accounts Receivable,11 Jul 2023,Asset,Unit G,Payment: Unit G,,Dues,(500.00),0.00,Receivable Payment,Cash in Hand,(500.00),0.00%,,0.00,500.00,
+,Cash in Hand,11 Jul 2023,Asset,Unit G,Payment: Unit G,,dues,500.00,0.00,Receivable Payment,610 - Accounts Receivable,500.00,0.00%,,500.00,0.00,
+610,Accounts Receivable,11 Jul 2023,Asset,Unit G,Payment: Unit G,,Rent,"(3,000.00)",0.00,Receivable Payment,Cash in Hand,"(3,000.00)",0.00%,,0.00,"3,000.00",
+,Cash in Hand,11 Jul 2023,Asset,Unit G,Payment: Unit G,,rent,"3,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"3,000.00",0.00%,,"3,000.00",0.00,
+610,Accounts Receivable,11 Jul 2023,Asset,Unit D,Payment: Unit D,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,11 Jul 2023,Asset,Unit D,Payment: Unit D,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,11 Jul 2023,Asset,Unit D,Payment: Unit D,,Water,(988.00),0.00,Receivable Payment,Cash in Hand,(988.00),0.00%,,0.00,988.00,
+,Cash in Hand,11 Jul 2023,Asset,Unit D,Payment: Unit D,,water,988.00,0.00,Receivable Payment,610 - Accounts Receivable,988.00,0.00%,,988.00,0.00,
+610,Accounts Receivable,11 Jul 2023,Asset,Unit G,Payment: Unit G,,Electricity,(120.00),0.00,Receivable Payment,Cash in Hand,(120.00),0.00%,,0.00,120.00,
+,Cash in Hand,11 Jul 2023,Asset,Unit G,Payment: Unit G,,elect,120.00,0.00,Receivable Payment,610 - Accounts Receivable,120.00,0.00%,,120.00,0.00,
+801,Unpaid Expense Claims,11 Jul 2023,Liability,,Jasmin D,,,"11,198.24",0.00,Expense Claim,446 - Water,"11,198.24",0.00%,,0.00,"11,198.24",
+801,Unpaid Expense Claims,11 Jul 2023,Liability,,Jasmin D,,,"15,000.00",0.00,Expense Claim,477 - Wages and Salaries,"15,000.00",0.00%,,0.00,"15,000.00",
+610,Accounts Receivable,11 Jul 2023,Asset,Unit G,Payment: Unit G,,Water,(152.00),0.00,Receivable Payment,Cash in Hand,(152.00),0.00%,,0.00,152.00,
+,Cash in Hand,11 Jul 2023,Asset,Unit G,Payment: Unit G,,water,152.00,0.00,Receivable Payment,610 - Accounts Receivable,152.00,0.00%,,152.00,0.00,
+610,Accounts Receivable,11 Jul 2023,Asset,Unit C,Payment: Unit C,,Rent,"(15,729.00)",0.00,Receivable Payment,Cash in Hand,"(15,729.00)",0.00%,,0.00,"15,729.00",
+,Cash in Hand,11 Jul 2023,Asset,Unit C,Payment: Unit C,,rent,"15,729.00",0.00,Receivable Payment,610 - Accounts Receivable,"15,729.00",0.00%,,"15,729.00",0.00,
+610,Accounts Receivable,17 Jul 2023,Asset,Unit C,Payment: Unit C,,Water,"(1,748.00)",0.00,Receivable Payment,Cash in Hand,"(1,748.00)",0.00%,,0.00,"1,748.00",
+,Cash in Hand,17 Jul 2023,Asset,Unit C,Payment: Unit C,,water,"1,748.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,748.00",0.00%,,"1,748.00",0.00,
+801,Unpaid Expense Claims,17 Jul 2023,Liability,,Payment: Jasmin D,,,"(10,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(10,000.00)",0.00%,,"10,000.00",0.00,
+,Cash in Hand,17 Jul 2023,Asset,,Payment: Jasmin D,,,"(10,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(10,000.00)",0.00%,,0.00,"10,000.00",
+,Cash in Hand,17 Jul 2023,Asset,Unit F,Payment: Unit F,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,17 Jul 2023,Asset,Unit F,Payment: Unit F,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+610,Accounts Receivable,17 Jul 2023,Asset,Unit F,Payment: Unit F,,Water,"(1,900.00)",0.00,Receivable Payment,Cash in Hand,"(1,900.00)",0.00%,,0.00,"1,900.00",
+,Cash in Hand,17 Jul 2023,Asset,Unit F,Payment: Unit F,,water,"1,900.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,900.00",0.00%,,"1,900.00",0.00,
+610,Accounts Receivable,17 Jul 2023,Asset,Unit B,Payment: Unit B,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+,Cash in Hand,17 Jul 2023,Asset,Unit B,Payment: Unit B,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+,Cash in Hand,17 Jul 2023,Asset,Unit C,Payment: Unit C,,elect,"10,738.00",0.00,Receivable Payment,610 - Accounts Receivable,"10,738.00",0.00%,,"10,738.00",0.00,
+610,Accounts Receivable,17 Jul 2023,Asset,Unit C,Payment: Unit C,,Electricity,"(10,738.00)",0.00,Receivable Payment,Cash in Hand,"(10,738.00)",0.00%,,0.00,"10,738.00",
+,Cash in Hand,17 Jul 2023,Asset,,Payment: Jasmin D,,,"(11,198.24)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(11,198.24)",0.00%,,0.00,"11,198.24",
+801,Unpaid Expense Claims,17 Jul 2023,Liability,,Payment: Jasmin D,,,"(11,198.24)",0.00,Expense Claim Payment,Cash in Hand,"(11,198.24)",0.00%,,"11,198.24",0.00,
+,Cash in Hand,17 Jul 2023,Asset,Unit F,Payment: Unit F,,elect,"2,531.00",0.00,Receivable Payment,610 - Accounts Receivable,"2,531.00",0.00%,,"2,531.00",0.00,
+610,Accounts Receivable,17 Jul 2023,Asset,Unit F,Payment: Unit F,,Electricity,"(2,531.00)",0.00,Receivable Payment,Cash in Hand,"(2,531.00)",0.00%,,0.00,"2,531.00",
+,Cash in Hand,17 Jul 2023,Asset,Unit A,Payment: Unit A,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+610,Accounts Receivable,17 Jul 2023,Asset,Unit A,Payment: Unit A,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+,Cash in Hand,17 Jul 2023,Asset,Unit F,Payment: Unit F,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+610,Accounts Receivable,17 Jul 2023,Asset,Unit F,Payment: Unit F,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+610,Accounts Receivable,17 Jul 2023,Asset,Unit F,Payment: Unit F,,Water,"(1,919.00)",0.00,Receivable Payment,Cash in Hand,"(1,919.00)",0.00%,,0.00,"1,919.00",
+,Cash in Hand,17 Jul 2023,Asset,Unit F,Payment: Unit F,,water,"1,919.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,919.00",0.00%,,"1,919.00",0.00,
+,Cash in Hand,17 Jul 2023,Asset,,Payment: Jasmin D,,,"(15,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(15,000.00)",0.00%,,0.00,"15,000.00",
+801,Unpaid Expense Claims,17 Jul 2023,Liability,,Payment: Jasmin D,,,"(15,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(15,000.00)",0.00%,,"15,000.00",0.00,
+801,Unpaid Expense Claims,20 Jul 2023,Liability,,Payment: Jasmin D,,,"(118,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(118,000.00)",0.00%,,"118,000.00",0.00,
+,Cash in Hand,20 Jul 2023,Asset,,Payment: Jasmin D,,,"(118,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(118,000.00)",0.00%,,0.00,"118,000.00",
+801,Unpaid Expense Claims,20 Jul 2023,Liability,,Jasmin D,,,"5,100.00",0.00,Expense Claim,477 - Wages and Salaries,"5,100.00",0.00%,,0.00,"5,100.00",
+801,Unpaid Expense Claims,20 Jul 2023,Liability,,Jasmin D,,,805.00,0.00,Expense Claim,"473 - Materials, Repairs and Maintenance",805.00,0.00%,,0.00,805.00,
+,Cash in Hand,20 Jul 2023,Asset,,Payment: Jasmin D,,,"(5,100.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(5,100.00)",0.00%,,0.00,"5,100.00",
+801,Unpaid Expense Claims,20 Jul 2023,Liability,,Payment: Jasmin D,,,"(5,100.00)",0.00,Expense Claim Payment,Cash in Hand,"(5,100.00)",0.00%,,"5,100.00",0.00,
+801,Unpaid Expense Claims,20 Jul 2023,Liability,,Payment: Jasmin D,,,(805.00),0.00,Expense Claim Payment,Cash in Hand,(805.00),0.00%,,805.00,0.00,
+,Cash in Hand,20 Jul 2023,Asset,,Payment: Jasmin D,,,(805.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(805.00),0.00%,,0.00,805.00,
+801,Unpaid Expense Claims,20 Jul 2023,Liability,,Jasmin D,,,"118,000.00",0.00,Expense Claim,"445 - Meralco, Light, Power, Heating","118,000.00",0.00%,,0.00,"118,000.00",
+801,Unpaid Expense Claims,20 Jul 2023,Liability,,Jasmin D,,,"1,050.00",0.00,Expense Claim,440 - Taxes and Licenses,"1,050.00",0.00%,,0.00,"1,050.00",
+801,Unpaid Expense Claims,20 Jul 2023,Liability,,Payment: Jasmin D,,,"(1,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(1,000.00)",0.00%,,"1,000.00",0.00,
+,Cash in Hand,20 Jul 2023,Asset,,Payment: Jasmin D,,,"(1,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,20 Jul 2023,Asset,,Payment: Jasmin D,,,"(1,050.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(1,050.00)",0.00%,,0.00,"1,050.00",
+801,Unpaid Expense Claims,20 Jul 2023,Liability,,Payment: Jasmin D,,,"(1,050.00)",0.00,Expense Claim Payment,Cash in Hand,"(1,050.00)",0.00%,,"1,050.00",0.00,
+801,Unpaid Expense Claims,20 Jul 2023,Liability,,Jasmin D,,,"1,000.00",0.00,Expense Claim,476 - Labor,"1,000.00",0.00%,,0.00,"1,000.00",
+801,Unpaid Expense Claims,24 Jul 2023,Liability,,Payment: Jasmin D,,,(35.00),0.00,Expense Claim Payment,Cash in Hand,(35.00),0.00%,,35.00,0.00,
+,Cash in Hand,24 Jul 2023,Asset,,Payment: Jasmin D,,,(35.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(35.00),0.00%,,0.00,35.00,
+801,Unpaid Expense Claims,24 Jul 2023,Liability,,Payment: Jasmin D,,,"(8,829.00)",0.00,Expense Claim Payment,Cash in Hand,"(8,829.00)",0.00%,,"8,829.00",0.00,
+,Cash in Hand,24 Jul 2023,Asset,,Payment: Jasmin D,,,"(8,829.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(8,829.00)",0.00%,,0.00,"8,829.00",
+801,Unpaid Expense Claims,24 Jul 2023,Liability,,Jasmin D,,,"8,000.00",0.00,Expense Claim,476 - Labor,"8,000.00",0.00%,,0.00,"8,000.00",
+801,Unpaid Expense Claims,24 Jul 2023,Liability,,Jasmin D,,,"2,700.00",0.00,Expense Claim,"473 - Materials, Repairs and Maintenance","2,700.00",0.00%,,0.00,"2,700.00",
+801,Unpaid Expense Claims,24 Jul 2023,Liability,,Jasmin D,,,35.00,0.00,Expense Claim,461 - Printing & Stationery,35.00,0.00%,,0.00,35.00,
+801,Unpaid Expense Claims,24 Jul 2023,Liability,,Jasmin D,,,"8,829.00",0.00,Expense Claim,"473 - Materials, Repairs and Maintenance","8,829.00",0.00%,,0.00,"8,829.00",
+801,Unpaid Expense Claims,24 Jul 2023,Liability,,Payment: Jasmin D,,,"(8,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(8,000.00)",0.00%,,"8,000.00",0.00,
+,Cash in Hand,24 Jul 2023,Asset,,Payment: Jasmin D,,,"(8,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(8,000.00)",0.00%,,0.00,"8,000.00",
+,Cash in Hand,24 Jul 2023,Asset,,Payment: Jasmin D,,,"(2,700.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(2,700.00)",0.00%,,0.00,"2,700.00",
+801,Unpaid Expense Claims,24 Jul 2023,Liability,,Payment: Jasmin D,,,"(2,700.00)",0.00,Expense Claim Payment,Cash in Hand,"(2,700.00)",0.00%,,"2,700.00",0.00,
+801,Unpaid Expense Claims,24 Jul 2023,Liability,,Jasmin D,,,"40,005.38",0.00,Expense Claim,"445 - Meralco, Light, Power, Heating","40,005.38",0.00%,,0.00,"40,005.38",
+,Cash in Hand,25 Jul 2023,Asset,,Payment: Jasmin D,,,"(1,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(1,000.00)",0.00%,,0.00,"1,000.00",
+801,Unpaid Expense Claims,25 Jul 2023,Liability,,Payment: Jasmin D,,,"(1,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(1,000.00)",0.00%,,"1,000.00",0.00,
+,Cash in Hand,25 Jul 2023,Asset,Unit E,Payment: Unit E,,elect,"5,389.00",0.00,Receivable Payment,610 - Accounts Receivable,"5,389.00",0.00%,,"5,389.00",0.00,
+610,Accounts Receivable,25 Jul 2023,Asset,Unit E,Payment: Unit E,,elect.,"(5,389.00)",0.00,Receivable Payment,Cash in Hand,"(5,389.00)",0.00%,,0.00,"5,389.00",
+610,Accounts Receivable,25 Jul 2023,Asset,Unit E,Payment: Unit E,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+,Cash in Hand,25 Jul 2023,Asset,Unit E,Payment: Unit E,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+801,Unpaid Expense Claims,25 Jul 2023,Liability,,Jasmin D,,,"1,000.00",0.00,Expense Claim,475 - Food,"1,000.00",0.00%,,0.00,"1,000.00",
+,Cash in Hand,25 Jul 2023,Asset,Unit E,Payment: Unit E,,water,648.00,0.00,Receivable Payment,610 - Accounts Receivable,648.00,0.00%,,648.00,0.00,
+610,Accounts Receivable,25 Jul 2023,Asset,Unit E,Payment: Unit E,,Water,(648.00),0.00,Receivable Payment,Cash in Hand,(648.00),0.00%,,0.00,648.00,
+,Cash in Hand,02 Aug 2023,Asset,Unit A,Payment: Unit A,,elect.,"5,527.00",0.00,Receivable Payment,610 - Accounts Receivable,"5,527.00",0.00%,,"5,527.00",0.00,
+610,Accounts Receivable,02 Aug 2023,Asset,Unit A,Payment: Unit A,,Electricity,"(5,527.00)",0.00,Receivable Payment,Cash in Hand,"(5,527.00)",0.00%,,0.00,"5,527.00",
+,Cash in Hand,02 Aug 2023,Asset,,Payment: Jasmin D,,,"(40,005.38)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(40,005.38)",0.00%,,0.00,"40,005.38",
+801,Unpaid Expense Claims,02 Aug 2023,Liability,,Payment: Jasmin D,,,"(40,005.38)",0.00,Expense Claim Payment,Cash in Hand,"(40,005.38)",0.00%,,"40,005.38",0.00,
+610,Accounts Receivable,02 Aug 2023,Asset,Unit A,Payment: Unit A,,Water,(504.00),0.00,Receivable Payment,Cash in Hand,(504.00),0.00%,,0.00,504.00,
+,Cash in Hand,02 Aug 2023,Asset,Unit A,Payment: Unit A,,water,504.00,0.00,Receivable Payment,610 - Accounts Receivable,504.00,0.00%,,504.00,0.00,
+,Cash in Hand,02 Aug 2023,Asset,Unit A,Payment: Unit A,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,02 Aug 2023,Asset,Unit A,Payment: Unit A,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+610,Accounts Receivable,09 Aug 2023,Asset,Unit D,Payment: Unit D,,Rent,"(16,500.00)",0.00,Receivable Payment,Cash in Hand,"(16,500.00)",0.00%,,0.00,"16,500.00",
+,Cash in Hand,09 Aug 2023,Asset,Unit D,Payment: Unit D,,rent,"16,500.00",0.00,Receivable Payment,610 - Accounts Receivable,"16,500.00",0.00%,,"16,500.00",0.00,
+,Cash in Hand,09 Aug 2023,Asset,Unit B,Payment: Unit B,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,09 Aug 2023,Asset,Unit B,Payment: Unit B,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+610,Accounts Receivable,09 Aug 2023,Asset,Unit B,Payment: Unit B,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+,Cash in Hand,09 Aug 2023,Asset,Unit B,Payment: Unit B,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+,Cash in Hand,09 Aug 2023,Asset,Unit D,Payment: Unit D,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,09 Aug 2023,Asset,Unit D,Payment: Unit D,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+610,Accounts Receivable,09 Aug 2023,Asset,Unit C,Payment: Unit C,,Rent,"(16,500.00)",0.00,Receivable Payment,Cash in Hand,"(16,500.00)",0.00%,,0.00,"16,500.00",
+,Cash in Hand,09 Aug 2023,Asset,Unit C,Payment: Unit C,,rent,"16,500.00",0.00,Receivable Payment,610 - Accounts Receivable,"16,500.00",0.00%,,"16,500.00",0.00,
+610,Accounts Receivable,09 Aug 2023,Asset,Unit C,Payment: Unit C,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,09 Aug 2023,Asset,Unit C,Payment: Unit C,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+801,Unpaid Expense Claims,14 Aug 2023,Liability,,Payment: Jasmin D,,,"(10,080.00)",0.00,Expense Claim Payment,Cash in Hand,"(10,080.00)",0.00%,,"10,080.00",0.00,
+,Cash in Hand,14 Aug 2023,Asset,,Payment: Jasmin D,,,"(10,080.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(10,080.00)",0.00%,,0.00,"10,080.00",
+801,Unpaid Expense Claims,14 Aug 2023,Liability,,Payment: Jasmin D,,,(35.00),0.00,Expense Claim Payment,Cash in Hand,(35.00),0.00%,,35.00,0.00,
+,Cash in Hand,14 Aug 2023,Asset,,Payment: Jasmin D,,,(35.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(35.00),0.00%,,0.00,35.00,
+,Cash in Hand,14 Aug 2023,Asset,Unit G,Payment: Unit G,,water,146.50,0.00,Receivable Payment,610 - Accounts Receivable,146.50,0.00%,,146.50,0.00,
+610,Accounts Receivable,14 Aug 2023,Asset,Unit G,Payment: Unit G,,Water,(146.50),0.00,Receivable Payment,Cash in Hand,(146.50),0.00%,,0.00,146.50,
+801,Unpaid Expense Claims,14 Aug 2023,Liability,,Jasmin D,,,"10,080.00",0.00,Expense Claim,"473 - Materials, Repairs and Maintenance","10,080.00",0.00%,,0.00,"10,080.00",
+801,Unpaid Expense Claims,14 Aug 2023,Liability,,Jasmin D,,,"3,000.00",0.00,Expense Claim,476 - Labor,"3,000.00",0.00%,,0.00,"3,000.00",
+610,Accounts Receivable,14 Aug 2023,Asset,Unit G,Payment: Unit G,,Electricity,(201.00),0.00,Receivable Payment,Cash in Hand,(201.00),0.00%,,0.00,201.00,
+,Cash in Hand,14 Aug 2023,Asset,Unit G,Payment: Unit G,,elect,201.00,0.00,Receivable Payment,610 - Accounts Receivable,201.00,0.00%,,201.00,0.00,
+,Cash in Hand,14 Aug 2023,Asset,,Payment: Jasmin D,,,(300.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(300.00),0.00%,,0.00,300.00,
+801,Unpaid Expense Claims,14 Aug 2023,Liability,,Payment: Jasmin D,,,(300.00),0.00,Expense Claim Payment,Cash in Hand,(300.00),0.00%,,300.00,0.00,
+801,Unpaid Expense Claims,14 Aug 2023,Liability,,Jasmin D,,,300.00,0.00,Expense Claim,"473 - Materials, Repairs and Maintenance",300.00,0.00%,,0.00,300.00,
+,Cash in Hand,14 Aug 2023,Asset,Unit G,Payment: Unit G,,dues,500.00,0.00,Receivable Payment,610 - Accounts Receivable,500.00,0.00%,,500.00,0.00,
+610,Accounts Receivable,14 Aug 2023,Asset,Unit G,Payment: Unit G,,Dues,(500.00),0.00,Receivable Payment,Cash in Hand,(500.00),0.00%,,0.00,500.00,
+,Cash in Hand,14 Aug 2023,Asset,Unit G,Payment: Unit G,,rent,"3,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"3,000.00",0.00%,,"3,000.00",0.00,
+610,Accounts Receivable,14 Aug 2023,Asset,Unit G,Payment: Unit G,,Rent,"(3,000.00)",0.00,Receivable Payment,Cash in Hand,"(3,000.00)",0.00%,,0.00,"3,000.00",
+801,Unpaid Expense Claims,14 Aug 2023,Liability,,Jasmin D,,,35.00,0.00,Expense Claim,461 - Printing & Stationery,35.00,0.00%,,0.00,35.00,
+,Cash in Hand,14 Aug 2023,Asset,,Payment: Jasmin D,,,"(3,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(3,000.00)",0.00%,,0.00,"3,000.00",
+801,Unpaid Expense Claims,14 Aug 2023,Liability,,Payment: Jasmin D,,,"(3,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(3,000.00)",0.00%,,"3,000.00",0.00,
+610,Accounts Receivable,21 Aug 2023,Asset,Unit C,Payment: Unit C,,Water,"(1,758.00)",0.00,Receivable Payment,Cash in Hand,"(1,758.00)",0.00%,,0.00,"1,758.00",
+,Cash in Hand,21 Aug 2023,Asset,Unit C,Payment: Unit C,,water,"1,758.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,758.00",0.00%,,"1,758.00",0.00,
+,Cash in Hand,21 Aug 2023,Asset,Unit F,Payment: Unit F,,water,"1,172.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,172.00",0.00%,,"1,172.00",0.00,
+610,Accounts Receivable,21 Aug 2023,Asset,Unit F,Payment: Unit F,,Water,"(1,172.00)",0.00,Receivable Payment,Cash in Hand,"(1,172.00)",0.00%,,0.00,"1,172.00",
+610,Accounts Receivable,21 Aug 2023,Asset,Unit F,Payment: Unit F,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,21 Aug 2023,Asset,Unit F,Payment: Unit F,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+801,Unpaid Expense Claims,21 Aug 2023,Liability,,Jasmin D,,,"10,000.00",0.00,Expense Claim,477 - Wages and Salaries,"10,000.00",0.00%,,0.00,"10,000.00",
+,Cash in Hand,21 Aug 2023,Asset,,Payment: Jasmin D,,,"(10,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(10,000.00)",0.00%,,0.00,"10,000.00",
+801,Unpaid Expense Claims,21 Aug 2023,Liability,,Payment: Jasmin D,,,"(10,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(10,000.00)",0.00%,,"10,000.00",0.00,
+801,Unpaid Expense Claims,21 Aug 2023,Liability,,Jasmin D,,,"15,000.00",0.00,Expense Claim,477 - Wages and Salaries,"15,000.00",0.00%,,0.00,"15,000.00",
+,Cash in Hand,21 Aug 2023,Asset,Unit D,Payment: Unit D,,water,805.75,0.00,Receivable Payment,610 - Accounts Receivable,805.75,0.00%,,805.75,0.00,
+610,Accounts Receivable,21 Aug 2023,Asset,Unit D,Payment: Unit D,,Water,(805.75),0.00,Receivable Payment,Cash in Hand,(805.75),0.00%,,0.00,805.75,
+610,Accounts Receivable,21 Aug 2023,Asset,Unit F,Payment: Unit F,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+,Cash in Hand,21 Aug 2023,Asset,Unit F,Payment: Unit F,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+,Cash in Hand,21 Aug 2023,Asset,,Payment: Jasmin D,,,"(15,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(15,000.00)",0.00%,,0.00,"15,000.00",
+801,Unpaid Expense Claims,21 Aug 2023,Liability,,Payment: Jasmin D,,,"(15,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(15,000.00)",0.00%,,"15,000.00",0.00,
+610,Accounts Receivable,21 Aug 2023,Asset,Unit F,Payment: Unit F,,Electricity,"(4,522.00)",0.00,Receivable Payment,Cash in Hand,"(4,522.00)",0.00%,,0.00,"4,522.00",
+,Cash in Hand,21 Aug 2023,Asset,Unit F,Payment: Unit F,,elect,"4,522.00",0.00,Receivable Payment,610 - Accounts Receivable,"4,522.00",0.00%,,"4,522.00",0.00,
+801,Unpaid Expense Claims,21 Aug 2023,Liability,,Jasmin D,,,"11,939.20",0.00,Expense Claim,446 - Water,"11,939.20",0.00%,,0.00,"11,939.20",
+,Cash in Hand,21 Aug 2023,Asset,,Payment: Jasmin D,,,"(11,939.20)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(11,939.20)",0.00%,,0.00,"11,939.20",
+801,Unpaid Expense Claims,21 Aug 2023,Liability,,Payment: Jasmin D,,,"(11,939.20)",0.00,Expense Claim Payment,Cash in Hand,"(11,939.20)",0.00%,,"11,939.20",0.00,
+610,Accounts Receivable,22 Aug 2023,Asset,Unit B,Payment: Unit B,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,22 Aug 2023,Asset,Unit B,Payment: Unit B,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,28 Aug 2023,Asset,Unit A,Payment: Unit A,,Water,(586.00),0.00,Receivable Payment,Cash in Hand,(586.00),0.00%,,0.00,586.00,
+,Cash in Hand,28 Aug 2023,Asset,Unit A,Payment: Unit A,,water,586.00,0.00,Receivable Payment,610 - Accounts Receivable,586.00,0.00%,,586.00,0.00,
+,Cash in Hand,28 Aug 2023,Asset,Unit E,Payment: Unit E,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,28 Aug 2023,Asset,Unit E,Payment: Unit E,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,28 Aug 2023,Asset,Unit A,Payment: Unit A,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+610,Accounts Receivable,28 Aug 2023,Asset,Unit A,Payment: Unit A,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+610,Accounts Receivable,28 Aug 2023,Asset,Unit A,Payment: Unit A,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,28 Aug 2023,Asset,Unit A,Payment: Unit A,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+,Cash in Hand,28 Aug 2023,Asset,Unit E,Payment: Unit E,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+610,Accounts Receivable,28 Aug 2023,Asset,Unit E,Payment: Unit E,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+801,Unpaid Expense Claims,03 Sep 2023,Liability,,Jasmin D,,,"8,107.59",0.00,Expense Claim,"445 - Meralco, Light, Power, Heating","8,107.59",0.00%,,0.00,"8,107.59",
+610,Accounts Receivable,03 Sep 2023,Asset,Unit B,Payment: Unit B,,Water,"(1,098.75)",0.00,Receivable Payment,Cash in Hand,"(1,098.75)",0.00%,,0.00,"1,098.75",
+,Cash in Hand,03 Sep 2023,Asset,Unit B,Payment: Unit B,,water,"1,098.75",0.00,Receivable Payment,610 - Accounts Receivable,"1,098.75",0.00%,,"1,098.75",0.00,
+,Cash in Hand,03 Sep 2023,Asset,,Payment: Jasmin D,,,"(8,107.59)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(8,107.59)",0.00%,,0.00,"8,107.59",
+801,Unpaid Expense Claims,03 Sep 2023,Liability,,Payment: Jasmin D,,,"(8,107.59)",0.00,Expense Claim Payment,Cash in Hand,"(8,107.59)",0.00%,,"8,107.59",0.00,
+,Cash in Hand,08 Sep 2023,Asset,Unit G,Payment: Unit G,,elect,201.00,0.00,Receivable Payment,610 - Accounts Receivable,201.00,0.00%,,201.00,0.00,
+610,Accounts Receivable,08 Sep 2023,Asset,Unit G,Payment: Unit G,,Electricity,(201.00),0.00,Receivable Payment,Cash in Hand,(201.00),0.00%,,0.00,201.00,
+,Cash in Hand,08 Sep 2023,Asset,Unit E,Payment: Unit E,,water,659.25,0.00,Receivable Payment,610 - Accounts Receivable,659.25,0.00%,,659.25,0.00,
+610,Accounts Receivable,08 Sep 2023,Asset,Unit E,Payment: Unit E,,Water,(659.25),0.00,Receivable Payment,Cash in Hand,(659.25),0.00%,,0.00,659.25,
+,Cash in Hand,08 Sep 2023,Asset,Unit D,Payment: Unit D,,rent,"16,500.00",0.00,Receivable Payment,610 - Accounts Receivable,"16,500.00",0.00%,,"16,500.00",0.00,
+610,Accounts Receivable,08 Sep 2023,Asset,Unit D,Payment: Unit D,,Rent,"(16,500.00)",0.00,Receivable Payment,Cash in Hand,"(16,500.00)",0.00%,,0.00,"16,500.00",
+610,Accounts Receivable,08 Sep 2023,Asset,Unit D,Payment: Unit D,,Water,(805.75),0.00,Receivable Payment,Cash in Hand,(805.75),0.00%,,0.00,805.75,
+,Cash in Hand,08 Sep 2023,Asset,Unit D,Payment: Unit D,,water,805.75,0.00,Receivable Payment,610 - Accounts Receivable,805.75,0.00%,,805.75,0.00,
+,Cash in Hand,08 Sep 2023,Asset,,Payment: Jasmin D,,,(500.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(500.00),0.00%,,0.00,500.00,
+801,Unpaid Expense Claims,08 Sep 2023,Liability,,Payment: Jasmin D,,,(500.00),0.00,Expense Claim Payment,Cash in Hand,(500.00),0.00%,,500.00,0.00,
+,Cash in Hand,08 Sep 2023,Asset,Unit G,Payment: Unit G,,dues,500.00,0.00,Receivable Payment,610 - Accounts Receivable,500.00,0.00%,,500.00,0.00,
+610,Accounts Receivable,08 Sep 2023,Asset,Unit G,Payment: Unit G,,Dues,(500.00),0.00,Receivable Payment,Cash in Hand,(500.00),0.00%,,0.00,500.00,
+801,Unpaid Expense Claims,08 Sep 2023,Liability,,Jasmin D,,,"10,000.00",0.00,Expense Claim,477 - Wages and Salaries,"10,000.00",0.00%,,0.00,"10,000.00",
+610,Accounts Receivable,08 Sep 2023,Asset,Unit G,Payment: Unit G,,Water,(146.00),0.00,Receivable Payment,Cash in Hand,(146.00),0.00%,,0.00,146.00,
+,Cash in Hand,08 Sep 2023,Asset,Unit G,Payment: Unit G,,water,146.00,0.00,Receivable Payment,610 - Accounts Receivable,146.00,0.00%,,146.00,0.00,
+,Cash in Hand,08 Sep 2023,Asset,Unit C,Payment: Unit C,,water,"1,758.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,758.00",0.00%,,"1,758.00",0.00,
+610,Accounts Receivable,08 Sep 2023,Asset,Unit C,Payment: Unit C,,Water,"(1,758.00)",0.00,Receivable Payment,Cash in Hand,"(1,758.00)",0.00%,,0.00,"1,758.00",
+610,Accounts Receivable,08 Sep 2023,Asset,Unit G,Payment: Unit G,,Rent,"(3,000.00)",0.00,Receivable Payment,Cash in Hand,"(3,000.00)",0.00%,,0.00,"3,000.00",
+,Cash in Hand,08 Sep 2023,Asset,Unit G,Payment: Unit G,,rent,"3,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"3,000.00",0.00%,,"3,000.00",0.00,
+,Cash in Hand,08 Sep 2023,Asset,Unit D,Payment: Unit D,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,08 Sep 2023,Asset,Unit D,Payment: Unit D,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+801,Unpaid Expense Claims,08 Sep 2023,Liability,,Jasmin D,,,590.00,0.00,Expense Claim,"473 - Materials, Repairs and Maintenance",590.00,0.00%,,0.00,590.00,
+610,Accounts Receivable,08 Sep 2023,Asset,Unit C,Payment: Unit C,,Rent,"(16,500.00)",0.00,Receivable Payment,Cash in Hand,"(16,500.00)",0.00%,,0.00,"16,500.00",
+,Cash in Hand,08 Sep 2023,Asset,Unit C,Payment: Unit C,,rent,"16,500.00",0.00,Receivable Payment,610 - Accounts Receivable,"16,500.00",0.00%,,"16,500.00",0.00,
+801,Unpaid Expense Claims,08 Sep 2023,Liability,,Jasmin D,,,"15,000.00",0.00,Expense Claim,477 - Wages and Salaries,"15,000.00",0.00%,,0.00,"15,000.00",
+610,Accounts Receivable,08 Sep 2023,Asset,Unit B,Payment: Unit B,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+,Cash in Hand,08 Sep 2023,Asset,Unit B,Payment: Unit B,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+801,Unpaid Expense Claims,08 Sep 2023,Liability,,Jasmin D,,,500.00,0.00,Expense Claim,476 - Labor,500.00,0.00%,,0.00,500.00,
+610,Accounts Receivable,08 Sep 2023,Asset,Unit C,Payment: Unit C,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,08 Sep 2023,Asset,Unit C,Payment: Unit C,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+,Cash in Hand,08 Sep 2023,Asset,Unit B,Payment: Unit B,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,08 Sep 2023,Asset,Unit B,Payment: Unit B,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+610,Accounts Receivable,08 Sep 2023,Asset,Unit B,Payment: Unit B,,Water,"(1,098.00)",0.00,Receivable Payment,Cash in Hand,"(1,098.00)",0.00%,,0.00,"1,098.00",
+,Cash in Hand,08 Sep 2023,Asset,Unit B,Payment: Unit B,,water,"1,098.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,098.00",0.00%,,"1,098.00",0.00,
+,Cash in Hand,08 Sep 2023,Asset,,Payment: Jasmin D,,,(590.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(590.00),0.00%,,0.00,590.00,
+801,Unpaid Expense Claims,08 Sep 2023,Liability,,Payment: Jasmin D,,,(590.00),0.00,Expense Claim Payment,Cash in Hand,(590.00),0.00%,,590.00,0.00,
+610,Accounts Receivable,17 Sep 2023,Asset,Unit F,Payment: Unit F,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,17 Sep 2023,Asset,Unit F,Payment: Unit F,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+801,Unpaid Expense Claims,17 Sep 2023,Liability,,Jasmin D,,,"17,823.00",0.00,Expense Claim,"440 - Taxes and Licenses, 493 - Tranportation allowance, Travel - National","17,823.00",0.00%,,0.00,"17,823.00",
+,Cash in Hand,17 Sep 2023,Asset,Unit F,Payment: Unit F,,water,"1,172.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,172.00",0.00%,,"1,172.00",0.00,
+610,Accounts Receivable,17 Sep 2023,Asset,Unit F,Payment: Unit F,,Water,"(1,172.00)",0.00,Receivable Payment,Cash in Hand,"(1,172.00)",0.00%,,0.00,"1,172.00",
+,Cash in Hand,17 Sep 2023,Asset,,Payment: Jasmin D,,,"(10,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(10,000.00)",0.00%,,0.00,"10,000.00",
+801,Unpaid Expense Claims,17 Sep 2023,Liability,,Payment: Jasmin D,,,"(10,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(10,000.00)",0.00%,,"10,000.00",0.00,
+,Cash in Hand,17 Sep 2023,Asset,,Payment: Jasmin D,,,"(17,823.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(17,823.00)",0.00%,,0.00,"17,823.00",
+801,Unpaid Expense Claims,17 Sep 2023,Liability,,Payment: Jasmin D,,,"(17,823.00)",0.00,Expense Claim Payment,Cash in Hand,"(17,823.00)",0.00%,,"17,823.00",0.00,
+801,Unpaid Expense Claims,17 Sep 2023,Liability,,Jasmin D,,,"11,941.46",0.00,Expense Claim,446 - Water,"11,941.46",0.00%,,0.00,"11,941.46",
+610,Accounts Receivable,17 Sep 2023,Asset,Unit F,Payment: Unit F,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+,Cash in Hand,17 Sep 2023,Asset,Unit F,Payment: Unit F,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+,Cash in Hand,17 Sep 2023,Asset,,Payment: Jasmin D,,,"(15,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(15,000.00)",0.00%,,0.00,"15,000.00",
+801,Unpaid Expense Claims,17 Sep 2023,Liability,,Payment: Jasmin D,,,"(15,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(15,000.00)",0.00%,,"15,000.00",0.00,
+,Cash in Hand,17 Sep 2023,Asset,,Payment: Jasmin D,,,"(11,941.46)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(11,941.46)",0.00%,,0.00,"11,941.46",
+801,Unpaid Expense Claims,17 Sep 2023,Liability,,Payment: Jasmin D,,,"(11,941.46)",0.00,Expense Claim Payment,Cash in Hand,"(11,941.46)",0.00%,,"11,941.46",0.00,
+610,Accounts Receivable,22 Sep 2023,Asset,Unit E,Payment: Unit E,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,22 Sep 2023,Asset,Unit E,Payment: Unit E,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,22 Sep 2023,Asset,Unit E,Payment: Unit E,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,22 Sep 2023,Asset,Unit E,Payment: Unit E,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,22 Sep 2023,Asset,Unit E,Payment: Unit E,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+,Cash in Hand,22 Sep 2023,Asset,Unit E,Payment: Unit E,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+610,Accounts Receivable,22 Sep 2023,Asset,Unit E,Payment: Unit E,,Water,(659.25),0.00,Receivable Payment,Cash in Hand,(659.25),0.00%,,0.00,659.25,
+,Cash in Hand,22 Sep 2023,Asset,Unit E,Payment: Unit E,,water,659.25,0.00,Receivable Payment,610 - Accounts Receivable,659.25,0.00%,,659.25,0.00,
+610,Accounts Receivable,03 Oct 2023,Asset,Unit A,Payment: Unit A,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,03 Oct 2023,Asset,Unit A,Payment: Unit A,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+,Cash in Hand,03 Oct 2023,Asset,Unit A,Payment: Unit A,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+610,Accounts Receivable,03 Oct 2023,Asset,Unit A,Payment: Unit A,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+,Cash in Hand,03 Oct 2023,Asset,,Payment: Jasmin D,,,"(6,745.75)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(6,745.75)",0.00%,,0.00,"6,745.75",
+801,Unpaid Expense Claims,03 Oct 2023,Liability,,Payment: Jasmin D,,,"(6,745.75)",0.00,Expense Claim Payment,Cash in Hand,"(6,745.75)",0.00%,,"6,745.75",0.00,
+801,Unpaid Expense Claims,03 Oct 2023,Liability,,Jasmin D,,,"6,745.75",0.00,Expense Claim,"445 - Meralco, Light, Power, Heating","6,745.75",0.00%,,0.00,"6,745.75",
+610,Accounts Receivable,03 Oct 2023,Asset,Unit A,Payment: Unit A,,Water,(586.00),0.00,Receivable Payment,Cash in Hand,(586.00),0.00%,,0.00,586.00,
+,Cash in Hand,03 Oct 2023,Asset,Unit A,Payment: Unit A,,water,586.00,0.00,Receivable Payment,610 - Accounts Receivable,586.00,0.00%,,586.00,0.00,
+,Cash in Hand,16 Oct 2023,Asset,Unit C,Payment: Unit C,,rent,"16,500.00",0.00,Receivable Payment,610 - Accounts Receivable,"16,500.00",0.00%,,"16,500.00",0.00,
+610,Accounts Receivable,16 Oct 2023,Asset,Unit C,Payment: Unit C,,Rent,"(16,500.00)",0.00,Receivable Payment,Cash in Hand,"(16,500.00)",0.00%,,0.00,"16,500.00",
+801,Unpaid Expense Claims,16 Oct 2023,Liability,,Jasmin D,,,"11,291.14",0.00,Expense Claim,446 - Water,"11,291.14",0.00%,,0.00,"11,291.14",
+610,Accounts Receivable,16 Oct 2023,Asset,Unit C,Payment: Unit C,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,16 Oct 2023,Asset,Unit C,Payment: Unit C,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+801,Unpaid Expense Claims,16 Oct 2023,Liability,,Payment: Jasmin D,,,"(15,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(15,000.00)",0.00%,,"15,000.00",0.00,
+,Cash in Hand,16 Oct 2023,Asset,,Payment: Jasmin D,,,"(15,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(15,000.00)",0.00%,,0.00,"15,000.00",
+,Cash in Hand,16 Oct 2023,Asset,Unit G,Payment: Unit G,,dues,500.00,0.00,Receivable Payment,610 - Accounts Receivable,500.00,0.00%,,500.00,0.00,
+610,Accounts Receivable,16 Oct 2023,Asset,Unit G,Payment: Unit G,,Dues,(500.00),0.00,Receivable Payment,Cash in Hand,(500.00),0.00%,,0.00,500.00,
+610,Accounts Receivable,16 Oct 2023,Asset,Unit F,Payment: Unit F,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+,Cash in Hand,16 Oct 2023,Asset,Unit F,Payment: Unit F,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+,Cash in Hand,16 Oct 2023,Asset,,Payment: Jasmin D,,,(35.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(35.00),0.00%,,0.00,35.00,
+801,Unpaid Expense Claims,16 Oct 2023,Liability,,Payment: Jasmin D,,,(35.00),0.00,Expense Claim Payment,Cash in Hand,(35.00),0.00%,,35.00,0.00,
+610,Accounts Receivable,16 Oct 2023,Asset,Unit E,Payment: Unit E,,Water,(506.00),0.00,Receivable Payment,Cash in Hand,(506.00),0.00%,,0.00,506.00,
+,Cash in Hand,16 Oct 2023,Asset,Unit E,Payment: Unit E,,water,506.00,0.00,Receivable Payment,610 - Accounts Receivable,506.00,0.00%,,506.00,0.00,
+610,Accounts Receivable,16 Oct 2023,Asset,Unit D,Payment: Unit D,,Water,(877.00),0.00,Receivable Payment,Cash in Hand,(877.00),0.00%,,0.00,877.00,
+,Cash in Hand,16 Oct 2023,Asset,Unit D,Payment: Unit D,,water,877.00,0.00,Receivable Payment,610 - Accounts Receivable,877.00,0.00%,,877.00,0.00,
+610,Accounts Receivable,16 Oct 2023,Asset,Unit B,Payment: Unit B,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+,Cash in Hand,16 Oct 2023,Asset,Unit B,Payment: Unit B,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+801,Unpaid Expense Claims,16 Oct 2023,Liability,,Jasmin D,,,875.00,0.00,Expense Claim,"473 - Materials, Repairs and Maintenance",875.00,0.00%,,0.00,875.00,
+610,Accounts Receivable,16 Oct 2023,Asset,Unit G,Payment: Unit G,,Rent,"(3,000.00)",0.00,Receivable Payment,Cash in Hand,"(3,000.00)",0.00%,,0.00,"3,000.00",
+,Cash in Hand,16 Oct 2023,Asset,Unit G,Payment: Unit G,,rent,"3,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"3,000.00",0.00%,,"3,000.00",0.00,
+,Cash in Hand,16 Oct 2023,Asset,Unit F,Payment: Unit F,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,16 Oct 2023,Asset,Unit F,Payment: Unit F,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+801,Unpaid Expense Claims,16 Oct 2023,Liability,,Jasmin D,,,35.00,0.00,Expense Claim,461 - Printing & Stationery,35.00,0.00%,,0.00,35.00,
+801,Unpaid Expense Claims,16 Oct 2023,Liability,,Payment: Jasmin D,,,(875.00),0.00,Expense Claim Payment,Cash in Hand,(875.00),0.00%,,875.00,0.00,
+,Cash in Hand,16 Oct 2023,Asset,,Payment: Jasmin D,,,(875.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(875.00),0.00%,,0.00,875.00,
+,Cash in Hand,16 Oct 2023,Asset,,Payment: Jasmin D,,,"(10,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(10,000.00)",0.00%,,0.00,"10,000.00",
+801,Unpaid Expense Claims,16 Oct 2023,Liability,,Payment: Jasmin D,,,"(10,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(10,000.00)",0.00%,,"10,000.00",0.00,
+610,Accounts Receivable,16 Oct 2023,Asset,Unit B,Payment: Unit B,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,16 Oct 2023,Asset,Unit B,Payment: Unit B,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+801,Unpaid Expense Claims,16 Oct 2023,Liability,,Payment: Jasmin D,,,"(11,291.14)",0.00,Expense Claim Payment,Cash in Hand,"(11,291.14)",0.00%,,"11,291.14",0.00,
+,Cash in Hand,16 Oct 2023,Asset,,Payment: Jasmin D,,,"(11,291.14)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(11,291.14)",0.00%,,0.00,"11,291.14",
+610,Accounts Receivable,16 Oct 2023,Asset,Unit G,Payment: Unit G,,Electricity,(221.00),0.00,Receivable Payment,Cash in Hand,(221.00),0.00%,,0.00,221.00,
+,Cash in Hand,16 Oct 2023,Asset,Unit G,Payment: Unit G,,elect,221.00,0.00,Receivable Payment,610 - Accounts Receivable,221.00,0.00%,,221.00,0.00,
+,Cash in Hand,16 Oct 2023,Asset,Unit D,Payment: Unit D,,rent,"16,500.00",0.00,Receivable Payment,610 - Accounts Receivable,"16,500.00",0.00%,,"16,500.00",0.00,
+610,Accounts Receivable,16 Oct 2023,Asset,Unit D,Payment: Unit D,,Rent,"(16,500.00)",0.00,Receivable Payment,Cash in Hand,"(16,500.00)",0.00%,,0.00,"16,500.00",
+801,Unpaid Expense Claims,16 Oct 2023,Liability,,Jasmin D,,,"15,000.00",0.00,Expense Claim,477 - Wages and Salaries,"15,000.00",0.00%,,0.00,"15,000.00",
+801,Unpaid Expense Claims,16 Oct 2023,Liability,,Jasmin D,,,"10,000.00",0.00,Expense Claim,477 - Wages and Salaries,"10,000.00",0.00%,,0.00,"10,000.00",
+610,Accounts Receivable,16 Oct 2023,Asset,Unit C,Payment: Unit C,,Water,"(1,901.00)",0.00,Receivable Payment,Cash in Hand,"(1,901.00)",0.00%,,0.00,"1,901.00",
+,Cash in Hand,16 Oct 2023,Asset,Unit C,Payment: Unit C,,water,"1,901.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,901.00",0.00%,,"1,901.00",0.00,
+,Cash in Hand,16 Oct 2023,Asset,Unit B,Payment: Unit B,,water,"1,316.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,316.00",0.00%,,"1,316.00",0.00,
+610,Accounts Receivable,16 Oct 2023,Asset,Unit B,Payment: Unit B,,Water,"(1,316.00)",0.00,Receivable Payment,Cash in Hand,"(1,316.00)",0.00%,,0.00,"1,316.00",
+610,Accounts Receivable,16 Oct 2023,Asset,Unit D,Payment: Unit D,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,16 Oct 2023,Asset,Unit D,Payment: Unit D,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,16 Oct 2023,Asset,Unit F,Payment: Unit F,,Water,"(1,389.00)",0.00,Receivable Payment,Cash in Hand,"(1,389.00)",0.00%,,0.00,"1,389.00",
+,Cash in Hand,16 Oct 2023,Asset,Unit F,Payment: Unit F,,water,"1,389.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,389.00",0.00%,,"1,389.00",0.00,
+801,Unpaid Expense Claims,16 Oct 2023,Liability,,Jasmin D,,,"1,710.00",0.00,Expense Claim,433 - Health Insurance,"1,710.00",0.00%,,0.00,"1,710.00",
+801,Unpaid Expense Claims,16 Oct 2023,Liability,,Payment: Jasmin D,,,"(1,710.00)",0.00,Expense Claim Payment,Cash in Hand,"(1,710.00)",0.00%,,"1,710.00",0.00,
+,Cash in Hand,16 Oct 2023,Asset,,Payment: Jasmin D,,,"(1,710.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(1,710.00)",0.00%,,0.00,"1,710.00",
+610,Accounts Receivable,16 Oct 2023,Asset,Unit G,Payment: Unit G,,Water,(146.00),0.00,Receivable Payment,Cash in Hand,(146.00),0.00%,,0.00,146.00,
+,Cash in Hand,16 Oct 2023,Asset,Unit G,Payment: Unit G,,water,146.00,0.00,Receivable Payment,610 - Accounts Receivable,146.00,0.00%,,146.00,0.00,
+,Cash in Hand,20 Oct 2023,Asset,,Payment: Jasmin D,,,"(3,300.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(3,300.00)",0.00%,,0.00,"3,300.00",
+801,Unpaid Expense Claims,20 Oct 2023,Liability,,Payment: Jasmin D,,,"(3,300.00)",0.00,Expense Claim Payment,Cash in Hand,"(3,300.00)",0.00%,,"3,300.00",0.00,
+801,Unpaid Expense Claims,20 Oct 2023,Liability,,Jasmin D,,,"3,300.00",0.00,Expense Claim,440 - Taxes and Licenses,"3,300.00",0.00%,,0.00,"3,300.00",
+801,Unpaid Expense Claims,27 Oct 2023,Liability,,Payment: Jasmin D,,,"(5,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(5,000.00)",0.00%,,"5,000.00",0.00,
+,Cash in Hand,27 Oct 2023,Asset,,Payment: Jasmin D,,,"(5,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(5,000.00)",0.00%,,0.00,"5,000.00",
+,Cash in Hand,27 Oct 2023,Asset,Unit E,Payment: Unit E,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+610,Accounts Receivable,27 Oct 2023,Asset,Unit E,Payment: Unit E,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+801,Unpaid Expense Claims,27 Oct 2023,Liability,,Jasmin D,,,"5,000.00",0.00,Expense Claim,"493 - Tranportation allowance, Travel - National","5,000.00",0.00%,,0.00,"5,000.00",
+801,Unpaid Expense Claims,27 Oct 2023,Liability,,Jasmin D,,,"6,282.85",0.00,Expense Claim,"445 - Meralco, Light, Power, Heating","6,282.85",0.00%,,0.00,"6,282.85",
+,Cash in Hand,27 Oct 2023,Asset,Unit E,Payment: Unit E,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,27 Oct 2023,Asset,Unit E,Payment: Unit E,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,03 Nov 2023,Asset,Unit A,Payment: Unit A,,water,434.00,0.00,Receivable Payment,610 - Accounts Receivable,434.00,0.00%,,434.00,0.00,
+610,Accounts Receivable,03 Nov 2023,Asset,Unit A,Payment: Unit A,,Water,(434.00),0.00,Receivable Payment,Cash in Hand,(434.00),0.00%,,0.00,434.00,
+801,Unpaid Expense Claims,03 Nov 2023,Liability,,Jasmin D,,,"15,000.00",0.00,Expense Claim,477 - Wages and Salaries,"15,000.00",0.00%,,0.00,"15,000.00",
+,Cash in Hand,03 Nov 2023,Asset,,Payment: Jasmin D,,,"(6,282.85)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(6,282.85)",0.00%,,0.00,"6,282.85",
+801,Unpaid Expense Claims,03 Nov 2023,Liability,,Payment: Jasmin D,,,"(6,282.85)",0.00,Expense Claim Payment,Cash in Hand,"(6,282.85)",0.00%,,"6,282.85",0.00,
+,Cash in Hand,03 Nov 2023,Asset,,Payment: Jasmin D,,,"(5,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(5,000.00)",0.00%,,0.00,"5,000.00",
+801,Unpaid Expense Claims,03 Nov 2023,Liability,,Payment: Jasmin D,,,"(5,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(5,000.00)",0.00%,,"5,000.00",0.00,
+610,Accounts Receivable,03 Nov 2023,Asset,Unit A,Payment: Unit A,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,03 Nov 2023,Asset,Unit A,Payment: Unit A,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+801,Unpaid Expense Claims,03 Nov 2023,Liability,,Jasmin D,,,"5,000.00",0.00,Expense Claim,"493 - Tranportation allowance, Travel - National","5,000.00",0.00%,,0.00,"5,000.00",
+801,Unpaid Expense Claims,03 Nov 2023,Liability,,Jasmin D,,,"10,000.00",0.00,Expense Claim,477 - Wages and Salaries,"10,000.00",0.00%,,0.00,"10,000.00",
+,Cash in Hand,03 Nov 2023,Asset,Unit A,Payment: Unit A,,rental,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+610,Accounts Receivable,03 Nov 2023,Asset,Unit A,Payment: Unit A,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+801,Unpaid Expense Claims,06 Nov 2023,Liability,,Jasmin D,,,"5,000.00",0.00,Expense Claim,"493 - Tranportation allowance, Travel - National","5,000.00",0.00%,,0.00,"5,000.00",
+,Cash in Hand,06 Nov 2023,Asset,,Payment: Jasmin D,,,"(5,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(5,000.00)",0.00%,,0.00,"5,000.00",
+801,Unpaid Expense Claims,06 Nov 2023,Liability,,Payment: Jasmin D,,,"(5,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(5,000.00)",0.00%,,"5,000.00",0.00,
+,Cash in Hand,11 Nov 2023,Asset,,Payment: Jasmin D,,,(553.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(553.00),0.00%,,0.00,553.00,
+801,Unpaid Expense Claims,11 Nov 2023,Liability,,Payment: Jasmin D,,,(553.00),0.00,Expense Claim Payment,Cash in Hand,(553.00),0.00%,,553.00,0.00,
+610,Accounts Receivable,11 Nov 2023,Asset,Unit D,Payment: Unit D,,Water,(796.00),0.00,Receivable Payment,Cash in Hand,(796.00),0.00%,,0.00,796.00,
+,Cash in Hand,11 Nov 2023,Asset,Unit D,Payment: Unit D,,water,796.00,0.00,Receivable Payment,610 - Accounts Receivable,796.00,0.00%,,796.00,0.00,
+,Cash in Hand,11 Nov 2023,Asset,Unit C,Payment: Unit C,,rent,"16,500.00",0.00,Receivable Payment,610 - Accounts Receivable,"16,500.00",0.00%,,"16,500.00",0.00,
+610,Accounts Receivable,11 Nov 2023,Asset,Unit C,Payment: Unit C,,Rent,"(16,500.00)",0.00,Receivable Payment,Cash in Hand,"(16,500.00)",0.00%,,0.00,"16,500.00",
+,Cash in Hand,11 Nov 2023,Asset,Unit C,Payment: Unit C,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,11 Nov 2023,Asset,Unit C,Payment: Unit C,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+801,Unpaid Expense Claims,11 Nov 2023,Liability,,Payment: Jasmin D,,,(800.00),0.00,Expense Claim Payment,Cash in Hand,(800.00),0.00%,,800.00,0.00,
+,Cash in Hand,11 Nov 2023,Asset,,Payment: Jasmin D,,,(800.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(800.00),0.00%,,0.00,800.00,
+801,Unpaid Expense Claims,11 Nov 2023,Liability,,Jasmin D,,,553.00,0.00,Expense Claim,"473 - Materials, Repairs and Maintenance",553.00,0.00%,,0.00,553.00,
+801,Unpaid Expense Claims,11 Nov 2023,Liability,,Jasmin D,,,500.00,0.00,Expense Claim,447 - Garbage,500.00,0.00%,,0.00,500.00,
+,Cash in Hand,11 Nov 2023,Asset,Unit D,Payment: Unit D,,rent,"16,500.00",0.00,Receivable Payment,610 - Accounts Receivable,"16,500.00",0.00%,,"16,500.00",0.00,
+610,Accounts Receivable,11 Nov 2023,Asset,Unit D,Payment: Unit D,,Rent,"(16,500.00)",0.00,Receivable Payment,Cash in Hand,"(16,500.00)",0.00%,,0.00,"16,500.00",
+610,Accounts Receivable,11 Nov 2023,Asset,Unit C,Payment: Unit C,,Water,"(1,881.00)",0.00,Receivable Payment,Cash in Hand,"(1,881.00)",0.00%,,0.00,"1,881.00",
+,Cash in Hand,11 Nov 2023,Asset,Unit C,Payment: Unit C,,water,"1,881.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,881.00",0.00%,,"1,881.00",0.00,
+801,Unpaid Expense Claims,11 Nov 2023,Liability,,Jasmin D,,,800.00,0.00,Expense Claim,476 - Labor,800.00,0.00%,,0.00,800.00,
+801,Unpaid Expense Claims,11 Nov 2023,Liability,,Jasmin D,,,700.00,0.00,Expense Claim,476 - Labor,700.00,0.00%,,0.00,700.00,
+801,Unpaid Expense Claims,11 Nov 2023,Liability,,Payment: Jasmin D,,,(500.00),0.00,Expense Claim Payment,Cash in Hand,(500.00),0.00%,,500.00,0.00,
+,Cash in Hand,11 Nov 2023,Asset,,Payment: Jasmin D,,,(500.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(500.00),0.00%,,0.00,500.00,
+,Cash in Hand,11 Nov 2023,Asset,,Payment: Jasmin D,,,(700.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(700.00),0.00%,,0.00,700.00,
+801,Unpaid Expense Claims,11 Nov 2023,Liability,,Payment: Jasmin D,,,(700.00),0.00,Expense Claim Payment,Cash in Hand,(700.00),0.00%,,700.00,0.00,
+,Cash in Hand,16 Nov 2023,Asset,Unit B,Payment: Unit B,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+610,Accounts Receivable,16 Nov 2023,Asset,Unit B,Payment: Unit B,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+,Cash in Hand,16 Nov 2023,Asset,,Payment: Jasmin D,,,(35.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(35.00),0.00%,,0.00,35.00,
+801,Unpaid Expense Claims,16 Nov 2023,Liability,,Payment: Jasmin D,,,(35.00),0.00,Expense Claim Payment,Cash in Hand,(35.00),0.00%,,35.00,0.00,
+610,Accounts Receivable,16 Nov 2023,Asset,Unit B,Payment: Unit B,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,16 Nov 2023,Asset,Unit B,Payment: Unit B,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+801,Unpaid Expense Claims,16 Nov 2023,Liability,,Jasmin D,,,"11,291.14",0.00,Expense Claim,446 - Water,"11,291.14",0.00%,,0.00,"11,291.14",
+801,Unpaid Expense Claims,16 Nov 2023,Liability,,Jasmin D,,,798.00,0.00,Expense Claim,420 - Entertainment,798.00,0.00%,,0.00,798.00,
+801,Unpaid Expense Claims,16 Nov 2023,Liability,,Payment: Jasmin D,,,(798.00),0.00,Expense Claim Payment,Cash in Hand,(798.00),0.00%,,798.00,0.00,
+,Cash in Hand,16 Nov 2023,Asset,,Payment: Jasmin D,,,(798.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(798.00),0.00%,,0.00,798.00,
+,Cash in Hand,16 Nov 2023,Asset,,Payment: Jasmin D,,,"(11,291.14)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(11,291.14)",0.00%,,0.00,"11,291.14",
+801,Unpaid Expense Claims,16 Nov 2023,Liability,,Payment: Jasmin D,,,"(11,291.14)",0.00,Expense Claim Payment,Cash in Hand,"(11,291.14)",0.00%,,"11,291.14",0.00,
+610,Accounts Receivable,16 Nov 2023,Asset,Unit D,Payment: Unit D,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,16 Nov 2023,Asset,Unit D,Payment: Unit D,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+801,Unpaid Expense Claims,16 Nov 2023,Liability,,Payment: Jasmin D,,,"(10,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(10,000.00)",0.00%,,"10,000.00",0.00,
+,Cash in Hand,16 Nov 2023,Asset,,Payment: Jasmin D,,,"(10,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(10,000.00)",0.00%,,0.00,"10,000.00",
+801,Unpaid Expense Claims,16 Nov 2023,Liability,,Jasmin D,,,35.00,0.00,Expense Claim,461 - Printing & Stationery,35.00,0.00%,,0.00,35.00,
+801,Unpaid Expense Claims,16 Nov 2023,Liability,,Payment: Jasmin D,,,"(15,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(15,000.00)",0.00%,,"15,000.00",0.00,
+,Cash in Hand,16 Nov 2023,Asset,,Payment: Jasmin D,,,"(15,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(15,000.00)",0.00%,,0.00,"15,000.00",
+,Cash in Hand,16 Nov 2023,Asset,Unit B,Payment: Unit B,,water,"1,157.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,157.00",0.00%,,"1,157.00",0.00,
+610,Accounts Receivable,16 Nov 2023,Asset,Unit B,Payment: Unit B,,Water,"(1,157.00)",0.00,Receivable Payment,Cash in Hand,"(1,157.00)",0.00%,,0.00,"1,157.00",
+610,Accounts Receivable,26 Nov 2023,Asset,Unit E,Payment: Unit E,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+,Cash in Hand,26 Nov 2023,Asset,Unit E,Payment: Unit E,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+610,Accounts Receivable,26 Nov 2023,Asset,Unit E,Payment: Unit E,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,26 Nov 2023,Asset,Unit E,Payment: Unit E,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+,Cash in Hand,26 Nov 2023,Asset,Unit E,Payment: Unit E,,water,578.96,0.00,Receivable Payment,610 - Accounts Receivable,578.96,0.00%,,578.96,0.00,
+610,Accounts Receivable,26 Nov 2023,Asset,Unit E,Payment: Unit E,,Water,(578.96),0.00,Receivable Payment,Cash in Hand,(578.96),0.00%,,0.00,578.96,
+801,Unpaid Expense Claims,27 Nov 2023,Liability,,Jasmin D,,,"1,170.00",0.00,Expense Claim,408 - Cleaning,"1,170.00",0.00%,,0.00,"1,170.00",
+801,Unpaid Expense Claims,27 Nov 2023,Liability,,Jasmin D,,,200.00,0.00,Expense Claim,"473 - Materials, Repairs and Maintenance",200.00,0.00%,,0.00,200.00,
+,Cash in Hand,27 Nov 2023,Asset,,Payment: Jasmin D,,,(825.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(825.00),0.00%,,0.00,825.00,
+801,Unpaid Expense Claims,27 Nov 2023,Liability,,Payment: Jasmin D,,,(825.00),0.00,Expense Claim Payment,Cash in Hand,(825.00),0.00%,,825.00,0.00,
+,Cash in Hand,27 Nov 2023,Asset,,Payment: Jasmin D,,,(320.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(320.00),0.00%,,0.00,320.00,
+801,Unpaid Expense Claims,27 Nov 2023,Liability,,Payment: Jasmin D,,,(320.00),0.00,Expense Claim Payment,Cash in Hand,(320.00),0.00%,,320.00,0.00,
+801,Unpaid Expense Claims,27 Nov 2023,Liability,,Jasmin D,,,320.00,0.00,Expense Claim,408 - Cleaning,320.00,0.00%,,0.00,320.00,
+801,Unpaid Expense Claims,27 Nov 2023,Liability,,Payment: Jasmin D,,,(200.00),0.00,Expense Claim Payment,Cash in Hand,(200.00),0.00%,,200.00,0.00,
+,Cash in Hand,27 Nov 2023,Asset,,Payment: Jasmin D,,,(200.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(200.00),0.00%,,0.00,200.00,
+801,Unpaid Expense Claims,27 Nov 2023,Liability,,Jasmin D,,,825.00,0.00,Expense Claim,"445 - Meralco, Light, Power, Heating",825.00,0.00%,,0.00,825.00,
+,Cash in Hand,27 Nov 2023,Asset,,Payment: Jasmin D,,,"(1,170.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(1,170.00)",0.00%,,0.00,"1,170.00",
+801,Unpaid Expense Claims,27 Nov 2023,Liability,,Payment: Jasmin D,,,"(1,170.00)",0.00,Expense Claim Payment,Cash in Hand,"(1,170.00)",0.00%,,"1,170.00",0.00,
+801,Unpaid Expense Claims,27 Nov 2023,Liability,,Jasmin D,,,780.00,0.00,Expense Claim,"473 - Materials, Repairs and Maintenance",780.00,0.00%,,0.00,780.00,
+,Cash in Hand,27 Nov 2023,Asset,,Payment: Jasmin D,,,(780.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(780.00),0.00%,,0.00,780.00,
+801,Unpaid Expense Claims,27 Nov 2023,Liability,,Payment: Jasmin D,,,(780.00),0.00,Expense Claim Payment,Cash in Hand,(780.00),0.00%,,780.00,0.00,
+,Cash in Hand,01 Dec 2023,Asset,,Payment: Jasmin D,,,"(5,669.13)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(5,669.13)",0.00%,,0.00,"5,669.13",
+801,Unpaid Expense Claims,01 Dec 2023,Liability,,Payment: Jasmin D,,,"(5,669.13)",0.00,Expense Claim Payment,Cash in Hand,"(5,669.13)",0.00%,,"5,669.13",0.00,
+801,Unpaid Expense Claims,01 Dec 2023,Liability,,Jasmin D,,,"5,669.13",0.00,Expense Claim,"445 - Meralco, Light, Power, Heating","5,669.13",0.00%,,0.00,"5,669.13",
+801,Unpaid Expense Claims,05 Dec 2023,Liability,,Payment: Jasmin D,,,"(83,700.00)",0.00,Expense Claim Payment,Cash in Hand,"(83,700.00)",0.00%,,"83,700.00",0.00,
+,Cash in Hand,05 Dec 2023,Asset,,Payment: Jasmin D,,,"(83,700.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(83,700.00)",0.00%,,0.00,"83,700.00",
+801,Unpaid Expense Claims,05 Dec 2023,Liability,,Jasmin D,,,"83,700.00",0.00,Expense Claim,474 - Christmas Gifts,"83,700.00",0.00%,,0.00,"83,700.00",
+,Cash in Hand,09 Dec 2023,Asset,Unit A,Payment: Unit A,,water,361.00,0.00,Receivable Payment,610 - Accounts Receivable,361.00,0.00%,,361.00,0.00,
+610,Accounts Receivable,09 Dec 2023,Asset,Unit A,Payment: Unit A,,Water,(361.00),0.00,Receivable Payment,Cash in Hand,(361.00),0.00%,,0.00,361.00,
+610,Accounts Receivable,09 Dec 2023,Asset,Unit A,Payment: Unit A,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+,Cash in Hand,09 Dec 2023,Asset,Unit A,Payment: Unit A,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+,Cash in Hand,09 Dec 2023,Asset,Unit G,Payment: Unit G,,dues,500.00,0.00,Receivable Payment,610 - Accounts Receivable,500.00,0.00%,,500.00,0.00,
+610,Accounts Receivable,09 Dec 2023,Asset,Unit G,Payment: Unit G,,Dues,(500.00),0.00,Receivable Payment,Cash in Hand,(500.00),0.00%,,0.00,500.00,
+610,Accounts Receivable,09 Dec 2023,Asset,Unit G,Payment: Unit G,,Water,(217.00),0.00,Receivable Payment,Cash in Hand,(217.00),0.00%,,0.00,217.00,
+,Cash in Hand,09 Dec 2023,Asset,Unit G,Payment: Unit G,,water,217.00,0.00,Receivable Payment,610 - Accounts Receivable,217.00,0.00%,,217.00,0.00,
+801,Unpaid Expense Claims,09 Dec 2023,Liability,,Jasmin D,,,480.00,0.00,Expense Claim,"445 - Meralco, Light, Power, Heating",480.00,0.00%,,0.00,480.00,
+,Cash in Hand,09 Dec 2023,Asset,Unit B,Payment: Unit B,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,09 Dec 2023,Asset,Unit B,Payment: Unit B,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,09 Dec 2023,Asset,Unit F,Payment: Unit F,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,09 Dec 2023,Asset,Unit F,Payment: Unit F,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+801,Unpaid Expense Claims,09 Dec 2023,Liability,,Jasmin D,,,"11,883.55",0.00,Expense Claim,"461 - Printing & Stationery, 446 - Water","11,883.55",0.00%,,0.00,"11,883.55",
+,Cash in Hand,09 Dec 2023,Asset,Unit B,Payment: Unit B,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+610,Accounts Receivable,09 Dec 2023,Asset,Unit B,Payment: Unit B,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+610,Accounts Receivable,09 Dec 2023,Asset,Unit F,Payment: Unit F,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+,Cash in Hand,09 Dec 2023,Asset,Unit F,Payment: Unit F,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+,Cash in Hand,09 Dec 2023,Asset,Unit G,Payment: Unit G,,elect,146.00,0.00,Receivable Payment,610 - Accounts Receivable,146.00,0.00%,,146.00,0.00,
+610,Accounts Receivable,09 Dec 2023,Asset,Unit G,Payment: Unit G,,Electricity,(146.00),0.00,Receivable Payment,Cash in Hand,(146.00),0.00%,,0.00,146.00,
+,Cash in Hand,09 Dec 2023,Asset,,Payment: Jasmin D,,,(480.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(480.00),0.00%,,0.00,480.00,
+801,Unpaid Expense Claims,09 Dec 2023,Liability,,Payment: Jasmin D,,,(480.00),0.00,Expense Claim Payment,Cash in Hand,(480.00),0.00%,,480.00,0.00,
+,Cash in Hand,09 Dec 2023,Asset,Unit G,Payment: Unit G,,rent,"3,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"3,000.00",0.00%,,"3,000.00",0.00,
+610,Accounts Receivable,09 Dec 2023,Asset,Unit G,Payment: Unit G,,Rent,"(3,000.00)",0.00,Receivable Payment,Cash in Hand,"(3,000.00)",0.00%,,0.00,"3,000.00",
+801,Unpaid Expense Claims,09 Dec 2023,Liability,,Jasmin D,,,"15,000.00",0.00,Expense Claim,477 - Wages and Salaries,"15,000.00",0.00%,,0.00,"15,000.00",
+,Cash in Hand,09 Dec 2023,Asset,Unit A,Payment: Unit A,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,09 Dec 2023,Asset,Unit A,Payment: Unit A,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+801,Unpaid Expense Claims,09 Dec 2023,Liability,,Jasmin D,,,"10,000.00",0.00,Expense Claim,477 - Wages and Salaries,"10,000.00",0.00%,,0.00,"10,000.00",
+,Cash in Hand,09 Dec 2023,Asset,Unit F,Payment: Unit F,,water,"1,447.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,447.00",0.00%,,"1,447.00",0.00,
+610,Accounts Receivable,09 Dec 2023,Asset,Unit F,Payment: Unit F,,Water,"(1,447.00)",0.00,Receivable Payment,Cash in Hand,"(1,447.00)",0.00%,,0.00,"1,447.00",
+801,Unpaid Expense Claims,15 Dec 2023,Liability,,Payment: Jasmin D,,,"(17,723.00)",0.00,Expense Claim Payment,Cash in Hand,"(17,723.00)",0.00%,,"17,723.00",0.00,
+,Cash in Hand,15 Dec 2023,Asset,,Payment: Jasmin D,,,"(17,723.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(17,723.00)",0.00%,,0.00,"17,723.00",
+801,Unpaid Expense Claims,15 Dec 2023,Liability,,Jasmin D,,,"17,723.00",0.00,Expense Claim,440 - Taxes and Licenses,"17,723.00",0.00%,,0.00,"17,723.00",
+801,Unpaid Expense Claims,15 Dec 2023,Liability,,Jasmin D,,,"5,100.00",0.00,Expense Claim,477 - Wages and Salaries,"5,100.00",0.00%,,0.00,"5,100.00",
+,Cash in Hand,15 Dec 2023,Asset,,Payment: Jasmin D,,,"(15,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(15,000.00)",0.00%,,0.00,"15,000.00",
+801,Unpaid Expense Claims,15 Dec 2023,Liability,,Payment: Jasmin D,,,"(15,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(15,000.00)",0.00%,,"15,000.00",0.00,
+801,Unpaid Expense Claims,15 Dec 2023,Liability,,Payment: Jasmin D,,,(35.00),0.00,Expense Claim Payment,Cash in Hand,(35.00),0.00%,,35.00,0.00,
+,Cash in Hand,15 Dec 2023,Asset,,Payment: Jasmin D,,,(35.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(35.00),0.00%,,0.00,35.00,
+,Cash in Hand,15 Dec 2023,Asset,,Payment: Jasmin D,,,"(11,813.55)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(11,813.55)",0.00%,,0.00,"11,813.55",
+801,Unpaid Expense Claims,15 Dec 2023,Liability,,Payment: Jasmin D,,,"(11,813.55)",0.00,Expense Claim Payment,Cash in Hand,"(11,813.55)",0.00%,,"11,813.55",0.00,
+,Cash in Hand,15 Dec 2023,Asset,,Payment: Jasmin D,,,"(10,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(10,000.00)",0.00%,,0.00,"10,000.00",
+801,Unpaid Expense Claims,15 Dec 2023,Liability,,Payment: Jasmin D,,,"(10,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(10,000.00)",0.00%,,"10,000.00",0.00,
+801,Unpaid Expense Claims,15 Dec 2023,Liability,,Payment: Jasmin D,,,"(5,100.00)",0.00,Expense Claim Payment,Cash in Hand,"(5,100.00)",0.00%,,"5,100.00",0.00,
+,Cash in Hand,15 Dec 2023,Asset,,Payment: Jasmin D,,,"(5,100.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(5,100.00)",0.00%,,0.00,"5,100.00",
+,Cash in Hand,15 Dec 2023,Asset,,Payment: Jasmin D,,,(35.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(35.00),0.00%,,0.00,35.00,
+801,Unpaid Expense Claims,15 Dec 2023,Liability,,Payment: Jasmin D,,,(35.00),0.00,Expense Claim Payment,Cash in Hand,(35.00),0.00%,,35.00,0.00,
+,Cash in Hand,15 Dec 2023,Asset,Unit F,Payment: Unit F,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,15 Dec 2023,Asset,Unit F,Payment: Unit F,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+610,Accounts Receivable,15 Dec 2023,Asset,Unit F,Payment: Unit F,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+,Cash in Hand,15 Dec 2023,Asset,Unit F,Payment: Unit F,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+610,Accounts Receivable,15 Dec 2023,Asset,Unit D,Payment: Unit D,,Water,(657.00),0.00,Receivable Payment,Cash in Hand,(657.00),0.00%,,0.00,657.00,
+,Cash in Hand,15 Dec 2023,Asset,Unit D,Payment: Unit D,,dues,657.00,0.00,Receivable Payment,610 - Accounts Receivable,657.00,0.00%,,657.00,0.00,
+801,Unpaid Expense Claims,16 Dec 2023,Liability,,Jasmin D,,,"3,500.00",0.00,Expense Claim,474 - Christmas Gifts,"3,500.00",0.00%,,0.00,"3,500.00",
+,Cash in Hand,16 Dec 2023,Asset,,Payment: Jasmin D,,,"(3,500.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(3,500.00)",0.00%,,0.00,"3,500.00",
+801,Unpaid Expense Claims,16 Dec 2023,Liability,,Payment: Jasmin D,,,"(3,500.00)",0.00,Expense Claim Payment,Cash in Hand,"(3,500.00)",0.00%,,"3,500.00",0.00,
+,Cash in Hand,16 Dec 2023,Asset,,Payment: Jasmin D,,,"(1,500.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(1,500.00)",0.00%,,0.00,"1,500.00",
+801,Unpaid Expense Claims,16 Dec 2023,Liability,,Payment: Jasmin D,,,"(1,500.00)",0.00,Expense Claim Payment,Cash in Hand,"(1,500.00)",0.00%,,"1,500.00",0.00,
+801,Unpaid Expense Claims,16 Dec 2023,Liability,,Jasmin D,,,"1,875.25",0.00,Expense Claim,440 - Taxes and Licenses,"1,875.25",0.00%,,0.00,"1,875.25",
+801,Unpaid Expense Claims,16 Dec 2023,Liability,,Jasmin D,,,"1,500.00",0.00,Expense Claim,474 - Christmas Gifts,"1,500.00",0.00%,,0.00,"1,500.00",
+,Cash in Hand,16 Dec 2023,Asset,,Payment: Jasmin D,,,"(2,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(2,000.00)",0.00%,,0.00,"2,000.00",
+801,Unpaid Expense Claims,16 Dec 2023,Liability,,Payment: Jasmin D,,,"(2,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(2,000.00)",0.00%,,"2,000.00",0.00,
+801,Unpaid Expense Claims,16 Dec 2023,Liability,,Jasmin D,,,"2,000.00",0.00,Expense Claim,474 - Christmas Gifts,"2,000.00",0.00%,,0.00,"2,000.00",
+801,Unpaid Expense Claims,16 Dec 2023,Liability,,Jasmin D,,,"1,000.00",0.00,Expense Claim,474 - Christmas Gifts,"1,000.00",0.00%,,0.00,"1,000.00",
+610,Accounts Receivable,16 Dec 2023,Asset,Unit C,Payment: Unit C,,Rent,"(16,500.00)",0.00,Receivable Payment,Cash in Hand,"(16,500.00)",0.00%,,0.00,"16,500.00",
+,Cash in Hand,16 Dec 2023,Asset,Unit C,Payment: Unit C,,rent,"16,500.00",0.00,Receivable Payment,610 - Accounts Receivable,"16,500.00",0.00%,,"16,500.00",0.00,
+610,Accounts Receivable,16 Dec 2023,Asset,Unit C,Payment: Unit C,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,16 Dec 2023,Asset,Unit C,Payment: Unit C,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+801,Unpaid Expense Claims,16 Dec 2023,Liability,,Payment: Jasmin D,,,"(1,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(1,000.00)",0.00%,,"1,000.00",0.00,
+,Cash in Hand,16 Dec 2023,Asset,,Payment: Jasmin D,,,"(1,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(1,000.00)",0.00%,,0.00,"1,000.00",
+801,Unpaid Expense Claims,16 Dec 2023,Liability,,Payment: Jasmin D,,,"(1,875.25)",0.00,Expense Claim Payment,Cash in Hand,"(1,875.25)",0.00%,,"1,875.25",0.00,
+,Cash in Hand,16 Dec 2023,Asset,,Payment: Jasmin D,,,"(1,875.25)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(1,875.25)",0.00%,,0.00,"1,875.25",
+,Cash in Hand,16 Dec 2023,Asset,Unit C,Payment: Unit C,,water,"1,664.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,664.00",0.00%,,"1,664.00",0.00,
+610,Accounts Receivable,16 Dec 2023,Asset,Unit C,Payment: Unit C,,Water,"(1,664.00)",0.00,Receivable Payment,Cash in Hand,"(1,664.00)",0.00%,,0.00,"1,664.00",
+801,Unpaid Expense Claims,22 Dec 2023,Liability,,Jasmin D,,,820.00,0.00,Expense Claim,"473 - Materials, Repairs and Maintenance",820.00,0.00%,,0.00,820.00,
+,Cash in Hand,22 Dec 2023,Asset,Unit E,Payment: Unit E,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+610,Accounts Receivable,22 Dec 2023,Asset,Unit E,Payment: Unit E,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+801,Unpaid Expense Claims,22 Dec 2023,Liability,,Jasmin D,,,"3,649.04",0.00,Expense Claim,"445 - Meralco, Light, Power, Heating","3,649.04",0.00%,,0.00,"3,649.04",
+610,Accounts Receivable,22 Dec 2023,Asset,Unit E,Payment: Unit E,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,22 Dec 2023,Asset,Unit E,Payment: Unit E,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+,Cash in Hand,22 Dec 2023,Asset,,Payment: Jasmin D,,,(820.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(820.00),0.00%,,0.00,820.00,
+801,Unpaid Expense Claims,22 Dec 2023,Liability,,Payment: Jasmin D,,,(820.00),0.00,Expense Claim Payment,Cash in Hand,(820.00),0.00%,,820.00,0.00,
+801,Unpaid Expense Claims,22 Dec 2023,Liability,,Jasmin D,,,500.00,0.00,Expense Claim,476 - Labor,500.00,0.00%,,0.00,500.00,
+,Cash in Hand,22 Dec 2023,Asset,Unit E,Payment: Unit E,,water,511.00,0.00,Receivable Payment,610 - Accounts Receivable,511.00,0.00%,,511.00,0.00,
+610,Accounts Receivable,22 Dec 2023,Asset,Unit E,Payment: Unit E,,Water,(511.00),0.00,Receivable Payment,Cash in Hand,(511.00),0.00%,,0.00,511.00,
+,Cash in Hand,22 Dec 2023,Asset,,Payment: Jasmin D,,,(500.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(500.00),0.00%,,0.00,500.00,
+801,Unpaid Expense Claims,22 Dec 2023,Liability,,Payment: Jasmin D,,,(500.00),0.00,Expense Claim Payment,Cash in Hand,(500.00),0.00%,,500.00,0.00,
+801,Unpaid Expense Claims,02 Jan 2024,Liability,,Jasmin D,,,"1,710.00",0.00,Expense Claim,433 - Health Insurance,"1,710.00",0.00%,,0.00,"1,710.00",
+,Cash in Hand,02 Jan 2024,Asset,,Payment: Jasmin D,,,"(1,710.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(1,710.00)",0.00%,,0.00,"1,710.00",
+801,Unpaid Expense Claims,02 Jan 2024,Liability,,Payment: Jasmin D,,,"(1,710.00)",0.00,Expense Claim Payment,Cash in Hand,"(1,710.00)",0.00%,,"1,710.00",0.00,
+,Cash in Hand,02 Jan 2024,Asset,,Payment: Jasmin D,,,"(3,649.04)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(3,649.04)",0.00%,,0.00,"3,649.04",
+801,Unpaid Expense Claims,02 Jan 2024,Liability,,Payment: Jasmin D,,,"(3,649.04)",0.00,Expense Claim Payment,Cash in Hand,"(3,649.04)",0.00%,,"3,649.04",0.00,
+610,Accounts Receivable,06 Jan 2024,Asset,Unit A,Payment: Unit A,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+,Cash in Hand,06 Jan 2024,Asset,Unit A,Payment: Unit A,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+801,Unpaid Expense Claims,06 Jan 2024,Liability,,Jasmin D,,,"25,000.00",0.00,Expense Claim,477 - Wages and Salaries,"25,000.00",0.00%,,0.00,"25,000.00",
+,Cash in Hand,06 Jan 2024,Asset,Unit A,Payment: Unit A,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,06 Jan 2024,Asset,Unit A,Payment: Unit A,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,06 Jan 2024,Asset,Unit G,Payment: Unit G,,dues,500.00,0.00,Receivable Payment,610 - Accounts Receivable,500.00,0.00%,,500.00,0.00,
+610,Accounts Receivable,06 Jan 2024,Asset,Unit G,Payment: Unit G,,Dues,(500.00),0.00,Receivable Payment,Cash in Hand,(500.00),0.00%,,0.00,500.00,
+,Cash in Hand,06 Jan 2024,Asset,Unit G,Payment: Unit G,,water,146.00,0.00,Receivable Payment,610 - Accounts Receivable,146.00,0.00%,,146.00,0.00,
+610,Accounts Receivable,06 Jan 2024,Asset,Unit G,Payment: Unit G,,Water,(146.00),0.00,Receivable Payment,Cash in Hand,(146.00),0.00%,,0.00,146.00,
+610,Accounts Receivable,06 Jan 2024,Asset,Unit A,Payment: Unit A,,Water,(292.00),0.00,Receivable Payment,Cash in Hand,(292.00),0.00%,,0.00,292.00,
+,Cash in Hand,06 Jan 2024,Asset,Unit A,Payment: Unit A,,water,292.00,0.00,Receivable Payment,610 - Accounts Receivable,292.00,0.00%,,292.00,0.00,
+,Cash in Hand,06 Jan 2024,Asset,Unit G,Payment: Unit G,,rent,"3,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"3,000.00",0.00%,,"3,000.00",0.00,
+610,Accounts Receivable,06 Jan 2024,Asset,Unit G,Payment: Unit G,,Rent,"(3,000.00)",0.00,Receivable Payment,Cash in Hand,"(3,000.00)",0.00%,,0.00,"3,000.00",
+801,Unpaid Expense Claims,12 Jan 2024,Liability,,Payment: Jasmin D,,,"(1,150.00)",0.00,Expense Claim Payment,Cash in Hand,"(1,150.00)",0.00%,,"1,150.00",0.00,
+,Cash in Hand,12 Jan 2024,Asset,,Payment: Jasmin D,,,"(1,150.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(1,150.00)",0.00%,,0.00,"1,150.00",
+801,Unpaid Expense Claims,12 Jan 2024,Liability,,Jasmin D,,,"12,530.64",0.00,Expense Claim,446 - Water,"12,530.64",0.00%,,0.00,"12,530.64",
+610,Accounts Receivable,12 Jan 2024,Asset,Unit B,Payment: Unit B,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+,Cash in Hand,12 Jan 2024,Asset,Unit B,Payment: Unit B,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+,Cash in Hand,12 Jan 2024,Asset,Unit F,Payment: Unit F,,water,"2,555.00",0.00,Receivable Payment,610 - Accounts Receivable,"2,555.00",0.00%,,"2,555.00",0.00,
+610,Accounts Receivable,12 Jan 2024,Asset,Unit F,Payment: Unit F,,Water,"(2,555.00)",0.00,Receivable Payment,Cash in Hand,"(2,555.00)",0.00%,,0.00,"2,555.00",
+801,Unpaid Expense Claims,12 Jan 2024,Liability,,Jasmin D,,,"3,150.00",0.00,Expense Claim,440 - Taxes and Licenses,"3,150.00",0.00%,,0.00,"3,150.00",
+,Cash in Hand,12 Jan 2024,Asset,,Payment: Jasmin D,,,"(23,500.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(23,500.00)",0.00%,,0.00,"23,500.00",
+801,Unpaid Expense Claims,12 Jan 2024,Liability,,Payment: Jasmin D,,,"(23,500.00)",0.00,Expense Claim Payment,Cash in Hand,"(23,500.00)",0.00%,,"23,500.00",0.00,
+801,Unpaid Expense Claims,12 Jan 2024,Liability,,Jasmin D,,,30.00,0.00,Expense Claim,446 - Water,30.00,0.00%,,0.00,30.00,
+801,Unpaid Expense Claims,12 Jan 2024,Liability,,Jasmin D,,,500.00,0.00,Expense Claim,440 - Taxes and Licenses,500.00,0.00%,,0.00,500.00,
+801,Unpaid Expense Claims,12 Jan 2024,Liability,,Payment: Jasmin D,,,(500.00),0.00,Expense Claim Payment,Cash in Hand,(500.00),0.00%,,500.00,0.00,
+,Cash in Hand,12 Jan 2024,Asset,,Payment: Jasmin D,,,(500.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(500.00),0.00%,,0.00,500.00,
+801,Unpaid Expense Claims,12 Jan 2024,Liability,,Jasmin D,,,"5,934.00",0.00,Expense Claim,"473 - Materials, Repairs and Maintenance","5,934.00",0.00%,,0.00,"5,934.00",
+610,Accounts Receivable,12 Jan 2024,Asset,Unit B,Payment: Unit B,,Water,"(1,606.00)",0.00,Receivable Payment,Cash in Hand,"(1,606.00)",0.00%,,0.00,"1,606.00",
+,Cash in Hand,12 Jan 2024,Asset,Unit B,Payment: Unit B,,water,"1,606.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,606.00",0.00%,,"1,606.00",0.00,
+801,Unpaid Expense Claims,12 Jan 2024,Liability,,Jasmin D,,,"1,150.00",0.00,Expense Claim,408 - Cleaning,"1,150.00",0.00%,,0.00,"1,150.00",
+801,Unpaid Expense Claims,12 Jan 2024,Liability,,Jasmin D,,,"1,000.00",0.00,Expense Claim,447 - Garbage,"1,000.00",0.00%,,0.00,"1,000.00",
+610,Accounts Receivable,12 Jan 2024,Asset,Unit B,Payment: Unit B,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,12 Jan 2024,Asset,Unit B,Payment: Unit B,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+,Cash in Hand,12 Jan 2024,Asset,Unit C,Payment: Unit C,,rent,"16,500.00",0.00,Receivable Payment,610 - Accounts Receivable,"16,500.00",0.00%,,"16,500.00",0.00,
+610,Accounts Receivable,12 Jan 2024,Asset,Unit C,Payment: Unit C,,Rent,"(16,500.00)",0.00,Receivable Payment,Cash in Hand,"(16,500.00)",0.00%,,0.00,"16,500.00",
+801,Unpaid Expense Claims,12 Jan 2024,Liability,,Payment: Jasmin D,,,"(3,150.00)",0.00,Expense Claim Payment,Cash in Hand,"(3,150.00)",0.00%,,"3,150.00",0.00,
+,Cash in Hand,12 Jan 2024,Asset,,Payment: Jasmin D,,,"(3,150.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(3,150.00)",0.00%,,0.00,"3,150.00",
+801,Unpaid Expense Claims,12 Jan 2024,Liability,,Jasmin D,,,"23,500.00",0.00,Expense Claim,440 - Taxes and Licenses,"23,500.00",0.00%,,0.00,"23,500.00",
+801,Unpaid Expense Claims,12 Jan 2024,Liability,,Payment: Jasmin D,,,"(1,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(1,000.00)",0.00%,,"1,000.00",0.00,
+,Cash in Hand,12 Jan 2024,Asset,,Payment: Jasmin D,,,"(1,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,12 Jan 2024,Asset,,Payment: Jasmin D,,,"(5,934.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(5,934.00)",0.00%,,0.00,"5,934.00",
+801,Unpaid Expense Claims,12 Jan 2024,Liability,,Payment: Jasmin D,,,"(5,934.00)",0.00,Expense Claim Payment,Cash in Hand,"(5,934.00)",0.00%,,"5,934.00",0.00,
+801,Unpaid Expense Claims,16 Jan 2024,Liability,,Payment: Jasmin D,,,"(27,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(27,000.00)",0.00%,,"27,000.00",0.00,
+,Cash in Hand,16 Jan 2024,Asset,,Payment: Jasmin D,,,"(27,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(27,000.00)",0.00%,,0.00,"27,000.00",
+801,Unpaid Expense Claims,16 Jan 2024,Liability,,Jasmin D,,,"27,000.00",0.00,Expense Claim,476 - Labor,"27,000.00",0.00%,,0.00,"27,000.00",
+801,Unpaid Expense Claims,16 Jan 2024,Liability,,Jasmin D,,,"80,194.40",0.00,Expense Claim,"473 - Materials, Repairs and Maintenance","80,194.40",0.00%,,0.00,"80,194.40",
+,Cash in Hand,16 Jan 2024,Asset,,Payment: Jasmin D,,,"(80,194.40)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(80,194.40)",0.00%,,0.00,"80,194.40",
+801,Unpaid Expense Claims,16 Jan 2024,Liability,,Payment: Jasmin D,,,"(80,194.40)",0.00,Expense Claim Payment,Cash in Hand,"(80,194.40)",0.00%,,"80,194.40",0.00,
+,Cash in Hand,16 Jan 2024,Asset,,Payment: Jasmin D,,,(30.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(30.00),0.00%,,0.00,30.00,
+801,Unpaid Expense Claims,16 Jan 2024,Liability,,Payment: Jasmin D,,,(30.00),0.00,Expense Claim Payment,Cash in Hand,(30.00),0.00%,,30.00,0.00,
+,Cash in Hand,16 Jan 2024,Asset,,Payment: Jasmin D,,,"(12,530.64)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(12,530.64)",0.00%,,0.00,"12,530.64",
+801,Unpaid Expense Claims,16 Jan 2024,Liability,,Payment: Jasmin D,,,"(12,530.64)",0.00,Expense Claim Payment,Cash in Hand,"(12,530.64)",0.00%,,"12,530.64",0.00,
+,Cash in Hand,16 Jan 2024,Asset,,Payment: Jasmin D,,,"(25,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(25,000.00)",0.00%,,0.00,"25,000.00",
+801,Unpaid Expense Claims,16 Jan 2024,Liability,,Payment: Jasmin D,,,"(25,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(25,000.00)",0.00%,,"25,000.00",0.00,
+,Cash in Hand,17 Jan 2024,Asset,,Payment: Jasmin D,,,"(60,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(60,000.00)",0.00%,,0.00,"60,000.00",
+801,Unpaid Expense Claims,17 Jan 2024,Liability,,Payment: Jasmin D,,,"(60,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(60,000.00)",0.00%,,"60,000.00",0.00,
+801,Unpaid Expense Claims,17 Jan 2024,Liability,,Jasmin D,,,"60,000.00",0.00,Expense Claim,930 - Payment to Owners,"60,000.00",0.00%,,0.00,"60,000.00",
+,Cash in Hand,17 Jan 2024,Asset,Unit F,Payment: Unit F,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+610,Accounts Receivable,17 Jan 2024,Asset,Unit F,Payment: Unit F,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+610,Accounts Receivable,17 Jan 2024,Asset,Unit F,Payment: Unit F,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,17 Jan 2024,Asset,Unit F,Payment: Unit F,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,19 Jan 2024,Asset,Unit F,Payment: Unit F,,Water,"(2,464.00)",0.00,Receivable Payment,Cash in Hand,"(2,464.00)",0.00%,,0.00,"2,464.00",
+,Cash in Hand,19 Jan 2024,Asset,Unit F,Payment: Unit F,,water,"2,464.00",0.00,Receivable Payment,610 - Accounts Receivable,"2,464.00",0.00%,,"2,464.00",0.00,
+,Cash in Hand,19 Jan 2024,Asset,Unit C,Payment: Unit C,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,19 Jan 2024,Asset,Unit C,Payment: Unit C,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+801,Unpaid Expense Claims,19 Jan 2024,Liability,,Jasmin D,,,"20,000.00",0.00,Expense Claim,930 - Payment to Owners,"20,000.00",0.00%,,0.00,"20,000.00",
+,Cash in Hand,19 Jan 2024,Asset,,Payment: Jasmin D,,,"(20,000.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(20,000.00)",0.00%,,0.00,"20,000.00",
+801,Unpaid Expense Claims,19 Jan 2024,Liability,,Payment: Jasmin D,,,"(20,000.00)",0.00,Expense Claim Payment,Cash in Hand,"(20,000.00)",0.00%,,"20,000.00",0.00,
+801,Unpaid Expense Claims,23 Jan 2024,Liability,,Jasmin D,,,"3,630.24",0.00,Expense Claim,"445 - Meralco, Light, Power, Heating","3,630.24",0.00%,,0.00,"3,630.24",
+,Cash in Hand,30 Jan 2024,Asset,Unit A,Payment: Unit A,,dues,"1,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"1,000.00",0.00%,,"1,000.00",0.00,
+610,Accounts Receivable,30 Jan 2024,Asset,Unit A,Payment: Unit A,,Dues,"(1,000.00)",0.00,Receivable Payment,Cash in Hand,"(1,000.00)",0.00%,,0.00,"1,000.00",
+,Cash in Hand,30 Jan 2024,Asset,Unit A,Payment: Unit A,,water,308.00,0.00,Receivable Payment,610 - Accounts Receivable,308.00,0.00%,,308.00,0.00,
+610,Accounts Receivable,30 Jan 2024,Asset,Unit A,Payment: Unit A,,Water,(308.00),0.00,Receivable Payment,Cash in Hand,(308.00),0.00%,,0.00,308.00,
+801,Unpaid Expense Claims,30 Jan 2024,Liability,,Jasmin D,,,"46,676.50",0.00,Expense Claim,"473 - Materials, Repairs and Maintenance","46,676.50",0.00%,,0.00,"46,676.50",
+801,Unpaid Expense Claims,30 Jan 2024,Liability,,Payment: Jasmin D,,,"(46,676.50)",0.00,Expense Claim Payment,Cash in Hand,"(46,676.50)",0.00%,,"46,676.50",0.00,
+,Cash in Hand,30 Jan 2024,Asset,,Payment: Jasmin D,,,"(46,676.50)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(46,676.50)",0.00%,,0.00,"46,676.50",
+610,Accounts Receivable,30 Jan 2024,Asset,Unit A,Payment: Unit A,,Rent,"(19,000.00)",0.00,Receivable Payment,Cash in Hand,"(19,000.00)",0.00%,,0.00,"19,000.00",
+,Cash in Hand,30 Jan 2024,Asset,Unit A,Payment: Unit A,,rent,"19,000.00",0.00,Receivable Payment,610 - Accounts Receivable,"19,000.00",0.00%,,"19,000.00",0.00,
+,Cash in Hand,01 Feb 2024,Asset,,Payment: Jasmin D,,,"(2,320.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(2,320.00)",0.00%,,0.00,"2,320.00",
+801,Unpaid Expense Claims,01 Feb 2024,Liability,,Payment: Jasmin D,,,"(2,320.00)",0.00,Expense Claim Payment,Cash in Hand,"(2,320.00)",0.00%,,"2,320.00",0.00,
+,Cash in Hand,01 Feb 2024,Asset,,Payment: Jasmin D,,,(977.00),0.00,Expense Claim Payment,801 - Unpaid Expense Claims,(977.00),0.00%,,0.00,977.00,
+801,Unpaid Expense Claims,01 Feb 2024,Liability,,Payment: Jasmin D,,,(977.00),0.00,Expense Claim Payment,Cash in Hand,(977.00),0.00%,,977.00,0.00,
+801,Unpaid Expense Claims,01 Feb 2024,Liability,,Jasmin D,,,977.00,0.00,Expense Claim,"473 - Materials, Repairs and Maintenance",977.00,0.00%,,0.00,977.00,
+801,Unpaid Expense Claims,01 Feb 2024,Liability,,Jasmin D,,,"2,320.00",0.00,Expense Claim,"473 - Materials, Repairs and Maintenance","2,320.00",0.00%,,0.00,"2,320.00",
+,Cash in Hand,01 Feb 2024,Asset,,Payment: Jasmin D,,,"(3,630.24)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(3,630.24)",0.00%,,0.00,"3,630.24",
+801,Unpaid Expense Claims,01 Feb 2024,Liability,,Payment: Jasmin D,,,"(3,630.24)",0.00,Expense Claim Payment,Cash in Hand,"(3,630.24)",0.00%,,"3,630.24",0.00,
+801,Unpaid Expense Claims,02 Feb 2024,Liability,,Payment: Jasmin D,,,"(27,600.00)",0.00,Expense Claim Payment,Cash in Hand,"(27,600.00)",0.00%,,"27,600.00",0.00,
+,Cash in Hand,02 Feb 2024,Asset,,Payment: Jasmin D,,,"(27,600.00)",0.00,Expense Claim Payment,801 - Unpaid Expense Claims,"(27,600.00)",0.00%,,0.00,"27,600.00",
+801,Unpaid Expense Claims,02 Feb 2024,Liability,,Jasmin D,,,"27,600.00",0.00,Expense Claim,476 - Labor,"27,600.00",0.00%,,0.00,"27,600.00",
+477,Wages and Salaries,11 Jul 2023,Expense,,Jasmin D - salary caretaker,,,"10,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"10,000.00",0.00%,,"10,000.00",0.00,Tax Exempt
+446,Water,11 Jul 2023,Expense,,Jasmin D - maynilad bill,,,"11,198.24",0.00,Expense Claim,801 - Unpaid Expense Claims,"11,198.24",0.00%,,"11,198.24",0.00,Tax on Purchases
+477,Wages and Salaries,11 Jul 2023,Expense,,Jasmin D - salary admin,,,"15,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"15,000.00",0.00%,,"15,000.00",0.00,Tax Exempt
+477,Wages and Salaries,20 Jul 2023,Expense,,Jasmin D - salary Bernadeth 3quarter,,,"5,100.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"5,100.00",0.00%,,"5,100.00",0.00,Tax Exempt
+473,"Materials, Repairs and Maintenance",20 Jul 2023,Expense,,"Jasmin D - silicone,coupling,elbow,gate valve.",,,805.00,0.00,Expense Claim,801 - Unpaid Expense Claims,805.00,0.00%,,805.00,0.00,Tax on Purchases
+445,"Meralco, Light, Power, Heating",20 Jul 2023,Expense,,Jasmin D - Meralco Representative/Cthall,,,"118,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"118,000.00",0.00%,,"118,000.00",0.00,Tax on Purchases
+440,Taxes and Licenses,20 Jul 2023,Expense,,Jasmin D - bir monthly percentage tax,,,"1,050.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"1,050.00",0.00%,,"1,050.00",0.00,Tax on Purchases
+476,Labor,20 Jul 2023,Expense,,Jasmin D - labor repair pump motor/drainage declogging ,,,"1,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"1,000.00",0.00%,,"1,000.00",0.00,Tax on Purchases
+476,Labor,24 Jul 2023,Expense,,"Jasmin D - labor of Meralco transfer all units ,installation of circuit breaker,tracing of power cable full box.from load side box to full box, going inside the units.A-F .disconnection of electric power from submeter and transfer to new meralco  meter,testing and monitoring,install of round tube for the wire of meralco.
+
+
+",,,"8,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"8,000.00",0.00%,,"8,000.00",0.00,Tax on Purchases
+473,"Materials, Repairs and Maintenance",24 Jul 2023,Expense,,Jasmin D - circuit breaker,,,"2,700.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"2,700.00",0.00%,,"2,700.00",0.00,Tax on Purchases
+461,Printing & Stationery,24 Jul 2023,Expense,,Jasmin D - meralco bill xerox,,,35.00,0.00,Expense Claim,801 - Unpaid Expense Claims,35.00,0.00%,,35.00,0.00,Tax on Purchases
+473,"Materials, Repairs and Maintenance",24 Jul 2023,Expense,,"Jasmin D - Materials for new meter/20mters wire black,silicon 3,screw 10pcs,elect tape1,clamp 3,rubber tape 1,gi ubolt 2,gi phms 6,round tubular 1,paint epoxy primer.",,,"8,829.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"8,829.00",0.00%,,"8,829.00",0.00,Tax on Purchases
+445,"Meralco, Light, Power, Heating",24 Jul 2023,Expense,,Jasmin D - meralco bill,,,"40,005.38",0.00,Expense Claim,801 - Unpaid Expense Claims,"40,005.38",0.00%,,"40,005.38",0.00,Tax on Purchases
+475,Food,25 Jul 2023,Expense,,Jasmin D - Meralco boys for snack,,,"1,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"1,000.00",0.00%,,"1,000.00",0.00,Tax on Purchases
+473,"Materials, Repairs and Maintenance",14 Aug 2023,Expense,,Jasmin D - repaint flooring over head water tank/2nd flr flooring water tank,,,"10,080.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"10,080.00",0.00%,,"10,080.00",0.00,Tax on Purchases
+476,Labor,14 Aug 2023,Expense,,"Jasmin D - labor painting over head roof deck water tank/wall of unitE kitchen.
+
+
+",,,"3,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"3,000.00",0.00%,,"3,000.00",0.00,Tax on Purchases
+473,"Materials, Repairs and Maintenance",14 Aug 2023,Expense,,Jasmin D - materials roof brush/roller,,,300.00,0.00,Expense Claim,801 - Unpaid Expense Claims,300.00,0.00%,,300.00,0.00,Tax on Purchases
+461,Printing & Stationery,14 Aug 2023,Expense,,Jasmin D - water bill xerox,,,35.00,0.00,Expense Claim,801 - Unpaid Expense Claims,35.00,0.00%,,35.00,0.00,Tax on Purchases
+477,Wages and Salaries,21 Aug 2023,Expense,,Jasmin D - salary caretaker,,,"10,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"10,000.00",0.00%,,"10,000.00",0.00,Tax Exempt
+477,Wages and Salaries,21 Aug 2023,Expense,,Jasmin D - salary admin,,,"15,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"15,000.00",0.00%,,"15,000.00",0.00,Tax Exempt
+446,Water,21 Aug 2023,Expense,,Jasmin D - maynilad,,,"11,939.20",0.00,Expense Claim,801 - Unpaid Expense Claims,"11,939.20",0.00%,,"11,939.20",0.00,Tax on Purchases
+445,"Meralco, Light, Power, Heating",03 Sep 2023,Expense,,Jasmin D - meralco bill,,,"8,107.59",0.00,Expense Claim,801 - Unpaid Expense Claims,"8,107.59",0.00%,,"8,107.59",0.00,Tax on Purchases
+477,Wages and Salaries,08 Sep 2023,Expense,,Jasmin D - sal.caretaker,,,"10,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"10,000.00",0.00%,,"10,000.00",0.00,Tax Exempt
+473,"Materials, Repairs and Maintenance",08 Sep 2023,Expense,,"Jasmin D - Meter base water, unit F/its not working anymore change new.",,,590.00,0.00,Expense Claim,801 - Unpaid Expense Claims,590.00,0.00%,,590.00,0.00,Tax on Purchases
+477,Wages and Salaries,08 Sep 2023,Expense,,Jasmin D - sal.admin,,,"15,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"15,000.00",0.00%,,"15,000.00",0.00,Tax Exempt
+476,Labor,08 Sep 2023,Expense,,Jasmin D - labor change meter base,,,500.00,0.00,Expense Claim,801 - Unpaid Expense Claims,500.00,0.00%,,500.00,0.00,Tax on Purchases
+493,"Tranportation allowance, Travel - National",17 Sep 2023,Expense,,Jasmin D - transpo for payment property tax,,,400.00,0.00,Expense Claim,"440 - Taxes and Licenses, 801 - Unpaid Expense Claims",400.00,0.00%,,400.00,0.00,Tax on Purchases
+440,Taxes and Licenses,17 Sep 2023,Expense,,Jasmin D - Property tax 3rd quarter,,,"17,423.00",0.00,Expense Claim,"493 - Tranportation allowance, Travel - National, 801 - Unpaid Expense Claims","17,423.00",0.00%,,"17,423.00",0.00,Tax on Purchases
+446,Water,17 Sep 2023,Expense,,Jasmin D - Maynilad bill,,,"11,941.46",0.00,Expense Claim,801 - Unpaid Expense Claims,"11,941.46",0.00%,,"11,941.46",0.00,Tax on Purchases
+445,"Meralco, Light, Power, Heating",03 Oct 2023,Expense,,Jasmin D - Meralco bill,,,"6,745.75",0.00,Expense Claim,801 - Unpaid Expense Claims,"6,745.75",0.00%,,"6,745.75",0.00,Tax on Purchases
+446,Water,16 Oct 2023,Expense,,Jasmin D - Maynilad bill,,,"11,291.14",0.00,Expense Claim,801 - Unpaid Expense Claims,"11,291.14",0.00%,,"11,291.14",0.00,Tax on Purchases
+473,"Materials, Repairs and Maintenance",16 Oct 2023,Expense,,Jasmin D - door closer in main door gate,,,875.00,0.00,Expense Claim,801 - Unpaid Expense Claims,875.00,0.00%,,875.00,0.00,Tax on Purchases
+461,Printing & Stationery,16 Oct 2023,Expense,,Jasmin D - maynilad xerox,,,35.00,0.00,Expense Claim,801 - Unpaid Expense Claims,35.00,0.00%,,35.00,0.00,Tax on Purchases
+477,Wages and Salaries,16 Oct 2023,Expense,,Jasmin D - salary admin,,,"15,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"15,000.00",0.00%,,"15,000.00",0.00,Tax Exempt
+477,Wages and Salaries,16 Oct 2023,Expense,,Jasmin D - salary Mike,,,"10,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"10,000.00",0.00%,,"10,000.00",0.00,Tax Exempt
+433,Health Insurance,16 Oct 2023,Expense,,Jasmin D - Mike 3rd quarter SSS,,,"1,710.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"1,710.00",0.00%,,"1,710.00",0.00,Tax on Purchases
+440,Taxes and Licenses,20 Oct 2023,Expense,,Jasmin D - Monthly Tax/3rd quarter,,,"3,300.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"3,300.00",0.00%,,"3,300.00",0.00,Tax on Purchases
+493,"Tranportation allowance, Travel - National",27 Oct 2023,Expense,,Jasmin D - cash expense of John/transpo,,,"5,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"5,000.00",0.00%,,"5,000.00",0.00,Tax on Purchases
+445,"Meralco, Light, Power, Heating",27 Oct 2023,Expense,,Jasmin D - Meralco bill,,,"6,282.85",0.00,Expense Claim,801 - Unpaid Expense Claims,"6,282.85",0.00%,,"6,282.85",0.00,Tax on Purchases
+477,Wages and Salaries,03 Nov 2023,Expense,,Jasmin D - salary admin,,,"15,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"15,000.00",0.00%,,"15,000.00",0.00,Tax Exempt
+493,"Tranportation allowance, Travel - National",03 Nov 2023,Expense,,Jasmin D - Transpo John add.,,,"5,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"5,000.00",0.00%,,"5,000.00",0.00,Tax on Purchases
+477,Wages and Salaries,03 Nov 2023,Expense,,Jasmin D - salary caretaker,,,"10,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"10,000.00",0.00%,,"10,000.00",0.00,Tax Exempt
+493,"Tranportation allowance, Travel - National",06 Nov 2023,Expense,,Jasmin D - add.5000 for Papa,,,"5,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"5,000.00",0.00%,,"5,000.00",0.00,Tax on Purchases
+473,"Materials, Repairs and Maintenance",11 Nov 2023,Expense,,Jasmin D - repair motor pump/materials,,,553.00,0.00,Expense Claim,801 - Unpaid Expense Claims,553.00,0.00%,,553.00,0.00,Tax on Purchases
+447,Garbage,11 Nov 2023,Expense,,Jasmin D - garbage bag,,,500.00,0.00,Expense Claim,801 - Unpaid Expense Claims,500.00,0.00%,,500.00,0.00,Tax on Purchases
+476,Labor,11 Nov 2023,Expense,,Jasmin D - labor of fixing motor pump,,,800.00,0.00,Expense Claim,801 - Unpaid Expense Claims,800.00,0.00%,,800.00,0.00,Tax on Purchases
+476,Labor,11 Nov 2023,Expense,,Jasmin D - de clogging of drainage of unit B going to main drainage,,,700.00,0.00,Expense Claim,801 - Unpaid Expense Claims,700.00,0.00%,,700.00,0.00,Tax on Purchases
+446,Water,16 Nov 2023,Expense,,Jasmin D - maynilad,,,"11,291.14",0.00,Expense Claim,801 - Unpaid Expense Claims,"11,291.14",0.00%,,"11,291.14",0.00,Tax on Purchases
+420,Entertainment,16 Nov 2023,Expense,,Jasmin D - floor cleaner,,,798.00,0.00,Expense Claim,801 - Unpaid Expense Claims,798.00,0.00%,,798.00,0.00,Tax Exempt
+461,Printing & Stationery,16 Nov 2023,Expense,,Jasmin D - Maynilad bill xerox,,,35.00,0.00,Expense Claim,801 - Unpaid Expense Claims,35.00,0.00%,,35.00,0.00,Tax on Purchases
+408,Cleaning,27 Nov 2023,Expense,,Jasmin D - insecticide for cockroaches,,,"1,170.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"1,170.00",0.00%,,"1,170.00",0.00,Tax on Purchases
+473,"Materials, Repairs and Maintenance",27 Nov 2023,Expense,,Jasmin D - 1tube tiplon,,,200.00,0.00,Expense Claim,801 - Unpaid Expense Claims,200.00,0.00%,,200.00,0.00,Tax on Purchases
+408,Cleaning,27 Nov 2023,Expense,,Jasmin D - 2rubber doormat,,,320.00,0.00,Expense Claim,801 - Unpaid Expense Claims,320.00,0.00%,,320.00,0.00,Tax on Purchases
+445,"Meralco, Light, Power, Heating",27 Nov 2023,Expense,,Jasmin D - bulb lights led ,,,825.00,0.00,Expense Claim,801 - Unpaid Expense Claims,825.00,0.00%,,825.00,0.00,Tax on Purchases
+473,"Materials, Repairs and Maintenance",27 Nov 2023,Expense,,"Jasmin D - 6 coupling,3/4.6 elbow 3/4",,,780.00,0.00,Expense Claim,801 - Unpaid Expense Claims,780.00,0.00%,,780.00,0.00,Tax on Purchases
+445,"Meralco, Light, Power, Heating",01 Dec 2023,Expense,,Jasmin D - Meralco bill,,,"5,669.13",0.00,Expense Claim,801 - Unpaid Expense Claims,"5,669.13",0.00%,,"5,669.13",0.00,Tax on Purchases
+474,Christmas Gifts,05 Dec 2023,Expense,,"Jasmin D - Christmas bunos 2023/+charge to send the money Susan,Ramon,Emeline.700",,,"83,700.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"83,700.00",0.00%,,"83,700.00",0.00,Tax on Purchases
+445,"Meralco, Light, Power, Heating",09 Dec 2023,Expense,,Jasmin D - florescent light with ballast for stockroom ground,,,480.00,0.00,Expense Claim,801 - Unpaid Expense Claims,480.00,0.00%,,480.00,0.00,Tax on Purchases
+446,Water,09 Dec 2023,Expense,,Jasmin D - Maynilad bill,,,"11,848.55",0.00,Expense Claim,"461 - Printing & Stationery, 801 - Unpaid Expense Claims","11,848.55",0.00%,,"11,848.55",0.00,Tax on Purchases
+461,Printing & Stationery,09 Dec 2023,Expense,,Jasmin D - xerox ,,,35.00,0.00,Expense Claim,"801 - Unpaid Expense Claims, 446 - Water",35.00,0.00%,,35.00,0.00,Tax on Purchases
+477,Wages and Salaries,09 Dec 2023,Expense,,Jasmin D - salary Admin,,,"15,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"15,000.00",0.00%,,"15,000.00",0.00,Tax Exempt
+477,Wages and Salaries,09 Dec 2023,Expense,,Jasmin D - salary Mike,,,"10,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"10,000.00",0.00%,,"10,000.00",0.00,Tax Exempt
+440,Taxes and Licenses,15 Dec 2023,Expense,,Jasmin D - 4quarter Property tax,,,"17,723.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"17,723.00",0.00%,,"17,723.00",0.00,Tax on Purchases
+477,Wages and Salaries,15 Dec 2023,Expense,,Jasmin D - salary of Bernadeth 4th quarter,,,"5,100.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"5,100.00",0.00%,,"5,100.00",0.00,Tax Exempt
+474,Christmas Gifts,16 Dec 2023,Expense,,Jasmin D - Christmas gift tenant 2023,,,"3,500.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"3,500.00",0.00%,,"3,500.00",0.00,Tax on Purchases
+440,Taxes and Licenses,16 Dec 2023,Expense,,Jasmin D - BIR 0605,,,"1,875.25",0.00,Expense Claim,801 - Unpaid Expense Claims,"1,875.25",0.00%,,"1,875.25",0.00,Tax on Purchases
+474,Christmas Gifts,16 Dec 2023,Expense,,Jasmin D - Brgy X'mas Solicit,,,"1,500.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"1,500.00",0.00%,,"1,500.00",0.00,Tax on Purchases
+474,Christmas Gifts,16 Dec 2023,Expense,,Jasmin D - Fire xmas,,,"2,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"2,000.00",0.00%,,"2,000.00",0.00,Tax on Purchases
+474,Christmas Gifts,16 Dec 2023,Expense,,Jasmin D - Garbage collector solicit 4pax/250,,,"1,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"1,000.00",0.00%,,"1,000.00",0.00,Tax on Purchases
+473,"Materials, Repairs and Maintenance",22 Dec 2023,Expense,,"Jasmin D - check valve 3/4,1coupling/teplon",,,820.00,0.00,Expense Claim,801 - Unpaid Expense Claims,820.00,0.00%,,820.00,0.00,Tax on Purchases
+445,"Meralco, Light, Power, Heating",22 Dec 2023,Expense,,Jasmin D - Meralco bill,,,"3,649.04",0.00,Expense Claim,801 - Unpaid Expense Claims,"3,649.04",0.00%,,"3,649.04",0.00,Tax on Purchases
+476,Labor,22 Dec 2023,Expense,,Jasmin D - labor fr.maynilad main line going to bldg water pipe,,,500.00,0.00,Expense Claim,801 - Unpaid Expense Claims,500.00,0.00%,,500.00,0.00,Tax on Purchases
+433,Health Insurance,02 Jan 2024,Expense,,Jasmin D - Michael SSS,,,"1,710.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"1,710.00",0.00%,,"1,710.00",0.00,Tax on Purchases
+477,Wages and Salaries,06 Jan 2024,Expense,,Jasmin D - salary Mike,,,"10,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"10,000.00",0.00%,,"10,000.00",0.00,Tax Exempt
+477,Wages and Salaries,06 Jan 2024,Expense,,Jasmin D - salary admin,,,"15,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"15,000.00",0.00%,,"15,000.00",0.00,Tax Exempt
+446,Water,12 Jan 2024,Expense,,Jasmin D - Maynilad bill,,,"12,530.64",0.00,Expense Claim,801 - Unpaid Expense Claims,"12,530.64",0.00%,,"12,530.64",0.00,Tax on Purchases
+440,Taxes and Licenses,12 Jan 2024,Expense,,Jasmin D - BIR 2551Q,,,"3,150.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"3,150.00",0.00%,,"3,150.00",0.00,Tax on Purchases
+446,Water,12 Jan 2024,Expense,,Jasmin D - maynilad bill xerox,,,30.00,0.00,Expense Claim,801 - Unpaid Expense Claims,30.00,0.00%,,30.00,0.00,Tax on Purchases
+440,Taxes and Licenses,12 Jan 2024,Expense,,Jasmin D - Bir 0605,,,500.00,0.00,Expense Claim,801 - Unpaid Expense Claims,500.00,0.00%,,500.00,0.00,Tax on Purchases
+473,"Materials, Repairs and Maintenance",12 Jan 2024,Expense,,Jasmin D - double lock,,,579.00,0.00,Expense Claim,801 - Unpaid Expense Claims,579.00,0.00%,,579.00,0.00,Tax on Purchases
+473,"Materials, Repairs and Maintenance",12 Jan 2024,Expense,,Jasmin D - door knob 5 pcs@499,,,"2,495.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"2,495.00",0.00%,,"2,495.00",0.00,Tax on Purchases
+473,"Materials, Repairs and Maintenance",12 Jan 2024,Expense,,"Jasmin D - screen door,window,9meters 4/4/3metersflex.flat.",,,"2,860.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"2,860.00",0.00%,,"2,860.00",0.00,Tax on Purchases
+408,Cleaning,12 Jan 2024,Expense,,"Jasmin D - Soap,Sonrox,bathroom cleaning,lysol,",,,"1,150.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"1,150.00",0.00%,,"1,150.00",0.00,Tax on Purchases
+447,Garbage,12 Jan 2024,Expense,,Jasmin D - collector garbage unit d?parquet,,,"1,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"1,000.00",0.00%,,"1,000.00",0.00,Tax on Purchases
+440,Taxes and Licenses,12 Jan 2024,Expense,,Jasmin D - Business Permit,,,"23,500.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"23,500.00",0.00%,,"23,500.00",0.00,Tax on Purchases
+476,Labor,16 Jan 2024,Expense,,Jasmin D - labor of Mason,,,"27,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"27,000.00",0.00%,,"27,000.00",0.00,Tax on Purchases
+473,"Materials, Repairs and Maintenance",16 Jan 2024,Expense,,"Jasmin D - Materials for Tiles,adhesive,cement,,2 rooms,back lavatory,kitchen lavatory,Cr,door,screen door,window.",,,"80,194.40",0.00,Expense Claim,801 - Unpaid Expense Claims,"80,194.40",0.00%,,"80,194.40",0.00,Tax on Purchases
+930,Payment to Owners,17 Jan 2024,Expense,,Jasmin D - Donna Candungan,,,"60,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"60,000.00",0.00%,,"60,000.00",0.00,Tax on Purchases
+930,Payment to Owners,19 Jan 2024,Expense,,Jasmin D - Donna add.20k,,,"20,000.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"20,000.00",0.00%,,"20,000.00",0.00,Tax on Purchases
+445,"Meralco, Light, Power, Heating",23 Jan 2024,Expense,,Jasmin D - meralco bill ,,,"3,630.24",0.00,Expense Claim,801 - Unpaid Expense Claims,"3,630.24",0.00%,,"3,630.24",0.00,Tax on Purchases
+473,"Materials, Repairs and Maintenance",30 Jan 2024,Expense,,"Jasmin D - Paint,latex,enamel,door fatty exhaust fan for kitchen,elect.materials, ",,,"46,676.50",0.00,Expense Claim,801 - Unpaid Expense Claims,"46,676.50",0.00%,,"46,676.50",0.00,Tax on Purchases
+473,"Materials, Repairs and Maintenance",01 Feb 2024,Expense,,"Jasmin D - add.materials.1gal.paint seal Gray,1enamel,",,,977.00,0.00,Expense Claim,801 - Unpaid Expense Claims,977.00,0.00%,,977.00,0.00,Tax on Purchases
+473,"Materials, Repairs and Maintenance",01 Feb 2024,Expense,,"Jasmin D - roller brush(2 big)5roller small(5)brush(3)silicon(3)vulcaseal(2)packs,tiplon(5)handle for cabinet, 5pcs,6pcs caches,flexible pipe,flexible hose.
+",,,"2,320.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"2,320.00",0.00%,,"2,320.00",0.00,Tax on Purchases
+476,Labor,02 Feb 2024,Expense,,"Jasmin D - labor unit D,repaint,electrical,carpentry,repipe.",,,"27,600.00",0.00,Expense Claim,801 - Unpaid Expense Claims,"27,600.00",0.00%,,"27,600.00",0.00,Tax on Purchases
+960,Retained Earnings,31 Dec 2023,Equity,,Net Profit,,,"374,597.16",0.00,End of Period,,0.00,0.00%,,0.00,"374,597.16",
+960,Retained Earnings,31 Dec 2024,Equity,,Net Loss,,,"(262,630.78)",0.00,End of Period,,0.00,0.00%,,"262,630.78",0.00,
+960,Retained Earnings,31 Dec 2025,Equity,,Net Profit,,,0.00,0.00,End of Period,,0.00,0.00%,,0.00,0.00,
+960,Retained Earnings,31 Dec 2026,Equity,,Net Profit,,,0.00,0.00,End of Period,,0.00,0.00%,,0.00,0.00,
+960,Retained Earnings,31 Dec 2027,Equity,,Net Profit,,,0.00,0.00,End of Period,,0.00,0.00%,,0.00,0.00,
+960,Retained Earnings,31 Dec 2028,Equity,,Net Profit,,,0.00,0.00,End of Period,,0.00,0.00%,,0.00,0.00,
+960,Retained Earnings,31 Dec 2029,Equity,,Net Profit,,,0.00,0.00,End of Period,,0.00,0.00%,,0.00,0.00,
+960,Retained Earnings,31 Dec 2030,Equity,,Net Profit,,,0.00,0.00,End of Period,,0.00,0.00%,,0.00,0.00,
+960,Retained Earnings,31 Dec 2031,Equity,,Net Profit,,,0.00,0.00,End of Period,,0.00,0.00%,,0.00,0.00,
+960,Retained Earnings,31 Dec 2032,Equity,,Net Profit,,,0.00,0.00,End of Period,,0.00,0.00%,,0.00,0.00,
+610,Accounts Receivable,01 Jul 2023,Asset,Unit A,Unit A,INV-2455,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit A,Unit A - Rent Unit A,INV-2455,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Purchases
+610,Accounts Receivable,01 Jul 2023,Asset,Unit B,Unit B,INV-2456,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit B,Unit B - Rent Unit B,INV-2456,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit B,Unit B,INV-2457,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit B,Unit B - Dues Unit B,INV-2457,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit E,Unit E,INV-2458,Water,648.00,0.00,Receivable Invoice,200 - Sales,648.00,0.00%,,648.00,0.00,
+200,Sales,01 Jul 2023,Revenue,Unit E,Unit E - Water Unit E,INV-2458,Water,648.00,0.00,Receivable Invoice,610 - Accounts Receivable,648.00,0.00%,,0.00,648.00,Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit C,Unit C,INV-2459,Electricity,"10,738.00",0.00,Receivable Invoice,200 - Sales,"10,738.00",0.00%,,"10,738.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit C,Unit C - Electricity Unit C,INV-2459,Electricity,"10,738.00",0.00,Receivable Invoice,610 - Accounts Receivable,"10,738.00",0.00%,,0.00,"10,738.00",Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit G,Unit G,INV-2460,Electricity,120.00,0.00,Receivable Invoice,200 - Sales,120.00,0.00%,,120.00,0.00,
+200,Sales,01 Jul 2023,Revenue,Unit G,Unit G - Electricity Unit G,INV-2460,Electricity,120.00,0.00,Receivable Invoice,610 - Accounts Receivable,120.00,0.00%,,0.00,120.00,Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit G,Unit G,INV-2461,Water,152.00,0.00,Receivable Invoice,200 - Sales,152.00,0.00%,,152.00,0.00,
+200,Sales,01 Jul 2023,Revenue,Unit G,Unit G - Water Unit G,INV-2461,Water,152.00,0.00,Receivable Invoice,610 - Accounts Receivable,152.00,0.00%,,0.00,152.00,Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit G,Unit G,INV-2462,Dues,500.00,0.00,Receivable Invoice,200 - Sales,500.00,0.00%,,500.00,0.00,
+200,Sales,01 Jul 2023,Revenue,Unit G,Unit G - Dues Unit G,INV-2462,Dues,500.00,0.00,Receivable Invoice,610 - Accounts Receivable,500.00,0.00%,,0.00,500.00,Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit G,Unit G,INV-2463,Rent,"3,000.00",0.00,Receivable Invoice,200 - Sales,"3,000.00",0.00%,,"3,000.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit G,Unit G - Rent Unit G,INV-2463,Rent,"3,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"3,000.00",0.00%,,0.00,"3,000.00",Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit F,Unit F,INV-2464,Electricity,"4,522.00",0.00,Receivable Invoice,200 - Sales,"4,522.00",0.00%,,"4,522.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit F,Unit F - Electricity Unit F,INV-2464,Electricity,"4,522.00",0.00,Receivable Invoice,610 - Accounts Receivable,"4,522.00",0.00%,,0.00,"4,522.00",Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit D,Unit D,INV-2466,Electricity,"3,895.00",0.00,Receivable Invoice,200 - Sales,"3,895.00",0.00%,,"3,895.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit D,Unit D - Electricity Unit D,INV-2466,Electricity,"3,895.00",0.00,Receivable Invoice,610 - Accounts Receivable,"3,895.00",0.00%,,0.00,"3,895.00",Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit B,Unit B,INV-2467,Electricity,"5,869.00",0.00,Receivable Invoice,200 - Sales,"5,869.00",0.00%,,"5,869.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit B,Unit B - Electricity Unit B,INV-2467,Electricity,"5,869.00",0.00,Receivable Invoice,610 - Accounts Receivable,"5,869.00",0.00%,,0.00,"5,869.00",Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit A,Unit A,INV-2468,Electricity,"5,527.00",0.00,Receivable Invoice,200 - Sales,"5,527.00",0.00%,,"5,527.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit A,Unit A - Electricity Unit A,INV-2468,Electricity,"5,527.00",0.00,Receivable Invoice,610 - Accounts Receivable,"5,527.00",0.00%,,0.00,"5,527.00",Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit F,Unit F,INV-2469,Water,"1,900.00",0.00,Receivable Invoice,200 - Sales,"1,900.00",0.00%,,"1,900.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit F,Unit F - Water Unit F,INV-2469,Water,"1,900.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,900.00",0.00%,,0.00,"1,900.00",Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit D,Unit D,INV-2470,Water,805.75,0.00,Receivable Invoice,200 - Sales,805.75,0.00%,,805.75,0.00,
+200,Sales,01 Jul 2023,Revenue,Unit D,Unit D - Water Unit D,INV-2470,Water,805.75,0.00,Receivable Invoice,610 - Accounts Receivable,805.75,0.00%,,0.00,805.75,Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit C,Unit C,INV-2471,Water,"1,748.00",0.00,Receivable Invoice,200 - Sales,"1,748.00",0.00%,,"1,748.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit C,Unit C - Water Unit C,INV-2471,Water,"1,748.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,748.00",0.00%,,0.00,"1,748.00",Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit B,Unit B,INV-2472,Water,"1,368.00",0.00,Receivable Invoice,200 - Sales,"1,368.00",0.00%,,"1,368.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit B,Unit B - Water Unit B,INV-2472,Water,"1,368.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,368.00",0.00%,,0.00,"1,368.00",Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit A,Unit A,INV-2473,Water,504.00,0.00,Receivable Invoice,200 - Sales,504.00,0.00%,,504.00,0.00,
+200,Sales,01 Jul 2023,Revenue,Unit A,Unit A - Water Unit A,INV-2473,Water,504.00,0.00,Receivable Invoice,610 - Accounts Receivable,504.00,0.00%,,0.00,504.00,Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit F,Unit F,INV-2474,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit F,Unit F - Dues Unit F,INV-2474,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit E,Unit E,INV-2475,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit E,Unit E - Dues Unit E,INV-2475,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit D,Unit D,INV-2476,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit D,Unit D - Dues Unit D,INV-2476,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit A,Unit A,INV-2477,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit A,Unit A - Dues Unit A,INV-2477,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax Exempt
+610,Accounts Receivable,01 Jul 2023,Asset,Unit F,Unit F,INV-2478,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit F,Unit F - Rent Unit F,INV-2478,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit E,Unit E,INV-2479,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit E,Unit E - Rent Unit E,INV-2479,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit D,Unit D,INV-2480,Rent,"15,729.00",0.00,Receivable Invoice,200 - Sales,"15,729.00",0.00%,,"15,729.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit D,Unit D - Rent Unit D,INV-2480,Rent,"15,729.00",0.00,Receivable Invoice,610 - Accounts Receivable,"15,729.00",0.00%,,0.00,"15,729.00",Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit C,Unit C,INV-2481,Rent,"15,729.00",0.00,Receivable Invoice,200 - Sales,"15,729.00",0.00%,,"15,729.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit C,Unit C - Rent Unit C,INV-2481,Rent,"15,729.00",0.00,Receivable Invoice,610 - Accounts Receivable,"15,729.00",0.00%,,0.00,"15,729.00",Tax on Sales
+610,Accounts Receivable,01 Jul 2023,Asset,Unit C,Unit C,INV-2482,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Jul 2023,Revenue,Unit C,Unit C - Dues Unit C,INV-2482,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,03 Jul 2023,Asset,Unit E,Unit E,INV-2483,elect.,"5,389.00",0.00,Receivable Invoice,200 - Sales,"5,389.00",0.00%,,"5,389.00",0.00,
+200,Sales,03 Jul 2023,Revenue,Unit E,Unit E - Electricity Unit E,INV-2483,elect.,"5,389.00",0.00,Receivable Invoice,610 - Accounts Receivable,"5,389.00",0.00%,,0.00,"5,389.00",Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit G,Unit G,INV-2484,Electricity,201.00,0.00,Receivable Invoice,200 - Sales,201.00,0.00%,,201.00,0.00,
+200,Sales,01 Aug 2023,Revenue,Unit G,Unit G - Electricity Unit G,INV-2484,Electricity,201.00,0.00,Receivable Invoice,610 - Accounts Receivable,201.00,0.00%,,0.00,201.00,Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit G,Unit G,INV-2485,Water,146.50,0.00,Receivable Invoice,200 - Sales,146.50,0.00%,,146.50,0.00,
+200,Sales,01 Aug 2023,Revenue,Unit G,Unit G - Water Unit G,INV-2485,Water,146.50,0.00,Receivable Invoice,610 - Accounts Receivable,146.50,0.00%,,0.00,146.50,Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit G,Unit G,INV-2486,Dues,500.00,0.00,Receivable Invoice,200 - Sales,500.00,0.00%,,500.00,0.00,
+200,Sales,01 Aug 2023,Revenue,Unit G,Unit G - Dues Unit G,INV-2486,Dues,500.00,0.00,Receivable Invoice,610 - Accounts Receivable,500.00,0.00%,,0.00,500.00,Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit G,Unit G,INV-2487,Rent,"3,000.00",0.00,Receivable Invoice,200 - Sales,"3,000.00",0.00%,,"3,000.00",0.00,
+200,Sales,01 Aug 2023,Revenue,Unit G,Unit G - Rent Unit G,INV-2487,Rent,"3,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"3,000.00",0.00%,,0.00,"3,000.00",Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit F,Unit F,INV-2494,Water,"1,172.00",0.00,Receivable Invoice,200 - Sales,"1,172.00",0.00%,,"1,172.00",0.00,
+200,Sales,01 Aug 2023,Revenue,Unit F,Unit F - Water Unit F,INV-2494,Water,"1,172.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,172.00",0.00%,,0.00,"1,172.00",Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit E,Unit E,INV-2495,Water,659.25,0.00,Receivable Invoice,200 - Sales,659.25,0.00%,,659.25,0.00,
+200,Sales,01 Aug 2023,Revenue,Unit E,Unit E - Water Unit E,INV-2495,Water,659.25,0.00,Receivable Invoice,610 - Accounts Receivable,659.25,0.00%,,0.00,659.25,Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit D,Unit D,INV-2496,Water,805.75,0.00,Receivable Invoice,200 - Sales,805.75,0.00%,,805.75,0.00,
+200,Sales,01 Aug 2023,Revenue,Unit D,Unit D - Water Unit D,INV-2496,Water,805.75,0.00,Receivable Invoice,610 - Accounts Receivable,805.75,0.00%,,0.00,805.75,Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit C,Unit C,INV-2497,Water,"1,758.00",0.00,Receivable Invoice,200 - Sales,"1,758.00",0.00%,,"1,758.00",0.00,
+200,Sales,01 Aug 2023,Revenue,Unit C,Unit C - Water Unit C,INV-2497,Water,"1,758.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,758.00",0.00%,,0.00,"1,758.00",Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit B,Unit B,INV-2498,Water,"1,098.75",0.00,Receivable Invoice,200 - Sales,"1,098.75",0.00%,,"1,098.75",0.00,
+200,Sales,01 Aug 2023,Revenue,Unit B,Unit B - Water Unit B,INV-2498,Water,"1,098.75",0.00,Receivable Invoice,610 - Accounts Receivable,"1,098.75",0.00%,,0.00,"1,098.75",Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit A,Unit A,INV-2499,Water,586.00,0.00,Receivable Invoice,200 - Sales,586.00,0.00%,,586.00,0.00,
+200,Sales,01 Aug 2023,Revenue,Unit A,Unit A - Water Unit A,INV-2499,Water,586.00,0.00,Receivable Invoice,610 - Accounts Receivable,586.00,0.00%,,0.00,586.00,Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit F,Unit F,INV-2500,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Aug 2023,Revenue,Unit F,Unit F - Dues Unit F,INV-2500,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit F,Unit F,INV-2501,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Aug 2023,Revenue,Unit F,Unit F - Rent Unit F,INV-2501,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit E,Unit E,INV-2502,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Aug 2023,Revenue,Unit E,Unit E - Dues Unit E,INV-2502,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit D,Unit D,INV-2503,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Aug 2023,Revenue,Unit D,Unit D - Dues Unit D,INV-2503,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit C,Unit C,INV-2504,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Aug 2023,Revenue,Unit C,Unit C - Dues Unit C,INV-2504,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit B,Unit B,INV-2505,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Aug 2023,Revenue,Unit B,Unit B - Dues Unit B,INV-2505,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit A,Unit A,INV-2506,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Aug 2023,Revenue,Unit A,Unit A - Dues Unit A,INV-2506,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax Exempt
+610,Accounts Receivable,01 Aug 2023,Asset,Unit C,Unit C,INV-2507,Rent,"16,500.00",0.00,Receivable Invoice,200 - Sales,"16,500.00",0.00%,,"16,500.00",0.00,
+200,Sales,01 Aug 2023,Revenue,Unit C,Unit C - Rent Unit C,INV-2507,Rent,"16,500.00",0.00,Receivable Invoice,610 - Accounts Receivable,"16,500.00",0.00%,,0.00,"16,500.00",Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit E,Unit E,INV-2508,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Aug 2023,Revenue,Unit E,Unit E - Rent Unit E,INV-2508,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit D,Unit D,INV-2509,Rent,"16,500.00",0.00,Receivable Invoice,200 - Sales,"16,500.00",0.00%,,"16,500.00",0.00,
+200,Sales,01 Aug 2023,Revenue,Unit D,Unit D - Rent Unit D,INV-2509,Rent,"16,500.00",0.00,Receivable Invoice,610 - Accounts Receivable,"16,500.00",0.00%,,0.00,"16,500.00",Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit B,Unit B,INV-2510,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Aug 2023,Revenue,Unit B,Unit B - Rent Unit B,INV-2510,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Aug 2023,Asset,Unit A,Unit A,INV-2511,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Aug 2023,Revenue,Unit A,Unit A - Rent Unit A,INV-2511,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Purchases
+610,Accounts Receivable,01 Sep 2023,Asset,Unit G,Unit G,INV-2512,Electricity,201.00,0.00,Receivable Invoice,200 - Sales,201.00,0.00%,,201.00,0.00,
+200,Sales,01 Sep 2023,Revenue,Unit G,Unit G - Electricity Unit G,INV-2512,Electricity,201.00,0.00,Receivable Invoice,610 - Accounts Receivable,201.00,0.00%,,0.00,201.00,Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit G,Unit G,INV-2513,Water,146.00,0.00,Receivable Invoice,200 - Sales,146.00,0.00%,,146.00,0.00,
+200,Sales,01 Sep 2023,Revenue,Unit G,Unit G - Water Unit G,INV-2513,Water,146.00,0.00,Receivable Invoice,610 - Accounts Receivable,146.00,0.00%,,0.00,146.00,Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit G,Unit G,INV-2514,Dues,500.00,0.00,Receivable Invoice,200 - Sales,500.00,0.00%,,500.00,0.00,
+200,Sales,01 Sep 2023,Revenue,Unit G,Unit G - Dues Unit G,INV-2514,Dues,500.00,0.00,Receivable Invoice,610 - Accounts Receivable,500.00,0.00%,,0.00,500.00,Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit G,Unit G,INV-2515,Rent,"3,000.00",0.00,Receivable Invoice,200 - Sales,"3,000.00",0.00%,,"3,000.00",0.00,
+200,Sales,01 Sep 2023,Revenue,Unit G,Unit G - Rent Unit G,INV-2515,Rent,"3,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"3,000.00",0.00%,,0.00,"3,000.00",Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit F,Unit F,INV-2522,Water,"1,172.00",0.00,Receivable Invoice,200 - Sales,"1,172.00",0.00%,,"1,172.00",0.00,
+200,Sales,01 Sep 2023,Revenue,Unit F,Unit F - Water Unit F,INV-2522,Water,"1,172.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,172.00",0.00%,,0.00,"1,172.00",Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit E,Unit E,INV-2523,Water,659.25,0.00,Receivable Invoice,200 - Sales,659.25,0.00%,,659.25,0.00,
+200,Sales,01 Sep 2023,Revenue,Unit E,Unit E - Water Unit E,INV-2523,Water,659.25,0.00,Receivable Invoice,610 - Accounts Receivable,659.25,0.00%,,0.00,659.25,Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit D,Unit D,INV-2524,Water,877.00,0.00,Receivable Invoice,200 - Sales,877.00,0.00%,,877.00,0.00,
+200,Sales,01 Sep 2023,Revenue,Unit D,Unit D - Water Unit D,INV-2524,Water,877.00,0.00,Receivable Invoice,610 - Accounts Receivable,877.00,0.00%,,0.00,877.00,Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit C,Unit C,INV-2525,Water,"1,758.00",0.00,Receivable Invoice,200 - Sales,"1,758.00",0.00%,,"1,758.00",0.00,
+200,Sales,01 Sep 2023,Revenue,Unit C,Unit C - Water Unit C,INV-2525,Water,"1,758.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,758.00",0.00%,,0.00,"1,758.00",Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit B,Unit B,INV-2526,Water,"1,098.00",0.00,Receivable Invoice,200 - Sales,"1,098.00",0.00%,,"1,098.00",0.00,
+200,Sales,01 Sep 2023,Revenue,Unit B,Unit B - Water Unit B,INV-2526,Water,"1,098.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,098.00",0.00%,,0.00,"1,098.00",Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit A,Unit A,INV-2527,Water,586.00,0.00,Receivable Invoice,200 - Sales,586.00,0.00%,,586.00,0.00,
+200,Sales,01 Sep 2023,Revenue,Unit A,Unit A - Water Unit A,INV-2527,Water,586.00,0.00,Receivable Invoice,610 - Accounts Receivable,586.00,0.00%,,0.00,586.00,Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit F,Unit F,INV-2528,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Sep 2023,Revenue,Unit F,Unit F - Dues Unit F,INV-2528,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit E,Unit E,INV-2529,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Sep 2023,Revenue,Unit E,Unit E - Dues Unit E,INV-2529,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit B,Unit B,INV-2530,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Sep 2023,Revenue,Unit B,Unit B - Dues Unit B,INV-2530,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit F,Unit F,INV-2531,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Sep 2023,Revenue,Unit F,Unit F - Rent Unit F,INV-2531,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit C,Unit C,INV-2532,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Sep 2023,Revenue,Unit C,Unit C - Dues Unit C,INV-2532,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit C,Unit C,INV-2533,Rent,"16,500.00",0.00,Receivable Invoice,200 - Sales,"16,500.00",0.00%,,"16,500.00",0.00,
+200,Sales,01 Sep 2023,Revenue,Unit C,Unit C - Rent Unit C,INV-2533,Rent,"16,500.00",0.00,Receivable Invoice,610 - Accounts Receivable,"16,500.00",0.00%,,0.00,"16,500.00",Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit E,Unit E,INV-2534,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Sep 2023,Revenue,Unit E,Unit E - Rent Unit E,INV-2534,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit D,Unit D,INV-2535,Rent,"16,500.00",0.00,Receivable Invoice,200 - Sales,"16,500.00",0.00%,,"16,500.00",0.00,
+200,Sales,01 Sep 2023,Revenue,Unit D,Unit D - Rent Unit D,INV-2535,Rent,"16,500.00",0.00,Receivable Invoice,610 - Accounts Receivable,"16,500.00",0.00%,,0.00,"16,500.00",Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit B,Unit B,INV-2536,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Sep 2023,Revenue,Unit B,Unit B - Rent Unit B,INV-2536,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit A,Unit A,INV-2537,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Sep 2023,Revenue,Unit A,Unit A - Rent Unit A,INV-2537,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Purchases
+610,Accounts Receivable,01 Sep 2023,Asset,Unit D,Unit D,INV-2538,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Sep 2023,Revenue,Unit D,Unit D - Dues Unit D,INV-2538,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Sep 2023,Asset,Unit A,Unit A,INV-2539,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Sep 2023,Revenue,Unit A,Unit A - Dues Unit A,INV-2539,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax Exempt
+610,Accounts Receivable,01 Oct 2023,Asset,Unit G,Unit G,INV-2540,Electricity,221.00,0.00,Receivable Invoice,200 - Sales,221.00,0.00%,,221.00,0.00,
+200,Sales,01 Oct 2023,Revenue,Unit G,Unit G - Electricity Unit G,INV-2540,Electricity,221.00,0.00,Receivable Invoice,610 - Accounts Receivable,221.00,0.00%,,0.00,221.00,Tax on Sales
+610,Accounts Receivable,01 Oct 2023,Asset,Unit G,Unit G,INV-2541,Water,146.00,0.00,Receivable Invoice,200 - Sales,146.00,0.00%,,146.00,0.00,
+200,Sales,01 Oct 2023,Revenue,Unit G,Unit G - Water Unit G,INV-2541,Water,146.00,0.00,Receivable Invoice,610 - Accounts Receivable,146.00,0.00%,,0.00,146.00,Tax on Sales
+610,Accounts Receivable,01 Oct 2023,Asset,Unit E,Unit E,INV-2543,Water,506.00,0.00,Receivable Invoice,200 - Sales,506.00,0.00%,,506.00,0.00,
+200,Sales,01 Oct 2023,Revenue,Unit E,Unit E - Water Unit E,INV-2543,Water,506.00,0.00,Receivable Invoice,610 - Accounts Receivable,506.00,0.00%,,0.00,506.00,Tax on Sales
+610,Accounts Receivable,01 Oct 2023,Asset,Unit D,Unit D,INV-2544,Water,796.00,0.00,Receivable Invoice,200 - Sales,796.00,0.00%,,796.00,0.00,
+200,Sales,01 Oct 2023,Revenue,Unit D,Unit D - Water Unit D,INV-2544,Water,796.00,0.00,Receivable Invoice,610 - Accounts Receivable,796.00,0.00%,,0.00,796.00,Tax on Sales
+610,Accounts Receivable,01 Oct 2023,Asset,Unit C,Unit C,INV-2545,Water,"1,901.00",0.00,Receivable Invoice,200 - Sales,"1,901.00",0.00%,,"1,901.00",0.00,
+200,Sales,01 Oct 2023,Revenue,Unit C,Unit C - Water Unit C,INV-2545,Water,"1,901.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,901.00",0.00%,,0.00,"1,901.00",Tax on Sales
+610,Accounts Receivable,01 Oct 2023,Asset,Unit B,Unit B,INV-2546,Water,"1,316.00",0.00,Receivable Invoice,200 - Sales,"1,316.00",0.00%,,"1,316.00",0.00,
+200,Sales,01 Oct 2023,Revenue,Unit B,Unit B - Water Unit B,INV-2546,Water,"1,316.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,316.00",0.00%,,0.00,"1,316.00",Tax on Sales
+610,Accounts Receivable,01 Oct 2023,Asset,Unit F,Unit F,INV-2547,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Oct 2023,Revenue,Unit F,Unit F - Dues Unit F,INV-2547,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Oct 2023,Asset,Unit E,Unit E,INV-2548,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Oct 2023,Revenue,Unit E,Unit E - Dues Unit E,INV-2548,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Oct 2023,Asset,Unit D,Unit D,INV-2549,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Oct 2023,Revenue,Unit D,Unit D - Dues Unit D,INV-2549,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Oct 2023,Asset,Unit C,Unit C,INV-2550,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Oct 2023,Revenue,Unit C,Unit C - Dues Unit C,INV-2550,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Oct 2023,Asset,Unit B,Unit B,INV-2551,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Oct 2023,Revenue,Unit B,Unit B - Dues Unit B,INV-2551,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Oct 2023,Asset,Unit A,Unit A,INV-2552,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Oct 2023,Revenue,Unit A,Unit A - Dues Unit A,INV-2552,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax Exempt
+610,Accounts Receivable,01 Oct 2023,Asset,Unit F,Unit F,INV-2553,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Oct 2023,Revenue,Unit F,Unit F - Rent Unit F,INV-2553,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Oct 2023,Asset,Unit C,Unit C,INV-2554,Rent,"16,500.00",0.00,Receivable Invoice,200 - Sales,"16,500.00",0.00%,,"16,500.00",0.00,
+200,Sales,01 Oct 2023,Revenue,Unit C,Unit C - Rent Unit C,INV-2554,Rent,"16,500.00",0.00,Receivable Invoice,610 - Accounts Receivable,"16,500.00",0.00%,,0.00,"16,500.00",Tax on Sales
+610,Accounts Receivable,01 Oct 2023,Asset,Unit D,Unit D,INV-2555,Rent,"16,500.00",0.00,Receivable Invoice,200 - Sales,"16,500.00",0.00%,,"16,500.00",0.00,
+200,Sales,01 Oct 2023,Revenue,Unit D,Unit D - Rent Unit D,INV-2555,Rent,"16,500.00",0.00,Receivable Invoice,610 - Accounts Receivable,"16,500.00",0.00%,,0.00,"16,500.00",Tax on Sales
+610,Accounts Receivable,01 Oct 2023,Asset,Unit B,Unit B,INV-2556,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Oct 2023,Revenue,Unit B,Unit B - Rent Unit B,INV-2556,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Oct 2023,Asset,Unit A,Unit A,INV-2557,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Oct 2023,Revenue,Unit A,Unit A - Rent Unit A,INV-2557,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Purchases
+610,Accounts Receivable,01 Oct 2023,Asset,Unit F,Unit F,INV-2560,Water,"1,389.00",0.00,Receivable Invoice,200 - Sales,"1,389.00",0.00%,,"1,389.00",0.00,
+200,Sales,01 Oct 2023,Revenue,Unit F,Unit F - Water Unit F,INV-2560,Water,"1,389.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,389.00",0.00%,,0.00,"1,389.00",Tax on Sales
+610,Accounts Receivable,01 Oct 2023,Asset,Unit A,Unit A,INV-2561,Water,434.00,0.00,Receivable Invoice,200 - Sales,434.00,0.00%,,434.00,0.00,
+200,Sales,01 Oct 2023,Revenue,Unit A,Unit A - Water Unit A,INV-2561,Water,434.00,0.00,Receivable Invoice,610 - Accounts Receivable,434.00,0.00%,,0.00,434.00,Tax on Sales
+610,Accounts Receivable,01 Oct 2023,Asset,Unit E,Unit E,INV-2562,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Oct 2023,Revenue,Unit E,Unit E - Rent Unit E,INV-2562,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Oct 2023,Asset,Unit G,Unit G,INV-2563,Rent,"3,000.00",0.00,Receivable Invoice,200 - Sales,"3,000.00",0.00%,,"3,000.00",0.00,
+200,Sales,01 Oct 2023,Revenue,Unit G,Unit G - Rent Unit G,INV-2563,Rent,"3,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"3,000.00",0.00%,,0.00,"3,000.00",Tax on Sales
+610,Accounts Receivable,01 Oct 2023,Asset,Unit G,Unit G,INV-2567,Dues,500.00,0.00,Receivable Invoice,200 - Sales,500.00,0.00%,,500.00,0.00,
+200,Sales,01 Oct 2023,Revenue,Unit G,Unit G - Dues Unit G,INV-2567,Dues,500.00,0.00,Receivable Invoice,610 - Accounts Receivable,500.00,0.00%,,0.00,500.00,Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit G,Unit G,INV-2568,Electricity,146.00,0.00,Receivable Invoice,200 - Sales,146.00,0.00%,,146.00,0.00,
+200,Sales,01 Nov 2023,Revenue,Unit G,Unit G - Electricity Unit G,INV-2568,Electricity,146.00,0.00,Receivable Invoice,610 - Accounts Receivable,146.00,0.00%,,0.00,146.00,Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit G,Unit G,INV-2569,Water,217.00,0.00,Receivable Invoice,200 - Sales,217.00,0.00%,,217.00,0.00,
+200,Sales,01 Nov 2023,Revenue,Unit G,Unit G - Water Unit G,INV-2569,Water,217.00,0.00,Receivable Invoice,610 - Accounts Receivable,217.00,0.00%,,0.00,217.00,Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit G,Unit G,INV-2570,Dues,500.00,0.00,Receivable Invoice,200 - Sales,500.00,0.00%,,500.00,0.00,
+200,Sales,01 Nov 2023,Revenue,Unit G,Unit G - Dues Unit G,INV-2570,Dues,500.00,0.00,Receivable Invoice,610 - Accounts Receivable,500.00,0.00%,,0.00,500.00,Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit G,Unit G,INV-2571,Rent,"3,000.00",0.00,Receivable Invoice,200 - Sales,"3,000.00",0.00%,,"3,000.00",0.00,
+200,Sales,01 Nov 2023,Revenue,Unit G,Unit G - Rent Unit G,INV-2571,Rent,"3,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"3,000.00",0.00%,,0.00,"3,000.00",Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit F,Unit F,INV-2577,Water,"1,447.00",0.00,Receivable Invoice,200 - Sales,"1,447.00",0.00%,,"1,447.00",0.00,
+200,Sales,01 Nov 2023,Revenue,Unit F,Unit F - Water Unit F,INV-2577,Water,"1,447.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,447.00",0.00%,,0.00,"1,447.00",Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit E,Unit E,INV-2578,Water,578.96,0.00,Receivable Invoice,200 - Sales,578.96,0.00%,,578.96,0.00,
+200,Sales,01 Nov 2023,Revenue,Unit E,Unit E - Water Unit E,INV-2578,Water,578.96,0.00,Receivable Invoice,610 - Accounts Receivable,578.96,0.00%,,0.00,578.96,Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit D,Unit D,INV-2579,Water,657.00,0.00,Receivable Invoice,200 - Sales,657.00,0.00%,,657.00,0.00,
+200,Sales,01 Nov 2023,Revenue,Unit D,Unit D - Water Unit D,INV-2579,Water,657.00,0.00,Receivable Invoice,610 - Accounts Receivable,657.00,0.00%,,0.00,657.00,Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit C,Unit C,INV-2580,Water,"1,881.00",0.00,Receivable Invoice,200 - Sales,"1,881.00",0.00%,,"1,881.00",0.00,
+200,Sales,01 Nov 2023,Revenue,Unit C,Unit C - Water Unit C,INV-2580,Water,"1,881.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,881.00",0.00%,,0.00,"1,881.00",Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit B,Unit B,INV-2581,Water,"1,157.00",0.00,Receivable Invoice,200 - Sales,"1,157.00",0.00%,,"1,157.00",0.00,
+200,Sales,01 Nov 2023,Revenue,Unit B,Unit B - Water Unit B,INV-2581,Water,"1,157.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,157.00",0.00%,,0.00,"1,157.00",Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit A,Unit A,INV-2582,Water,361.00,0.00,Receivable Invoice,200 - Sales,361.00,0.00%,,361.00,0.00,
+200,Sales,01 Nov 2023,Revenue,Unit A,Unit A - Water Unit A,INV-2582,Water,361.00,0.00,Receivable Invoice,610 - Accounts Receivable,361.00,0.00%,,0.00,361.00,Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit F,Unit F,INV-2583,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Nov 2023,Revenue,Unit F,Unit F - Dues Unit F,INV-2583,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit E,Unit E,INV-2584,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Nov 2023,Revenue,Unit E,Unit E - Dues Unit E,INV-2584,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit D,Unit D,INV-2585,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Nov 2023,Revenue,Unit D,Unit D - Dues Unit D,INV-2585,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit C,Unit C,INV-2586,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Nov 2023,Revenue,Unit C,Unit C - Dues Unit C,INV-2586,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit B,Unit B,INV-2587,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Nov 2023,Revenue,Unit B,Unit B - Dues Unit B,INV-2587,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit A,Unit A,INV-2588,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Nov 2023,Revenue,Unit A,Unit A - Dues Unit A,INV-2588,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax Exempt
+610,Accounts Receivable,01 Nov 2023,Asset,Unit F,Unit F,INV-2589,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Nov 2023,Revenue,Unit F,Unit F - Rent Unit F,INV-2589,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit C,Unit C,INV-2590,Rent,"16,500.00",0.00,Receivable Invoice,200 - Sales,"16,500.00",0.00%,,"16,500.00",0.00,
+200,Sales,01 Nov 2023,Revenue,Unit C,Unit C - Rent Unit C,INV-2590,Rent,"16,500.00",0.00,Receivable Invoice,610 - Accounts Receivable,"16,500.00",0.00%,,0.00,"16,500.00",Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit E,Unit E,INV-2591,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Nov 2023,Revenue,Unit E,Unit E - Rent Unit E,INV-2591,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit D,Unit D,INV-2592,Rent,"16,500.00",0.00,Receivable Invoice,200 - Sales,"16,500.00",0.00%,,"16,500.00",0.00,
+200,Sales,01 Nov 2023,Revenue,Unit D,Unit D - Rent Unit D,INV-2592,Rent,"16,500.00",0.00,Receivable Invoice,610 - Accounts Receivable,"16,500.00",0.00%,,0.00,"16,500.00",Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit B,Unit B,INV-2593,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Nov 2023,Revenue,Unit B,Unit B - Rent Unit B,INV-2593,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Nov 2023,Asset,Unit A,Unit A,INV-2594,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Nov 2023,Revenue,Unit A,Unit A - Rent Unit A,INV-2594,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Purchases
+610,Accounts Receivable,01 Dec 2023,Asset,Unit G,Unit G,INV-2597,Water,146.00,0.00,Receivable Invoice,200 - Sales,146.00,0.00%,,146.00,0.00,
+200,Sales,01 Dec 2023,Revenue,Unit G,Unit G - Water Unit G,INV-2597,Water,146.00,0.00,Receivable Invoice,610 - Accounts Receivable,146.00,0.00%,,0.00,146.00,Tax on Sales
+610,Accounts Receivable,01 Dec 2023,Asset,Unit G,Unit G,INV-2598,Dues,500.00,0.00,Receivable Invoice,200 - Sales,500.00,0.00%,,500.00,0.00,
+200,Sales,01 Dec 2023,Revenue,Unit G,Unit G - Dues Unit G,INV-2598,Dues,500.00,0.00,Receivable Invoice,610 - Accounts Receivable,500.00,0.00%,,0.00,500.00,Tax on Sales
+610,Accounts Receivable,01 Dec 2023,Asset,Unit G,Unit G,INV-2599,Rent,"3,000.00",0.00,Receivable Invoice,200 - Sales,"3,000.00",0.00%,,"3,000.00",0.00,
+200,Sales,01 Dec 2023,Revenue,Unit G,Unit G - Rent Unit G,INV-2599,Rent,"3,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"3,000.00",0.00%,,0.00,"3,000.00",Tax on Sales
+610,Accounts Receivable,01 Dec 2023,Asset,Unit F,Unit F,INV-2606,Water,"2,555.00",0.00,Receivable Invoice,200 - Sales,"2,555.00",0.00%,,"2,555.00",0.00,
+200,Sales,01 Dec 2023,Revenue,Unit F,Unit F - Water Unit F,INV-2606,Water,"2,555.00",0.00,Receivable Invoice,610 - Accounts Receivable,"2,555.00",0.00%,,0.00,"2,555.00",Tax on Sales
+610,Accounts Receivable,01 Dec 2023,Asset,Unit E,Unit E,INV-2607,Water,511.00,0.00,Receivable Invoice,200 - Sales,511.00,0.00%,,511.00,0.00,
+200,Sales,01 Dec 2023,Revenue,Unit E,Unit E - Water Unit E,INV-2607,Water,511.00,0.00,Receivable Invoice,610 - Accounts Receivable,511.00,0.00%,,0.00,511.00,Tax on Sales
+610,Accounts Receivable,01 Dec 2023,Asset,Unit C,Unit C,INV-2609,Water,"1,664.00",0.00,Receivable Invoice,200 - Sales,"1,664.00",0.00%,,"1,664.00",0.00,
+200,Sales,01 Dec 2023,Revenue,Unit C,Unit C - Water Unit C,INV-2609,Water,"1,664.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,664.00",0.00%,,0.00,"1,664.00",Tax on Sales
+610,Accounts Receivable,01 Dec 2023,Asset,Unit B,Unit B,INV-2610,Water,"1,606.00",0.00,Receivable Invoice,200 - Sales,"1,606.00",0.00%,,"1,606.00",0.00,
+200,Sales,01 Dec 2023,Revenue,Unit B,Unit B - Water Unit B,INV-2610,Water,"1,606.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,606.00",0.00%,,0.00,"1,606.00",Tax on Sales
+610,Accounts Receivable,01 Dec 2023,Asset,Unit A,Unit A,INV-2611,Water,292.00,0.00,Receivable Invoice,200 - Sales,292.00,0.00%,,292.00,0.00,
+200,Sales,01 Dec 2023,Revenue,Unit A,Unit A - Water Unit A,INV-2611,Water,292.00,0.00,Receivable Invoice,610 - Accounts Receivable,292.00,0.00%,,0.00,292.00,Tax on Sales
+610,Accounts Receivable,01 Dec 2023,Asset,Unit F,Unit F,INV-2612,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Dec 2023,Revenue,Unit F,Unit F - Dues Unit F,INV-2612,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Dec 2023,Asset,Unit E,Unit E,INV-2613,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Dec 2023,Revenue,Unit E,Unit E - Dues Unit E,INV-2613,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Dec 2023,Asset,Unit C,Unit C,INV-2615,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Dec 2023,Revenue,Unit C,Unit C - Dues Unit C,INV-2615,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Dec 2023,Asset,Unit B,Unit B,INV-2616,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Dec 2023,Revenue,Unit B,Unit B - Dues Unit B,INV-2616,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Dec 2023,Asset,Unit A,Unit A,INV-2617,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Dec 2023,Revenue,Unit A,Unit A - Dues Unit A,INV-2617,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax Exempt
+610,Accounts Receivable,01 Dec 2023,Asset,Unit F,Unit F,INV-2618,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Dec 2023,Revenue,Unit F,Unit F - Rent Unit F,INV-2618,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Dec 2023,Asset,Unit B,Unit B,INV-2619,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Dec 2023,Revenue,Unit B,Unit B - Rent Unit B,INV-2619,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Dec 2023,Asset,Unit C,Unit C,INV-2620,Rent,"16,500.00",0.00,Receivable Invoice,200 - Sales,"16,500.00",0.00%,,"16,500.00",0.00,
+200,Sales,01 Dec 2023,Revenue,Unit C,Unit C - Rent Unit C,INV-2620,Rent,"16,500.00",0.00,Receivable Invoice,610 - Accounts Receivable,"16,500.00",0.00%,,0.00,"16,500.00",Tax on Sales
+610,Accounts Receivable,01 Dec 2023,Asset,Unit E,Unit E,INV-2621,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Dec 2023,Revenue,Unit E,Unit E - Rent Unit E,INV-2621,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Dec 2023,Asset,Unit A,Unit A,INV-2623,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Dec 2023,Revenue,Unit A,Unit A - Rent Unit A,INV-2623,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Purchases
+610,Accounts Receivable,01 Jan 2024,Asset,Unit F,Unit F,INV-2634,Water,"2,464.00",0.00,Receivable Invoice,200 - Sales,"2,464.00",0.00%,,"2,464.00",0.00,
+200,Sales,01 Jan 2024,Revenue,Unit F,Unit F - Water Unit F,INV-2634,Water,"2,464.00",0.00,Receivable Invoice,610 - Accounts Receivable,"2,464.00",0.00%,,0.00,"2,464.00",Tax on Sales
+610,Accounts Receivable,01 Jan 2024,Asset,Unit A,Unit A,INV-2639,Water,308.00,0.00,Receivable Invoice,200 - Sales,308.00,0.00%,,308.00,0.00,
+200,Sales,01 Jan 2024,Revenue,Unit A,Unit A - Water Unit A,INV-2639,Water,308.00,0.00,Receivable Invoice,610 - Accounts Receivable,308.00,0.00%,,0.00,308.00,Tax on Sales
+610,Accounts Receivable,01 Jan 2024,Asset,Unit F,Unit F,INV-2640,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Jan 2024,Revenue,Unit F,Unit F - Dues Unit F,INV-2640,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Jan 2024,Asset,Unit F,Unit F,INV-2642,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Jan 2024,Revenue,Unit F,Unit F - Rent Unit F,INV-2642,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Jan 2024,Asset,Unit C,Unit C,INV-2644,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Jan 2024,Revenue,Unit C,Unit C - Dues Unit C,INV-2644,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Jan 2024,Asset,Unit B,Unit B,INV-2645,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Jan 2024,Revenue,Unit B,Unit B - Dues Unit B,INV-2645,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax on Sales
+610,Accounts Receivable,01 Jan 2024,Asset,Unit A,Unit A,INV-2646,Dues,"1,000.00",0.00,Receivable Invoice,200 - Sales,"1,000.00",0.00%,,"1,000.00",0.00,
+200,Sales,01 Jan 2024,Revenue,Unit A,Unit A - Dues Unit A,INV-2646,Dues,"1,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"1,000.00",0.00%,,0.00,"1,000.00",Tax Exempt
+610,Accounts Receivable,01 Jan 2024,Asset,Unit C,Unit C,INV-2647,Rent,"16,500.00",0.00,Receivable Invoice,200 - Sales,"16,500.00",0.00%,,"16,500.00",0.00,
+200,Sales,01 Jan 2024,Revenue,Unit C,Unit C - Rent Unit C,INV-2647,Rent,"16,500.00",0.00,Receivable Invoice,610 - Accounts Receivable,"16,500.00",0.00%,,0.00,"16,500.00",Tax on Sales
+610,Accounts Receivable,01 Jan 2024,Asset,Unit B,Unit B,INV-2649,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Jan 2024,Revenue,Unit B,Unit B - Rent Unit B,INV-2649,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Sales
+610,Accounts Receivable,01 Jan 2024,Asset,Unit A,Unit A,INV-2650,Rent,"19,000.00",0.00,Receivable Invoice,200 - Sales,"19,000.00",0.00%,,"19,000.00",0.00,
+200,Sales,01 Jan 2024,Revenue,Unit A,Unit A - Rent Unit A,INV-2650,Rent,"19,000.00",0.00,Receivable Invoice,610 - Accounts Receivable,"19,000.00",0.00%,,0.00,"19,000.00",Tax on Purchases
+Total,,,,,,,,0.00,0.00,,,0.00,,,0.00,0.00,
+,,,,,,,,,,,,,,,,,
+Total,,,,,,,,0.00,0.00,,,0.00,,,0.00,0.00,

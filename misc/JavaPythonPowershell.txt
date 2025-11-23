@@ -1,0 +1,50 @@
+Program languages differences - Python, Java, Powershell
+
+https://www.activestate.com/blog/python-vs-java-duck-typing-parsing-whitespace-and-other-cool-differences/
+
+Python 
+.compiled down to bytecodes that run on virtual machine at runtime
+.Parsing whitespace puts some people off Python
+.Python is a dynamically typed
+.Python is strongly but dynamically typed. This means names in code are bound to strongly typed objects at runtime. 
+The only condition on the type of object a name refers to is that it supports the operations required for the particular 
+object instances in the program. For example, I might have two types Person and Car that both support operation “run”, 
+but Car also supports “refuel”. So long as my program only calls “run” on objects, it doesn’t matter if they are Person or Car. 
+This is called “duck typing” after the expression “if it walks like a duck and talks like a duck, it’s a duck”. This makes 
+Python very easy to write and not too bad to read, but difficult to analyze. 
+.Static type inference (conclusion reached on the basis of evidence and reasoning.) is a known hard problem. The lack of type 
+information in function signatures combined with support for operator overloading and just-in-time loading of modules at runtime 
+means that the most common type inference algorithms have nothing to work with until the point in the program’s execution when 
+the types are known anyway.
+.In Python, names have no strong binding to their type, and thanks to duck typing, function arguments can be used to pass in any
+object whose interface supports the operations required by the function. There is no reasonable way to determine the type of an 
+argument in this case, which can be very powerful and convenient, and is a lot like how we use objects in the real world. In the
+real world I don’t generally care if I have a rock or a hammer: both have “hit()” interfaces that result in similar consequences
+when called.
+.Python requires very little type design. This is what makes Python a great prototyping language, and is also what makes it a
+good teaching language and a good language for people who aren’t software professionals. Professionals care about types, and 
+actually enjoy threading the maze of arcane type rules imposed by strongly typed languages to create, clean, powerful systems 
+that are provably type-safe. Everyone else just wants to get their job done.
+
+
+
+
+Java
+.compiled down to bytecodes that run on virtual machine by (javac) 
+.Many Java virtual machines (JVMs) have the ability to do just-in-time compilation of parts of the bytecode down to the native 
+instruction set of whatever platform it happens to be running on, which can produce significant speed-ups
+.Java is a statically typed. Names in Java are bound to types at compile time via explicit type declaration. This means many 
+type errors that would result in a runtime error–and often a program crash–in Python get caught at compile time in Java. And 
+you can tell at a glance what type of object a name is associated with in Java, which makes analysis by humans as well as 
+compilers much easier.
+.The cost of this is that developers have to care about types. Java’s automatic type conversions are extremely limited, and 
+the compiler insists that objects passed through interfaces be of a type convertible to the target type, either by inheritance 
+or automatic type promotion. Java doesn’t permit the kind of implicit type conversion based on constructors that C++ does.
+This means that Java depends critically on well-designed types,
+
+
+
+
+Powwershell
+
+

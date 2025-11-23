@@ -1,0 +1,801 @@
+fidelityPortfolio_Positions_Feb-18-2024.csv
+/home/jordonez/bitbucket/misc/PASAY/ingest/fidelityPortfolio_Positions_Feb-18-2024.csv
+Begin database integration
+App Fidelity
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 16
+. 0
+. 1
+. 0
+. 1
+. 0
+. 1
+2
+3 02/18/2024 8:09 PM ET
+4 ['02/18/2024', '8:09', 'PM', 'ET']
+date is 02/18/2024
+unclean fidelity csv ['\ufeffAccount Number', 'Account Name', 'Symbol', 'Description', 'Quantity', 'Last Price', 'Last Price Change', 'Current Value', "Today's Gain/Loss Dollar", "Today's Gain/Loss Percent", 'Total Gain/Loss Dollar', 'Total Gain/Loss Percent', 'Percent Of Account', 'Cost Basis Total', 'Average Cost Basis', 'Type']
+unclean fidelity csv ['Z21480840', 'Trust: Under Agreement', 'FCASH**', 'HELD IN FCASH', '', '', '', '$4200.10', '', '', '', '', '17.60%', '', '', 'Cash']
+unclean fidelity csv ['Z21480840', 'Trust: Under Agreement', 'PLUG', 'PLUG POWER INC', '111', '$3.96', '-$0.06', '$439.56', '-$6.66', '-1.50%', '+$43.11', '+10.87%', '1.84%', '$396.45', '$3.57', 'Cash']
+JOP 135: cleaning ['Z21480840', 'Trust: Under Agreement', 'PLUG', 'PLUG POWER INC', '111', '$3.96', '-$0.06', '$439.56', '-$6.66', '-1.50%', '+$43.11', '+10.87%', '1.84%', '$396.45', '$3.57', 'Cash']
+clean field Z21480840
+clean field Trust: Under Agreement
+clean field PLUG
+clean field PLUG POWER INC
+clean field 111
+clean field 3.96
+clean field -0.06
+clean field 439.56
+clean field -6.66
+clean field -1.50
+clean field +43.11
+clean field +10.87
+clean field 1.84
+clean field 396.45
+clean field 3.57
+clean field Cash
+unclean fidelity csv ['Z21480840', 'Trust: Under Agreement', 'HUT', 'HUT 8 CORP COM ISIN #US44812J1043 SEDOL #BQQ8805', '140', '$10.08', '+$0.11', '$1411.20', '+$15.40', '+1.10%', '-$3495.80', '-71.25%', '5.91%', '$4907.00', '$35.05', 'Cash']
+JOP 135: cleaning ['Z21480840', 'Trust: Under Agreement', 'HUT', 'HUT 8 CORP COM ISIN #US44812J1043 SEDOL #BQQ8805', '140', '$10.08', '+$0.11', '$1411.20', '+$15.40', '+1.10%', '-$3495.80', '-71.25%', '5.91%', '$4907.00', '$35.05', 'Cash']
+clean field Z21480840
+clean field Trust: Under Agreement
+clean field HUT
+clean field HUT 8 CORP COM ISIN #US44812J1043 SEDOL #BQQ8805
+clean field 140
+clean field 10.08
+clean field +0.11
+clean field 1411.20
+clean field +15.40
+clean field +1.10
+clean field -3495.80
+clean field -71.25
+clean field 5.91
+clean field 4907.00
+clean field 35.05
+clean field Cash
+unclean fidelity csv ['Z21480840', 'Trust: Under Agreement', 'WPM', 'WHEATON PRECIOUS METALS CORP COM NPV ISIN #CA9628791027 SEDOL #BF13KN5', '120.902', '$44.41', '+$0.08', '$5369.25', '+$9.67', '+0.18%', '+$1386.05', '+34.79%', '22.49%', '$3983.20', '$32.95', 'Cash']
+JOP 135: cleaning ['Z21480840', 'Trust: Under Agreement', 'WPM', 'WHEATON PRECIOUS METALS CORP COM NPV ISIN #CA9628791027 SEDOL #BF13KN5', '120.902', '$44.41', '+$0.08', '$5369.25', '+$9.67', '+0.18%', '+$1386.05', '+34.79%', '22.49%', '$3983.20', '$32.95', 'Cash']
+clean field Z21480840
+clean field Trust: Under Agreement
+clean field WPM
+clean field WHEATON PRECIOUS METALS CORP COM NPV ISIN #CA9628791027 SEDOL #BF13KN5
+clean field 120.902
+clean field 44.41
+clean field +0.08
+clean field 5369.25
+clean field +9.67
+clean field +0.18
+clean field +1386.05
+clean field +34.79
+clean field 22.49
+clean field 3983.20
+clean field 32.95
+clean field Cash
+unclean fidelity csv ['Z21480840', 'Trust: Under Agreement', 'BDC', 'BELDEN INC', '129.221', '$83.11', '-$1.86', '$10739.55', '-$240.36', '-2.19%', '+$3832.88', '+55.49%', '44.99%', '$6906.67', '$53.45', 'Cash']
+JOP 135: cleaning ['Z21480840', 'Trust: Under Agreement', 'BDC', 'BELDEN INC', '129.221', '$83.11', '-$1.86', '$10739.55', '-$240.36', '-2.19%', '+$3832.88', '+55.49%', '44.99%', '$6906.67', '$53.45', 'Cash']
+clean field Z21480840
+clean field Trust: Under Agreement
+clean field BDC
+clean field BELDEN INC
+clean field 129.221
+clean field 83.11
+clean field -1.86
+clean field 10739.55
+clean field -240.36
+clean field -2.19
+clean field +3832.88
+clean field +55.49
+clean field 44.99
+clean field 6906.67
+clean field 53.45
+clean field Cash
+unclean fidelity csv ['Z21480840', 'Trust: Under Agreement', 'PBF', 'PBF ENERGY INC COM USD0.001', '35.524', '$48.16', '-$2.90', '$1710.83', '-$103.02', '-5.68%', '+$33.16', '+1.97%', '7.17%', '$1677.67', '$47.23', 'Cash']
+JOP 135: cleaning ['Z21480840', 'Trust: Under Agreement', 'PBF', 'PBF ENERGY INC COM USD0.001', '35.524', '$48.16', '-$2.90', '$1710.83', '-$103.02', '-5.68%', '+$33.16', '+1.97%', '7.17%', '$1677.67', '$47.23', 'Cash']
+clean field Z21480840
+clean field Trust: Under Agreement
+clean field PBF
+clean field PBF ENERGY INC COM USD0.001
+clean field 35.524
+clean field 48.16
+clean field -2.90
+clean field 1710.83
+clean field -103.02
+clean field -5.68
+clean field +33.16
+clean field +1.97
+clean field 7.17
+clean field 1677.67
+clean field 47.23
+clean field Cash
+unclean fidelity csv ['Z29077372', 'Individual - TOD', 'FCASH**', 'HELD IN FCASH', '', '', '', '$4.46', '', '', '', '', '100.00%', '', '', 'Cash']
+unclean fidelity csv ['216748698', 'ROTH IRA', 'CORE**', 'FDIC-INSURED DEPOSIT SWEEP', '', '', '', '$32.37', '', '', '', '', '0.12%', '', '', 'Cash']
+unclean fidelity csv ['216748698', 'ROTH IRA', 'IRDM', 'IRIDIUM COMMUNICATIONS INC', '131.054', '$30.14', '-$0.33', '$3949.96', '-$43.25', '-1.09%', '+$245.75', '+6.63%', '14.75%', '$3704.21', '$28.26', 'Cash']
+JOP 135: cleaning ['216748698', 'ROTH IRA', 'IRDM', 'IRIDIUM COMMUNICATIONS INC', '131.054', '$30.14', '-$0.33', '$3949.96', '-$43.25', '-1.09%', '+$245.75', '+6.63%', '14.75%', '$3704.21', '$28.26', 'Cash']
+clean field 216748698
+clean field ROTH IRA
+clean field IRDM
+clean field IRIDIUM COMMUNICATIONS INC
+clean field 131.054
+clean field 30.14
+clean field -0.33
+clean field 3949.96
+clean field -43.25
+clean field -1.09
+clean field +245.75
+clean field +6.63
+clean field 14.75
+clean field 3704.21
+clean field 28.26
+clean field Cash
+unclean fidelity csv ['216748698', 'ROTH IRA', 'BTG', 'B2GOLD CORP COM ISIN #CA11777Q2099 SEDOL #B29VFC4', '3115.335', '$2.52', '-$0.02', '$7850.64', '-$62.31', '-0.79%', '+$657.81', '+9.14%', '29.31%', '$7192.83', '$2.31', 'Cash']
+JOP 135: cleaning ['216748698', 'ROTH IRA', 'BTG', 'B2GOLD CORP COM ISIN #CA11777Q2099 SEDOL #B29VFC4', '3115.335', '$2.52', '-$0.02', '$7850.64', '-$62.31', '-0.79%', '+$657.81', '+9.14%', '29.31%', '$7192.83', '$2.31', 'Cash']
+clean field 216748698
+clean field ROTH IRA
+clean field BTG
+clean field B2GOLD CORP COM ISIN #CA11777Q2099 SEDOL #B29VFC4
+clean field 3115.335
+clean field 2.52
+clean field -0.02
+clean field 7850.64
+clean field -62.31
+clean field -0.79
+clean field +657.81
+clean field +9.14
+clean field 29.31
+clean field 7192.83
+clean field 2.31
+clean field Cash
+unclean fidelity csv ['216748698', 'ROTH IRA', 'NIO', 'NIO INC SPON ADS EACH REP 1 ORD SHS CLASS A', '450', '$6.14', '+$0.05', '$2763.00', '+$22.50', '+0.82%', '-$83.50', '-2.94%', '10.32%', '$2846.50', '$6.33', 'Cash']
+JOP 135: cleaning ['216748698', 'ROTH IRA', 'NIO', 'NIO INC SPON ADS EACH REP 1 ORD SHS CLASS A', '450', '$6.14', '+$0.05', '$2763.00', '+$22.50', '+0.82%', '-$83.50', '-2.94%', '10.32%', '$2846.50', '$6.33', 'Cash']
+clean field 216748698
+clean field ROTH IRA
+clean field NIO
+clean field NIO INC SPON ADS EACH REP 1 ORD SHS CLASS A
+clean field 450
+clean field 6.14
+clean field +0.05
+clean field 2763.00
+clean field +22.50
+clean field +0.82
+clean field -83.50
+clean field -2.94
+clean field 10.32
+clean field 2846.50
+clean field 6.33
+clean field Cash
+unclean fidelity csv ['216748698', 'ROTH IRA', 'RGLD', 'ROYAL GOLD INC COM ISIN #US7802871084', '75.945', '$108.65', '-$0.62', '$8251.42', '-$47.09', '-0.57%', '+$2987.30', '+56.74%', '30.81%', '$5264.12', '$69.31', 'Cash']
+JOP 135: cleaning ['216748698', 'ROTH IRA', 'RGLD', 'ROYAL GOLD INC COM ISIN #US7802871084', '75.945', '$108.65', '-$0.62', '$8251.42', '-$47.09', '-0.57%', '+$2987.30', '+56.74%', '30.81%', '$5264.12', '$69.31', 'Cash']
+clean field 216748698
+clean field ROTH IRA
+clean field RGLD
+clean field ROYAL GOLD INC COM ISIN #US7802871084
+clean field 75.945
+clean field 108.65
+clean field -0.62
+clean field 8251.42
+clean field -47.09
+clean field -0.57
+clean field +2987.30
+clean field +56.74
+clean field 30.81
+clean field 5264.12
+clean field 69.31
+clean field Cash
+unclean fidelity csv ['216748698', 'ROTH IRA', 'SKYE', 'SKYE BIOSCIENCE INC COM NEW', '32', '$6.20', '+$0.2695', '$198.40', '+$8.62', '+4.54%', '+$19.78', '+11.07%', '0.74%', '$178.62', '$5.58', 'Cash']
+JOP 135: cleaning ['216748698', 'ROTH IRA', 'SKYE', 'SKYE BIOSCIENCE INC COM NEW', '32', '$6.20', '+$0.2695', '$198.40', '+$8.62', '+4.54%', '+$19.78', '+11.07%', '0.74%', '$178.62', '$5.58', 'Cash']
+clean field 216748698
+clean field ROTH IRA
+clean field SKYE
+clean field SKYE BIOSCIENCE INC COM NEW
+clean field 32
+clean field 6.20
+clean field +0.2695
+clean field 198.40
+clean field +8.62
+clean field +4.54
+clean field +19.78
+clean field +11.07
+clean field 0.74
+clean field 178.62
+clean field 5.58
+clean field Cash
+unclean fidelity csv ['216748698', 'ROTH IRA', 'ACHR', 'ARCHER AVIATION INC COM CL A', '200', '$5.24', '-$0.21', '$1048.00', '-$42.00', '-3.86%', '+$475.26', '+82.98%', '3.91%', '$572.74', '$2.86', 'Cash']
+JOP 135: cleaning ['216748698', 'ROTH IRA', 'ACHR', 'ARCHER AVIATION INC COM CL A', '200', '$5.24', '-$0.21', '$1048.00', '-$42.00', '-3.86%', '+$475.26', '+82.98%', '3.91%', '$572.74', '$2.86', 'Cash']
+clean field 216748698
+clean field ROTH IRA
+clean field ACHR
+clean field ARCHER AVIATION INC COM CL A
+clean field 200
+clean field 5.24
+clean field -0.21
+clean field 1048.00
+clean field -42.00
+clean field -3.86
+clean field +475.26
+clean field +82.98
+clean field 3.91
+clean field 572.74
+clean field 2.86
+clean field Cash
+unclean fidelity csv ['216748698', 'ROTH IRA', 'PBF', 'PBF ENERGY INC COM USD0.001', '55.822', '$48.16', '-$2.90', '$2688.38', '-$161.89', '-5.68%', '+$235.38', '+9.59%', '10.04%', '$2453.00', '$43.94', 'Cash']
+JOP 135: cleaning ['216748698', 'ROTH IRA', 'PBF', 'PBF ENERGY INC COM USD0.001', '55.822', '$48.16', '-$2.90', '$2688.38', '-$161.89', '-5.68%', '+$235.38', '+9.59%', '10.04%', '$2453.00', '$43.94', 'Cash']
+clean field 216748698
+clean field ROTH IRA
+clean field PBF
+clean field PBF ENERGY INC COM USD0.001
+clean field 55.822
+clean field 48.16
+clean field -2.90
+clean field 2688.38
+clean field -161.89
+clean field -5.68
+clean field +235.38
+clean field +9.59
+clean field 10.04
+clean field 2453.00
+clean field 43.94
+clean field Cash
+unclean fidelity csv ['229076430', 'Traditional IRA', 'FDRXX**', 'HELD IN MONEY MARKET', '', '', '', '$3702.61', '', '', '', '', '2.64%', '', '', 'Cash']
+unclean fidelity csv ['229076430', 'Traditional IRA', 'SOXS', 'DIREXION SHS ETF TR DLY SEMICNDTR BR', '300', '$4.39', '+$0.09', '$1317.00', '+$27.00', '+2.09%', '-$2753.97', '-67.65%', '0.94%', '$4070.97', '$13.57', 'Cash']
+JOP 135: cleaning ['229076430', 'Traditional IRA', 'SOXS', 'DIREXION SHS ETF TR DLY SEMICNDTR BR', '300', '$4.39', '+$0.09', '$1317.00', '+$27.00', '+2.09%', '-$2753.97', '-67.65%', '0.94%', '$4070.97', '$13.57', 'Cash']
+clean field 229076430
+clean field Traditional IRA
+clean field SOXS
+clean field DIREXION SHS ETF TR DLY SEMICNDTR BR
+clean field 300
+clean field 4.39
+clean field +0.09
+clean field 1317.00
+clean field +27.00
+clean field +2.09
+clean field -2753.97
+clean field -67.65
+clean field 0.94
+clean field 4070.97
+clean field 13.57
+clean field Cash
+unclean fidelity csv ['229076430', 'Traditional IRA', 'BTG', 'B2GOLD CORP COM ISIN #CA11777Q2099 SEDOL #B29VFC4', '1505.744', '$2.52', '-$0.02', '$3794.47', '-$30.12', '-0.79%', '-$235.39', '-5.85%', '2.70%', '$4029.86', '$2.68', 'Cash']
+JOP 135: cleaning ['229076430', 'Traditional IRA', 'BTG', 'B2GOLD CORP COM ISIN #CA11777Q2099 SEDOL #B29VFC4', '1505.744', '$2.52', '-$0.02', '$3794.47', '-$30.12', '-0.79%', '-$235.39', '-5.85%', '2.70%', '$4029.86', '$2.68', 'Cash']
+clean field 229076430
+clean field Traditional IRA
+clean field BTG
+clean field B2GOLD CORP COM ISIN #CA11777Q2099 SEDOL #B29VFC4
+clean field 1505.744
+clean field 2.52
+clean field -0.02
+clean field 3794.47
+clean field -30.12
+clean field -0.79
+clean field -235.39
+clean field -5.85
+clean field 2.70
+clean field 4029.86
+clean field 2.68
+clean field Cash
+unclean fidelity csv ['229076430', 'Traditional IRA', 'NIO', 'NIO INC SPON ADS EACH REP 1 ORD SHS CLASS A', '550', '$6.14', '+$0.05', '$3377.00', '+$27.50', '+0.82%', '-$4598.00', '-57.66%', '2.40%', '$7975.00', '$14.50', 'Cash']
+JOP 135: cleaning ['229076430', 'Traditional IRA', 'NIO', 'NIO INC SPON ADS EACH REP 1 ORD SHS CLASS A', '550', '$6.14', '+$0.05', '$3377.00', '+$27.50', '+0.82%', '-$4598.00', '-57.66%', '2.40%', '$7975.00', '$14.50', 'Cash']
+clean field 229076430
+clean field Traditional IRA
+clean field NIO
+clean field NIO INC SPON ADS EACH REP 1 ORD SHS CLASS A
+clean field 550
+clean field 6.14
+clean field +0.05
+clean field 3377.00
+clean field +27.50
+clean field +0.82
+clean field -4598.00
+clean field -57.66
+clean field 2.40
+clean field 7975.00
+clean field 14.50
+clean field Cash
+unclean fidelity csv ['229076430', 'Traditional IRA', 'AG', 'FIRST MAJESTIC SILVER CORP COM NPV ISIN #CA32076V1031 SEDOL #2833583', '1002.599', '$4.55', '+$0.03', '$4561.82', '+$30.07', '+0.66%', '+$107.85', '+2.42%', '3.25%', '$4453.97', '$4.44', 'Cash']
+JOP 135: cleaning ['229076430', 'Traditional IRA', 'AG', 'FIRST MAJESTIC SILVER CORP COM NPV ISIN #CA32076V1031 SEDOL #2833583', '1002.599', '$4.55', '+$0.03', '$4561.82', '+$30.07', '+0.66%', '+$107.85', '+2.42%', '3.25%', '$4453.97', '$4.44', 'Cash']
+clean field 229076430
+clean field Traditional IRA
+clean field AG
+clean field FIRST MAJESTIC SILVER CORP COM NPV ISIN #CA32076V1031 SEDOL #2833583
+clean field 1002.599
+clean field 4.55
+clean field +0.03
+clean field 4561.82
+clean field +30.07
+clean field +0.66
+clean field +107.85
+clean field +2.42
+clean field 3.25
+clean field 4453.97
+clean field 4.44
+clean field Cash
+unclean fidelity csv ['229076430', 'Traditional IRA', 'NGRBF', 'NEXTGEN FOOD ROBOTICS CORP COM NPV ISIN #CA65344X1050 SEDOL #BPX2052', '3000', '$0.1186', '$0.00', '$356.01', '$0.00', '0.00%', '-$1085.30', '-75.30%', '0.25%', '$1441.31', '$0.48', 'Cash']
+JOP 135: cleaning ['229076430', 'Traditional IRA', 'NGRBF', 'NEXTGEN FOOD ROBOTICS CORP COM NPV ISIN #CA65344X1050 SEDOL #BPX2052', '3000', '$0.1186', '$0.00', '$356.01', '$0.00', '0.00%', '-$1085.30', '-75.30%', '0.25%', '$1441.31', '$0.48', 'Cash']
+clean field 229076430
+clean field Traditional IRA
+clean field NGRBF
+clean field NEXTGEN FOOD ROBOTICS CORP COM NPV ISIN #CA65344X1050 SEDOL #BPX2052
+clean field 3000
+clean field 0.1186
+clean field 0.00
+clean field 356.01
+clean field 0.00
+clean field 0.00
+clean field -1085.30
+clean field -75.30
+clean field 0.25
+clean field 1441.31
+clean field 0.48
+clean field Cash
+unclean fidelity csv ['229076430', 'Traditional IRA', 'GDX', 'VANECK ETF TR VANECK GOLD MINERS ETF', '143.64', '$26.86', '+$0.09', '$3858.17', '+$12.92', '+0.33%', '-$591.80', '-13.30%', '2.75%', '$4449.97', '$30.98', 'Cash']
+JOP 135: cleaning ['229076430', 'Traditional IRA', 'GDX', 'VANECK ETF TR VANECK GOLD MINERS ETF', '143.64', '$26.86', '+$0.09', '$3858.17', '+$12.92', '+0.33%', '-$591.80', '-13.30%', '2.75%', '$4449.97', '$30.98', 'Cash']
+clean field 229076430
+clean field Traditional IRA
+clean field GDX
+clean field VANECK ETF TR VANECK GOLD MINERS ETF
+clean field 143.64
+clean field 26.86
+clean field +0.09
+clean field 3858.17
+clean field +12.92
+clean field +0.33
+clean field -591.80
+clean field -13.30
+clean field 2.75
+clean field 4449.97
+clean field 30.98
+clean field Cash
+unclean fidelity csv ['229076430', 'Traditional IRA', 'RGLD', 'ROYAL GOLD INC COM ISIN #US7802871084', '101.259', '$108.65', '-$0.62', '$11001.79', '-$62.79', '-0.57%', '+$2365.84', '+27.39%', '7.83%', '$8635.95', '$85.29', 'Cash']
+JOP 135: cleaning ['229076430', 'Traditional IRA', 'RGLD', 'ROYAL GOLD INC COM ISIN #US7802871084', '101.259', '$108.65', '-$0.62', '$11001.79', '-$62.79', '-0.57%', '+$2365.84', '+27.39%', '7.83%', '$8635.95', '$85.29', 'Cash']
+clean field 229076430
+clean field Traditional IRA
+clean field RGLD
+clean field ROYAL GOLD INC COM ISIN #US7802871084
+clean field 101.259
+clean field 108.65
+clean field -0.62
+clean field 11001.79
+clean field -62.79
+clean field -0.57
+clean field +2365.84
+clean field +27.39
+clean field 7.83
+clean field 8635.95
+clean field 85.29
+clean field Cash
+unclean fidelity csv ['229076430', 'Traditional IRA', 'XOM', 'EXXON MOBIL CORP', '37.781', '$103.73', '$0.00', '$3919.02', '$0.00', '0.00%', '-$480.96', '-10.94%', '2.79%', '$4399.98', '$116.46', 'Cash']
+JOP 135: cleaning ['229076430', 'Traditional IRA', 'XOM', 'EXXON MOBIL CORP', '37.781', '$103.73', '$0.00', '$3919.02', '$0.00', '0.00%', '-$480.96', '-10.94%', '2.79%', '$4399.98', '$116.46', 'Cash']
+clean field 229076430
+clean field Traditional IRA
+clean field XOM
+clean field EXXON MOBIL CORP
+clean field 37.781
+clean field 103.73
+clean field 0.00
+clean field 3919.02
+clean field 0.00
+clean field 0.00
+clean field -480.96
+clean field -10.94
+clean field 2.79
+clean field 4399.98
+clean field 116.46
+clean field Cash
+unclean fidelity csv ['229076430', 'Traditional IRA', 'TSLA', 'TESLA INC COM', '30', '$199.95', '-$0.50', '$5998.50', '-$15.00', '-0.25%', '+$2665.50', '+79.97%', '4.27%', '$3333.00', '$111.10', 'Cash']
+JOP 135: cleaning ['229076430', 'Traditional IRA', 'TSLA', 'TESLA INC COM', '30', '$199.95', '-$0.50', '$5998.50', '-$15.00', '-0.25%', '+$2665.50', '+79.97%', '4.27%', '$3333.00', '$111.10', 'Cash']
+clean field 229076430
+clean field Traditional IRA
+clean field TSLA
+clean field TESLA INC COM
+clean field 30
+clean field 199.95
+clean field -0.50
+clean field 5998.50
+clean field -15.00
+clean field -0.25
+clean field +2665.50
+clean field +79.97
+clean field 4.27
+clean field 3333.00
+clean field 111.10
+clean field Cash
+unclean fidelity csv ['229076430', 'Traditional IRA', 'WPM', 'WHEATON PRECIOUS METALS CORP COM NPV ISIN #CA9628791027 SEDOL #BF13KN5', '757.518', '$44.41', '+$0.08', '$33641.37', '+$60.60', '+0.18%', '+$22244.67', '+195.18%', '23.95%', '$11396.70', '$15.04', 'Cash']
+JOP 135: cleaning ['229076430', 'Traditional IRA', 'WPM', 'WHEATON PRECIOUS METALS CORP COM NPV ISIN #CA9628791027 SEDOL #BF13KN5', '757.518', '$44.41', '+$0.08', '$33641.37', '+$60.60', '+0.18%', '+$22244.67', '+195.18%', '23.95%', '$11396.70', '$15.04', 'Cash']
+clean field 229076430
+clean field Traditional IRA
+clean field WPM
+clean field WHEATON PRECIOUS METALS CORP COM NPV ISIN #CA9628791027 SEDOL #BF13KN5
+clean field 757.518
+clean field 44.41
+clean field +0.08
+clean field 33641.37
+clean field +60.60
+clean field +0.18
+clean field +22244.67
+clean field +195.18
+clean field 23.95
+clean field 11396.70
+clean field 15.04
+clean field Cash
+unclean fidelity csv ['229076430', 'Traditional IRA', 'XLE', 'SELECT SECTOR SPDR TR ENERGY', '47.758', '$85.57', '-$0.05', '$4086.65', '-$2.39', '-0.06%', '-$313.30', '-7.13%', '2.91%', '$4399.95', '$92.13', 'Cash']
+JOP 135: cleaning ['229076430', 'Traditional IRA', 'XLE', 'SELECT SECTOR SPDR TR ENERGY', '47.758', '$85.57', '-$0.05', '$4086.65', '-$2.39', '-0.06%', '-$313.30', '-7.13%', '2.91%', '$4399.95', '$92.13', 'Cash']
+clean field 229076430
+clean field Traditional IRA
+clean field XLE
+clean field SELECT SECTOR SPDR TR ENERGY
+clean field 47.758
+clean field 85.57
+clean field -0.05
+clean field 4086.65
+clean field -2.39
+clean field -0.06
+clean field -313.30
+clean field -7.13
+clean field 2.91
+clean field 4399.95
+clean field 92.13
+clean field Cash
+unclean fidelity csv ['229076430', 'Traditional IRA', 'ACHR', 'ARCHER AVIATION INC COM CL A', '500', '$5.24', '-$0.21', '$2620.00', '-$105.00', '-3.86%', '+$472.50', '+22.00%', '1.87%', '$2147.50', '$4.30', 'Cash']
+JOP 135: cleaning ['229076430', 'Traditional IRA', 'ACHR', 'ARCHER AVIATION INC COM CL A', '500', '$5.24', '-$0.21', '$2620.00', '-$105.00', '-3.86%', '+$472.50', '+22.00%', '1.87%', '$2147.50', '$4.30', 'Cash']
+clean field 229076430
+clean field Traditional IRA
+clean field ACHR
+clean field ARCHER AVIATION INC COM CL A
+clean field 500
+clean field 5.24
+clean field -0.21
+clean field 2620.00
+clean field -105.00
+clean field -3.86
+clean field +472.50
+clean field +22.00
+clean field 1.87
+clean field 2147.50
+clean field 4.30
+clean field Cash
+unclean fidelity csv ['229076430', 'Traditional IRA', 'YUM', 'YUM! BRANDS INC', '40.57', '$133.88', '-$0.85', '$5431.51', '-$34.49', '-0.64%', '+$379.91', '+7.52%', '3.87%', '$5051.60', '$124.52', 'Cash']
+JOP 135: cleaning ['229076430', 'Traditional IRA', 'YUM', 'YUM! BRANDS INC', '40.57', '$133.88', '-$0.85', '$5431.51', '-$34.49', '-0.64%', '+$379.91', '+7.52%', '3.87%', '$5051.60', '$124.52', 'Cash']
+clean field 229076430
+clean field Traditional IRA
+clean field YUM
+clean field YUM! BRANDS INC
+clean field 40.57
+clean field 133.88
+clean field -0.85
+clean field 5431.51
+clean field -34.49
+clean field -0.64
+clean field +379.91
+clean field +7.52
+clean field 3.87
+clean field 5051.60
+clean field 124.52
+clean field Cash
+unclean fidelity csv ['229076430', 'Traditional IRA', 'VRTX', 'VERTEX PHARMACEUTICALS INC', '25', '$422.20', '-$4.09', '$10555.00', '-$102.25', '-0.96%', '+$7456.05', '+240.59%', '7.52%', '$3098.95', '$123.96', 'Cash']
+JOP 135: cleaning ['229076430', 'Traditional IRA', 'VRTX', 'VERTEX PHARMACEUTICALS INC', '25', '$422.20', '-$4.09', '$10555.00', '-$102.25', '-0.96%', '+$7456.05', '+240.59%', '7.52%', '$3098.95', '$123.96', 'Cash']
+clean field 229076430
+clean field Traditional IRA
+clean field VRTX
+clean field VERTEX PHARMACEUTICALS INC
+clean field 25
+clean field 422.20
+clean field -4.09
+clean field 10555.00
+clean field -102.25
+clean field -0.96
+clean field +7456.05
+clean field +240.59
+clean field 7.52
+clean field 3098.95
+clean field 123.96
+clean field Cash
+unclean fidelity csv ['229076430', 'Traditional IRA', 'AMZN', 'AMAZON.COM INC', '50', '$169.51', '-$0.29', '$8475.50', '-$14.50', '-0.18%', '+$3678.09', '+76.66%', '6.04%', '$4797.41', '$95.95', 'Cash']
+JOP 135: cleaning ['229076430', 'Traditional IRA', 'AMZN', 'AMAZON.COM INC', '50', '$169.51', '-$0.29', '$8475.50', '-$14.50', '-0.18%', '+$3678.09', '+76.66%', '6.04%', '$4797.41', '$95.95', 'Cash']
+clean field 229076430
+clean field Traditional IRA
+clean field AMZN
+clean field AMAZON.COM INC
+clean field 50
+clean field 169.51
+clean field -0.29
+clean field 8475.50
+clean field -14.50
+clean field -0.18
+clean field +3678.09
+clean field +76.66
+clean field 6.04
+clean field 4797.41
+clean field 95.95
+clean field Cash
+unclean fidelity csv ['229076430', 'Traditional IRA', 'WMT', 'WALMART INC COM', '50.553', '$170.36', '+$1.07', '$8612.20', '+$54.09', '+0.63%', '+$1517.29', '+21.38%', '6.13%', '$7094.91', '$140.35', 'Cash']
+JOP 135: cleaning ['229076430', 'Traditional IRA', 'WMT', 'WALMART INC COM', '50.553', '$170.36', '+$1.07', '$8612.20', '+$54.09', '+0.63%', '+$1517.29', '+21.38%', '6.13%', '$7094.91', '$140.35', 'Cash']
+clean field 229076430
+clean field Traditional IRA
+clean field WMT
+clean field WALMART INC COM
+clean field 50.553
+clean field 170.36
+clean field +1.07
+clean field 8612.20
+clean field +54.09
+clean field +0.63
+clean field +1517.29
+clean field +21.38
+clean field 6.13
+clean field 7094.91
+clean field 140.35
+clean field Cash
+unclean fidelity csv ['229076430', 'Traditional IRA', 'STLA', 'STELLANTIS N.V COM EUR0.01 ISIN #NL00150001Q9', '331.459', '$25.69', '-$0.30', '$8515.18', '-$99.44', '-1.16%', '+$3013.65', '+54.77%', '6.06%', '$5501.53', '$16.60', 'Cash']
+JOP 135: cleaning ['229076430', 'Traditional IRA', 'STLA', 'STELLANTIS N.V COM EUR0.01 ISIN #NL00150001Q9', '331.459', '$25.69', '-$0.30', '$8515.18', '-$99.44', '-1.16%', '+$3013.65', '+54.77%', '6.06%', '$5501.53', '$16.60', 'Cash']
+clean field 229076430
+clean field Traditional IRA
+clean field STLA
+clean field STELLANTIS N.V COM EUR0.01 ISIN #NL00150001Q9
+clean field 331.459
+clean field 25.69
+clean field -0.30
+clean field 8515.18
+clean field -99.44
+clean field -1.16
+clean field +3013.65
+clean field +54.77
+clean field 6.06
+clean field 5501.53
+clean field 16.60
+clean field Cash
+unclean fidelity csv ['229076430', 'Traditional IRA', 'ABBV', 'ABBVIE INC COM USD0.01', '93.607', '$177.49', '+$0.90', '$16614.30', '+$84.24', '+0.50%', '+$10564.95', '+174.64%', '11.83%', '$6049.35', '$64.62', 'Cash']
+JOP 135: cleaning ['229076430', 'Traditional IRA', 'ABBV', 'ABBVIE INC COM USD0.01', '93.607', '$177.49', '+$0.90', '$16614.30', '+$84.24', '+0.50%', '+$10564.95', '+174.64%', '11.83%', '$6049.35', '$64.62', 'Cash']
+clean field 229076430
+clean field Traditional IRA
+clean field ABBV
+clean field ABBVIE INC COM USD0.01
+clean field 93.607
+clean field 177.49
+clean field +0.90
+clean field 16614.30
+clean field +84.24
+clean field +0.50
+clean field +10564.95
+clean field +174.64
+clean field 11.83
+clean field 6049.35
+clean field 64.62
+clean field Cash
+unclean fidelity csv ['19432', 'FORTRA 401(K) PLAN', 'MIDLX', 'MFS INTL NEW DISC R6', '2063.084', '$31.09', '+$0.22', '$64141.28', '+$453.88', '+0.71%', '+$2778.06', '+4.53%', '23.08%', '$61363.22', '$29.74', '']
+JOP 135: cleaning ['19432', 'FORTRA 401(K) PLAN', 'MIDLX', 'MFS INTL NEW DISC R6', '2063.084', '$31.09', '+$0.22', '$64141.28', '+$453.88', '+0.71%', '+$2778.06', '+4.53%', '23.08%', '$61363.22', '$29.74', '']
+clean field 19432
+clean field FORTRA 401(K) PLAN
+clean field MIDLX
+clean field MFS INTL NEW DISC R6
+clean field 2063.084
+clean field 31.09
+clean field +0.22
+clean field 64141.28
+clean field +453.88
+clean field +0.71
+clean field +2778.06
+clean field +4.53
+clean field 23.08
+clean field 61363.22
+clean field 29.74
+clean field 
+unclean fidelity csv ['19432', 'FORTRA 401(K) PLAN', 'WSCAAX', 'SMALL CAP VAL II I1', '159.114', '$16.67', '-$0.15', '$2652.43', '-$23.87', '-0.89%', '+$105.74', '+4.15%', '0.95%', '$2546.69', '$16.01', '']
+JOP 135: cleaning ['19432', 'FORTRA 401(K) PLAN', 'WSCAAX', 'SMALL CAP VAL II I1', '159.114', '$16.67', '-$0.15', '$2652.43', '-$23.87', '-0.89%', '+$105.74', '+4.15%', '0.95%', '$2546.69', '$16.01', '']
+clean field 19432
+clean field FORTRA 401(K) PLAN
+clean field WSCAAX
+clean field SMALL CAP VAL II I1
+clean field 159.114
+clean field 16.67
+clean field -0.15
+clean field 2652.43
+clean field -23.87
+clean field -0.89
+clean field +105.74
+clean field +4.15
+clean field 0.95
+clean field 2546.69
+clean field 16.01
+clean field 
+unclean fidelity csv ['19432', 'FORTRA 401(K) PLAN', 'FSPGX', 'FID LG CAP GR IDX', '2570.116', '$31.70', '-$0.19', '$81472.68', '-$488.32', '-0.60%', '+$24566.17', '+43.17%', '29.31%', '$56906.51', '$22.14', '']
+JOP 135: cleaning ['19432', 'FORTRA 401(K) PLAN', 'FSPGX', 'FID LG CAP GR IDX', '2570.116', '$31.70', '-$0.19', '$81472.68', '-$488.32', '-0.60%', '+$24566.17', '+43.17%', '29.31%', '$56906.51', '$22.14', '']
+clean field 19432
+clean field FORTRA 401(K) PLAN
+clean field FSPGX
+clean field FID LG CAP GR IDX
+clean field 2570.116
+clean field 31.70
+clean field -0.19
+clean field 81472.68
+clean field -488.32
+clean field -0.60
+clean field +24566.17
+clean field +43.17
+clean field 29.31
+clean field 56906.51
+clean field 22.14
+clean field 
+unclean fidelity csv ['19432', 'FORTRA 401(K) PLAN', 'FXAIX', 'FID 500 INDEX', '360.535', '$174.01', '-$0.81', '$62736.70', '-$292.03', '-0.46%', '+$10900.65', '+21.03%', '22.57%', '$51836.05', '$143.78', '']
+JOP 135: cleaning ['19432', 'FORTRA 401(K) PLAN', 'FXAIX', 'FID 500 INDEX', '360.535', '$174.01', '-$0.81', '$62736.70', '-$292.03', '-0.46%', '+$10900.65', '+21.03%', '22.57%', '$51836.05', '$143.78', '']
+clean field 19432
+clean field FORTRA 401(K) PLAN
+clean field FXAIX
+clean field FID 500 INDEX
+clean field 360.535
+clean field 174.01
+clean field -0.81
+clean field 62736.70
+clean field -292.03
+clean field -0.46
+clean field +10900.65
+clean field +21.03
+clean field 22.57
+clean field 51836.05
+clean field 143.78
+clean field 
+unclean fidelity csv ['19432', 'FORTRA 401(K) PLAN', 'MVCKX', 'MFS MID CAP VALUE R6', '2137.895', '$31.32', '-$0.07', '$66958.87', '-$149.65', '-0.22%', '+$6455.12', '+10.67%', '24.09%', '$60503.75', '$28.30', '']
+JOP 135: cleaning ['19432', 'FORTRA 401(K) PLAN', 'MVCKX', 'MFS MID CAP VALUE R6', '2137.895', '$31.32', '-$0.07', '$66958.87', '-$149.65', '-0.22%', '+$6455.12', '+10.67%', '24.09%', '$60503.75', '$28.30', '']
+clean field 19432
+clean field FORTRA 401(K) PLAN
+clean field MVCKX
+clean field MFS MID CAP VALUE R6
+clean field 2137.895
+clean field 31.32
+clean field -0.07
+clean field 66958.87
+clean field -149.65
+clean field -0.22
+clean field +6455.12
+clean field +10.67
+clean field 24.09
+clean field 60503.75
+clean field 28.30
+clean field 
+unclean fidelity csv []
+unclean fidelity csv ['The data and information in this spreadsheet is provided to you solely for your use and is not for distribution. The spreadsheet is provided for informational purposes only, and is not intended to provide advice, nor should it be construed as an offer to sell, a solicitation of an offer to buy or a recommendation for any security by Fidelity or any third party. Data and information shown is based on information known to Fidelity as of the date it was exported and is subject to change. It should not be used in place of your account statements or trade confirmations and is not intended for tax reporting purposes. For more information on the data included in this spreadsheet, including any limitations thereof, go to Fidelity.com.']
+unclean fidelity csv []
+unclean fidelity csv ['Brokerage services are provided by Fidelity Brokerage Services LLC, 900 Salem Street, Smithfield, RI 02917. Custody and other services provided by National Financial Services LLC. Both are Fidelity Investment companies and members SIPC, NYSE.']
+unclean fidelity csv []
+unclean fidelity csv ['Date downloaded 02/18/2024 8:09 PM ET']
+clean CSV  ['Z21480840', 'Trust: Under Agreement', 'PLUG', 'PLUG POWER INC', '111', '3.96', '-0.06', '439.56', '-6.66', '-1.50', '+43.11', '+10.87', '1.84', '396.45', '3.57', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['Z21480840', 'Trust: Under Agreement', 'HUT', 'HUT 8 CORP COM ISIN #US44812J1043 SEDOL #BQQ8805', '140', '10.08', '+0.11', '1411.20', '+15.40', '+1.10', '-3495.80', '-71.25', '5.91', '4907.00', '35.05', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['Z21480840', 'Trust: Under Agreement', 'WPM', 'WHEATON PRECIOUS METALS CORP COM NPV ISIN #CA9628791027 SEDOL #BF13KN5', '120.902', '44.41', '+0.08', '5369.25', '+9.67', '+0.18', '+1386.05', '+34.79', '22.49', '3983.20', '32.95', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['Z21480840', 'Trust: Under Agreement', 'BDC', 'BELDEN INC', '129.221', '83.11', '-1.86', '10739.55', '-240.36', '-2.19', '+3832.88', '+55.49', '44.99', '6906.67', '53.45', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['Z21480840', 'Trust: Under Agreement', 'PBF', 'PBF ENERGY INC COM USD0.001', '35.524', '48.16', '-2.90', '1710.83', '-103.02', '-5.68', '+33.16', '+1.97', '7.17', '1677.67', '47.23', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['216748698', 'ROTH IRA', 'IRDM', 'IRIDIUM COMMUNICATIONS INC', '131.054', '30.14', '-0.33', '3949.96', '-43.25', '-1.09', '+245.75', '+6.63', '14.75', '3704.21', '28.26', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['216748698', 'ROTH IRA', 'BTG', 'B2GOLD CORP COM ISIN #CA11777Q2099 SEDOL #B29VFC4', '3115.335', '2.52', '-0.02', '7850.64', '-62.31', '-0.79', '+657.81', '+9.14', '29.31', '7192.83', '2.31', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['216748698', 'ROTH IRA', 'NIO', 'NIO INC SPON ADS EACH REP 1 ORD SHS CLASS A', '450', '6.14', '+0.05', '2763.00', '+22.50', '+0.82', '-83.50', '-2.94', '10.32', '2846.50', '6.33', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['216748698', 'ROTH IRA', 'RGLD', 'ROYAL GOLD INC COM ISIN #US7802871084', '75.945', '108.65', '-0.62', '8251.42', '-47.09', '-0.57', '+2987.30', '+56.74', '30.81', '5264.12', '69.31', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['216748698', 'ROTH IRA', 'SKYE', 'SKYE BIOSCIENCE INC COM NEW', '32', '6.20', '+0.2695', '198.40', '+8.62', '+4.54', '+19.78', '+11.07', '0.74', '178.62', '5.58', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['216748698', 'ROTH IRA', 'ACHR', 'ARCHER AVIATION INC COM CL A', '200', '5.24', '-0.21', '1048.00', '-42.00', '-3.86', '+475.26', '+82.98', '3.91', '572.74', '2.86', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['216748698', 'ROTH IRA', 'PBF', 'PBF ENERGY INC COM USD0.001', '55.822', '48.16', '-2.90', '2688.38', '-161.89', '-5.68', '+235.38', '+9.59', '10.04', '2453.00', '43.94', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['229076430', 'Traditional IRA', 'SOXS', 'DIREXION SHS ETF TR DLY SEMICNDTR BR', '300', '4.39', '+0.09', '1317.00', '+27.00', '+2.09', '-2753.97', '-67.65', '0.94', '4070.97', '13.57', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['229076430', 'Traditional IRA', 'BTG', 'B2GOLD CORP COM ISIN #CA11777Q2099 SEDOL #B29VFC4', '1505.744', '2.52', '-0.02', '3794.47', '-30.12', '-0.79', '-235.39', '-5.85', '2.70', '4029.86', '2.68', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['229076430', 'Traditional IRA', 'NIO', 'NIO INC SPON ADS EACH REP 1 ORD SHS CLASS A', '550', '6.14', '+0.05', '3377.00', '+27.50', '+0.82', '-4598.00', '-57.66', '2.40', '7975.00', '14.50', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['229076430', 'Traditional IRA', 'AG', 'FIRST MAJESTIC SILVER CORP COM NPV ISIN #CA32076V1031 SEDOL #2833583', '1002.599', '4.55', '+0.03', '4561.82', '+30.07', '+0.66', '+107.85', '+2.42', '3.25', '4453.97', '4.44', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['229076430', 'Traditional IRA', 'NGRBF', 'NEXTGEN FOOD ROBOTICS CORP COM NPV ISIN #CA65344X1050 SEDOL #BPX2052', '3000', '0.1186', '0.00', '356.01', '0.00', '0.00', '-1085.30', '-75.30', '0.25', '1441.31', '0.48', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['229076430', 'Traditional IRA', 'GDX', 'VANECK ETF TR VANECK GOLD MINERS ETF', '143.64', '26.86', '+0.09', '3858.17', '+12.92', '+0.33', '-591.80', '-13.30', '2.75', '4449.97', '30.98', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['229076430', 'Traditional IRA', 'RGLD', 'ROYAL GOLD INC COM ISIN #US7802871084', '101.259', '108.65', '-0.62', '11001.79', '-62.79', '-0.57', '+2365.84', '+27.39', '7.83', '8635.95', '85.29', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['229076430', 'Traditional IRA', 'XOM', 'EXXON MOBIL CORP', '37.781', '103.73', '0.00', '3919.02', '0.00', '0.00', '-480.96', '-10.94', '2.79', '4399.98', '116.46', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['229076430', 'Traditional IRA', 'TSLA', 'TESLA INC COM', '30', '199.95', '-0.50', '5998.50', '-15.00', '-0.25', '+2665.50', '+79.97', '4.27', '3333.00', '111.10', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['229076430', 'Traditional IRA', 'WPM', 'WHEATON PRECIOUS METALS CORP COM NPV ISIN #CA9628791027 SEDOL #BF13KN5', '757.518', '44.41', '+0.08', '33641.37', '+60.60', '+0.18', '+22244.67', '+195.18', '23.95', '11396.70', '15.04', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['229076430', 'Traditional IRA', 'XLE', 'SELECT SECTOR SPDR TR ENERGY', '47.758', '85.57', '-0.05', '4086.65', '-2.39', '-0.06', '-313.30', '-7.13', '2.91', '4399.95', '92.13', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['229076430', 'Traditional IRA', 'ACHR', 'ARCHER AVIATION INC COM CL A', '500', '5.24', '-0.21', '2620.00', '-105.00', '-3.86', '+472.50', '+22.00', '1.87', '2147.50', '4.30', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['229076430', 'Traditional IRA', 'YUM', 'YUM! BRANDS INC', '40.57', '133.88', '-0.85', '5431.51', '-34.49', '-0.64', '+379.91', '+7.52', '3.87', '5051.60', '124.52', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['229076430', 'Traditional IRA', 'VRTX', 'VERTEX PHARMACEUTICALS INC', '25', '422.20', '-4.09', '10555.00', '-102.25', '-0.96', '+7456.05', '+240.59', '7.52', '3098.95', '123.96', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['229076430', 'Traditional IRA', 'AMZN', 'AMAZON.COM INC', '50', '169.51', '-0.29', '8475.50', '-14.50', '-0.18', '+3678.09', '+76.66', '6.04', '4797.41', '95.95', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['229076430', 'Traditional IRA', 'WMT', 'WALMART INC COM', '50.553', '170.36', '+1.07', '8612.20', '+54.09', '+0.63', '+1517.29', '+21.38', '6.13', '7094.91', '140.35', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['229076430', 'Traditional IRA', 'STLA', 'STELLANTIS N.V COM EUR0.01 ISIN #NL00150001Q9', '331.459', '25.69', '-0.30', '8515.18', '-99.44', '-1.16', '+3013.65', '+54.77', '6.06', '5501.53', '16.60', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['229076430', 'Traditional IRA', 'ABBV', 'ABBVIE INC COM USD0.01', '93.607', '177.49', '+0.90', '16614.30', '+84.24', '+0.50', '+10564.95', '+174.64', '11.83', '6049.35', '64.62', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['19432', 'FORTRA 401(K) PLAN', 'MIDLX', 'MFS INTL NEW DISC R6', '2063.084', '31.09', '+0.22', '64141.28', '+453.88', '+0.71', '+2778.06', '+4.53', '23.08', '61363.22', '29.74', '', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['19432', 'FORTRA 401(K) PLAN', 'WSCAAX', 'SMALL CAP VAL II I1', '159.114', '16.67', '-0.15', '2652.43', '-23.87', '-0.89', '+105.74', '+4.15', '0.95', '2546.69', '16.01', '', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['19432', 'FORTRA 401(K) PLAN', 'FSPGX', 'FID LG CAP GR IDX', '2570.116', '31.70', '-0.19', '81472.68', '-488.32', '-0.60', '+24566.17', '+43.17', '29.31', '56906.51', '22.14', '', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['19432', 'FORTRA 401(K) PLAN', 'FXAIX', 'FID 500 INDEX', '360.535', '174.01', '-0.81', '62736.70', '-292.03', '-0.46', '+10900.65', '+21.03', '22.57', '51836.05', '143.78', '', datetime.datetime(2024, 2, 18, 0, 0)]
+clean CSV  ['19432', 'FORTRA 401(K) PLAN', 'MVCKX', 'MFS MID CAP VALUE R6', '2137.895', '31.32', '-0.07', '66958.87', '-149.65', '-0.22', '+6455.12', '+10.67', '24.09', '60503.75', '28.30', '', datetime.datetime(2024, 2, 18, 0, 0)]
+..Trying to insert: ['Z21480840', 'Trust: Under Agreement', 'PLUG', 'PLUG POWER INC', '111', '3.96', '-0.06', '439.56', '-6.66', '-1.50', '+43.11', '+10.87', '1.84', '396.45', '3.57', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol B:PLUG
+..Trying to insert: ['Z21480840', 'Trust: Under Agreement', 'HUT', 'HUT 8 CORP COM ISIN #US44812J1043 SEDOL #BQQ8805', '140', '10.08', '+0.11', '1411.20', '+15.40', '+1.10', '-3495.80', '-71.25', '5.91', '4907.00', '35.05', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol B:HUT
+..Trying to insert: ['Z21480840', 'Trust: Under Agreement', 'WPM', 'WHEATON PRECIOUS METALS CORP COM NPV ISIN #CA9628791027 SEDOL #BF13KN5', '120.902', '44.41', '+0.08', '5369.25', '+9.67', '+0.18', '+1386.05', '+34.79', '22.49', '3983.20', '32.95', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol B:WPM
+..Trying to insert: ['Z21480840', 'Trust: Under Agreement', 'BDC', 'BELDEN INC', '129.221', '83.11', '-1.86', '10739.55', '-240.36', '-2.19', '+3832.88', '+55.49', '44.99', '6906.67', '53.45', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol B:BDC
+..Trying to insert: ['Z21480840', 'Trust: Under Agreement', 'PBF', 'PBF ENERGY INC COM USD0.001', '35.524', '48.16', '-2.90', '1710.83', '-103.02', '-5.68', '+33.16', '+1.97', '7.17', '1677.67', '47.23', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol B:PBF
+..Trying to insert: ['216748698', 'ROTH IRA', 'IRDM', 'IRIDIUM COMMUNICATIONS INC', '131.054', '30.14', '-0.33', '3949.96', '-43.25', '-1.09', '+245.75', '+6.63', '14.75', '3704.21', '28.26', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol R:IRDM
+..Trying to insert: ['216748698', 'ROTH IRA', 'BTG', 'B2GOLD CORP COM ISIN #CA11777Q2099 SEDOL #B29VFC4', '3115.335', '2.52', '-0.02', '7850.64', '-62.31', '-0.79', '+657.81', '+9.14', '29.31', '7192.83', '2.31', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol R:BTG
+..Trying to insert: ['216748698', 'ROTH IRA', 'NIO', 'NIO INC SPON ADS EACH REP 1 ORD SHS CLASS A', '450', '6.14', '+0.05', '2763.00', '+22.50', '+0.82', '-83.50', '-2.94', '10.32', '2846.50', '6.33', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol R:NIO
+..Trying to insert: ['216748698', 'ROTH IRA', 'RGLD', 'ROYAL GOLD INC COM ISIN #US7802871084', '75.945', '108.65', '-0.62', '8251.42', '-47.09', '-0.57', '+2987.30', '+56.74', '30.81', '5264.12', '69.31', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol R:RGLD
+..Trying to insert: ['216748698', 'ROTH IRA', 'SKYE', 'SKYE BIOSCIENCE INC COM NEW', '32', '6.20', '+0.2695', '198.40', '+8.62', '+4.54', '+19.78', '+11.07', '0.74', '178.62', '5.58', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol R:SKYE
+..Trying to insert: ['216748698', 'ROTH IRA', 'ACHR', 'ARCHER AVIATION INC COM CL A', '200', '5.24', '-0.21', '1048.00', '-42.00', '-3.86', '+475.26', '+82.98', '3.91', '572.74', '2.86', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol R:ACHR
+..Trying to insert: ['216748698', 'ROTH IRA', 'PBF', 'PBF ENERGY INC COM USD0.001', '55.822', '48.16', '-2.90', '2688.38', '-161.89', '-5.68', '+235.38', '+9.59', '10.04', '2453.00', '43.94', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol R:PBF
+..Trying to insert: ['229076430', 'Traditional IRA', 'SOXS', 'DIREXION SHS ETF TR DLY SEMICNDTR BR', '300', '4.39', '+0.09', '1317.00', '+27.00', '+2.09', '-2753.97', '-67.65', '0.94', '4070.97', '13.57', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol I:SOXS
+..Trying to insert: ['229076430', 'Traditional IRA', 'BTG', 'B2GOLD CORP COM ISIN #CA11777Q2099 SEDOL #B29VFC4', '1505.744', '2.52', '-0.02', '3794.47', '-30.12', '-0.79', '-235.39', '-5.85', '2.70', '4029.86', '2.68', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol I:BTG
+..Trying to insert: ['229076430', 'Traditional IRA', 'NIO', 'NIO INC SPON ADS EACH REP 1 ORD SHS CLASS A', '550', '6.14', '+0.05', '3377.00', '+27.50', '+0.82', '-4598.00', '-57.66', '2.40', '7975.00', '14.50', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol I:NIO
+..Trying to insert: ['229076430', 'Traditional IRA', 'AG', 'FIRST MAJESTIC SILVER CORP COM NPV ISIN #CA32076V1031 SEDOL #2833583', '1002.599', '4.55', '+0.03', '4561.82', '+30.07', '+0.66', '+107.85', '+2.42', '3.25', '4453.97', '4.44', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol I:AG
+..Trying to insert: ['229076430', 'Traditional IRA', 'NGRBF', 'NEXTGEN FOOD ROBOTICS CORP COM NPV ISIN #CA65344X1050 SEDOL #BPX2052', '3000', '0.1186', '0.00', '356.01', '0.00', '0.00', '-1085.30', '-75.30', '0.25', '1441.31', '0.48', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol I:NGRBF
+..Trying to insert: ['229076430', 'Traditional IRA', 'GDX', 'VANECK ETF TR VANECK GOLD MINERS ETF', '143.64', '26.86', '+0.09', '3858.17', '+12.92', '+0.33', '-591.80', '-13.30', '2.75', '4449.97', '30.98', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol I:GDX
+..Trying to insert: ['229076430', 'Traditional IRA', 'RGLD', 'ROYAL GOLD INC COM ISIN #US7802871084', '101.259', '108.65', '-0.62', '11001.79', '-62.79', '-0.57', '+2365.84', '+27.39', '7.83', '8635.95', '85.29', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol I:RGLD
+..Trying to insert: ['229076430', 'Traditional IRA', 'XOM', 'EXXON MOBIL CORP', '37.781', '103.73', '0.00', '3919.02', '0.00', '0.00', '-480.96', '-10.94', '2.79', '4399.98', '116.46', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol I:XOM
+..Trying to insert: ['229076430', 'Traditional IRA', 'TSLA', 'TESLA INC COM', '30', '199.95', '-0.50', '5998.50', '-15.00', '-0.25', '+2665.50', '+79.97', '4.27', '3333.00', '111.10', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol I:TSLA
+..Trying to insert: ['229076430', 'Traditional IRA', 'WPM', 'WHEATON PRECIOUS METALS CORP COM NPV ISIN #CA9628791027 SEDOL #BF13KN5', '757.518', '44.41', '+0.08', '33641.37', '+60.60', '+0.18', '+22244.67', '+195.18', '23.95', '11396.70', '15.04', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol I:WPM
+..Trying to insert: ['229076430', 'Traditional IRA', 'XLE', 'SELECT SECTOR SPDR TR ENERGY', '47.758', '85.57', '-0.05', '4086.65', '-2.39', '-0.06', '-313.30', '-7.13', '2.91', '4399.95', '92.13', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol I:XLE
+..Trying to insert: ['229076430', 'Traditional IRA', 'ACHR', 'ARCHER AVIATION INC COM CL A', '500', '5.24', '-0.21', '2620.00', '-105.00', '-3.86', '+472.50', '+22.00', '1.87', '2147.50', '4.30', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol I:ACHR
+..Trying to insert: ['229076430', 'Traditional IRA', 'YUM', 'YUM! BRANDS INC', '40.57', '133.88', '-0.85', '5431.51', '-34.49', '-0.64', '+379.91', '+7.52', '3.87', '5051.60', '124.52', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol I:YUM
+..Trying to insert: ['229076430', 'Traditional IRA', 'VRTX', 'VERTEX PHARMACEUTICALS INC', '25', '422.20', '-4.09', '10555.00', '-102.25', '-0.96', '+7456.05', '+240.59', '7.52', '3098.95', '123.96', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol I:VRTX
+..Trying to insert: ['229076430', 'Traditional IRA', 'AMZN', 'AMAZON.COM INC', '50', '169.51', '-0.29', '8475.50', '-14.50', '-0.18', '+3678.09', '+76.66', '6.04', '4797.41', '95.95', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol I:AMZN
+..Trying to insert: ['229076430', 'Traditional IRA', 'WMT', 'WALMART INC COM', '50.553', '170.36', '+1.07', '8612.20', '+54.09', '+0.63', '+1517.29', '+21.38', '6.13', '7094.91', '140.35', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol I:WMT
+..Trying to insert: ['229076430', 'Traditional IRA', 'STLA', 'STELLANTIS N.V COM EUR0.01 ISIN #NL00150001Q9', '331.459', '25.69', '-0.30', '8515.18', '-99.44', '-1.16', '+3013.65', '+54.77', '6.06', '5501.53', '16.60', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol I:STLA
+..Trying to insert: ['229076430', 'Traditional IRA', 'ABBV', 'ABBVIE INC COM USD0.01', '93.607', '177.49', '+0.90', '16614.30', '+84.24', '+0.50', '+10564.95', '+174.64', '11.83', '6049.35', '64.62', 'Cash', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol I:ABBV
+..Trying to insert: ['19432', 'FORTRA 401(K) PLAN', 'MIDLX', 'MFS INTL NEW DISC R6', '2063.084', '31.09', '+0.22', '64141.28', '+453.88', '+0.71', '+2778.06', '+4.53', '23.08', '61363.22', '29.74', '', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol K:MIDLX
+..Trying to insert: ['19432', 'FORTRA 401(K) PLAN', 'WSCAAX', 'SMALL CAP VAL II I1', '159.114', '16.67', '-0.15', '2652.43', '-23.87', '-0.89', '+105.74', '+4.15', '0.95', '2546.69', '16.01', '', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol K:WSCAAX
+..Trying to insert: ['19432', 'FORTRA 401(K) PLAN', 'FSPGX', 'FID LG CAP GR IDX', '2570.116', '31.70', '-0.19', '81472.68', '-488.32', '-0.60', '+24566.17', '+43.17', '29.31', '56906.51', '22.14', '', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol K:FSPGX
+..Trying to insert: ['19432', 'FORTRA 401(K) PLAN', 'FXAIX', 'FID 500 INDEX', '360.535', '174.01', '-0.81', '62736.70', '-292.03', '-0.46', '+10900.65', '+21.03', '22.57', '51836.05', '143.78', '', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol K:FXAIX
+..Trying to insert: ['19432', 'FORTRA 401(K) PLAN', 'MVCKX', 'MFS MID CAP VALUE R6', '2137.895', '31.32', '-0.07', '66958.87', '-149.65', '-0.22', '+6455.12', '+10.67', '24.09', '60503.75', '28.30', '', datetime.datetime(2024, 2, 18, 0, 0)]
+JOP 745 symbol K:MVCKX
+Renaming file  /home/jordonez/bitbucket/misc/PASAY/ingest/fidelityPortfolio_Positions_Feb-18-2024.csv to  /home/jordonez/bitbucket/misc/PASAY/ingest/fidelityPortfolio_Positions_Feb-18-2024.csvprocessed

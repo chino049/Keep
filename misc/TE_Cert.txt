@@ -1,0 +1,409 @@
+TE cert
+
+TE INTERFACE AND AGENTS
+URL access 443 - https://console or ip
+interface area used to refresh interface - interface toolbar
+context-sensitive - true
+user preference to retrieve objects from db in batches - display exact table count
+services port - 9898
+
+TE NODES
+AD can be monitored out-box - all 
+node property editor, which displays nodes male, model, version - general
+nerwork devices install agent - flase
+node type not manually created - file system
+admins can only create nodes of pre-configures types - false
+
+TE ASSET VIEW
+best practices dictates tasks should be scope to user-created node groups - false
+asset view provides filter options for which of these - OS
+SNG which does not require admin conf - System tag sets
+tagging profiles allow yser to filter on which option - hostname
+which error type has to be cleared manually - uncategorized
+
+TE OBJECTS
+edit a linked object, is it updated on all locations - True
+rule groups contain - rules and other rules groups
+SNG - cannot be moved
+deleting any parentless object  - moved to the unlinked group
+which te object reprsents a response to a change - action
+
+TE RULES
+only way to create a baseline is to runa baseline rule task - false
+where to download TW rules - twcc
+format of TE rules/poliicies - XML
+download twcc rules, can you import them into any group - false
+baseline is a record of a monitores object un which state - known and trusted
+
+TE SEARCH AND LOGS
+user preference impacts how to search results are fetched and displayed - display exact table count
+wher are search fields for a node type when selected from the type dropdown displayed in the Node search criteta - search criteria displayed below the general criteris
+options for managing rule searched are the same as the options for managing node searches, except URL options - true
+log messages are exported in format - xml
+default settting for max number of search result options - 10000
+
+TE CHANGES
+action that can be ised to notify TE users and other about a discovered change - email
+tree option in the node mgr only displays nodes in the tree that have cahnges - changed node view 
+cleick version type link will open the difference viewer to complate the change against baseline - true
+act of creating a baseline that is exact copy of a specified element version - promotion
+promotion options available - promote versions, match, reference
+
+ADMIN REPORTING 
+report criteria is the same regardless of report type - false
+access controls cannot be assigned to report groups - true
+must select at least one node when configuring any report criteria - false
+by default, all report criteris even unselected criteria will be displayed in a report - true
+dashboards may contain - reports graphs/charts
+
+ADMIN CONFIG
+session timeout is a value in - minutes
+forward TE logs setting allows - syslog
+2 types of GVs - text  and passwords
+items/settings are not exported via export settings in setting mgr - lesence, home pages, node variables and asset tags
+which are default severity ranges in TE - low, medium, high.
+
+ADMIN PERMISSIONS
+Default admin role can be edited - false
+collection of permissions - roles
+required when creating a user - name, passwd, role
+default roles allow user to do admin tasks - user admin and admin
+custom roles can be assigned to users and groups in access cotnrols - true
+
+ADMIN CUSTOM NODES
+creating a custom node, under which folder can the custom node be found? - network device
+creating a custom node, what mst be created first - custom node type
+version information cannot be gatehred on custom node - false
+where can the custom node type be created? - Settings mgr
+what syntax do the selection and filter criteria for a COVR rule accept - Java 2 regex
+
+SECURITY THREAT INTEL
+which of the following is defined by gartner as evidence based knowledge - Threat intelligence
+common problem for enterprises on security threats - information overload
+primary challenges IT - info overload, lack of business context, motives and motivations of adversaries
+indicate time it takes to put measures in place to avoid future attacks - prevention gap
+models was created to illustrate difference phases of cyberthreat lifecycle - Cyberthreat gap
+
+SECURITY RULES
+Whcih are collections of attributes to be monitored by TE - criteria sets
+possible to set severity override values on attribute basis - true
+option to collect version content to be used by diff viewer - archive element content 
+which rule type will only display info after user had logged into the computer once - Rsop rule
+unlimited dir recusion - 0
+
+SECURITY SEVERITY
+which of the following is numeric value which is used in rule to indicate changes - severity range 
+where severity cahnges can be edited - settings magr
+is not possible to override a severity value based on user-soecified criteria - false
+action typpe may be used to override a severity - severity override action 
+which is a default severity ranges - low meduum high
+
+SECURITY CHANGE MANAGEMENT
+user-defined properties which may be assigned to nodes, elements, and version - custom properties
+all custom properties must have default value - true
+node custom properties may be changed on the security tab on the node property editor - false
+allow to edit a custom property via actions - set custom value action 
+used to apply or unapply one or more tags to an asset when node has changes - tag action
+
+SECURITY REALTIME 
+which tab of the node property editor is auditing enabled - events 
+which node types has auditing only provided by the integration of external auth and log version - network devices nodes
+te event generator default port - 1169
+audit event information can be found on the log tab of the node property mager - false
+where must real time monitoring be enabled in order for it to be used? - node and rule
+
+SECURITY POLICIES
+where can you download preconfigured securit dashboards files? TWCC
+standard to which a monitored system on a network must conform - Policy
+which tab can the policy results be viewed? - compliance
+no reports designed for reporting on policies and policy resutsl in TE - false
+
+COMPLIANCE
+term to mean conforming to a rule like specification, policym standard ot law - compliance
+whcih aims to protect patient health information - hippa
+not a five critical steps of a security risk and compliance lifecycle - promote and document
+which is implemented to protect credit card data - PCI DSS
+which ourlines cyber security standrds intended to protect bulk power for us/canada - NERC CIP
+
+COMPLIANCE CUSTOM POLICIES
+which is not a policy rest type - functional test
+which checks for compliance based on atttribute values specified by conditions - attributes test
+which checks for compliance based on content specified by conditions - content tests
+which checks for compliance based on values in DALC or SACL - windows ACL tests
+downoad TE policy tests - TWCC
+
+COMPLIANCE TUNNING
+NOT one of the changes types when a change is discovered - usefull
+NOT an option when rule tunning - add remove saved seach 
+NOT a step in rule tunning - baseline
+NOT option for policy test tunning - edit criteria set
+what is the process of eliminating irrelevant change frequently called? - rule tunning 
+
+COMPLIANCE REPORTING 
+report to provide test definition that includes details lke desc, type, severity and weight - detail test inventory 
+report to calculate number of passing and fail policy tests for a time interval - compliance history
+report to show overall compliance pass/fail status for each node? - scoring
+report to display pass/fail tests and errors detected since last result - test result by node
+report to show trend of historucak scores on policy compliance - scoring hostory 
+
+COMPLIANCE TOOLS
+home page for compliance provide by TW - integrity dashboard 
+report is not included in the integrity dashboard - changes by audit 
+not of the files included with the integrity dashboard - 2_homepage xml
+ordere should integrity dashboard fules be imported - quicklink, reports, dashboards 
+where integrity dashboard be downloaded - twcc
+
+
+
+Results for TE Foundation and Advanced Final Quiz
+CONGRATULATIONS, jordonez
+YOU PASSED!
+Your Score: 75 %
+ 
+Your Score
+  
+Passing Score
+  
+ 
+Results Summary
+Course
+TE Foundation and Administration Track - 5 days
+Quiz
+TE Foundation and Advanced Final Quiz
+Number Correct
+45 of 60
+ 
+Results Details
+ 
+QUESTION ID 1278 : TEF Final Quiz::TEF (wrong) 
+Which interface area controls the display of common tree display filters?
+
+
+A. Tabs
+B. Tree Pane
+C. Interface Toolbar
+D. Tree Options Pane
+
+
+>> CORRECT ANSWER IS: D 
+>> YOUR ANSWER IS: B 
+
+
+
+QUESTION ID 1308 : TEF Final Quiz::TEF (wrong) 
+Which settings controls how many results will be returned when using TE's search function?
+
+
+A. None
+B. Table size
+C. Maximum search results
+D. Display exact table count
+
+
+>> CORRECT ANSWER IS: C 
+>> YOUR ANSWER IS: D 
+
+
+
+QUESTION ID 1340 : TEF Final Quiz::Admin (wrong) 
+How many versions may be compared in the Difference Viewer?
+
+
+A. 1
+B. 2
+C. 3
+D. 4
+
+
+>> CORRECT ANSWER IS: B 
+>> YOUR ANSWER IS: A 
+
+
+
+QUESTION ID 1348 : TEF Final Quiz::Admin (wrong) 
+Which statement about the Recalculate database index statistics function is true?
+
+
+A. It is only necessary about once a year
+B. It will take more time on larger databases
+C. It will improve TE performance by rebuilding the database
+D. It is only recommended when Tripwire Support directs its use
+
+
+>> CORRECT ANSWER IS: B 
+>> YOUR ANSWER IS: C 
+
+
+
+QUESTION ID 1883 : TEF Final Quiz::Compliance (wrong) 
+Which steps are required when creating policy?
+
+
+A. Determine which node types will be tested
+B. Create a policy specific to the OS type to be tested
+C. Create a rule group to contain applicable policy tests
+D. Create policy tests to verify compliance with the standard
+
+
+>> CORRECT ANSWER IS: A B D 
+>> YOUR ANSWER IS: A B C D 
+
+Tripwire Enterprise Foundation Compliance Track Student Manual
+Module 3
+
+
+QUESTION ID 1901 : TEF Final Quiz::Compliance (wrong) 
+Which manager must the Integrity Dashboard 2_Dashboards.xml file be imported into?
+
+
+A. File
+B. Rules
+C. Reports
+D. Settings
+
+
+>> CORRECT ANSWER IS: D 
+>> YOUR ANSWER IS: C 
+
+Tripwire Enterprise Foundation Compliance Track Student Manual
+Module 6
+
+
+QUESTION ID 1329 : TEF Final Quiz::Admin (wrong) 
+Which statements are true about access controls?
+
+
+A. Access controls override all user roles
+B. Groups cannot be assigned access controls
+C. Access controls override all user roles except administrator
+D. Accessors can only be assigned roles in access controls, not individual permissions
+
+
+>> CORRECT ANSWER IS: C D 
+>> YOUR ANSWER IS: B 
+
+
+
+QUESTION ID 1890 : TEF Final Quiz::Compliance (wrong) 
+Which options are valid ways to adjust rules when tuning them?
+
+
+A. Adjust filters
+B. Adjust specifiers
+C. Adjust criteria sets
+D. Adjust include options
+
+
+>> CORRECT ANSWER IS: A B C D 
+>> YOUR ANSWER IS: C 
+
+Tripwire Enterprise Foundation Compliance Track Student Manual
+Module 4
+
+
+QUESTION ID 1338 : TEF Final Quiz::Admin (wrong) 
+Contextual Differences only apply to which type of e-mail action?
+
+
+A. All
+B. None
+C. Detailed
+D. Summary
+
+
+>> CORRECT ANSWER IS: C 
+>> YOUR ANSWER IS: A 
+
+
+
+QUESTION ID 1314 : TEF Final Quiz::TEF (wrong) 
+Report tasks can be used to schedule groups of reports.
+
+
+( True/False ) 
+
+>> CORRECT ANSWER IS: B 
+>> YOUR ANSWER IS: A 
+
+
+
+QUESTION ID 1897 : TEF Final Quiz::Compliance (wrong) 
+You want to send a report alert when a node fails a policy test. You configure a Policy Test Result Conditional Action that runs a Test Result Summary report. Where should you assign the action?
+
+
+A. As the True Action
+B. As the False Action
+C. As the Policy Fail Action
+D. As the Policy True Action
+
+
+>> CORRECT ANSWER IS: B 
+>> YOUR ANSWER IS: C 
+
+Tripwire Enterprise Foundation Compliance Track Student Manual
+Module 5
+
+
+QUESTION ID 1467 : TEF Final Quiz::Security (wrong) 
+Select the order of import for the following Security Dashboard files:
+
+
+1 -> ???
+2 -> ???
+3 -> ???
+4 -> ???
+
+
+>> CORRECT ANSWER IS: 1_Rules.xml,2_QuickLinks.xml,2_Reports.xml,3_Dashboard.xml, 
+>> YOUR ANSWER IS: 2_QuickLinks.xml,2_Reports.xml,3_Dashboard.xml,1_Rules.xml, 
+
+TEF_Security_v2.pdf Module 6
+
+
+QUESTION ID 1334 : TEF Final Quiz::Admin (wrong) 
+Which COVR rule feature creates an initial monitoring comparison point during rule creation (as opposed to collection the first time a task is run)?
+
+
+A. Search-and-Replace
+B. Asserting a Baseline
+C. Command Execution
+D. Selecting Command Output
+
+
+>> CORRECT ANSWER IS: B 
+>> YOUR ANSWER IS: A 
+
+
+
+QUESTION ID 1275 : TEF Final Quiz::TEF (wrong) 
+Choose the browsers TE supports.
+
+
+A. IE
+B. Opera
+C. Firefox
+D. Chrome
+
+
+>> CORRECT ANSWER IS: A C 
+>> YOUR ANSWER IS: A B C D 
+
+
+
+QUESTION ID 1887 : TEF Final Quiz::Compliance (wrong) 
+Rule tuning is the process of fine-tuning rules to collect only relevant changes. Which step will prevent irrelevant (unwanted) changes from being detected in the future?
+
+
+A. Fix the rule
+B. Reverse change
+C. Evaluate change
+D. Promote change
+
+
+>> CORRECT ANSWER IS: A 
+>> YOUR ANSWER IS: C 
+
+Tripwire Enterprise Foundation Compliance Track Student Manual
+Module 4
+
+

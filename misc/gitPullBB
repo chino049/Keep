@@ -1,0 +1,1 @@
+df=`ls bitbucket`;for f in $df; do echo $f; cd bitbucket/$f; git pull; cd ../..; done

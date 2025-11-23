@@ -1,0 +1,14 @@
+echo "bitbucket"
+df=`ls d:/bitbucket`;for f in $df; do echo $f; cd d:/bitbucket/$f; git status; cd ../..; done
+
+echo "Engagements"
+cd Engagements
+
+git status
+cd ..
+
+echo "Library"
+cd Library
+
+git status
+cd ..

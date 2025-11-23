@@ -1,0 +1,199 @@
+SCAP
+SCAP consists of a bunch of standards for
+how policies are described (XCCDF), 
+how settings are tested (OVAL), 
+and how results are delivered (XCCDF, CPE, CVSS). 
+
+
+SCAP - Security Content Automation Protocol - is a method for using specific standards to 
+enable automated vulnerability management, measurement, and policy compliance evaluation 
+(e.g., FISMA compliance).
+
+SCAP is a standared which ties together a number or other standards, including OVAL, XCCDF, CPE,
+CVE, etc. It is a way to combine all of these standards into one single package which can be
+deployed to scan target assets. This package is called a data stream. SCAP 1.2 brings an XML
+format which lets data stream content be specified explicity. Prior to SCAP 1.2 data strems were
+just a set of component XML files on a zip archive.
+
+SCAP Security Content Automation Protocol
+goto nist scap repository and download a tier IV policy
+ chose SCAP content 1.0 version
+ load SCAP pplicy into vne and choose
+  XCCDF benchmarks and XCCDF profiles 
+  OVAL definitions 
+
+OVAL Open Vulnerability and Assessment Language is an xml-based language for specifying 
+compliance test procedures to detect machine state. An OVAL definition file contains and 
+OVAL definition, which can contain multiple tests. Each test is of an specific type and
+combines an OVAL object (an specification of what tests to look on the target) with 0 or
+more OVAL states (an specification of what the found items should contain)
+Devgru is our own OVAL content interpreter which operates on the local machine and will 
+produce a result for each definition, ture/false for Pass/Fail
+
+XCCDF eXtensible Checklist Configuration Description Format is an xml-based language for 
+specifiying checklists and reporting results of checklists evaluations. 
+XCCDF is a checklist language. It allows content writers to associate metadata with a check.
+The actual checks are rexpected to be implemented in another language like OVAL. The top
+level of an XCCDF document is a benchmark (or CCM compliance policy). Each benchmarks contains
+a bunch or rules, which can reference one or more checks. XCCDF has also a number of features,
+such as profiles, which let a single benchmark be tailored to a numnber of different capabilities
+as well as scoring models for failed rules and the ability to set variable values to be passed to
+OVAL. When XCCDF is evaluated, each rule is assigned a result value, which are equivalent to the 
+result values defined in OVAL
+Blackhawk is our own SCAP/XCCDF interpreter with the ability to deploy copies of Devgru
+to remote systems for just-in-time local target evaluation.
+
+ARF is the reporting/result format for SCAP. It is a very short format which manily acts as a 
+container for OVAL and XCCDF results.
+
+
+
+
+
+-to verify a report against standard schema validator
+java -jar proabatron.jar Cyberscope_Data.xml LASRSchematron_1.0.0-ea1.sch.xml 
+
+-a report contains tags
+Benchmark id resolved
+ Status date accepted
+ Version
+ Rule id
+ ...
+ Test Result end-time id start-time test-system
+  benchmark href id
+  identity auhtenticated privileged
+  profile idref
+  target
+  target address
+  rule-result idref
+   result
+   ident system
+   ...
+  ...
+  score system
+  score maximum system
+  
+ 
+
+
+
+-to base64 encode a file 
+import base64
+inf = open("IE7-53-2.0.1.0.zip","r")
+outf = open("IE7-53-2.0.1.0.zip.b64","w")
+base64.encode(inf,outf)
+outf.close()
+
+-to validate a scap policy file 
+sh scap/validate/validate.sh scap/validate/chino/IE7-53-2.0.1.0.zip.b64
+sh scap/validate/validate.sh scap/validate/chino/IE7-53-2.0.1.0.zip.b64 scap/validate/chino/IE7-53-2.0.1.0.2.zip.b64
+
+
+validate.py
+-needs to import scap_validate, zlib, base64, zipfile  and StrinIO (from cStringIO or StringIO)
+-appends the current directory to the system path
+-reads system arguments (zip and base64 encoded files) and sends them to be process and validated.
+-the process of validation, 
+   decodes the b64encoded file, into a string
+   uses StringIO for the string to act as a file object
+   if it is a zipped files, it will unzip, and will make a dic for each file containinrg file name and file content 
+   it will use function validate of scap_validate with directory, schemas, and xml dic 
+   This function will use a list comprehension to join directory and schema files that are not cpe-language, nor cpe-dictionary and ends with xsd
+   it validates using schematron. It reads name, values from xmlcontent. it finds and yileds oveldefs to find the xml root
+ 
+   
+-create_report.py
+-import xml.sax.saxutils, xml.etree, ctypes, psqcopg2, base64, zlib, json, StrinIO
+-loads from /hive/vendor/altpkg some libraries for xml 
+-parses arguments into outputfilename, audit ids and org names
+-makes connection to db using psycopg2
+-user cursor object with cursor_factory argument to allow columns to access by name
+-
+
+-Blackhawk can operate as a script or loadable python module
+It is a SCAP/XCCDF interpreter. When the SCAP data stream links to OVAL content, 
+the content will be collated and packaged along with Devgru payload, which will be
+uploaded (via window file sharing or ssh) to a remote asset to be scanned. 
+The payload consists of:
+ custom built python interpreter (in case suitable python is not found on target) 
+ bootloader script in python
+ custom made zip file of devgru source, with only necessary modules for OVAL content included. 
+   This file contains a hash signature and if already found on target asset, it will not be
+   re-uploaded (unless overwritten by parameter)
+ the actual OVAL xml files
+
+Blackhawk invokes a python interpreter on remote asset with bootloader script as argument.
+The script handles unpacking the devgru content, invoking it, and creating a special sentinal
+file when process completes.
+
+Blackhawk will monitor multiple target scans at once by polling them intermitently for sentinel files.
+Once successfull scanned is detected, it will copy back the OVAL result files and integrate results into 
+SCAP results generated by interpreting the SCAP content. These results will be written to the XML data 
+output by blackhawk before exiting.  
+
+For some target assets or test types, local evaluation will not be available. In these cases, blackhawk 
+must have a way to separate out the OVAL content that is remotely evaluated and execute devgru modules
+against target asset.
+
+
+-blackhawk_run.py
+append blackhawk directory to path
+imports blackhawk.py (class to handle i/o for all blackhawk scans), scap_data.py and logcleaner
+creates a content dictionary from file
+
+
+-Blackhawk manual test
+go to DP /rd/externalModules/scap/blackhawk
+
+usage: blackhawk.py ip ssh|windows|all username datastream.xml
+
+excute 
+python blackhawk.py 10.10.151.236 windows jesus ../test/content/scap/scap_gov.nist_USGCB-Windows-7.xml 
+
+
+python blackhawk.py 10.10.152.228 windows jesus ../test/content/scap/scap_gov.nist_USGCB-Windows-7.xml
+Password: 
+2013-04-22 15:13:28,286:675287104:INFO:Found benchmark xccdf_gov.nist_benchmark_USGCB-Windows-7
+
+2013-04-22 15:13:28,872:678067456:INFO:Initiating scan on 10.10.152.228
+
+2013-04-22 15:13:28,872:678067456:INFO:Trying credential 0 with windows scanner
+
+2013-04-22 15:13:28,872:678067456:INFO:Found slimpython version [0, 4]
+
+Domain=[STAEL] OS=[Windows 7 Enterprise 7600] Server=[Windows 7 Enterprise 6.1]
+
+2013-04-22 15:13:28,905:678067456:INFO:Calling check_call ['smbclient', '-U', 'jesus', '-c', 'put loader.py nc-scap-loader-10.10.152.228-4d5254f5.py', '//10.10.152.228/admin$', '<redacted>']
+
+putting file loader.py as \nc-scap-loader-10.10.152.228-4d5254f5.py (1349.5 kb/s) (average 1349.6 kb/s)
+
+2013-04-22 15:13:28,921:678067456:INFO:Calling check_call ['smbclient', '-U', 'jesus', '-c', 'put 10.10.152.228-4d5254f5.tmp.zip nc-scap-data-10.10.152.228-4d5254f5.zip', '//10.10.152.228/admin$', '<redacted>']
+
+putting file 10.10.152.228-4d5254f5.tmp.zip as \nc-scap-data-10.10.152.228-4d5254f5.zip (3893.9 kb/s) (average 3893.9 kb/s)
+
+2013-04-22 15:13:29,625:678067456:INFO:Scan initiated
+
+2013-04-22 15:13:30,717:678067456:INFO:Calling check_call ['smbclient', '-U', 'jesus', '-c', 'get nc-scap-results-10.10.152.228-4d5254f5.zip', '//10.10.152.228/admin$', '<redacted>']
+
+getting file \nc-scap-results-10.10.152.228-4d5254f5.zip of size 2446 as nc-scap-results-10.10.152.228-4d5254f5.zip (1194.3 KiloBytes/sec) (average 1194.3 KiloBytes/sec)
+
+2013-04-22 15:13:30,733:678067456:INFO:Calling call ['smbclient', '-U', 'jesus', '-c', 'del nc-scap-results-10.10.152.228-4d5254f5.zip', '//10.10.152.228/admin$', '<redacted>']
+
+2013-04-22 15:13:30,747:678067456:INFO:Calling check_call ['smbclient', '-U', 'jesus', '-c', 'get nc-scap-trace-10.10.152.228-4d5254f5.zip', '//10.10.152.228/admin$', '<redacted>']
+
+getting file \nc-scap-trace-10.10.152.228-4d5254f5.zip of size 15557 as nc-scap-trace-10.10.152.228-4d5254f5.zip (3038.4 KiloBytes/sec) (average 3038.5 KiloBytes/sec)
+
+2013-04-22 15:13:30,765:678067456:INFO:Calling call ['smbclient', '-U', 'jesus', '-c', 'del nc-scap-trace-10.10.152.228-4d5254f5.zip', '//10.10.152.228/admin$', '<redacted>']
+
+2013-04-22 15:13:30,779:678067456:INFO:Calling call ['smbclient', '-U', 'jesus', '-c', 'del nc-scap-loader-10.10.152.228-4d5254f5.py', '//10.10.152.228/admin$', '<redacted>']
+
+2013-04-22 15:13:30,984:678067456:INFO:Scan complete
+
+2013-04-22 15:13:30,985:675287104:INFO:Wrote nc-scap-results.xml
+
+2013-04-22 15:13:30,985:675287104:INFO:Wrote nc-scap-trace.zip
+-------------------------------------------------------------------------
+
+net share
+
+smbclient -s /tmp/smb.conf -U 'administrator%foobar' -c 'dir *.*' -L '//10.10.152.90/admin$'

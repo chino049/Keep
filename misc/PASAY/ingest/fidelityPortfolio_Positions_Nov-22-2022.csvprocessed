@@ -1,0 +1,42 @@
+﻿Account Number,Account Name,Symbol,Description,Quantity,Last Price,Last Price Change,Current Value,Today's Gain/Loss Dollar,Today's Gain/Loss Percent,Total Gain/Loss Dollar,Total Gain/Loss Percent,Percent Of Account,Cost Basis,Cost Basis Per Share,Type
+Z21480840,Trust: Under Agreement,VWSYF,VESTAS WIND SYSTEMS DKK0.20 ISIN #DK0061539921 SEDOL #BN4MYF5,500,$23.92 ,$0.58 ,"$11,961.25 ",$288.95 ,2.47%,"$2,001.25 ",20.09%,38.57%,"$9,960.00 ",$19.92 ,Cash
+Z21480840,Trust: Under Agreement,BDC,BELDEN INC,129,$79.63 ,($0.68),"$10,272.27 ",($87.72),-0.85%,"$3,384.96 ",49.14%,33.13%,"$6,887.31 ",$53.39 ,Cash
+Z21480840,Trust: Under Agreement,WPM,WHEATON PRECIOUS METALS CORP COM NPV ISIN #CA9628791027 SEDOL #BF13KN5,120,$37.99 ,$1.05 ,"$4,558.80 ",$126.00 ,2.84%,$616.20 ,15.62%,14.70%,"$3,942.60 ",$32.86 ,Cash
+Z21480840,Trust: Under Agreement,FCASH**,CASH,1755.18,$1.00 ,$0.00 ,"$1,755.18 ",$0.00 ,0.00%,n/a,n/a,5.66%,n/a,n/a,Cash
+Z21480840,Trust: Under Agreement,PLUG,PLUG POWER INC,111,$15.04 ,($0.16),"$1,668.88 ",($17.21),-1.03%,"$1,272.43 ",320.95%,5.38%,$396.45 ,$3.57 ,Cash
+Z21480840,Trust: Under Agreement,PBF,PBF ENERGY INC COM USD0.001,35,$47.24 ,$1.14 ,"$1,653.22 ",($1.58),-0.10%,($1.58),-0.10%,5.33%,"$1,654.80 ",$47.28 ,Cash
+Z21480840,Trust: Under Agreement,HUT,HUT 8 MINING CORP COM NPV ISIN #CA44812T1021 SEDOL #BF11385,700,$1.14 ,$0.02 ,$794.50 ,$10.50 ,1.33%,"($4,112.50)",-83.81%,2.56%,"$4,907.00 ",$7.01 ,Cash
+Z21480840,Trust: Under Agreement,Pending Activity,,,,"($1,654.80)",,,,,,,,,
+Z29077372,Individual - TOD,FCASH**,CASH,4.31,$1.00 ,$0.00 ,$4.31 ,$0.00 ,0.00%,n/a,n/a,100.00%,n/a,n/a,Cash
+216748698,ROTH IRA,BTG,B2GOLD CORP COM ISIN #CA11777Q2099 SEDOL #B29VFC4,3000,$3.44 ,$0.11 ,"$10,305.00 ",$315.00 ,3.15%,"$3,112.17 ",43.26%,31.50%,"$7,192.83 ",$2.40 ,Cash
+216748698,ROTH IRA,RGLD,ROYAL GOLD INC COM ISIN #US7802871084,75,$109.46 ,$4.47 ,"$8,209.50 ",$335.25 ,4.25%,"$2,945.38 ",55.95%,25.09%,"$5,264.12 ",$70.19 ,Cash
+216748698,ROTH IRA,IRDM,IRIDIUM COMMUNICATIONS INC,130,$51.67 ,$0.59 ,"$6,717.10 ",$76.70 ,1.15%,"$3,012.89 ",81.33%,20.53%,"$3,704.21 ",$28.49 ,Cash
+216748698,ROTH IRA,NIO,NIO INC SPON ADS EACH REP 1 ORD SHS CLASS A,450,$9.85 ,($0.17),"$4,432.50 ",($76.50),-1.70%,"$1,586.00 ",55.71%,13.55%,"$2,846.50 ",$6.33 ,Cash
+216748698,ROTH IRA,CORE**,FDIC-INSURED DEPOSIT SWEEP,2764.26,$1.00 ,$0.00 ,"$2,764.26 ",n/a,n/a,n/a,n/a,8.45%,n/a,n/a,Cash
+216748698,ROTH IRA,PBF,PBF ENERGY INC COM USD0.001,55,$47.24 ,$1.14 ,"$2,597.92 ",$62.42 ,2.46%,$144.92 ,5.90%,7.94%,"$2,453.00 ",$44.60 ,Cash
+216748698,ROTH IRA,SKYE,SKYE BIOSCIENCE INC COM,7800,$0.02 ,$0.00 ,$142.74 ,$4.29 ,3.09%,($35.88),-20.09%,0.44%,$178.62 ,$0.02 ,Cash
+216748698,ROTH IRA,Pending Activity,,,,"($2,453.00)",,,,,,,,,
+229076430,Traditional IRA,WPM,WHEATON PRECIOUS METALS CORP COM NPV ISIN #CA9628791027 SEDOL #BF13KN5,750,$37.99 ,$1.05 ,"$28,492.50 ",$787.50 ,2.84%,"$17,095.80 ",150.00%,23.47%,"$11,396.70 ",$15.20 ,Cash
+229076430,Traditional IRA,AG,FIRST MAJESTIC SILVER CORP COM NPV ISIN #CA32076V1031 SEDOL #2833583,2000,$9.39 ,$0.27 ,"$18,770.00 ",$530.00 ,2.90%,"$9,862.05 ",110.71%,15.46%,"$8,907.95 ",$4.45 ,Cash
+229076430,Traditional IRA,ABBV,ABBVIE INC COM USD0.01,90,$159.06 ,$1.95 ,"$14,315.40 ",$175.50 ,1.24%,"$8,266.05 ",136.64%,11.79%,"$6,049.35 ",$67.22 ,Cash
+229076430,Traditional IRA,RGLD,ROYAL GOLD INC COM ISIN #US7802871084,100,$109.46 ,$4.47 ,"$10,946.00 ",$447.00 ,4.25%,"$2,310.05 ",26.74%,9.02%,"$8,635.95 ",$86.36 ,Cash
+229076430,Traditional IRA,MODG,TOPGOLF CALLAWAY BRANDS CORP COM,500,$20.22 ,$0.09 ,"$10,107.50 ",$42.50 ,0.42%,"$3,102.50 ",44.28%,8.33%,"$7,005.00 ",$14.01 ,Cash
+229076430,Traditional IRA,BE,BLOOM ENERGY CORP COM CL A,420,$21.04 ,$0.19 ,"$8,836.80 ",$79.80 ,0.91%,"$1,571.81 ",21.63%,7.28%,"$7,264.99 ",$17.30 ,Cash
+229076430,Traditional IRA,VRTX,VERTEX PHARMACEUTICALS INC,25,$319.50 ,$3.30 ,"$7,987.37 ",$82.37 ,1.04%,"$4,888.42 ",157.74%,6.58%,"$3,098.95 ",$123.96 ,Cash
+229076430,Traditional IRA,NIO,NIO INC SPON ADS EACH REP 1 ORD SHS CLASS A,550,$9.85 ,($0.17),"$5,417.50 ",($93.50),-1.70%,"($2,557.50)",-32.07%,4.46%,"$7,975.00 ",$14.50 ,Cash
+229076430,Traditional IRA,BTG,B2GOLD CORP COM ISIN #CA11777Q2099 SEDOL #B29VFC4,1450,$3.44 ,$0.11 ,"$4,980.75 ",$152.25 ,3.15%,$950.89 ,23.59%,4.10%,"$4,029.86 ",$2.78 ,Cash
+229076430,Traditional IRA,EOG,EOG RESOURCES INC,33.689,$143.33 ,$3.47 ,"$4,828.64 ",$116.90 ,2.48%,$728.67 ,17.77%,3.98%,"$4,099.97 ",$121.70 ,Cash
+,,,,,,,,,,,,,,,
+229076430,Traditional IRA,FDRXX**,FIDELITY GOVERNMENT CASH RESERVES,2174.42,$1.00 ,$0.00 ,"$2,174.42 ",n/a,n/a,n/a,n/a,1.79%,n/a,n/a,Cash
+229076430,Traditional IRA,PBF,PBF ENERGY INC COM USD0.001,45,$47.24 ,$1.14 ,"$2,125.57 ",$51.07 ,2.46%,$118.57 ,5.90%,1.75%,"$2,007.00 ",$44.60 ,Cash
+229076430,Traditional IRA,Pending Activity,,,,"($2,007.00)",,,,,,,,,
+19432,FORTRA 401(K) PLAN,MVCKX,MFS MID CAP VALUE R6,1940.192,$29.98 ,($0.07),"$58,166.96 ",($135.81),-0.23%,"$3,583.62 ",6.57%,25.76%,"$54,583.34 ",$28.13 ,
+19432,FORTRA 401(K) PLAN,WSCAAX,SMALL CAP VAL II I1,3800.969,$15.07 ,($0.04),"$57,280.60 ",($152.04),-0.26%,"$2,697.20 ",4.94%,25.37%,"$54,583.40 ",$14.36 ,
+19432,FORTRA 401(K) PLAN,FSPGX,FID LG CAP GR IDX,2529.5,$21.82 ,($0.19),"$55,193.69 ",($480.61),-0.86%,$608.11 ,1.11%,24.45%,"$54,585.58 ",$21.58 ,
+19432,FORTRA 401(K) PLAN,MIDLX,MFS INTL NEW DISC R6,1845.308,$29.87 ,($0.23),"$55,119.35 ",($424.42),-0.76%,$536.12 ,0.98%,24.42%,"$54,583.23 ",$29.58 ,
+,,,,,,,,,,,,,,,
+"The data and information in this spreadsheet is provided to you solely for your use and is not for distribution. The spreadsheet is provided for informational purposes only, and is not intended to provide advice, nor should it be construed as an offer to sell, a solicitation of an offer to buy or a recommendation for any security by Fidelity or any third party. Data and information shown is based on information known to Fidelity as of the date it was exported and is subject to change. It should not be used in place of your account statements or trade confirmations and is not intended for tax reporting purposes. For more information on the data included in this spreadsheet, including any limitations thereof, go to Fidelity.com.",,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+"Brokerage services are provided by Fidelity Brokerage Services LLC, 900 Salem Street, Smithfield, RI 02917. Custody and other services provided by National Financial Services LLC. Both are Fidelity Investment companies and members SIPC, NYSE.",,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+Date downloaded 11/22/2022 2:35 PM ET,,,,,,,,,,,,,,,

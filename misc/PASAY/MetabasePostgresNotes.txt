@@ -1,0 +1,223 @@
+http://192.168.1.108:3000
+
+jo@fake.com
+nCircle008
+
+http://192.168.1.108/wordpress/wp-admin/
+jordonez 
+nCircle007
+
+create table test_transaction_detailed as table transaction_detailed;
+create table test_transaction_detailed as table transaction_detailed with no data;
+
+update test_positions set symbol = concat('B:BDC', symbol) where acct = 'Z214480840' abd symbol - 'BDC'
+ 
+select * into staging_test_receivable_invoice from test_receivable_invoice;
+select * into test_transaction_detailed from transaction_detailed;
+
+select * from staging_test_receivable_invoice where not exists 
+(select * from test_receivable_invoice 
+where test_receivable_invoice.record_id = staging_test_receivable_invoice.record_id);
+
+select  acct_code, acct_name, trans_date, trans_type, trans_des, trans_ref, trans_gross, trans_tax, trans_net, trans_tax_rate, trans_tax_name 
+from transaction_detailed 
+where not exists (select  acct_code, acct_name, trans_date, trans_type, trans_des, trans_ref, trans_gross, trans_tax, trans_net, trans_tax_rate, trans_tax_name 
+from test_transaction_detailed3); 
+
+select acct_code, acct_name, trans_date, trans_type, trans_des, trans_ref, trans_gross, trans_tax, trans_net, trans_tax_rate, trans_tax_name, 'missing or new' as missing 
+from test_transaction_detailed3
+except 
+select acct_code, acct_name, trans_date, trans_type, trans_des, trans_ref, trans_gross, trans_tax, trans_net, trans_tax_rate, trans_tax_name, 'missing or new' as missing
+from transaction_detailed
+
+select acct_code, acct_name, trans_date, trans_type, trans_des, trans_ref, trans_gross, trans_tax, trans_net, trans_tax_rate, trans_tax_name
+from test_transaction_detailed3
+MINUS
+select acct_code, acct_name, trans_date, trans_type, trans_des, trans_ref, trans_gross, trans_tax, trans_net, trans_tax_rate, trans_tax_name
+from transaction_detailed
+
+
+
+insert into test_receivable_invoice(inv_id, contact, inv_date, expected_date, reference, currency, gross, balance, status, source, invoice_sent, record_id)
+select inv_id, contact, inv_date, expected_date, reference, currency, gross, balance, status, source, invoice_sent, record_id
+from staging_test_receivable_invoice 
+on conflict  
+do nothing;
+
+
+'''insert into test_transaction_detailed3 (acct_code, acct_name, trans_date, trans_type, \
+                        trans_des, trans_ref, trans_gross, trans_tax, trans_net, trans_tax_rate, trans_tax_name) \
+                        values (%(str)s, %(str)s, %(date)s, %(str)s, %(str)s, %(str)s, %(float)s, %(float)s, %(float)s, %(str)s, %(str)s;''',
+                        { 'str':'201',
+                          'str':'fake',
+                          'date':'2022-01-01,
+                          'str':'fake',
+                          'str':'fake',
+                          'str':'fake',
+                          'float':23.0,
+                          'float':24.0,
+                          'float':25.0,
+                          'str':'fake',
+                          'str':'fake})
+						  
+						  
+select acct_code, acct_name, trans_date, trans_type, trans_des, trans_ref, trans_gross, 
+trans_tax, trans_net, trans_tax_rate, trans_tax_name, 
+COUNT(*) AS Count
+from transaction_detailed 
+group by acct_code, acct_name, trans_date, trans_type, trans_des, trans_ref, trans_gross, trans_tax, trans_net, trans_tax_rate, trans_tax_name 
+HAVING COUNT(*) > 1
+			  
+			  
+			  
+SELECT 'public'.'transaction_detailed'.'acct_code' AS 'acct_code', 'public'.'transaction_detailed'.'acct_name' AS 'acct_name', 'public'.'transaction_detailed'.'trans_date' AS 'trans_date', 'public'.'transaction_detailed'.'trans_type' AS 'trans_type', 'public'.'transaction_detailed'.'trans_des' AS 'trans_des', 'public'.'transaction_detailed'.'trans_ref' AS 'trans_ref', 'public'.'transaction_detailed'.'trans_gross' AS 'trans_gross', 'public'.'transaction_detailed'.'trans_tax' AS 'trans_tax', 'public'.'transaction_detailed'.'trans_net' AS 'trans_net', 'public'.'transaction_detailed'.'trans_tax_rate' AS 'trans_tax_rate', 'public'.'transaction_detailed'.'trans_tax_name' AS 'trans_tax_name'
+FROM 'public'.'transaction_detailed'
+WHERE ('public'.'transaction_detailed'.'trans_date' >= timestamp with time zone '2022-01-01 00:00:00.000-08:00'
+   AND 'public'.'transaction_detailed'.'trans_date' < timestamp with time zone '2023-01-01 00:00:00.000-08:00'
+   AND ('public'.'transaction_detailed'.'trans_ref' <> 'transpo'
+    OR 'public'.'transaction_detailed'.'trans_ref' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_ref' <> 'Transpo' 
+	OR 'public'.'transaction_detailed'.'trans_ref' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo ' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL)
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo allowance'
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo allowance of bernadeth '
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL)
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - Transpo allowance payment property tax'
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo allowance quarterly'
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL)
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo allowance to notarial of new contract' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo allowance/3rd quarter'
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo bernadeth' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - Transpo Bernadeth for filing (ITR,BIR quarterLy)' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo filing property tax &montly tax' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - Transpo filing tax' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo filing taxes'
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo filing taxes ' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo for bringing the A/C' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo for filing at cthall' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - Transpo for filing taxes'
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo for notarial' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL)
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo for notarial ' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo going to cthall for reporting to treasurer office regarding tax mapping.then going to bldg for some issues to brgy.' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo notarial' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL)
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo of materials'
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo to purchase a/c' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transpo to talk to new tenant and signing of contract' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - Transpo/4quarter' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - Transportation' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - transportation/to purchased garbage tub and pots' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'lights - transpo' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Transpo - Transpo filing Tax' OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - gas'
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'trans_des' <> 'Jasmin D - refill gas tank' 
+	OR 'public'.'transaction_detailed'.'trans_des' IS NULL) 
+	AND ('public'.'transaction_detailed'.'acct_name' = 'Payment to Owners' 
+	OR 'public'.'transaction_detailed'.'acct_name' = 'Tranportation allowance, Travel - National' 
+	OR 'public'.'transaction_detailed'.'acct_name' = 'Christmas Gifts'))
+	order by trans_date 
+	
+	
+	SELECT acct_code, acct_name, trans_date, trans_type, trans_type, trans_des, trans_ref, trans_gross, trans_tax, trans_net, trans_tax_rate, trans_tax_name
+FROM transaction_detailed
+WHERE (trans_date >= timestamp with time zone '2022-01-01' AND trans_date < timestamp with time zone '2023-01-01 
+AND (acct_code = '473' OR acct_code = '476' OR acct_code = '429' OR acct_code = '420' OR acct_code = '408' OR acct_code = '461' OR acct_code = '441' OR acct_code = '475')) order by trans_date
+
+
+SELECT acct_code, acct_name, trans_date, trans_type, trans_des, trans_ref, trans_gross, 
+            trans_tax, trans_net, trans_tax_rate, trans_tax_name FROM transaction_detailed 
+            WHERE (trans_date >= '2022-01-01' AND trans_date < '2023-01-01') AND  
+			(trans_des = 'Sal Admin - salary Admin' 
+            OR trans_des = 'Jasmin D - admin' OR trans_des = 'Jasmin D - admin sal' 
+            OR trans_des = 'Jasmin D - Admin sal' OR trans_des = 'Jasmin D - admin sal.' 
+            OR trans_des = 'Jasmin D - admin salary' OR trans_des = 'Jasmin D - AdminSal' 
+            OR trans_des = 'Jasmin D - sal admin' OR trans_des = 'Jasmin D - Sal admin' 
+            OR trans_des = 'Jasmin D - Sal Admin' OR trans_des = 'Jasmin D - sal.admin' 
+            OR trans_des = 'Jasmin D - sal.Admin' OR trans_des = 'Jasmin D - Sal.admin' 
+            OR trans_des = 'Jasmin D - salary admin' OR trans_des = 'Jasmin D - salary Admin' 
+            OR trans_des = 'Jasmin D - Salary admin' OR trans_des = 'Jasmin D - Salary Admin' 
+            OR trans_des = 'Jasmin D - salary administrator' OR trans_des = 'sal - sal.admin' 
+            OR trans_des = 'sal - salary admin' OR trans_des = 'Sal Admin - salary' 
+            OR trans_des = 'Sal Admin - salary admin' OR trans_des = 'wages salary - salary admin' 
+            OR trans_des = 'Jasmin D -  sal.caretaker')
+			
+SELECT acct_code, acct_name, trans_date, trans_type, trans_des, trans_ref, trans_gross, 
+            trans_tax, trans_net, trans_tax_rate, trans_tax_name FROM transaction_detailed 
+            WHERE (trans_date >= '2022-01-01' AND trans_date < '2023-01-01') AND 
+			(trans_des = 'Jasmin D -  sal.caretaker' OR trans_des = 'Jasmin D - salary Mike' OR trans_des = 'Jasmin D - salary mike' OR trans_des = 'Jasmin D - Salary  Mike' OR trans_des = 'Jasmin D - sal.Mike' OR trans_des = 'Jasmin D - sal.mike' OR trans_des = 'sal caretaker - salary mike' OR trans_des = 'sal caretaker - salary Mike' OR trans_des = 'Jasmin D - care taker' OR trans_des = 'Jasmin D - caretaker' OR trans_des = 'Jasmin D - caretaker sal.' OR trans_des = 'Jasmin D - sal caretaker' OR trans_des = 'Jasmin D - Sal caretaker' OR trans_des = 'Jasmin D - Sal Caretaker' OR trans_des = 'Jasmin D - sal.caretaker' OR trans_des = 'Jasmin D - sal.Caretaker' OR trans_des = 'Jasmin D - salary care taker' OR trans_des = 'Jasmin D - salary caretaker' OR trans_des = 'Jasmin D - Salary Caretaker' OR trans_des = 'Jasmin D - salary of caretaker' OR trans_des = 'sal - sal.caretaker' OR trans_des = 'sal caretaker - salary caretaker' OR trans_des = 'Sal of Michael - salary caretaker' OR trans_des = 'Jasmin D - michael' OR trans_des = 'Jasmin D - Michael' OR trans_des = 'Jasmin D - Michael sal' OR trans_des = 'Jasmin D - Michael sal.' OR trans_des = 'Jasmin D - salary michael' OR trans_des = 'Jasmin D - salary Michael' OR trans_des = 'Jasmin D - salary of Michael' OR trans_des = 'Jasmin D - Salary of Michael' OR trans_des = 'Jasmin D - sal Michael' OR trans_des = 'Jasmin D - sal.michael' OR trans_des = 'Jasmin D - Sal.Michael' OR trans_des = 'Jasmin D - sal.Michael') order by trans_date
+			
+			
+-- SELECT sum(trans_gross), TO_CHAR(trans_date, 'Month') FROM "public"."transaction_detailed" 
+--    WHERE ("public"."transaction_detailed"."trans_type" = 'EC'
+--    AND "public"."transaction_detailed"."trans_date" >= timestamp with time zone '2023-01-1 00:00:00.000Z' 
+--    AND "public"."transaction_detailed"."trans_date" < timestamp with time zone '2023-01-31 00:00:00.000Z')
+--    GROUP BY TO_CHAR(trans_date, 'Month')
+   
+   
+-- SELECT TO_CHAR(trans_date, 'Mon YYYY') as ym ,
+--  sum(trans_gross)as sales
+--    FROM "public"."transaction_detailed" 
+--    WHERE ("public"."transaction_detailed"."trans_type" = 'EC'
+--    AND "public"."transaction_detailed"."trans_date" >= '2023-01-1' 
+--    AND "public"."transaction_detailed"."trans_date" < '2023-01-31')
+--  GROUP BY 1;
+
+-- SELECT *, TO_CHAR(trans_date, 'Mon YYYY') as ym FROM "public"."transaction_detailed" 
+--    WHERE ("public"."transaction_detailed"."trans_type" = 'EC'
+--    AND "public"."transaction_detailed"."trans_date" >= '2023-01-1 00:00:00.000Z' 
+--    AND "public"."transaction_detailed"."trans_date" < '2023-01-31 00:00:00.000Z');	
+
+SELECT CAST(extract(month from "public"."transaction_detailed"."trans_date") AS integer) AS "trans_date",
+sum("public"."transaction_detailed"."trans_gross") AS "sum"
+FROM "public"."transaction_detailed"
+WHERE ("public"."transaction_detailed"."trans_date" >=  '2023-01-01'
+   AND "public"."transaction_detailed"."trans_date" <  '2023-02-01')
+	   AND "public"."transaction_detailed"."trans_type" = 'EC'
+GROUP BY CAST(extract(month from "public"."transaction_detailed"."trans_date") AS integer)
+ORDER BY CAST(extract(month from "public"."transaction_detailed"."trans_date") AS integer) ASC 
+
+
+SELECT sum(trans_gross)
+   FROM "public"."transaction_detailed" 
+   WHERE ("public"."transaction_detailed"."trans_type" = 'EC'
+   AND "public"."transaction_detailed"."trans_date" >= '2023-01-01'::date
+   AND "public"."transaction_detailed"."trans_date" < '2023-01-31'::date + '1 day'::interval)
+   
+SELECT sum(trans_gross)
+   FROM "public"."transaction_detailed" 
+   WHERE ("public"."transaction_detailed"."trans_type" = 'EC'
+ and TO_DATE(to_char(trans_date,'YYYY-MM-DD'),'YYYY-MM-DD') >= to_timestamp('2023-01-01', 'YYYY-MM-DD')
+ and TO_DATE(to_char(trans_date,'YYYY-MM-DD'),'YYYY-MM-DD') < to_timestamp('2023-01-31', 'YYYY-MM-DD')		   
+
+
+  apt install postgresql-client-common
+		
+			
+			
