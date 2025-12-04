@@ -247,3 +247,18 @@ Emiline	5,000
 Ramon	5,000
 Susan   5,000
 
+----------------2025 xmas
+Jasmin/GG   8k	    
+Eric        5k     
+Michael     5k     
+Bernadette  3k      
+John Flojo  5k	    
+
+Emiline	5k
+Ramon	5k 
+Susan   5k 
+
+salary increase 
+Michael from 10k to 10.5k
+Jasmin from 15k to 15.5k
+Berdanette 1700 to 2k
